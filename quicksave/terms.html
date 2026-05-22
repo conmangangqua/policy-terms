@@ -1,167 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Use - QuickSave</title>
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Terms of Use for QuickSave — rules and conditions for using the app.">
+    <title>Terms of Use — QuickSave</title>
     <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-        h1 { color: #2c3e50; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
-        h2 { color: #34495e; margin-top: 30px; }
-        p { margin-bottom: 15px; }
-        ul { margin-bottom: 15px; }
-        strong { color: #2980b9; }
-        .footer {
-            margin-top: 50px;
-            font-size: 0.9em;
-            color: #7f8c8d;
-            border-top: 1px solid #bdc3c7;
-            padding-top: 20px;
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
         }
-        .meta { color: #7f8c8d; font-size: 0.95em; }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+        header.site {
+            position: sticky; top: 0; z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px; margin: 0 auto;
+            padding: 14px 24px;
+            display: flex; align-items: center; justify-content: space-between; gap: 16px;
+        }
+        .brand {
+            display: flex; align-items: center; gap: 10px;
+            font-weight: 700; font-size: 15px;
+            color: var(--text); border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #6366f1, var(--accent));
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta { font-size: 13px; color: var(--text-soft); display: flex; gap: 14px; }
+        main.shell {
+            max-width: 1100px; margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid; grid-template-columns: 1fr; gap: 32px;
+        }
+        @media (min-width: 960px) { main.shell { grid-template-columns: 240px 1fr; } }
+        aside.toc {
+            position: sticky; top: 84px; align-self: start;
+            max-height: calc(100vh - 100px); overflow-y: auto;
+            font-size: 13.5px; display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block; text-transform: uppercase;
+            letter-spacing: .08em; font-size: 11px;
+            color: var(--text-soft); margin-bottom: 10px;
+        }
+        aside.toc ol { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+        aside.toc a {
+            display: block; padding: 6px 10px; border-radius: var(--radius-sm);
+            color: var(--text-muted); border-bottom: none; line-height: 1.4;
+        }
+        aside.toc a:hover { background: var(--bg-elev); color: var(--text); }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft); color: var(--accent);
+            font-size: 12px; font-weight: 600;
+            letter-spacing: .04em; text-transform: uppercase;
+            border-radius: 999px; margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px); font-weight: 800;
+            letter-spacing: -0.02em; margin: 0 0 12px; line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px; font-weight: 700; letter-spacing: -0.01em;
+            margin: 38px 0 12px; padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 { font-size: 16px; font-weight: 600; color: var(--text); margin: 22px 0 8px; }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul { margin: 0 0 14px; padding-left: 22px; color: var(--text-muted); }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 8px 18px;
+            font-size: 13.5px; color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev); border: 1px solid var(--border);
+            border-radius: var(--radius-sm); margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px; padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px; color: var(--text-soft);
+            display: flex; justify-content: space-between;
+            flex-wrap: wrap; gap: 8px;
+        }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
     </style>
 </head>
-
 <body>
 
-    <h1>Terms of Use - QuickSave</h1>
-    <p class="meta"><strong>Effective Date:</strong> May 22, 2026<br>
-    <strong>Last Updated:</strong> May 22, 2026</p>
-
-    <p>Welcome to QuickSave - The easiest way to save your favorite content ("QuickSave", "we", "our", or "us"). These Terms of Use
-        ("Terms") govern your access to and use of the QuickSave mobile application (the "App").</p>
-    <p>By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree, please
-        do not use the App.</p>
-
-    <h2>1. Eligibility</h2>
-    <p>You must be at least 13 years old (or 16 in the EEA) to use the App. By using the App, you represent that you
-        meet this age requirement and have the legal capacity to enter into these Terms.</p>
-
-    <h2>2. Description of Service</h2>
-    <p>QuickSave provides tools and features as described in the application's listing for personal, non-commercial
-        use only. The App does not host or store unauthorized content on our servers.</p>
-    <p>Users are solely responsible for how they use the App and any generated or downloaded content.</p>
-
-    <h2>3. User Responsibilities</h2>
-    <p>When using QuickSave, you agree that:</p>
-    <ul>
-        <li>You will use the App only for lawful purposes.</li>
-        <li>You will respect copyright laws and intellectual property rights.</li>
-        <li>You will not reproduce or distribute any copyrighted content without permission from the owner.</li>
-        <li>You will not use the App to violate any local, national, or international laws.</li>
-    </ul>
-    <p>QuickSave is not responsible for how users utilize the App's features.</p>
-
-    <h2>4. AI-Generated Content (if applicable)</h2>
-    <p>If the App provides AI-generated outputs (images, text, audio, video, or recommendations), you acknowledge that:</p>
-    <ul>
-        <li>AI outputs may be inaccurate, biased, or unsuitable for any specific purpose.</li>
-        <li>Outputs are <strong>not</strong> a substitute for professional advice (medical, legal, financial).</li>
-        <li>You are solely responsible for reviewing, verifying, and using AI outputs.</li>
-        <li>You will not use the App to generate content that is illegal, harmful, deceptive, defamatory, or that
-            infringes on the rights of others (including deepfakes of real people without consent).</li>
-        <li>Ownership of AI-generated content is governed by applicable law and the terms of the underlying AI provider.</li>
-    </ul>
-
-    <h2>5. In-App Purchases and Subscriptions</h2>
-    <p>If the App offers in-app purchases, coins, or subscriptions:</p>
-    <ul>
-        <li>All purchases are processed by the Apple App Store or Google Play Store and subject to their terms.</li>
-        <li>Subscriptions auto-renew unless canceled at least 24 hours before the end of the current period.</li>
-        <li>Refunds are handled by Apple or Google according to their respective refund policies.</li>
-        <li>Virtual items (coins, credits) have no monetary value and are non-refundable except where required by law.</li>
-    </ul>
-
-    <h2>6. Intellectual Property</h2>
-    <p>The App, including its design, features, logos, and software, is owned by QuickSave and protected by
-        intellectual property laws.</p>
-    <p>You may not:</p>
-    <ul>
-        <li>Copy, modify, or distribute any part of the App</li>
-        <li>Reverse engineer or attempt to extract the source code</li>
-        <li>Use our trademarks without permission</li>
-    </ul>
-    <p>All third-party content accessed through the App belongs to its respective owners.</p>
-
-    <h2>7. Third-Party Services</h2>
-    <p>The App may interact with third-party platforms or websites. QuickSave:</p>
-    <ul>
-        <li>Does not control third-party content</li>
-        <li>Is not responsible for third-party services</li>
-        <li>Makes no guarantees about availability or accuracy</li>
-    </ul>
-    <p>Your use of third-party services is subject to their own terms and policies.</p>
-
-    <h2>8. Prohibited Uses</h2>
-    <p>You agree not to:</p>
-    <ul>
-        <li>Use the App to infringe copyrights or other rights</li>
-        <li>Distribute illegal, harmful, or deceptive content</li>
-        <li>Generate or share non-consensual intimate imagery or deepfakes of real people</li>
-        <li>Attempt to hack, decompile, or disrupt the App</li>
-        <li>Use automated systems, bots, or scrapers to abuse the service</li>
-        <li>Engage in any activity that harms QuickSave or other users</li>
-    </ul>
-    <p>We reserve the right to suspend or terminate access for violations.</p>
-
-    <h2>9. Disclaimer of Warranties</h2>
-    <p>The App is provided "as is" and "as available," without warranties of any kind, express or implied, including
-        merchantability, fitness for a particular purpose, or non-infringement.</p>
-    <p>We do not guarantee that:</p>
-    <ul>
-        <li>The App will always function without interruption</li>
-        <li>Downloads will always succeed</li>
-        <li>The App will be error-free or fully secure</li>
-        <li>AI outputs will be accurate or suitable for any purpose</li>
-    </ul>
-    <p>Use of the App is at your own risk.</p>
-
-    <h2>10. Limitation of Liability</h2>
-    <p>To the maximum extent permitted by law, QuickSave and its affiliates shall not be liable for:</p>
-    <ul>
-        <li>Loss of data, profits, or revenue</li>
-        <li>Copyright disputes</li>
-        <li>Indirect, incidental, special, consequential, or punitive damages</li>
-        <li>Issues arising from third-party content or AI outputs</li>
-    </ul>
-    <p>Our total aggregate liability shall not exceed the amount you paid to us in the 12 months preceding the claim
-        (or USD $10 if no payment was made). Users assume full responsibility for their actions when using the App.</p>
-
-    <h2>11. Indemnification</h2>
-    <p>You agree to indemnify and hold harmless QuickSave from any claims, damages, or expenses arising from your
-        misuse of the App, violation of these Terms, or infringement of any third-party rights.</p>
-
-    <h2>12. Termination</h2>
-    <p>We may suspend or terminate access to the App at any time, with or without notice, if users violate these Terms.
-        You may stop using the App at any time by uninstalling it. Sections that by their nature should survive
-        termination (IP, Disclaimer, Liability, Indemnification, Governing Law) will remain in effect.</p>
-
-    <h2>13. Changes to These Terms</h2>
-    <p>We may update these Terms from time to time. Material updates will be highlighted in-app or on our website with
-        a revised "Last Updated" date. Continued use of the App after changes means you accept the updated Terms.</p>
-
-    <h2>14. Governing Law and Dispute Resolution</h2>
-    <p>These Terms are governed by the laws of the <strong>Socialist Republic of Vietnam</strong>, without regard to
-        conflict of law principles. Any disputes arising out of or relating to these Terms or the App shall be resolved
-        through good-faith negotiation. If unresolved, disputes shall be submitted to the competent courts of Vietnam,
-        except where mandatory consumer protection laws of your country of residence provide otherwise.</p>
-
-    <h2>15. Contact Us</h2>
-    <p>If you have questions about these Terms, please contact us:</p>
-    <p>Email: <strong>contact@tranquilmind.co</strong></p>
-
-    <div class="footer">
-        &copy; 2026 QuickSave. All rights reserved.
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">T</span>QuickSave</a>
+        <div class="nav-meta">
+            <span>Terms of Use</span>
+            <span>·</span>
+            <span>May 22, 2026</span>
+        </div>
     </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#eligibility">1. Eligibility</a></li>
+            <li><a href="#service">2. Description of Service</a></li>
+            <li><a href="#responsibilities">3. User Responsibilities</a></li>
+            <li><a href="#ai">4. AI-Generated Content</a></li>
+            <li><a href="#iap">5. In-App Purchases</a></li>
+            <li><a href="#ip">6. Intellectual Property</a></li>
+            <li><a href="#third-party">7. Third-Party Services</a></li>
+            <li><a href="#prohibited">8. Prohibited Uses</a></li>
+            <li><a href="#disclaimer">9. Disclaimer of Warranties</a></li>
+            <li><a href="#liability">10. Limitation of Liability</a></li>
+            <li><a href="#indemnification">11. Indemnification</a></li>
+            <li><a href="#termination">12. Termination</a></li>
+            <li><a href="#changes">13. Changes</a></li>
+            <li><a href="#governing">14. Governing Law</a></li>
+            <li><a href="#contact">15. Contact Us</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Terms</span>
+        <h1>Terms of Use</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> QuickSave</span>
+            <span><strong>Effective:</strong> May 22, 2026</span>
+            <span><strong>Last Updated:</strong> May 22, 2026</span>
+        </div>
+
+        <p>Welcome to QuickSave — The easiest way to save your favorite content ("QuickSave", "we", "our", or "us"). These Terms of Use
+            ("Terms") govern your access to and use of the QuickSave mobile application (the "App").</p>
+        <p>By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree,
+            please do not use the App.</p>
+
+        <h2 id="eligibility">1. Eligibility</h2>
+        <p>You must be at least 13 years old (or 16 in the EEA) to use the App. By using the App, you represent that
+            you meet this age requirement and have the legal capacity to enter into these Terms.</p>
+
+        <h2 id="service">2. Description of Service</h2>
+        <p>QuickSave provides tools and features as described in the application's listing for personal,
+            non-commercial use only. The App does not host or store unauthorized content on our servers.</p>
+        <p>Users are solely responsible for how they use the App and any generated or downloaded content.</p>
+
+        <h2 id="responsibilities">3. User Responsibilities</h2>
+        <p>When using QuickSave, you agree that:</p>
+        <ul>
+            <li>You will use the App only for lawful purposes.</li>
+            <li>You will respect copyright laws and intellectual property rights.</li>
+            <li>You will not reproduce or distribute any copyrighted content without permission from the owner.</li>
+            <li>You will not use the App to violate any local, national, or international laws.</li>
+        </ul>
+
+        <h2 id="ai">4. AI-Generated Content (if applicable)</h2>
+        <p>If the App provides AI-generated outputs (images, text, audio, video, or recommendations), you acknowledge
+            that:</p>
+        <ul>
+            <li>AI outputs may be inaccurate, biased, or unsuitable for any specific purpose.</li>
+            <li>Outputs are <strong>not</strong> a substitute for professional advice (medical, legal, financial).</li>
+            <li>You are solely responsible for reviewing, verifying, and using AI outputs.</li>
+            <li>You will not generate content that is illegal, harmful, deceptive, defamatory, or that infringes on
+                the rights of others (including deepfakes of real people without consent).</li>
+            <li>Ownership of AI-generated content is governed by applicable law and the terms of the underlying AI
+                provider.</li>
+        </ul>
+
+        <h2 id="iap">5. In-App Purchases and Subscriptions</h2>
+        <p>If the App offers in-app purchases, coins, or subscriptions:</p>
+        <ul>
+            <li>All purchases are processed by the Apple App Store or Google Play Store and subject to their terms.</li>
+            <li>Subscriptions auto-renew unless canceled at least 24 hours before the end of the current period.</li>
+            <li>Refunds are handled by Apple or Google according to their respective refund policies.</li>
+            <li>Virtual items (coins, credits) have no monetary value and are non-refundable except where required by
+                law.</li>
+        </ul>
+
+        <h2 id="ip">6. Intellectual Property</h2>
+        <p>The App, including its design, features, logos, and software, is owned by QuickSave and protected by
+            intellectual property laws.</p>
+        <p>You may not:</p>
+        <ul>
+            <li>Copy, modify, or distribute any part of the App</li>
+            <li>Reverse engineer or attempt to extract the source code</li>
+            <li>Use our trademarks without permission</li>
+        </ul>
+        <p>All third-party content accessed through the App belongs to its respective owners.</p>
+
+        <h2 id="third-party">7. Third-Party Services</h2>
+        <p>The App may interact with third-party platforms or websites. QuickSave:</p>
+        <ul>
+            <li>Does not control third-party content</li>
+            <li>Is not responsible for third-party services</li>
+            <li>Makes no guarantees about availability or accuracy</li>
+        </ul>
+        <p>Your use of third-party services is subject to their own terms and policies.</p>
+
+        <h2 id="prohibited">8. Prohibited Uses</h2>
+        <p>You agree not to:</p>
+        <ul>
+            <li>Use the App to infringe copyrights or other rights</li>
+            <li>Distribute illegal, harmful, or deceptive content</li>
+            <li>Generate or share non-consensual intimate imagery or deepfakes of real people</li>
+            <li>Attempt to hack, decompile, or disrupt the App</li>
+            <li>Use automated systems, bots, or scrapers to abuse the service</li>
+            <li>Engage in any activity that harms QuickSave or other users</li>
+        </ul>
+        <p>We reserve the right to suspend or terminate access for violations.</p>
+
+        <h2 id="disclaimer">9. Disclaimer of Warranties</h2>
+        <p>The App is provided "as is" and "as available," without warranties of any kind, express or implied,
+            including merchantability, fitness for a particular purpose, or non-infringement.</p>
+        <p>We do not guarantee that:</p>
+        <ul>
+            <li>The App will always function without interruption</li>
+            <li>Downloads will always succeed</li>
+            <li>The App will be error-free or fully secure</li>
+            <li>AI outputs will be accurate or suitable for any purpose</li>
+        </ul>
+        <p>Use of the App is at your own risk.</p>
+
+        <h2 id="liability">10. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, QuickSave and its affiliates shall not be liable for:</p>
+        <ul>
+            <li>Loss of data, profits, or revenue</li>
+            <li>Copyright disputes</li>
+            <li>Indirect, incidental, special, consequential, or punitive damages</li>
+            <li>Issues arising from third-party content or AI outputs</li>
+        </ul>
+        <p>Our total aggregate liability shall not exceed the amount you paid to us in the 12 months preceding the
+            claim (or USD $10 if no payment was made). Users assume full responsibility for their actions when using
+            the App.</p>
+
+        <h2 id="indemnification">11. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless QuickSave from any claims, damages, or expenses arising from
+            your misuse of the App, violation of these Terms, or infringement of any third-party rights.</p>
+
+        <h2 id="termination">12. Termination</h2>
+        <p>We may suspend or terminate access to the App at any time, with or without notice, if users violate these
+            Terms. You may stop using the App at any time by uninstalling it. Sections that by their nature should
+            survive termination (IP, Disclaimer, Liability, Indemnification, Governing Law) will remain in effect.</p>
+
+        <h2 id="changes">13. Changes to These Terms</h2>
+        <p>We may update these Terms from time to time. Material updates will be highlighted in-app or on our website
+            with a revised "Last Updated" date. Continued use of the App after changes means you accept the updated
+            Terms.</p>
+
+        <h2 id="governing">14. Governing Law and Dispute Resolution</h2>
+        <p>These Terms are governed by the laws of the <strong>Socialist Republic of Vietnam</strong>, without regard
+            to conflict of law principles. Any disputes arising out of or relating to these Terms or the App shall be
+            resolved through good-faith negotiation. If unresolved, disputes shall be submitted to the competent courts
+            of Vietnam, except where mandatory consumer protection laws of your country of residence provide
+            otherwise.</p>
+
+        <h2 id="contact">15. Contact Us</h2>
+        <p>If you have questions about these Terms, please contact us:</p>
+        <p>Email: <a href="mailto:contact@tranquilmind.co"><strong>contact@tranquilmind.co</strong></a></p>
+
+        <div class="footer-block">
+            <span>&copy; 2026 QuickSave. All rights reserved.</span>
+            <a href="#top">↑ Back to top</a>
+        </div>
+    </article>
+
+</main>
 
 </body>
-
 </html>
