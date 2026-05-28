@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#7c3aed">
+    <meta name="description" content="Terms of Use for Velvet Drama — rules and conditions for using the app.">
+    <title>Terms of Use — Velvet Drama</title>
+    <style>
+        :root {
+            --bg: #ffffff; --bg-elev: #f8fafc; --bg-card: #ffffff; --border: #e2e8f0;
+            --text: #0f172a; --text-muted: #475569; --text-soft: #64748b;
+            --accent: #7c3aed; --accent-hover: #6d28d9; --accent-soft: #f5f3ff;
+            --radius: 14px; --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b0a14; --bg-elev: #13111e; --bg-card: #181528; --border: #2a2440;
+                --text: #e2e8f0; --text-muted: #94a3b8; --text-soft: #64748b;
+                --accent: #a78bfa; --accent-hover: #c4b5fd; --accent-soft: #1e1a36;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-sans); font-size: 16px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+        a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: color .2s ease; }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        header.site { position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(180%) blur(14px); -webkit-backdrop-filter: saturate(180%) blur(14px); background: color-mix(in srgb, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); }
+        .nav { max-width: 1100px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+        .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 15px; color: var(--text); border-bottom: none; }
+        .brand .dot { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg, var(--accent), #ec4899); display: grid; place-items: center; color: #fff; font-size: 14px; }
+        .nav-meta { font-size: 13px; color: var(--text-soft); display: flex; gap: 14px; }
+        main.shell { max-width: 1100px; margin: 0 auto; padding: 40px 24px 80px; display: grid; grid-template-columns: 1fr; gap: 32px; }
+        @media (min-width: 960px) { main.shell { grid-template-columns: 240px 1fr; } }
+        aside.toc { position: sticky; top: 84px; align-self: start; max-height: calc(100vh - 100px); overflow-y: auto; font-size: 13.5px; display: none; }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong { display: block; text-transform: uppercase; letter-spacing: .08em; font-size: 11px; color: var(--text-soft); margin-bottom: 10px; }
+        aside.toc ol { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+        aside.toc a { display: block; padding: 6px 10px; border-radius: var(--radius-sm); color: var(--text-muted); border-bottom: none; line-height: 1.4; }
+        aside.toc a:hover { background: var(--bg-elev); color: var(--text); }
+        article { max-width: 72ch; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 36px; box-shadow: var(--shadow); }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 5px 11px; background: var(--accent-soft); color: var(--accent); font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; border-radius: 999px; margin-bottom: 14px; }
+        h1 { font-size: clamp(28px, 4vw, 36px); font-weight: 800; letter-spacing: -0.02em; margin: 0 0 12px; line-height: 1.2; }
+        h2 { font-size: 20px; font-weight: 700; letter-spacing: -0.01em; margin: 38px 0 12px; padding-top: 12px; border-top: 1px solid var(--border); scroll-margin-top: 88px; }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong { color: var(--text); font-weight: 600; }
+        ul { margin: 0 0 14px; padding-left: 22px; color: var(--text-muted); }
+        ul li { margin-bottom: 6px; }
+        .meta { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13.5px; color: var(--text-soft); padding: 12px 16px; background: var(--bg-elev); border: 1px solid var(--border); border-radius: var(--radius-sm); margin-bottom: 28px; }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 13.5px; color: var(--text-soft); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+        @media print { header.site, aside.toc { display: none; } main.shell { display: block; padding: 0; } article { box-shadow: none; border: none; padding: 0; max-width: 100%; } }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">V</span>Velvet Drama</a>
+        <div class="nav-meta">
+            <span>Terms of Use</span>
+            <span>·</span>
+            <span>28/05/2026</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#acceptance">1. Acceptance</a></li>
+            <li><a href="#license">2. License</a></li>
+            <li><a href="#content">3. Content</a></li>
+            <li><a href="#prohibited">4. Prohibited Uses</a></li>
+            <li><a href="#ip">5. Intellectual Property</a></li>
+            <li><a href="#disclaimer">6. Disclaimers</a></li>
+            <li><a href="#limitation">7. Limitation of Liability</a></li>
+            <li><a href="#termination">8. Termination</a></li>
+            <li><a href="#governing">9. Governing Law</a></li>
+            <li><a href="#changes">10. Changes</a></li>
+            <li><a href="#contact">11. Contact</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Terms</span>
+        <h1>Terms of Use</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Velvet Drama</span>
+            <span><strong>Effective:</strong> 28/05/2026</span>
+            <span><strong>Last Updated:</strong> 28/05/2026</span>
+        </div>
+
+        <p>Please read these Terms of Use carefully before using Velvet Drama. By downloading or using the App, you agree to be bound by these Terms.</p>
+
+        <h2 id="acceptance">1. Acceptance of Terms</h2>
+        <p>By accessing or using Velvet Drama, you confirm that you are at least 13 years of age (or 16 in the EEA) and agree to these Terms of Use and our Privacy Policy.</p>
+
+        <h2 id="license">2. License to Use</h2>
+        <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the App for your personal, non-commercial purposes. This license does not include the right to: sublicense, sell, resell, or commercially exploit the App or its content; reverse engineer, decompile, or disassemble any part of the App; or use the App in any unlawful manner.</p>
+
+        <h2 id="content">3. Content and Services</h2>
+        <p>Velvet Drama provides access to short-form drama video content. All content available through the App is for personal entertainment purposes only. Content availability may vary by region and may change without notice.</p>
+
+        <h2 id="prohibited">4. Prohibited Uses</h2>
+        <p>You agree not to:</p>
+        <ul>
+            <li>Use the App to infringe upon any third party's intellectual property rights</li>
+            <li>Attempt to gain unauthorized access to any portion of the App or its systems</li>
+            <li>Use the App to transmit any harmful, offensive, or illegal content</li>
+            <li>Use automated tools (bots, scrapers) to access or collect content from the App</li>
+            <li>Circumvent any digital rights management or access control measures</li>
+        </ul>
+
+        <h2 id="ip">5. Intellectual Property</h2>
+        <p>All content, features, and functionality of the App — including but not limited to text, graphics, logos, icons, and software — are the exclusive property of Velvet Drama or its licensors and are protected by applicable intellectual property laws.</p>
+
+        <h2 id="disclaimer">6. Disclaimer of Warranties</h2>
+        <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. We do not warrant that the App will be uninterrupted, error-free, or free of viruses or other harmful components.</p>
+
+        <h2 id="limitation">7. Limitation of Liability</h2>
+        <p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, VELVET DRAMA SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF OR INABILITY TO USE THE APP, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+
+        <h2 id="termination">8. Termination</h2>
+        <p>We reserve the right to terminate or suspend your access to the App at any time, with or without cause or notice, including if we believe you have violated these Terms.</p>
+
+        <h2 id="governing">9. Governing Law</h2>
+        <p>These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law provisions. Any disputes shall be resolved through binding arbitration or in the courts of competent jurisdiction.</p>
+
+        <h2 id="changes">10. Changes to These Terms</h2>
+        <p>We may revise these Terms at any time. Continued use of the App after changes are posted constitutes your acceptance of the revised Terms. We will notify users of material changes through the App.</p>
+
+        <h2 id="contact">11. Contact Us</h2>
+        <p>If you have any questions about these Terms, please contact us:</p>
+        <p>Email: <a href="mailto:contact@tranquil.co"><strong>contact@tranquil.co</strong></a></p>
+
+        <div class="footer-block">
+            <span>&copy; 2026 Velvet Drama. All rights reserved.</span>
+            <a href="#top">&#8593; Back to top</a>
+        </div>
+    </article>
+</main>
+</body>
+</html>
