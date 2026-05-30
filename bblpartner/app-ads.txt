@@ -1,0 +1,5 @@
+# app-ads.txt — BBL Partner
+# https://bblpartner.tranquilmind.co/app-ads.txt
+# See https://iabtechlab.com/ads-txt/ for specification
+# --- PLACEHOLDER: replace content below with the actual AdMob entries ---
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
