@@ -4,14 +4,9 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "bblpartner.tranquilmind.co" }],
-      "destination": "/bblpartner/index.html"
-    },
-    {
-      "source": "/:path+",
-      "has": [{ "type": "host", "value": "bblpartner.tranquilmind.co" }],
-      "destination": "/bblpartner/:path+"
+      "destination": "/bblpartner/$1"
     }
   ],
   "headers": [
