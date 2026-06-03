@@ -1,0 +1,14 @@
+{
+  "name": "policy-terms",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Tranquil Studio policy & terms hosted on Vercel. Middleware normalizes slug variants (scoredeck → score-deck, etc).",
+  "type": "module",
+  "scripts": {
+    "build:slugs": "node scripts/build-slug-index.mjs",
+    "vercel-build": "node scripts/build-slug-index.mjs"
+  },
+  "dependencies": {
+    "@vercel/functions": "^3.2.0"
+  }
+}
