@@ -11,11 +11,11 @@
 // time in scripts/build-slug-index.mjs.
 
 import { rewrite, next } from '@vercel/functions';
-import slugIndex from './slug-index.json' with { type: 'json' };
+import slugIndex from './slug-index.js';
 
-const CANONICAL_SET = new Set(slugIndex.slugs);
+const CANONICAL_SET = new Set(slugIndex);
 const NORMALIZED_MAP = new Map(
-  slugIndex.slugs.map((s) => [normalize(s), s])
+  slugIndex.map((s) => [normalize(s), s])
 );
 
 function normalize(s) {
