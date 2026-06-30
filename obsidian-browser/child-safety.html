@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Child Safety Standards for Obsidian Browser — our commitment against child sexual abuse and exploitation (CSAE).">
+    <title>Child Safety Standards — Obsidian Browser</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        header.site {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+            border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #6366f1);
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta {
+            font-size: 13px;
+            color: var(--text-soft);
+            display: flex; gap: 14px;
+        }
+        main.shell {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        @media (min-width: 960px) {
+            main.shell { grid-template-columns: 240px 1fr; }
+        }
+        aside.toc {
+            position: sticky;
+            top: 84px;
+            align-self: start;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            font-size: 13.5px;
+            display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: 11px;
+            color: var(--text-soft);
+            margin-bottom: 10px;
+        }
+        aside.toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        aside.toc a {
+            display: block;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            color: var(--text-muted);
+            border-bottom: none;
+            line-height: 1.4;
+        }
+        aside.toc a:hover {
+            background: var(--bg-elev);
+            color: var(--text);
+        }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 38px 0 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 22px 0 8px;
+        }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul {
+            margin: 0 0 14px;
+            padding-left: 22px;
+            color: var(--text-muted);
+        }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            font-size: 13.5px;
+            color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .callout {
+            background: var(--accent-soft);
+            border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+            border-radius: var(--radius-sm);
+            padding: 16px 18px;
+            margin: 20px 0;
+            color: var(--text);
+        }
+        .callout strong { color: var(--text); }
+        .footer-block {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px;
+            color: var(--text-soft);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">O</span>Obsidian Browser</a>
+        <div class="nav-meta">
+            <span>Child Safety Standards</span>
+            <span>·</span>
+            <span>30/06/2026</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#commitment">1. Our Commitment</a></li>
+            <li><a href="#zero-tolerance">2. Zero-Tolerance Policy</a></li>
+            <li><a href="#standards">3. Child Safety Standards</a></li>
+            <li><a href="#reporting">4. Reporting CSAE</a></li>
+            <li><a href="#response">5. How We Respond</a></li>
+            <li><a href="#compliance">6. Legal Compliance</a></li>
+            <li><a href="#resources">7. Resources &amp; Hotlines</a></li>
+            <li><a href="#contact">8. Contact</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Child Safety</span>
+        <h1>Child Safety Standards</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Obsidian Browser</span>
+            <span><strong>Effective:</strong> 30/06/2026</span>
+            <span><strong>Last Updated:</strong> 30/06/2026</span>
+        </div>
+
+        <p>Obsidian Browser ("Obsidian Browser", "we", "our", or "us") is committed to protecting children and
+            maintaining a safe online environment. This document sets out our standards against child sexual abuse and
+            exploitation (CSAE) in accordance with the Google Play Child Safety Standards policy and applicable laws.</p>
+
+        <div class="callout">
+            <strong>Zero tolerance.</strong> Obsidian Browser strictly prohibits any form of child sexual abuse
+            material (CSAM) and child sexual abuse and exploitation (CSAE). We do not tolerate such content or conduct
+            in any part of our service.
+        </div>
+
+        <h2 id="commitment">1. Our Commitment</h2>
+        <p>We are dedicated to the prevention, detection, and removal of child sexual abuse material and any conduct
+            that exploits or endangers children. We design our products and policies to keep minors safe and to comply
+            fully with all applicable child-protection laws and platform requirements.</p>
+
+        <h2 id="zero-tolerance">2. Zero-Tolerance Policy</h2>
+        <p>Obsidian Browser maintains a strict zero-tolerance approach toward CSAE. The following are strictly
+            prohibited:</p>
+        <ul>
+            <li>Creating, uploading, sharing, storing, or distributing child sexual abuse material (CSAM)</li>
+            <li>Any content that sexualizes, exploits, or endangers minors</li>
+            <li>Grooming, soliciting, or attempting to engage minors for sexual purposes</li>
+            <li>Trafficking, sextortion, or any exploitation of children</li>
+            <li>Linking to or facilitating access to CSAE material through the App</li>
+        </ul>
+
+        <h2 id="standards">3. Child Safety Standards</h2>
+        <p>To uphold our commitment, we adhere to the following standards:</p>
+        <ul>
+            <li><strong>Prohibition in our policies.</strong> CSAE is explicitly banned in our Terms of Service and
+                user policies.</li>
+            <li><strong>Reporting mechanism.</strong> We provide an accessible in-app and email channel for users to
+                report suspected CSAE content or behavior.</li>
+            <li><strong>Prompt action.</strong> We act on credible reports without undue delay, including removing
+                content and restricting offending accounts where applicable.</li>
+            <li><strong>Reporting to authorities.</strong> We report confirmed CSAM to the relevant authorities,
+                including the National Center for Missing &amp; Exploited Children (NCMEC) and/or local law
+                enforcement, as required by law.</li>
+            <li><strong>Designated child safety contact.</strong> We maintain a point of contact for child-safety
+                matters (see Section 8).</li>
+        </ul>
+        <p>Obsidian Browser is a web browser and does not host user-generated content on our own servers. Where the
+            App is used to access third-party content, we cooperate with platform and legal reporting mechanisms to
+            address CSAE.</p>
+
+        <h2 id="reporting">4. Reporting CSAE</h2>
+        <p>If you encounter any content or behavior involving the sexual abuse or exploitation of children while using
+            Obsidian Browser, please report it immediately:</p>
+        <ul>
+            <li>Email us at <a href="mailto:contact@tranquilmind.co"><strong>contact@tranquilmind.co</strong></a>
+                with the subject line "Child Safety Report".</li>
+            <li>Include as much detail as possible (URLs, descriptions, timestamps) without downloading, storing, or
+                re-sharing the material.</li>
+        </ul>
+        <p>If a child is in immediate danger, contact your local emergency services or law enforcement right away.</p>
+
+        <h2 id="response">5. How We Respond</h2>
+        <p>Upon receiving a report of suspected CSAE, we will:</p>
+        <ul>
+            <li>Review the report promptly and prioritize child-safety cases</li>
+            <li>Remove or disable access to violating content where it is within our control</li>
+            <li>Preserve relevant evidence as required by law</li>
+            <li>Report confirmed CSAM to NCMEC and/or appropriate law enforcement agencies</li>
+            <li>Take appropriate action against any account or user responsible for the violation</li>
+        </ul>
+
+        <h2 id="compliance">6. Legal Compliance</h2>
+        <p>We comply with applicable child-protection laws and platform requirements, including the Google Play Child
+            Safety Standards policy. We cooperate with law enforcement and recognized child-protection organizations in
+            investigations relating to CSAE.</p>
+
+        <h2 id="resources">7. Resources &amp; Hotlines</h2>
+        <p>If you or someone you know needs help, the following organizations provide support and reporting channels:</p>
+        <ul>
+            <li>National Center for Missing &amp; Exploited Children (NCMEC) — <a href="https://report.cybertip.org" target="_blank" rel="noopener">CyberTipline</a></li>
+            <li>Internet Watch Foundation (IWF) — <a href="https://www.iwf.org.uk" target="_blank" rel="noopener">iwf.org.uk</a></li>
+            <li>INHOPE (international network of hotlines) — <a href="https://www.inhope.org" target="_blank" rel="noopener">inhope.org</a></li>
+        </ul>
+
+        <h2 id="contact">8. Contact</h2>
+        <p>For any child-safety concern or to reach our designated child-safety contact, please email:</p>
+        <p>Email: <a href="mailto:contact@tranquilmind.co"><strong>contact@tranquilmind.co</strong></a></p>
+
+        <div class="footer-block">
+            <span>&copy; 2026 Obsidian Browser. All rights reserved.</span>
+            <a href="#top">↑ Back to top</a>
+        </div>
+    </article>
+
+</main>
+
+</body>
+</html>
