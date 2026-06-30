@@ -2,6 +2,9 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/velora_drama/:path*", "destination": "/dramio/:path*", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)\\.html",
