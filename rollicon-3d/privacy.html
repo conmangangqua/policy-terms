@@ -228,6 +228,44 @@
             flex-wrap: wrap;
             gap: 8px;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 0 20px;
+            font-size: 14px;
+        }
+        thead th {
+            text-align: left;
+            font-weight: 600;
+            color: var(--text);
+            background: var(--bg-elev);
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        tbody td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+            vertical-align: top;
+        }
+        tbody tr:last-child td { border-bottom: none; }
+        .table-wrap {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        .table-wrap table { margin: 0; }
+        .callout {
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
+            margin: 0 0 16px;
+            color: var(--text-muted);
+        }
+        .callout strong { color: var(--text); }
         @media print {
             header.site, aside.toc { display: none; }
             main.shell { display: block; padding: 0; }
@@ -257,15 +295,17 @@
         <ol>
             <li><a href="#info-collect">1. Information We Collect</a></li>
             <li><a href="#how-use">2. How We Use Information</a></li>
-            <li><a href="#third-party">3. Advertising &amp; Third-Party</a></li>
-            <li><a href="#retention">4. Data Retention</a></li>
-            <li><a href="#intl">5. International Transfers</a></li>
-            <li><a href="#security">6. Storage &amp; Security</a></li>
-            <li><a href="#children">7. Children's Privacy</a></li>
-            <li><a href="#gdpr">8. GDPR (EU/UK)</a></li>
-            <li><a href="#ccpa">9. CCPA / CPRA (California)</a></li>
-            <li><a href="#changes">10. Changes</a></li>
-            <li><a href="#contact">11. Contact Us</a></li>
+            <li><a href="#third-party">3. Third-Party Services</a></li>
+            <li><a href="#share">4. How We Share Information</a></li>
+            <li><a href="#legal-bases">5. Legal Bases (GDPR)</a></li>
+            <li><a href="#retention">6. Data Retention</a></li>
+            <li><a href="#rights">7. Your Rights</a></li>
+            <li><a href="#children">8. Children's Privacy</a></li>
+            <li><a href="#intl">9. International Transfers</a></li>
+            <li><a href="#security">10. Data Security</a></li>
+            <li><a href="#third-apps">11. Third-Party Apps &amp; Links</a></li>
+            <li><a href="#changes">12. Changes</a></li>
+            <li><a href="#contact">13. Contact Us</a></li>
         </ol>
     </aside>
 
@@ -279,97 +319,102 @@
             <span><strong>Last Updated:</strong> July 10, 2026</span>
         </div>
 
-        <p>Rollicon 3D ("Rollicon 3D", "we", "our", or "us") respects your privacy. This Privacy Policy explains
-            how we collect, use, store, and protect your information when you use the Rollicon 3D mobile application
-            (the "App").</p>
-        <p>Rollicon 3D is a wallpaper app. Rolling icons live wallpaper brings your home screen to life with 3D physics. You do not need to create an account to use it.</p>
-        <p>By using the App, you agree to the practices described in this Privacy Policy.</p>
+        <p>Rollicon 3D ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your
+            privacy. This Privacy Policy explains what information we collect, how we use and share it, and the
+            choices and rights you have. By using the App, you agree to this Policy.</p>
+        <p>Rollicon 3D is a wallpaper app. Live 3D wallpaper with rolling app icons that bring your home screen to life. You do not need to create an account to use it.</p>
 
         <h2 id="info-collect">1. Information We Collect</h2>
 <h3>1.1 Information processed only on your device (not collected by us)</h3><p>The App's core features run on your device. The following is processed locally and is <strong>not</strong> collected, transmitted, or stored on our own servers:</p><ul><li><strong>Installed apps.</strong> With your permission, the App queries installed apps to provide its features (such as app management).</li><li><strong>Wallpaper.</strong> With your permission, the App sets images you choose as your device wallpaper.</li><li><strong>Settings and preferences.</strong> Your in-app settings are stored only on your device.</li></ul><p>You can delete this data at any time by clearing the App's data or uninstalling the App.</p><h3>1.2 Information collected automatically by third-party services</h3><p>When you use the App, the third-party services listed in Section 3 may automatically collect:</p><ul><li><strong>Advertising &amp; device identifiers</strong> (such as the Android Advertising ID / IDFA) and basic device information (model, OS version, app version).</li><li><strong>Approximate location</strong> derived from your IP address (city/region level) — not GPS-based tracking.</li><li><strong>App activity &amp; diagnostics</strong> such as feature usage, session data, and crash reports.</li></ul><h3>1.3 Information you provide</h3><p>The App does not require account registration and does not ask for personal information such as your name, email, or phone number, unless you voluntarily contact support.</p>
 
 
         <h2 id="how-use">2. How We Use Information</h2>
-        <p>We use collected information to:</p>
         <ul>
-            <li>Improve app functionality and performance</li>
-            <li>Fix bugs and crashes</li>
-            <li>Analyze usage trends</li>
-            <li>Enhance user experience</li>
-            <li>Display relevant advertising</li>
-            <li>Comply with legal obligations</li>
+            <li><strong>Provide and operate the App</strong> — core features run on-device; remote configuration keeps
+                the App's settings up to date.</li>
+            <li><strong>Advertising and measurement</strong> — to serve ads (which fund the free App) and measure ad
+                performance and install attribution.</li>
+            <li><strong>Analytics and improvement</strong> — to understand how the App is used and improve features and
+                stability.</li>
+            <li><strong>Fraud prevention, security and compliance</strong> — to detect invalid ad traffic and abuse.</li>
+            <li><strong>Legal compliance</strong> — to comply with applicable laws and enforce our terms.</li>
         </ul>
-        <p>We do not sell or rent your personal information to third parties.</p>
 
-        <h2 id="third-party">3. Advertising and Third-Party Services</h2>
-<p>The App integrates the following third-party services, which may collect data under their own privacy policies. We only integrate the services listed here:</p><ul><li>Meta Audience Network — <a href="https://www.facebook.com/policy.php" target="_blank" rel="noopener">Privacy Policy</a></li><li>Adjust — <a href="https://www.adjust.com/terms/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></li><li>Mintegral — <a href="https://www.mintegral.com/en/privacy/" target="_blank" rel="noopener">Privacy Policy</a></li><li>Pangle (ByteDance) — <a href="https://www.pangleglobal.com/privacy/enUS" target="_blank" rel="noopener">Privacy Policy</a></li><li>Unity Ads — <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Privacy Policy</a></li><li>Vungle (Liftoff) — <a href="https://liftoff.io/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></li><li>Google AdMob — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li><li>Google Firebase (analytics &amp; crash reporting) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy Policy</a></li></ul><p>We are not responsible for the privacy practices of these third parties and recommend reviewing their policies. We do not sell or rent your personal information.</p>
+        <h2 id="third-party">3. Third-Party Services</h2>
+<p>The following third-party services are integrated in the App and may collect the data described in Section 1.2 under their own privacy policies:</p><div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Meta Audience Network</td><td>Advertising (mediation)</td><td><a href="https://www.facebook.com/policy.php" target="_blank" rel="noopener">facebook.com/policy.php</a></td></tr><tr><td>Adjust</td><td>Install attribution and marketing analytics</td><td><a href="https://www.adjust.com/terms/privacy-policy/" target="_blank" rel="noopener">adjust.com/terms/privacy-policy</a></td></tr><tr><td>Mintegral</td><td>Advertising (mediation)</td><td><a href="https://www.mintegral.com/en/privacy/" target="_blank" rel="noopener">mintegral.com/en/privacy</a></td></tr><tr><td>Pangle (ByteDance)</td><td>Advertising (mediation)</td><td><a href="https://www.pangleglobal.com/privacy/enUS" target="_blank" rel="noopener">pangleglobal.com/privacy/enUS</a></td></tr><tr><td>Unity Ads</td><td>Advertising (mediation)</td><td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">unity.com</a></td></tr><tr><td>Vungle (Liftoff)</td><td>Advertising (mediation)</td><td><a href="https://liftoff.io/privacy-policy/" target="_blank" rel="noopener">liftoff.io/privacy-policy</a></td></tr><tr><td>Google AdMob</td><td>Advertising</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr><tr><td>Google Firebase (analytics &amp; crash reporting)</td><td>Analytics, crash reporting, remote configuration</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr></tbody></table></div><div class="callout"><strong>Ad consent.</strong> Where required (for example in the EEA, UK, and Switzerland), the App shows a consent dialog (Google User Messaging Platform) before personalized ads are served. You can decline or later change your choice; if you decline, ads may be non-personalized.</div><div class="callout"><strong>Advertising ID controls.</strong> You can reset your Advertising ID or opt out of ads personalization at any time in your device settings (Android: <strong>Settings &rarr; Google &rarr; Ads</strong>; iOS: <strong>Settings &rarr; Privacy &amp; Security &rarr; Tracking</strong>).</div><p>We are not responsible for the privacy practices of these third parties and recommend reviewing their policies. We do not sell or rent your personal information.</p>
 
 
-        <h2 id="retention">4. Data Retention</h2>
-        <p>We retain non-personal usage and crash data for up to <strong>24 months</strong> for analytics purposes,
-            after which it is automatically aggregated or deleted. Any media or content processed by the App is stored
-            only on your device and is not retained by us.</p>
-
-        <h2 id="intl">5. International Data Transfers</h2>
-        <p>Some third-party services (e.g., Google, Meta, AI providers) may process data in countries outside your
-            residence, including the United States. By using the App, you consent to such transfers. Where required,
-            these providers rely on Standard Contractual Clauses (SCCs) or equivalent mechanisms for cross-border data
-            transfer.</p>
-
-        <h2 id="security">6. Data Storage and Security</h2>
-        <p>We implement reasonable technical and organizational security measures to protect information collected
-            through the App. However, no method of electronic storage or transmission is 100% secure.</p>
-        <p>Any media files processed or generated remain stored only on your device. Rollicon 3D does not upload or
-            back up your files to our servers.</p>
-
-        <h2 id="children">7. Children's Privacy (COPPA)</h2>
-        <p>Rollicon 3D is not intended for children under the age of 13 (or 16 in the EEA, where applicable). We do
-            not knowingly collect personal information from children. If we discover that a child has provided personal
-            information, we will delete it promptly. Parents or guardians may contact us using the details in Section
-            11 to request review or deletion.</p>
-
-        <h2 id="gdpr">8. Your Rights Under GDPR (EU/UK Users)</h2>
-        <p>If you reside in the European Economic Area, United Kingdom, or Switzerland, you have the following rights
-            under the General Data Protection Regulation (GDPR):</p>
+        <h2 id="share">4. How We Share Information</h2>
+        <p>We do not sell your personal information for money. Information is shared only:</p>
         <ul>
-            <li><strong>Right of access</strong> — request a copy of data we hold about you</li>
-            <li><strong>Right to rectification</strong> — correct inaccurate data</li>
-            <li><strong>Right to erasure</strong> ("right to be forgotten")</li>
-            <li><strong>Right to restrict processing</strong></li>
-            <li><strong>Right to data portability</strong></li>
-            <li><strong>Right to object</strong> to processing based on legitimate interests or direct marketing</li>
-            <li><strong>Right to withdraw consent</strong> at any time</li>
-            <li><strong>Right to lodge a complaint</strong> with your local Data Protection Authority</li>
+            <li><strong>With the ad, analytics, and attribution partners</strong> listed in Section 3, to the extent
+                described above. Under some U.S. state privacy laws (for example the CPRA), the transfer of identifiers
+                to advertising partners for personalized ads may be considered a "sale" or "sharing" — Section 7
+                explains how to opt out.</li>
+            <li><strong>For legal reasons</strong>, if required by law, regulation, legal process, or enforceable
+                governmental request, or to protect our rights, users, or the public.</li>
+            <li><strong>In a business transfer</strong>, such as a merger, acquisition, or asset sale, in which case
+                this Policy will continue to apply to previously collected data.</li>
         </ul>
-        <p>Our lawful bases for processing are: (a) your consent, (b) legitimate interests in operating and improving
-            the App, and (c) compliance with legal obligations.</p>
 
-        <h2 id="ccpa">9. Your Rights Under CCPA / CPRA (California Users)</h2>
-        <p>If you are a California resident, you have the following rights under the California Consumer Privacy Act
-            (CCPA) and California Privacy Rights Act (CPRA):</p>
+        <h2 id="legal-bases">5. Legal Bases (EEA/UK — GDPR)</h2>
+        <p>Where the GDPR or UK GDPR applies, we rely on:</p>
         <ul>
-            <li>Right to know what personal information is collected, used, or shared</li>
-            <li>Right to delete personal information</li>
-            <li>Right to correct inaccurate personal information</li>
-            <li>Right to opt out of the "sale" or "sharing" of personal information</li>
-            <li>Right to limit the use of sensitive personal information</li>
-            <li>Right to non-discrimination for exercising these rights</li>
+            <li><strong>Consent</strong> — for personalized advertising and, where required, analytics. You may
+                withdraw consent at any time via the in-app consent dialog or system settings.</li>
+            <li><strong>Legitimate interests</strong> — for core App operation, security, fraud prevention,
+                non-personalized advertising, and improvement, balanced against your rights.</li>
+            <li><strong>Legal obligation</strong> — where processing is required by law.</li>
         </ul>
-        <p><strong>Do Not Sell or Share My Personal Information:</strong> Rollicon 3D does not sell personal
-            information for monetary value. We may share anonymized identifiers with advertising partners (Google
-            AdMob, Meta) for interest-based advertising, which may be considered "sharing" under CCPA/CPRA. To opt out,
-            contact us at <a href="mailto:support@tranquilmind.co">support@tranquilmind.co</a> or disable personalized ads in your
-            device settings.</p>
 
-        <h2 id="changes">10. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal
-            reasons. Material changes will be highlighted in-app or on our website. The "Last Updated" date above will
-            be revised.</p>
-        <p>Your continued use of the App after updates means you accept the revised Privacy Policy.</p>
+        <h2 id="retention">6. Data Retention</h2>
+        <p>We do not operate our own servers and keep no user database. Our third-party partners retain the data they
+            collect for the periods stated in their own policies (for example, Google Analytics for Firebase retains
+            user-level data for up to 14 months; crash logs are retained for around 90 days). Data processed on your
+            device (Section 1.1) remains until you clear the App's data or uninstall the App.</p>
 
-        <h2 id="contact">11. Contact Us</h2>
-        <p>If you have questions, concerns, or wish to exercise your privacy rights, please contact us:</p>
-        <p>Email: <a href="mailto:support@tranquilmind.co"><strong>support@tranquilmind.co</strong></a></p>
+        <h2 id="rights">7. Your Rights</h2>
+        <p>Depending on where you live, you may have the right to access, correct, delete, or port your data, to object
+            to or restrict processing, to withdraw consent, and to lodge a complaint with your supervisory authority
+            (GDPR/UK GDPR); or to know, delete, correct, and opt out of the "sale"/"sharing" of personal information
+            and targeted advertising without discrimination (CCPA/CPRA and similar U.S. state laws); or equivalent
+            rights under other laws (LGPD, PIPEDA, and others).</p>
+        <p>To exercise any right, email <a href="mailto:support@tranquilmind.co"><strong>support@tranquilmind.co</strong></a>.
+            Because the App has no accounts, please include your <strong>Android Advertising ID</strong> (Settings
+            &rarr; Google &rarr; Ads) and device model so we and our partners can locate data associated with your
+            device. You can also act directly on your device: reset your Advertising ID, opt out of ads personalization,
+            use the in-app consent dialog, or clear the App's data.</p>
+
+        <h2 id="children">8. Children's Privacy</h2>
+        <p>The App is intended for users aged <strong>18</strong> or older and is not directed to children under 13 (or
+            the equivalent minimum age in your jurisdiction). We do not knowingly collect personal information from
+            children. If you believe a child has provided personal information through the App, contact us at
+            <a href="mailto:support@tranquilmind.co">support@tranquilmind.co</a> and we will work with our partners to
+            delete it.</p>
+
+        <h2 id="intl">9. International Data Transfers</h2>
+        <p>Our ad and analytics partners may process data in countries other than yours, including the United States.
+            Where required, transfers are protected by safeguards such as the EU Standard Contractual Clauses or
+            equivalent mechanisms maintained by those partners.</p>
+
+        <h2 id="security">10. Data Security</h2>
+        <p>Data transmitted by the SDKs described above is encrypted in transit using HTTPS/TLS. We and our partners
+            apply reasonable technical and organizational measures; however, no method of transmission or storage is
+            100% secure.</p>
+
+        <h2 id="third-apps">11. Third-Party Apps, Content and Links</h2>
+        <p>The App displays ads and may contain links that lead to third-party websites, apps, or services. Those services are governed by their own terms and privacy
+            policies, and we are not responsible for them. Rollicon 3D is not affiliated with, endorsed, or sponsored by any third-party brands referenced in the App.</p>
+
+        <h2 id="changes">12. Changes to This Policy</h2>
+        <p>We may update this Policy from time to time. Material changes will be posted in the App or on this page with
+            a new "Last updated" date. Your continued use of the App after changes take effect constitutes acceptance
+            of the updated Policy.</p>
+
+        <h2 id="contact">13. Contact Us</h2>
+        <p>Tranquil Mind Technology JSC<br>
+            No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam<br>
+            Email: <a href="mailto:support@tranquilmind.co"><strong>support@tranquilmind.co</strong></a></p>
 
         <div class="footer-block">
             <span>&copy; 2026 Rollicon 3D. All rights reserved.</span>
