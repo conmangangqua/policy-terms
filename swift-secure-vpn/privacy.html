@@ -316,7 +316,7 @@
         <div class="meta">
             <span><strong>App:</strong> Swift Secure VPN</span>
             <span><strong>Effective:</strong> July 10, 2026</span>
-            <span><strong>Last Updated:</strong> July 23, 2026</span>
+            <span><strong>Last Updated:</strong> July 28, 2026</span>
         </div>
 
         <p>Swift Secure VPN ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your
@@ -331,11 +331,16 @@
         <p>The App and the third-party services it uses automatically collect certain information when you use it:</p>
         <ul>
             <li><strong>Device and advertising identifiers</strong> &mdash; including the Google Advertising ID (AAID),
-                a Firebase installation/app-instance ID, and a push notification token.</li>
+                a Firebase installation/app-instance ID, and a push notification (FCM) token. These identifiers are
+                also used by our mobile attribution and measurement partner (Adjust) to attribute installs and measure
+                advertising performance.</li>
             <li><strong>IP address and approximate (coarse) location</strong> &mdash; your IP address is inherently
                 processed to route your VPN connection, and our advertising partners may infer an approximate,
-                city/region-level location from it for ad delivery. The App does <strong>not</strong> request
-                device-level GPS/precise location permission, and the in-app "server locations" are VPN server
+                city/region-level location from it for ad delivery. In addition, when you open a connection-details or
+                server-location screen, the App sends an IP address (the VPN server's IP, or &mdash; when you are not
+                connected &mdash; your current network's IP) to a third-party IP-geolocation service (ip-api.com) to
+                display the approximate country, region, city and ISP for that IP. The App does <strong>not</strong>
+                request device-level GPS/precise location permission, and the in-app "server locations" are VPN server
                 countries you choose, not your physical location.</li>
             <li><strong>App activity and interactions</strong> &mdash; screens viewed, features used, and in-app events,
                 for analytics.</li>
@@ -354,6 +359,8 @@
         <ul>
             <li>Provide, operate, and maintain the VPN connection and core features of the App;</li>
             <li>Display and measure advertising, including through mediation partners;</li>
+            <li>Attribute app installs and measure marketing and advertising performance;</li>
+            <li>Show the approximate location (country, region, city, ISP) of the VPN server you connect to;</li>
             <li>Understand usage and improve the App (analytics);</li>
             <li>Detect, prevent, and address fraud, abuse, invalid traffic, and security issues;</li>
             <li>Comply with legal obligations.</li>
@@ -362,18 +369,20 @@
             effects about you.</p>
 
         <h2 id="third-party">3. Third-Party Services</h2>
-        <p>The App integrates the following third-party SDKs, which may receive and process data as described. Each
-            provider handles data under its own privacy policy:</p>
+        <p>The App integrates the following third-party SDKs and services, which may receive and process data as
+            described. Each provider handles data under its own privacy policy:</p>
         <div class="table-wrap"><table>
             <thead><tr><th>Provider</th><th>Purpose</th><th>Privacy policy</th></tr></thead>
             <tbody>
                 <tr><td>Google &mdash; Firebase (Analytics, Crashlytics, Cloud Messaging, Remote Config, Firestore)</td><td>Analytics, crash reporting, push, configuration</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
                 <tr><td>Google AdMob</td><td>Advertising and ad measurement</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
-                <tr><td>Meta Audience Network</td><td>Advertising (mediation)</td><td><a href="https://www.facebook.com/about/privacy" target="_blank" rel="noopener">facebook.com/about/privacy</a></td></tr>
+                <tr><td>Meta (Facebook SDK &amp; Audience Network)</td><td>Advertising (mediation) and app-event measurement</td><td><a href="https://www.facebook.com/about/privacy" target="_blank" rel="noopener">facebook.com/about/privacy</a></td></tr>
+                <tr><td>Adjust</td><td>Mobile install attribution and marketing measurement</td><td><a href="https://www.adjust.com/terms/privacy-policy/" target="_blank" rel="noopener">adjust.com/terms/privacy-policy</a></td></tr>
                 <tr><td>Pangle (ByteDance)</td><td>Advertising (mediation)</td><td><a href="https://www.pangleglobal.com/privacy" target="_blank" rel="noopener">pangleglobal.com/privacy</a></td></tr>
                 <tr><td>Liftoff / Vungle</td><td>Advertising (mediation)</td><td><a href="https://vungle.com/privacy/" target="_blank" rel="noopener">vungle.com/privacy</a></td></tr>
                 <tr><td>Mintegral</td><td>Advertising (mediation)</td><td><a href="https://www.mintegral.com/en/privacy/" target="_blank" rel="noopener">mintegral.com/en/privacy</a></td></tr>
                 <tr><td>Unity Ads</td><td>Advertising (mediation)</td><td><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">unity.com/legal/privacy-policy</a></td></tr>
+                <tr><td>ip-api.com</td><td>IP-to-approximate-location lookup (country/region/city/ISP) for the connection-details display</td><td><a href="https://ip-api.com/docs/legal" target="_blank" rel="noopener">ip-api.com/docs/legal</a></td></tr>
             </tbody>
         </table></div>
         <div class="callout"><strong>Advertising ID controls.</strong> You can reset or delete your advertising ID, or
@@ -391,7 +400,7 @@
         <h2 id="share">4. How We Share Information</h2>
         <p>We do <strong>not</strong> sell your personal information for money. We share the automatically-collected data
             described above with the third-party providers listed in Section 3 so they can perform their services
-            (advertising, analytics, crash reporting, messaging).</p>
+            (advertising, attribution/measurement, analytics, crash reporting, messaging, and IP geolocation).</p>
         <p>Because the App serves personalized advertising, some U.S. state privacy laws (e.g. California's CPRA) may
             treat the sharing of advertising identifiers with ad partners for targeted advertising as a "sale" or
             "sharing." You can opt out of this by resetting/limiting your advertising ID and declining
