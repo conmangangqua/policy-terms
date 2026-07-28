@@ -342,8 +342,13 @@
             <li><strong>Crash logs and diagnostics</strong> — crash reports, error logs, and performance/diagnostic
                 data used to keep the App stable.</li>
             <li><strong>Network / connection information</strong> — technical data needed to establish the VPN
-                connection (for example your originating IP address, chosen server, and connection status). Your real
-                IP is also displayed to you in the App via a third-party IP-lookup service.</li>
+                connection (for example your originating IP address, chosen server, and connection status). Your
+                device's public IP address is sent to a third-party IP-lookup service (ipify) so the App can display
+                your real IP and help verify VPN status; the App also downloads its list of free VPN servers from
+                VPNGate (a third-party volunteer VPN network) and connection-configuration files from our servers and
+                community-operated mirrors. As with any internet request, these requests carry your IP address, but
+                they are <strong>not</strong> linked to your name or an account and <strong>no</strong> advertising
+                identifier is attached to them.</li>
         </ul>
         <h3>Information stored only on your device (not collected by us)</h3>
         <p>The following stay on your device and are <strong>not</strong> transmitted to us: your <strong>browsing
@@ -370,10 +375,19 @@
             privacy policy:</p>
         <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody>
             <tr><td>Google AdMob (Google)</td><td>Advertising &amp; measurement</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
-            <tr><td>Meta Audience Network (Meta)</td><td>Advertising mediation &amp; measurement</td><td><a href="https://www.facebook.com/about/privacy" target="_blank" rel="noopener">facebook.com/about/privacy</a></td></tr>
+            <tr><td>Meta Audience Network (Meta)</td><td>Advertising mediation &amp; measurement (device &amp; advertising IDs, app activity)</td><td><a href="https://www.facebook.com/about/privacy" target="_blank" rel="noopener">facebook.com/about/privacy</a></td></tr>
+            <tr><td>AppLovin / MAX (AppLovin Corporation)</td><td>Advertising mediation &amp; measurement (device &amp; advertising IDs, app activity)</td><td><a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener">applovin.com/privacy</a></td></tr>
+            <tr><td>Pangle (ByteDance)</td><td>Advertising mediation &amp; measurement (device &amp; advertising IDs, app activity)</td><td><a href="https://www.pangleglobal.com/privacy" target="_blank" rel="noopener">pangleglobal.com/privacy</a></td></tr>
+            <tr><td>Mintegral (Mobvista)</td><td>Advertising mediation &amp; measurement (device &amp; advertising IDs, app activity)</td><td><a href="https://www.mintegral.com/en/privacy/" target="_blank" rel="noopener">mintegral.com/en/privacy</a></td></tr>
+            <tr><td>Unity Ads (Unity Technologies)</td><td>Advertising mediation &amp; measurement (device &amp; advertising IDs, app activity)</td><td><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">unity.com/legal/privacy-policy</a></td></tr>
+            <tr><td>Liftoff Monetize / Vungle (Liftoff Mobile)</td><td>Advertising mediation &amp; measurement (device &amp; advertising IDs, app activity)</td><td><a href="https://liftoff.io/privacy-policy/" target="_blank" rel="noopener">liftoff.io/privacy-policy</a></td></tr>
+            <tr><td>Adjust (Adjust GmbH)</td><td>Attribution &amp; marketing analytics (device &amp; advertising IDs, app activity)</td><td><a href="https://www.adjust.com/terms/privacy-policy/" target="_blank" rel="noopener">adjust.com/terms/privacy-policy</a></td></tr>
             <tr><td>Google Firebase Crashlytics (Google)</td><td>Crash reporting &amp; diagnostics</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
             <tr><td>Google Firebase Remote Config (Google)</td><td>Remote configuration</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
             <tr><td>Google Play services / In-app review &amp; update (Google)</td><td>App reviews, update prompts</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
+            <tr><td>ipify (public IP lookup)</td><td>Returns your public IP address to display in the App and check VPN status; your device's IP reaches this service by the nature of the request. No account or advertising identifier is attached.</td><td><a href="https://www.ipify.org" target="_blank" rel="noopener">ipify.org</a></td></tr>
+            <tr><td>VPNGate — University of Tsukuba (and community mirrors)</td><td>Provides the public list of free volunteer OpenVPN servers the App can connect through; the App downloads this list without sending an account or advertising identifier.</td><td><a href="https://www.vpngate.net/en/" target="_blank" rel="noopener">vpngate.net</a></td></tr>
+            <tr><td>VPN configuration endpoints (operated by us and community mirrors)</td><td>Deliver OpenVPN connection-configuration files for the App's free and premium servers; the App downloads config files without sending a personal identifier.</td><td>Operated by Tranquil Mind Technology JSC / varies by mirror</td></tr>
             <tr><td>Third-party / community VPN servers</td><td>Routing your encrypted VPN traffic</td><td>Varies by operator</td></tr>
         </tbody></table></div>
         <div class="callout"><strong>Ad consent (UMP / IAB TCF).</strong> In the European Economic Area, the United Kingdom, and other regions where required, the App presents a consent request (via Google's User Messaging Platform and the IAB Transparency &amp; Consent Framework) before showing personalized ads, and on iOS an App Tracking Transparency prompt. Your choice determines whether ads and identifiers are used for personalization.</div>
