@@ -283,7 +283,7 @@
         <div class="nav-meta">
             <span>Privacy Policy</span>
             <span>·</span>
-            <span>July 27, 2026</span>
+            <span>July 28, 2026</span>
         </div>
     </div>
 </header>
@@ -315,7 +315,7 @@
         <div class="meta">
             <span><strong>App:</strong> Lingowl</span>
             <span><strong>Effective:</strong> July 27, 2026</span>
-            <span><strong>Last Updated:</strong> July 27, 2026</span>
+            <span><strong>Last Updated:</strong> July 28, 2026</span>
         </div>
 
         <p>Lingowl ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your
@@ -332,8 +332,10 @@
         <ul>
             <li><strong>Account information</strong> — when you sign in with Google, we receive your name, email
                 address, Google account identifier, and profile photo URL.</li>
-            <li><strong>Voice recordings</strong> — when you use speaking features, your microphone audio is captured
-                and sent for real-time transcription and pronunciation assessment. Audio is processed to generate
+            <li><strong>Voice recordings</strong> — when you use speaking features, we access your microphone. For live
+                conversation practice, speech is recognized <strong>on your device</strong> and only the resulting text
+                leaves your device. For pronunciation practice, a short audio clip of your speech is recorded and
+                <strong>sent to Microsoft Azure</strong> to score your pronunciation. Audio is processed to generate
                 feedback and is not retained as stored recordings after processing.</li>
             <li><strong>Conversation and learning content</strong> — the text of your conversations, roleplay
                 messages, quiz answers, and similar learning input you generate in the App.</li>
@@ -345,11 +347,14 @@
                 error statistics, synced to your account.</li>
             <li><strong>Crash logs and diagnostics</strong> — error reports and performance data to keep the App
                 stable.</li>
-            <li><strong>Device and other identifiers</strong> — app-instance and analytics identifiers, plus basic
-                device and operating-system information.</li>
+            <li><strong>Device and other identifiers</strong> — app-instance and analytics identifiers, the
+                <strong>advertising identifier (Advertising ID)</strong>, plus basic device and operating-system
+                information.</li>
         </ul>
-        <p>We do <strong>not</strong> collect your precise or approximate location, contacts, photos, or advertising
-            identifier, and the App contains <strong>no advertising</strong>.</p>
+        <p>The App is free and <strong>supported by advertising</strong>. Ads are served by Google AdMob and its
+            mediation partners, which may use your advertising identifier and device information to show and measure
+            ads (see Section 3). We do <strong>not</strong> collect your precise or approximate location, contacts, or
+            photos.</p>
 
         <h2 id="how-use">2. How We Use Information</h2>
         <ul>
@@ -357,34 +362,43 @@
                 roleplay.</li>
             <li>Save and sync your learning progress and personalize practice to your mistakes.</li>
             <li>Analyze usage and diagnose crashes to improve the App.</li>
+            <li>Display advertising and measure ad performance and revenue through our advertising and attribution
+                partners.</li>
             <li>Maintain security and prevent fraud or abuse.</li>
             <li>Comply with legal obligations.</li>
         </ul>
-        <p>We do not use your data for advertising, and we do not build advertising profiles.</p>
+        <p>We do not sell your personal information, and we do not use the content of your conversations or voice
+            recordings to serve ads.</p>
 
         <h2 id="third-party">3. Third-Party Services</h2>
         <p>We share data with the following service providers strictly to operate the App. Each processes data on our
             behalf under its own privacy terms.</p>
         <div class="table-wrap"><table><thead><tr><th>Service provider</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody>
-            <tr><td>Google Firebase (Authentication, Analytics, Crashlytics, Firestore, Remote Config)</td><td>Sign-in, progress sync, analytics, crash reporting</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a> · <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
-            <tr><td>Anthropic (Claude API)</td><td>Generates AI conversation and language feedback from your messages</td><td><a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">anthropic.com/legal/privacy</a></td></tr>
-            <tr><td>OpenAI</td><td>Speech-to-text transcription and, where configured, AI conversation</td><td><a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">openai.com/policies/privacy-policy</a></td></tr>
-            <tr><td>Microsoft Azure Cognitive Services (Speech)</td><td>Pronunciation assessment of your voice recordings</td><td><a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener">privacy.microsoft.com/privacystatement</a></td></tr>
+            <tr><td>Google Firebase (Authentication, Google Sign-In, Analytics, Crashlytics, Firestore, Remote Config)</td><td>Sign-in, cloud sync of your learning progress, analytics, crash reporting</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a> · <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
+            <tr><td>OpenAI</td><td>Generates AI conversation, roleplay, and grammar/language feedback from the text of your messages</td><td><a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">openai.com/policies/privacy-policy</a></td></tr>
+            <tr><td>Microsoft Azure Cognitive Services (Speech)</td><td>Pronunciation assessment of your recorded voice clips</td><td><a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener">privacy.microsoft.com/privacystatement</a></td></tr>
+            <tr><td>Google AdMob (and its mediation partners, including Meta Audience Network)</td><td>Displays ads; may use your advertising identifier and device data to serve and measure ads</td><td><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">support.google.com/admob/answer/6128543</a> · <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
+            <tr><td>Adjust</td><td>Mobile attribution and ad-revenue measurement using device and advertising identifiers</td><td><a href="https://www.adjust.com/terms/privacy-policy/" target="_blank" rel="noopener">adjust.com/terms/privacy-policy</a></td></tr>
         </tbody></table></div>
-        <p>These providers act as our processors/service providers and are not permitted to use your data for their own
-            purposes. API-based AI processing is not used to train the providers' models by default.</p>
+        <p>These providers process data on our behalf or for the advertising and measurement purposes described above.
+            Our AI and speech providers act as our processors/service providers, are not permitted to use your data for
+            their own purposes, and API-based AI processing is not used to train their models by default.</p>
 
         <h2 id="share">4. How We Share Information</h2>
-        <p>We do <strong>not</strong> sell your personal information for money, and we do <strong>not</strong> share it
-            with third parties for their own advertising or marketing. We share data only: (a) with the service
-            providers listed in Section 3 to operate the App; (b) when required by law or to protect rights and safety;
-            and (c) in connection with a merger, acquisition, or business transfer, subject to this Policy.</p>
+        <p>We do <strong>not</strong> sell your personal information for money. We share data only: (a) with the service
+            providers listed in Section 3 to operate the App; (b) with advertising and attribution partners (Google
+            AdMob, its mediation partners, and Adjust) that receive your advertising identifier and device information
+            to show and measure ads; (c) when required by law or to protect rights and safety; and (d) in connection
+            with a merger, acquisition, or business transfer, subject to this Policy. Depending on your region, sharing
+            data with advertising partners may be considered a "sale" or "sharing" under laws such as the CCPA/CPRA;
+            you may exercise the choices described in Section 7.</p>
 
         <h2 id="legal-bases">5. Legal Bases (EEA/UK — GDPR)</h2>
         <p>We rely on: <strong>contract</strong> (to provide the App and account features you request);
             <strong>legitimate interests</strong> (core functionality, security, and improvement);
-            <strong>consent</strong> (where required, e.g. microphone access); and <strong>legal obligation</strong>
-            (compliance and recordkeeping).</p>
+            <strong>consent</strong> (where required, e.g. microphone access and, in the EEA/UK, personalized
+            advertising collected via a consent prompt); and <strong>legal obligation</strong> (compliance and
+            recordkeeping).</p>
 
         <h2 id="retention">6. Data Retention</h2>
         <p>We keep account and learning data for as long as your account is active. Crash and diagnostic data is kept
@@ -419,7 +433,7 @@
                 sextortion, solicitation, trafficking, and any attempt to create, request, share, or promote such
                 material. These rules apply to <strong>both what users type into the App and what the AI generates</strong>
                 in response.</li>
-            <li><strong>Prevention:</strong> AI conversations are generated through providers (Anthropic, OpenAI) whose
+            <li><strong>Prevention:</strong> AI conversations are generated through our AI provider (OpenAI) whose
                 systems include built-in CSAE safety filters, and our system prompts constrain the AI to
                 English-language learning. The App has <strong>no user-to-user messaging, content sharing, or public
                 communication</strong> — users interact only with the AI tutor — which removes user-to-user CSAM

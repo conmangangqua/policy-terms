@@ -283,7 +283,7 @@
         <div class="nav-meta">
             <span>Privacy Policy</span>
             <span>·</span>
-            <span>July 27, 2026</span>
+            <span>July 28, 2026</span>
         </div>
     </div>
 </header>
@@ -315,8 +315,8 @@
 
         <div class="meta">
             <span><strong>App:</strong> PitchSide</span>
-            <span><strong>Effective:</strong> July 27, 2026</span>
-            <span><strong>Last Updated:</strong> July 27, 2026</span>
+            <span><strong>Effective:</strong> July 28, 2026</span>
+            <span><strong>Last Updated:</strong> July 28, 2026</span>
         </div>
 
         <p>PitchSide ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your
@@ -330,7 +330,16 @@
         <p>We do not ask you to register, and we do not collect your name, email address, or contacts. The App collects
             only the limited data listed below, and only data that leaves your device is described here. Choices you
             make on your device (such as your favorite teams and leagues, selected language, and notification
-            preferences) are stored <strong>locally on your device</strong> and are not transmitted to us.</p>
+            preferences) are stored <strong>locally on your device</strong>; we do not upload your favorites list or
+            build a profile of you.</p>
+        <p>To show live data, the App sends <strong>content requests</strong> to our backend proxy (hosted on
+            Cloudflare Workers), which fetches the matching scores, fixtures, lineups, and statistics from our
+            sports-data provider and returns them to the App. These requests describe only the content you are viewing
+            (for example the match, team, league, competition, or date) and necessarily include your device's
+            <strong>IP address</strong> at the network level. We use them solely to deliver the content you request and
+            to protect the service (for example rate-limiting and abuse prevention); we do not use them to identify you.
+            The App does <strong>not</strong> send push tokens, and it schedules match reminders locally on your device
+            rather than through a server.</p>
         <p>Data collected automatically by the App and its third-party SDKs:</p>
         <ul>
             <li><strong>Device and other identifiers</strong> — including the advertising identifier (Google
@@ -371,7 +380,8 @@
             <tr><td>Mintegral (ad mediation)</td><td>Advertising</td><td><a href="https://www.mintegral.com/en/privacy/" target="_blank" rel="noopener">mintegral.com/en/privacy</a></td></tr>
             <tr><td>Adjust</td><td>Attribution &amp; analytics</td><td><a href="https://www.adjust.com/terms/privacy-policy/" target="_blank" rel="noopener">adjust.com/terms/privacy-policy</a></td></tr>
             <tr><td>Google Play Billing</td><td>Process in-app purchases</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
-            <tr><td>Third-party sports-data provider (e.g. API-Football / api-sports.io)</td><td>Supplies scores, fixtures, lineups, and statistics shown in the App</td><td><a href="https://www.api-football.com/privacy-policy" target="_blank" rel="noopener">api-football.com/privacy-policy</a></td></tr>
+            <tr><td>Cloudflare (Workers)</td><td>Backend proxy that receives the App's content requests (and IP address) and delivers sports data; infrastructure &amp; abuse protection</td><td><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a></td></tr>
+            <tr><td>Third-party sports-data provider (API-Football / api-sports.io), reached through our backend proxy</td><td>Supplies the scores, fixtures, lineups, and statistics shown in the App</td><td><a href="https://www.api-football.com/privacy-policy" target="_blank" rel="noopener">api-football.com/privacy-policy</a></td></tr>
         </tbody></table></div>
         <div class="callout"><strong>Ad consent (UMP).</strong> Where required (for example in the EEA, the UK, and Switzerland), the App shows a Google-certified consent message (Google User Messaging Platform) before serving personalized ads. Your choice governs whether our advertising partners use your data for personalized advertising, and you can change it later from the App's settings where available.</div>
         <div class="callout"><strong>iOS App Tracking Transparency.</strong> On iOS, the App uses Apple's App Tracking Transparency framework and will ask for your permission before tracking you across apps and websites. If you decline, the advertising identifier is not used for cross-app tracking.</div>
