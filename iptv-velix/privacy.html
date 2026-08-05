@@ -283,7 +283,7 @@
         <div class="nav-meta">
             <span>Privacy Policy</span>
             <span>·</span>
-            <span>July 28, 2026</span>
+            <span>August 5, 2026</span>
         </div>
     </div>
 </header>
@@ -316,7 +316,7 @@
         <div class="meta">
             <span><strong>App:</strong> IPTV Velix</span>
             <span><strong>Effective:</strong> July 28, 2026</span>
-            <span><strong>Last Updated:</strong> July 28, 2026</span>
+            <span><strong>Last Updated:</strong> August 5, 2026</span>
         </div>
 
         <p>IPTV Velix ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your
@@ -345,12 +345,19 @@
         <p>Through the third-party services in Section 3:</p>
         <ul>
             <li><strong>Device and advertising identifiers</strong> — e.g. an app-instance ID and the Android
-                Advertising ID, used for analytics.</li>
-            <li><strong>Approximate location</strong> — a coarse, city-level location derived from your IP address by
-                our analytics provider. We do <strong>not</strong> collect precise/GPS location, and the App requests no
-                location permission.</li>
-            <li><strong>App activity</strong> — in-app interactions and events (e.g. screens opened, features used),
-                used to understand and improve the App.</li>
+                Advertising ID (AAID). The App declares the <code>com.google.android.gms.permission.AD_ID</code>
+                permission. These identifiers are used for advertising, ad measurement, attribution, analytics, and
+                fraud prevention.</li>
+            <li><strong>Approximate location</strong> — a coarse, city/region-level location derived from your IP
+                address by our advertising, attribution, and analytics providers. We do <strong>not</strong> collect
+                precise/GPS location, and the App requests no location permission.</li>
+            <li><strong>App activity</strong> — in-app interactions and events (e.g. screens opened, features used,
+                ads requested, shown, clicked, or rewarded), used to operate the App, measure advertising, and improve
+                the App.</li>
+            <li><strong>Advertising and attribution data</strong> — ad impressions and interactions, and install and
+                marketing-attribution events processed by our advertising and attribution partners (AdMob and its
+                mediation networks, and Adjust) to serve and measure ads and to understand how the App is installed and
+                used.</li>
             <li><strong>Crash logs and diagnostics</strong> — technical information about crashes and performance
                 (device model, OS version, stack traces, timing) so we can fix problems.</li>
         </ul>
@@ -359,37 +366,69 @@
         <h2 id="how-use">2. How We Use Information</h2>
         <ul>
             <li>Provide, operate, and maintain the App.</li>
+            <li>Serve and measure advertising, including personalized advertising where you have consented, through
+                Google AdMob and its mediation networks.</li>
+            <li>Measure marketing and install attribution to understand how the App is discovered and used.</li>
             <li>Diagnose crashes, monitor stability, and improve performance and features.</li>
             <li>Understand aggregate usage through analytics.</li>
             <li>Protect against fraud, abuse, and security threats, and comply with legal obligations.</li>
         </ul>
-        <p>We do <strong>not</strong> use your information to serve advertising, and the App contains no ads.</p>
+        <p>The App is <strong>free and supported by advertising</strong>. Ads are provided through Google AdMob and
+            the mediation networks listed in Section 3, which may display banner, interstitial, native, rewarded, and
+            app-open ad formats.</p>
 
         <h2 id="third-party">3. Third-Party Services</h2>
         <p>The App uses the following data-transmitting services. Each processes data under its own privacy policy:</p>
         <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody>
-            <tr><td>Google Firebase Analytics</td><td>Aggregate usage analytics</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
-            <tr><td>Google Firebase Crashlytics</td><td>Crash reporting and diagnostics</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
+            <tr><td>Google Firebase (Analytics)</td><td>Aggregate usage analytics</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
+            <tr><td>Google Firebase (Crashlytics)</td><td>Crash reporting and diagnostics</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
+            <tr><td>Google Firebase (Remote Config)</td><td>Remote app configuration</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
+            <tr><td>Google AdMob</td><td>Advertising (banner, interstitial, native, rewarded, app-open)</td><td><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a></td></tr>
+            <tr><td>Meta Audience Network</td><td>Ad mediation</td><td><a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noopener">facebook.com/about/privacy</a></td></tr>
+            <tr><td>Pangle</td><td>Ad mediation</td><td><a href="https://www.pangleglobal.com/privacy" target="_blank" rel="noopener">pangleglobal.com/privacy</a></td></tr>
+            <tr><td>Mintegral</td><td>Ad mediation</td><td><a href="https://www.mintegral.com/en/privacy" target="_blank" rel="noopener">mintegral.com/en/privacy</a></td></tr>
+            <tr><td>Unity Ads</td><td>Ad mediation</td><td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">unity.com/legal/game-player-and-app-user-privacy-policy</a></td></tr>
+            <tr><td>Liftoff Monetize (Vungle)</td><td>Ad mediation</td><td><a href="https://liftoff.io/privacy-policy/" target="_blank" rel="noopener">liftoff.io/privacy-policy</a></td></tr>
+            <tr><td>Adjust</td><td>Attribution &amp; marketing analytics</td><td><a href="https://www.adjust.com/terms/privacy-policy/" target="_blank" rel="noopener">adjust.com/terms/privacy-policy</a></td></tr>
+            <tr><td>Google Play (in-app review)</td><td>In-app rating prompt</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
         </tbody></table></div>
-        <p>These Google services act as our <strong>service providers</strong> (data processors) and process data on our
-            behalf. Google's handling of data is also governed by the
+        <p>Google Firebase acts as our <strong>service provider</strong> (data processor) and processes data on our
+            behalf. Our advertising and attribution partners (AdMob and its mediation networks, and Adjust) act as
+            independent controllers or processors for advertising purposes under their own policies. Google's handling
+            of data is also governed by the
             <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
-        <div class="callout"><strong>Advertising identifier.</strong> Although the App shows no ads, our analytics provider may read the Android Advertising ID. You can reset or delete this identifier, or opt out of ad personalization, at any time in your device settings (Settings &rarr; Google &rarr; Ads).</div>
+        <p><strong>Ad consent (UMP / IAB TCF).</strong> Where required (e.g. in the EEA/UK), the App presents a consent
+            request managed through Google's User Messaging Platform (UMP) before serving personalized ads, and reads the
+            resulting IAB Transparency &amp; Consent Framework (TCF) signals stored on your device so that our ad
+            partners honour your choice. For networks that do not read the TCF string directly, the App forwards your
+            GDPR and U.S.-privacy (CCPA) consent state to those mediation partners. You can change your choice at any
+            time from the App's settings.</p>
+        <div class="callout"><strong>Advertising identifier.</strong> The App serves ads and its partners read the
+            Android Advertising ID. You can reset or delete this identifier, or opt out of ad personalization, at any
+            time in your device settings (Settings &rarr; Google &rarr; Ads, or Settings &rarr; Privacy &rarr; Ads).</div>
 
         <h2 id="share">4. How We Share Information</h2>
-        <p>We do <strong>not</strong> sell your personal information for money, and we do <strong>not</strong> share it
-            with third parties for cross-context behavioral advertising. We share data only:</p>
+        <p>We do <strong>not</strong> sell your personal information for money. However, to show ads the App shares
+            device and advertising identifiers and ad-interaction data with our advertising partners. Under some U.S.
+            state laws this may be considered a "sale" or "sharing"/targeted advertising (see Section 7). We share data:</p>
         <ul>
+            <li>with the advertising and attribution partners listed in Section 3 (AdMob and its mediation networks, and
+                Adjust), to serve and measure ads and attribute installs, subject to your consent choices;</li>
             <li>with the service providers listed in Section 3, to the limited extent needed to run the App;</li>
             <li>to comply with law, legal process, or enforceable governmental requests; and</li>
             <li>in connection with a merger, acquisition, or asset transfer, subject to this Policy.</li>
         </ul>
+        <p><strong>U.S. state privacy notice.</strong> Because the App serves personalized advertising, the sharing of
+            advertising and device identifiers with ad partners may be treated as a "sale" or "sharing" for targeted
+            advertising under certain U.S. state laws. You can opt out using the ad-consent controls and your device's
+            advertising-ID settings described in Sections 3 and 7.</p>
 
         <h2 id="legal-bases">5. Legal Bases (EEA/UK — GDPR)</h2>
-        <p>Where GDPR applies, we rely on: our <strong>legitimate interests</strong> in operating, securing, and
-            improving the App (analytics, crash diagnostics, fraud prevention); <strong>consent</strong> where required
-            by local law for certain analytics; and <strong>legal obligation</strong> where applicable. You may object
-            to or withdraw consent as described in Section 7.</p>
+        <p>Where GDPR applies, we rely on: <strong>consent</strong> for personalized advertising and for certain
+            analytics and attribution (collected via the UMP consent request described in Section 3); our
+            <strong>legitimate interests</strong> in operating, securing, and improving the App (including
+            non-personalized advertising, crash diagnostics, and fraud prevention); and <strong>legal obligation</strong>
+            where applicable. You may object to or withdraw consent as described in Section 7.</p>
 
         <h2 id="retention">6. Data Retention</h2>
         <p>We retain automatically-collected data only as long as necessary for the purposes above or as required by
