@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Privacy Policy for FameRing — how we collect, use, and protect your data.">
+    <title>Privacy Policy — FameRing</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        header.site {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+            border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #6366f1);
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta {
+            font-size: 13px;
+            color: var(--text-soft);
+            display: flex; gap: 14px;
+        }
+        main.shell {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        @media (min-width: 960px) {
+            main.shell { grid-template-columns: 240px 1fr; }
+        }
+        aside.toc {
+            position: sticky;
+            top: 84px;
+            align-self: start;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            font-size: 13.5px;
+            display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: 11px;
+            color: var(--text-soft);
+            margin-bottom: 10px;
+        }
+        aside.toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        aside.toc a {
+            display: block;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            color: var(--text-muted);
+            border-bottom: none;
+            line-height: 1.4;
+        }
+        aside.toc a:hover {
+            background: var(--bg-elev);
+            color: var(--text);
+        }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 38px 0 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 22px 0 8px;
+        }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul {
+            margin: 0 0 14px;
+            padding-left: 22px;
+            color: var(--text-muted);
+        }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            font-size: 13.5px;
+            color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px;
+            color: var(--text-soft);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 0 20px;
+            font-size: 14px;
+        }
+        thead th {
+            text-align: left;
+            font-weight: 600;
+            color: var(--text);
+            background: var(--bg-elev);
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        tbody td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+            vertical-align: top;
+        }
+        tbody tr:last-child td { border-bottom: none; }
+        .table-wrap {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        .table-wrap table { margin: 0; }
+        .callout {
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
+            margin: 0 0 16px;
+            color: var(--text-muted);
+        }
+        .callout strong { color: var(--text); }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">P</span>FameRing</a>
+        <div class="nav-meta">
+            <span>Privacy Policy</span>
+            <span>·</span>
+            <span>2026-08-07</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#information-we-collect">1. Information we collect</a></li>
+            <li><a href="#how-we-use-information">2. How we use information</a></li>
+            <li><a href="#third-party-services">3. Third-party services</a></li>
+            <li><a href="#how-we-share-information">4. How we share information</a></li>
+            <li><a href="#legal-bases">5. Legal bases (EEA/UK — GDPR)</a></li>
+            <li><a href="#data-retention">6. Data retention</a></li>
+            <li><a href="#your-rights">7. Your rights</a></li>
+            <li><a href="#childrens-privacy-child-safety-standards">8. Children&#x27;s privacy &amp; Child Safety Standards</a></li>
+            <li><a href="#international-data-transfers">9. International data transfers</a></li>
+            <li><a href="#data-security">10. Data security</a></li>
+            <li><a href="#changes-to-this-policy">11. Changes to this Policy</a></li>
+            <li><a href="#contact-us">12. Contact us</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Privacy</span>
+        <h1>Privacy Policy</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> FameRing</span>
+            <span><strong>Effective:</strong> 2026-08-07</span>
+            <span><strong>Last Updated:</strong> 2026-08-07</span>
+        </div>
+
+        <p>FameRing ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information we collect, how we use and share it, and the choices and rights you have. By using the App, you agree to this Policy.</p>
+        <p>FameRing is an entertainment app for simulated ("prank") video calls and text chats with fictional AI idol characters, with device text-to-speech voice playback and an optional "Custom Star" feature that lets you build a character from a photo or video you pick on your device. You do not need to create an account to use it, and any photos or videos you choose for a Custom Star stay on your device — they are not uploaded to us.</p>
+        <h2 id="information-we-collect">1. Information we collect</h2>
+        <p>We do not ask you to register or submit personal details, and we do not operate our own user database. The App works with data that is either kept on your device or collected automatically by the third-party services below:</p>
+        <ul><li><strong>Device &amp; advertising identifiers</strong> (e.g. Google Advertising ID) — used by our advertising and attribution partners.</li><li><strong>Approximate location derived from IP address</strong> — inferred by advertising/analytics partners; we do not collect GPS/precise location.</li><li><strong>App activity &amp; diagnostics</strong> — app interactions, feature usage, crash logs and performance data.</li><li><strong>Consent choices</strong> — your advertising/consent selections (via the Google UMP / IAB TCF consent flow) are stored to honor your preferences.</li></ul>
+        <p>Content you create locally — your Custom Star photos/videos, chat history, and settings such as text-to-speech on/off — is stored <strong>on your device only</strong> and is not transmitted to us.</p>
+        <h2 id="how-we-use-information">2. How we use information</h2>
+        <p>We use the information above to: provide and operate the App; remember your settings and preferences; serve and measure advertising; run analytics to understand usage and improve the App; detect and prevent fraud, abuse and security issues; and comply with legal obligations.</p>
+        <h2 id="third-party-services">3. Third-party services</h2>
+        <p>FameRing includes the following data-transmitting SDKs. Each partner processes data under its own privacy policy:</p>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Google Firebase (Analytics, Crashlytics, Remote Config)</td><td>Analytics, crash reporting, configuration</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google AdMob</td><td>Advertising</td><td>https://policies.google.com/privacy</td></tr><tr><td>Meta Audience Network</td><td>Ad mediation</td><td>https://www.facebook.com/about/privacy</td></tr><tr><td>Pangle</td><td>Ad mediation</td><td>https://www.pangleglobal.com/privacy</td></tr><tr><td>Liftoff Vungle</td><td>Ad mediation</td><td>https://vungle.com/privacy</td></tr><tr><td>Mintegral</td><td>Ad mediation</td><td>https://www.mintegral.com/en/privacy</td></tr><tr><td>Unity Ads</td><td>Ad mediation</td><td>https://unity.com/legal/game-player-and-app-user-privacy-policy</td></tr><tr><td>Adjust</td><td>Attribution &amp; analytics</td><td>https://www.adjust.com/terms/privacy-policy</td></tr><tr><td>AppsFlyer</td><td>Attribution &amp; analytics</td><td>https://www.appsflyer.com/legal/services-privacy-policy</td></tr></tbody></table></div>
+        <p><strong>Ad consent (UMP / IAB TCF).</strong> Where required (e.g. in the EEA/UK), we present a Google User Messaging Platform consent form so you can accept or decline personalized ads before ads load. You can change your choice later from the App.</p>
+        <p><strong>Resetting / opting out of your advertising ID.</strong> You can reset or delete your advertising identifier, or opt out of ad personalization, in your device settings (Android: Settings → Google → Ads).</p>
+        <h2 id="how-we-share-information">4. How we share information</h2>
+        <p>We do <strong>not</strong> sell your personal information for money. We share data only with the third-party services listed above, when required by law, or in connection with a business transfer. Because we serve personalized advertising, some U.S. state privacy laws may treat the related data flows as a "sale" or "sharing" of personal information for targeted advertising; you can opt out via the ad-consent controls and your device ad settings described above.</p>
+        <h2 id="legal-bases">5. Legal bases (EEA/UK — GDPR)</h2>
+        <p>We rely on: your <strong>consent</strong> (personalized ads and analytics where required); our <strong>legitimate interests</strong> (providing core functionality, security, and improving the App); and <strong>legal obligation</strong> where applicable.</p>
+        <h2 id="data-retention">6. Data retention</h2>
+        <p>We keep data only as long as necessary for the purposes above or as required by law. Advertising and attribution partners retain identifiers according to their own retention periods; crash and diagnostic data is kept for a limited period. Content stored on your device remains until you delete it or uninstall the App.</p>
+        <h2 id="your-rights">7. Your rights</h2>
+        <p>Depending on where you live, you may have rights to access, correct, delete, port, object to, or restrict processing of your personal data, and to withdraw consent or complain to a data protection authority (<strong>GDPR</strong>); to know, delete, correct, and opt out of the sale/sharing or targeted advertising of your personal information, with a right against discrimination (<strong>CCPA/CPRA</strong>); and similar rights under other laws (<strong>LGPD</strong>, <strong>PIPEDA</strong>, and others). Because FameRing has no user accounts, please contact us at the email below and include your device advertising ID so we can act on your request.</p>
+        <h2 id="childrens-privacy-child-safety-standards">8. Children's privacy &amp; Child Safety Standards</h2>
+        <p>FameRing is intended for users aged <strong>13 and older</strong>; the App presents an age check and a note for parents at first use. It is not directed to children under 13, and we do not knowingly collect personal information from them. If you believe a child under 13 has provided information, contact us and we will address it. We apply higher age thresholds where local law (e.g. GDPR digital-consent ages) requires.</p>
+        <p><strong>Child Safety Standards (CSAE).</strong> FameRing lets users interact with fictional AI idol characters through simulated calls and chats. We have <strong>zero tolerance</strong> for child sexual abuse and exploitation (CSAE) and child sexual abuse material (CSAM). This prohibition covers images, video, audio, text, and AI-generated content, including any sexualization of minors; grooming, sextortion, solicitation, or trafficking; and any attempt to create, request, share, or promote such material. It applies to content you input <strong>and</strong> to any AI-generated output.</p>
+        <p>To prevent and respond to such content: the App's AI characters are built around pre-authored, entertainment-only content and are not designed to produce sexual content involving minors; any Custom Star media you add stays on your device and is not shared with other users; and you can report concerns or apparent abuse to us at the child-safety contact below. When we become aware of apparent CSAM, we will remove the offending content where it is within our control, suspend access where appropriate, and report it to the <strong>National Center for Missing &amp; Exploited Children (NCMEC)</strong> and/or local authorities as required by law. FameRing does not currently offer user-to-user content sharing or public communities; if we add such features, we will provide in-app reporting and moderation before launch.</p>
+        <p>We comply with applicable child-safety laws and align these standards with the Google Play Child Safety Standards policy. Child-safety point of contact: <strong>contact@tranquilmind.co</strong> (app/developer: FameRing).</p>
+        <h2 id="international-data-transfers">9. International data transfers</h2>
+        <p>Your data may be processed in countries other than your own, including the United States. Where required, we and our partners use appropriate safeguards (such as Standard Contractual Clauses) for these transfers.</p>
+        <h2 id="data-security">10. Data security</h2>
+        <p>We use encryption in transit (HTTPS/TLS) and other reasonable technical and organizational measures to protect data. However, no method of transmission or storage is 100% secure.</p>
+        <h2 id="changes-to-this-policy">11. Changes to this Policy</h2>
+        <p>We may update this Policy from time to time. Material changes will be posted here with a new "Last updated" date; continued use of the App means you accept the updated Policy.</p>
+        <h2 id="contact-us">12. Contact us</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
