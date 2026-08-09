@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Privacy Policy for Noxen Browser — how we collect, use, and protect your data.">
+    <title>Privacy Policy — Noxen Browser</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        header.site {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+            border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #6366f1);
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta {
+            font-size: 13px;
+            color: var(--text-soft);
+            display: flex; gap: 14px;
+        }
+        main.shell {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        @media (min-width: 960px) {
+            main.shell { grid-template-columns: 240px 1fr; }
+        }
+        aside.toc {
+            position: sticky;
+            top: 84px;
+            align-self: start;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            font-size: 13.5px;
+            display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: 11px;
+            color: var(--text-soft);
+            margin-bottom: 10px;
+        }
+        aside.toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        aside.toc a {
+            display: block;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            color: var(--text-muted);
+            border-bottom: none;
+            line-height: 1.4;
+        }
+        aside.toc a:hover {
+            background: var(--bg-elev);
+            color: var(--text);
+        }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 38px 0 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 22px 0 8px;
+        }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul {
+            margin: 0 0 14px;
+            padding-left: 22px;
+            color: var(--text-muted);
+        }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            font-size: 13.5px;
+            color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px;
+            color: var(--text-soft);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+        .table-wrap { border: 1px solid var(--border); border-radius: var(--radius-sm); overflow-x: auto; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; margin: 0; font-size: 14px; }
+        thead th { text-align: left; font-weight: 600; color: var(--text); background: var(--bg-elev); padding: 10px 12px; border-bottom: 1px solid var(--border); }
+        tbody td { padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
+        tbody tr:last-child td { border-bottom: none; }
+        .callout { background: var(--bg-elev); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: var(--radius-sm); padding: 12px 16px; margin: 0 0 16px; color: var(--text-muted); }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">P</span>Noxen Browser</a>
+        <div class="nav-meta">
+            <span>Privacy Policy</span>
+            <span>·</span>
+            <span>2026-08-07</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#information-we-collect">1. Information we collect</a></li>
+            <li><a href="#how-we-use-information">2. How we use information</a></li>
+            <li><a href="#third-party-services">3. Third-party services</a></li>
+            <li><a href="#how-we-share-information">4. How we share information</a></li>
+            <li><a href="#legal-bases-for-processing">5. Legal bases for processing (EEA / UK — GDPR)</a></li>
+            <li><a href="#data-retention">6. Data retention</a></li>
+            <li><a href="#your-rights-and-choices">7. Your rights and choices</a></li>
+            <li><a href="#childrens-privacy">8. Children&#x27;s privacy</a></li>
+            <li><a href="#international-data-transfers">9. International data transfers</a></li>
+            <li><a href="#data-security">10. Data security</a></li>
+            <li><a href="#third-party-content-and-websites">11. Third-party content and websites</a></li>
+            <li><a href="#changes-to-this-policy">12. Changes to this Policy</a></li>
+            <li><a href="#contact-us">13. Contact us</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Privacy</span>
+        <h1>Privacy Policy</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Noxen Browser</span>
+            <span><strong>Effective:</strong> 2026-08-07</span>
+            <span><strong>Last Updated:</strong> 2026-08-07</span>
+        </div>
+
+        <p>Noxen Browser ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information we collect, how we use and share it, and the choices and rights you have. By using the App, you agree to this Policy.</p>
+        <p>Noxen Browser is a private mobile web browser: it lets you open and manage multiple tabs, reach popular sites through one-tap shortcuts, block web advertising and trackers with a built-in blocker, choose from 25 interface languages, and receive optional reminders to come back to the App. <strong>You do not need to create an account, sign in, or provide any personal details to use Noxen Browser</strong> — there is no login, no profile, no messaging, and no user-to-user content.</p>
+        <h2 id="information-we-collect">1. Information we collect</h2>
+        <p>We do <strong>not</strong> ask you for your name, email address, phone number, contacts, photos, files, or precise location. The App has no registration form and no user account.</p>
+        <p>The following information is collected automatically by the App and the third-party services listed in Section 3:</p>
+        <h3>1.1 Device and app information</h3>
+        <p>Device model and manufacturer, operating system version, screen and language/region settings, app version and build, network connection type, and time zone. Used to operate the App, deliver the correct configuration, and diagnose problems.</p>
+        <h3>1.2 Identifiers</h3>
+        <ul><li><strong>Advertising ID (Google Advertising ID / GAID)</strong> — a resettable identifier provided by Android. It is used by the analytics and install-attribution services listed in Section 3; the App declares the <code>com.google.android.gms.permission.AD_ID</code> permission for that purpose.</li><li><strong>App-instance identifiers</strong> — Firebase installation ID / app instance ID used by Firebase Analytics, Crashlytics and Remote Config; an installation identifier used by Adjust for install attribution.</li><li><strong>Install referrer</strong> — the Google Play install referrer string, read through the <code>BIND_GET_INSTALL_REFERRER_SERVICE</code> permission, so we can tell which campaign or listing brought you to the App.</li></ul>
+        <h3>1.3 Approximate location (derived from IP address)</h3>
+        <p>We do not request GPS or any location permission and the App does not access your device location. Our service providers may infer an approximate location (typically country or city level) from your IP address for analytics, fraud prevention and regional configuration.</p>
+        <h3>1.4 App activity and diagnostics</h3>
+        <p>Anonymous in-app events (for example: splash shown, language screen viewed, onboarding step completed, search bar tapped, settings row tapped, share/rate/feedback tapped) and screen views. These events record <strong>that</strong> an action happened, together with the interest topic you optionally pick during onboarding. <strong>They do not contain the web addresses you visit, the pages you open, or the words you type into the search bar.</strong></p>
+        <p>We also collect crash reports and diagnostic data (stack traces, exception messages, device state at the time of the crash, app version) through Firebase Crashlytics.</p>
+        <h3>1.5 Purchase status</h3>
+        <p>The App bundles Google Play Billing so it can restore an existing ad-free entitlement. When the App starts, it asks Google Play whether your Google account already owns one of our products; Google Play returns the purchase status. We never see or store your payment card, billing address or Google account credentials. See Section 3.3.</p>
+        <h3>1.6 What we do <strong>not</strong> collect: your browsing</h3>
+        <p>This is the most important point for a browser:</p>
+        <ul><li><strong>Browsing history, open tabs, bookmarks, form input, cookies and site data stay on your device.</strong> They are handled by the Android WebView engine and stored in the App's private storage. We do not upload them, we do not back them up to our servers, and we have no server that could receive them.</li><li><strong>The App has no analytics event, log or crash field that records a URL, page title or search query.</strong></li><li><strong>The built-in ad and tracker blocker runs entirely on your device.</strong> Its blocklist (~250 advertising and tracking domains derived from public EasyList/EasyPrivacy sources) is compiled into the App. No page you open is sent to us or to any blocklist server for checking.</li><li>Clearing the App's data from Android Settings, or uninstalling the App, removes this locally stored browsing data.</li></ul>
+        <h3>1.7 Data the websites you visit receive</h3>
+        <p>When you open a website in Noxen Browser, that website — like with any browser — receives your IP address, user-agent string and any cookies it has previously set, and may set new cookies (third-party cookies are enabled by default in the WebView). If you use the address bar to search, your query is sent to <strong>Google Search</strong>, the App's default search provider. This information is collected by those third parties under <strong>their</strong> privacy policies, not ours. See Section 11.</p>
+        <h2 id="how-we-use-information">2. How we use information</h2>
+        <ul><li><strong>To provide and operate the App</strong> — render pages, keep your tabs, apply your chosen language, apply the ad-block setting.</li><li><strong>To deliver configuration remotely</strong> — Firebase Remote Config lets us change App settings (such as feature toggles) without shipping an update.</li><li><strong>To measure installs and campaign performance</strong> — attribution SDKs tell us which marketing source an install came from, in aggregate.</li><li><strong>To understand usage and improve the App</strong> — anonymous, aggregated event and screen analytics.</li><li><strong>To keep the App stable</strong> — crash and performance diagnostics.</li><li><strong>To restore purchases</strong> — confirm with Google Play whether you already own an ad-free entitlement.</li><li><strong>To send optional reminders</strong> — local re-engagement notifications, only if you granted notification permission.</li><li><strong>To comply with law</strong> — respond to lawful requests and enforce our Terms.</li></ul>
+        <h2 id="third-party-services">3. Third-party services</h2>
+        <p>The App includes the following software development kits (SDKs). Each one is listed with the data it may receive.</p>
+        <h3>3.1 Analytics, diagnostics and configuration — <strong>active</strong></h3>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Provider</th><th>Purpose</th><th>Data it may receive</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Firebase Analytics</td><td>Google LLC</td><td>Anonymous usage and screen analytics</td><td>App instance ID, device &amp; app info, IP-derived approximate location, in-app events</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr><tr><td>Firebase Crashlytics</td><td>Google LLC</td><td>Crash and stability reporting</td><td>Crashlytics installation UUID, crash stack traces, device state, app version</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr><tr><td>Firebase Remote Config</td><td>Google LLC</td><td>Remote App configuration</td><td>App instance ID, device &amp; app info, IP address</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr><tr><td>Adjust</td><td>Adjust GmbH</td><td>Install attribution and marketing measurement</td><td>Advertising ID, device info, IP address, install referrer, App events</td><td><a href="https://www.adjust.com/terms/privacy-policy/" target="_blank" rel="noopener">adjust.com/terms/privacy-policy</a></td></tr><tr><td>Meta (Facebook) SDK for Android</td><td>Meta Platforms, Inc.</td><td>Supports Adjust in measuring installs originating from Meta ads</td><td>Advertising ID, device info, IP address, install/app events</td><td><a href="https://www.facebook.com/about/privacy" target="_blank" rel="noopener">facebook.com/about/privacy</a></td></tr></tbody></table></div>
+        <p>Adjust and the Meta SDK activate only when the corresponding measurement tokens are supplied through Remote Config; when no token is configured they perform no tracking.</p>
+        <h3>3.2 Advertising identifier controls</h3>
+        <p><strong>Resetting or deleting your advertising ID.</strong> On Android you can reset your advertising ID or delete it entirely at any time: <strong>Settings → Google → Ads → Reset advertising ID / Delete advertising ID</strong>, or <strong>Settings → Privacy → Ads</strong> depending on your device. Deleting it stops apps from receiving a personalised identifier.</p>
+        <h3>3.3 Purchases and store services — <strong>active</strong></h3>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Provider</th><th>Purpose</th><th>Data it may receive</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Google Play Billing</td><td>Google LLC</td><td>Checking and restoring an existing ad-free entitlement</td><td>Google account purchase status for our products, device and Play information</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr><tr><td>Google Play In-App Review</td><td>Google LLC</td><td>Showing the optional in-app rating prompt</td><td>Play Store account and device information handled by Google</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr></tbody></table></div>
+        <p>The current version of the App does <strong>not</strong> present a purchase or subscription screen; the billing component is used only to query and restore purchases that may already exist on your Google account. If we introduce paid products in a future update, all payments will be processed by Google Play — we never receive your payment details.</p>
+        <h3>3.4 Services you reach through the App</h3>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Role</th></tr></thead><tbody><tr><td>Google Search</td><td>Default search provider for queries typed into the address bar</td></tr><tr><td>Any website you open, including the built-in shortcuts (Facebook, Instagram, Threads, X, WhatsApp Web, Pinterest, Reddit, Twitch)</td><td>Independent third-party websites, governed by their own privacy policies</td></tr><tr><td>Your email app, share sheet and Google Play Store</td><td>Opened only when you tap Feedback, Share or Rate</td></tr></tbody></table></div>
+        <p>We have no control over, and take no responsibility for, the data practices of these third parties.</p>
+        <h2 id="how-we-share-information">4. How we share information</h2>
+        <p><strong>We do not sell your personal information for money, and we do not share your browsing history with anyone.</strong></p>
+        <p>We share the limited data described above only:</p>
+        <ul><li>with the service providers in Section 3, for the purposes stated there;</li><li>when required by law, legal process, or a valid government request, or to protect our rights, safety, or property, or to investigate fraud or abuse;</li><li>in a merger, acquisition, or asset sale, in which case we will post a notice of the change.</li></ul>
+        <p><strong>U.S. state privacy laws.</strong> We do not sell your personal information, and we do not share it for cross-context behavioural advertising. You may still exercise the rights described in this Section by contacting us at the address in Section 13.</p>
+        <h2 id="legal-bases-for-processing">5. Legal bases for processing (EEA / UK — GDPR)</h2>
+        <ul><li><strong>Consent</strong> — where required by local law, analytics and marketing measurement; you may withdraw consent at any time.</li><li><strong>Legitimate interests</strong> — operating and securing the App, crash diagnostics, aggregated non-personalised analytics, preventing fraud and abuse.</li><li><strong>Performance of a contract</strong> — providing the App and restoring or fulfilling any purchase you make.</li><li><strong>Legal obligation</strong> — retaining records and responding to lawful requests.</li></ul>
+        <h2 id="data-retention">6. Data retention</h2>
+        <ul><li>Locally stored browsing data (tabs, cookies, cache, site data, your language and ad-block preference) stays on your device until you clear the App's data or uninstall it. We hold no copy.</li><li>Analytics and crash data are retained by Google for the periods set out in the Firebase documentation and our project settings (typically up to 14 months for event-level analytics data; crash records are retained for a limited diagnostic period).</li><li>Attribution data is retained by Adjust under our agreement with them, generally for the period needed for marketing measurement.</li><li>We keep support correspondence only as long as needed to handle your request and to meet legal obligations.</li></ul>
+        <h2 id="your-rights-and-choices">7. Your rights and choices</h2>
+        <h3>7.1 In-app and on-device controls</h3>
+        <ul><li><strong>Clear your browsing data</strong> — clear the App's storage from <strong>Android Settings → Apps → Noxen Browser → Storage → Clear data</strong>, or uninstall the App.</li><li><strong>Reset or delete your advertising ID</strong> — see Section 3.2.</li><li><strong>Turn off notifications</strong> — <strong>Android Settings → Apps → Noxen Browser → Notifications</strong>, or decline the notification permission.</li><li><strong>Ad and tracker blocking</strong> — the built-in blocker can be switched on or off in the App.</li></ul>
+        <h3>7.2 GDPR (EEA / UK)</h3>
+        <p>You have the right to access, correct, delete, restrict, and port your personal data, to object to processing based on legitimate interests, to withdraw consent at any time, and to lodge a complaint with your local data protection authority.</p>
+        <h3>7.3 CCPA / CPRA (California) and other U.S. states</h3>
+        <p>You have the right to know what personal information is collected and how it is used and disclosed, to delete it, to correct it, to opt out of the sale or sharing of personal information and of targeted advertising, to limit the use of sensitive personal information, and not to be discriminated against for exercising these rights. We do not knowingly sell or share the personal information of consumers under 16 years of age.</p>
+        <h3>7.4 Other regions</h3>
+        <p>Residents of Brazil (LGPD), Canada (PIPEDA), and other jurisdictions with comparable laws have equivalent rights of access, correction, deletion, and objection.</p>
+        <h3>7.5 How to exercise your rights</h3>
+        <p>Email us at <strong>contact@tranquilmind.co</strong>. Because the App has no user account, we cannot identify you from a name or email alone. <strong>Please include your Android advertising ID, your device model and the approximate date of installation</strong> so that we can locate any associated records with our analytics and attribution providers. We will respond within the period required by applicable law. Verification requests are used only to process your request.</p>
+        <h2 id="childrens-privacy">8. Children's privacy</h2>
+        <p>Noxen Browser is intended for users aged <strong>13 and over</strong> (or the higher age of digital consent in your country). It is a general-audience utility and is <strong>not</strong> directed to children.</p>
+        <p>The App gives access to the open internet, and the pages you can reach are not created, filtered, or controlled by us. Parents and guardians should supervise younger users and consider using Android's Family Link / parental controls and Google's SafeSearch.</p>
+        <p>We do not knowingly collect personal information from children under 13 (or under 16 in the EEA/UK, where a higher age applies). If you believe a child has provided personal information to us, contact <strong>contact@tranquilmind.co</strong> and we will delete it and any associated identifiers.</p>
+        <h2 id="international-data-transfers">9. International data transfers</h2>
+        <p>We are based in Vietnam and our service providers operate globally, including in the United States, the European Union, and Singapore. Your information may therefore be processed outside your country of residence, where data protection laws may differ. Where required, transfers rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses or an adequacy decision.</p>
+        <h2 id="data-security">10. Data security</h2>
+        <p>All communication between the App and our service providers uses encryption in transit (HTTPS/TLS). Data stored by the App stays in Android's private, sandboxed app storage, protected by the operating system.</p>
+        <p>Note that the App allows plain-text (<code>http://</code>) connections so that legacy websites remain reachable, as browsers generally do. Traffic to such sites is <strong>not</strong> encrypted by the site itself; look for the padlock/<code>https://</code> before entering sensitive information on any page.</p>
+        <p>No method of transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+        <h2 id="third-party-content-and-websites">11. Third-party content and websites</h2>
+        <p>Noxen Browser is a gateway to the open web. We do not create, own, endorse, moderate, or control the websites, services, advertisements, or content you reach through it — including the sites behind the built-in shortcuts. Your use of any third-party website is governed by that site's own terms and privacy policy, and any data you submit there goes to that site, not to us. We are not responsible for third-party content, availability, or data practices. Please review the privacy policy of every site you use.</p>
+        <p>The built-in blocker reduces, but cannot eliminate, advertising and tracking on the pages you visit.</p>
+        <h2 id="changes-to-this-policy">12. Changes to this Policy</h2>
+        <p>We may update this Policy from time to time — for example, if we enable advertising or add new features. Material changes will be posted on this page with a new "Last updated" date, and where required by law we will seek your consent again. Continued use of the App after an update means you accept the revised Policy.</p>
+        <h2 id="contact-us">13. Contact us</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Terms of Service for Noxen Browser — the rules for using the app.">
+    <title>Terms of Service — Noxen Browser</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+        header.site {
+            position: sticky; top: 0; z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px; margin: 0 auto;
+            padding: 14px 24px;
+            display: flex; align-items: center; justify-content: space-between; gap: 16px;
+        }
+        .brand {
+            display: flex; align-items: center; gap: 10px;
+            font-weight: 700; font-size: 15px;
+            color: var(--text); border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #6366f1, var(--accent));
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta { font-size: 13px; color: var(--text-soft); display: flex; gap: 14px; }
+        main.shell {
+            max-width: 1100px; margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid; grid-template-columns: 1fr; gap: 32px;
+        }
+        @media (min-width: 960px) { main.shell { grid-template-columns: 240px 1fr; } }
+        aside.toc {
+            position: sticky; top: 84px; align-self: start;
+            max-height: calc(100vh - 100px); overflow-y: auto;
+            font-size: 13.5px; display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block; text-transform: uppercase;
+            letter-spacing: .08em; font-size: 11px;
+            color: var(--text-soft); margin-bottom: 10px;
+        }
+        aside.toc ol { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+        aside.toc a {
+            display: block; padding: 6px 10px; border-radius: var(--radius-sm);
+            color: var(--text-muted); border-bottom: none; line-height: 1.4;
+        }
+        aside.toc a:hover { background: var(--bg-elev); color: var(--text); }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft); color: var(--accent);
+            font-size: 12px; font-weight: 600;
+            letter-spacing: .04em; text-transform: uppercase;
+            border-radius: 999px; margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px); font-weight: 800;
+            letter-spacing: -0.02em; margin: 0 0 12px; line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px; font-weight: 700; letter-spacing: -0.01em;
+            margin: 38px 0 12px; padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 { font-size: 16px; font-weight: 600; color: var(--text); margin: 22px 0 8px; }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul { margin: 0 0 14px; padding-left: 22px; color: var(--text-muted); }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 8px 18px;
+            font-size: 13.5px; color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev); border: 1px solid var(--border);
+            border-radius: var(--radius-sm); margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px; padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px; color: var(--text-soft);
+            display: flex; justify-content: space-between;
+            flex-wrap: wrap; gap: 8px;
+        }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">T</span>Noxen Browser</a>
+        <div class="nav-meta">
+            <span>Terms of Service</span>
+            <span>·</span>
+            <span>2026-08-07</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#eligibility">1. Eligibility</a></li>
+            <li><a href="#licence">2. Licence</a></li>
+            <li><a href="#the-service">3. The service</a></li>
+            <li><a href="#no-accounts-and-your-data">4. No accounts, and your data</a></li>
+            <li><a href="#advertising-and-purchases">5. Advertising and purchases</a></li>
+            <li><a href="#acceptable-use">6. Acceptable use</a></li>
+            <li><a href="#intellectual-property">7. Intellectual property</a></li>
+            <li><a href="#third-party-services-and-content">8. Third-party services and content</a></li>
+            <li><a href="#disclaimers">9. Disclaimers</a></li>
+            <li><a href="#limitation-of-liability">10. Limitation of liability</a></li>
+            <li><a href="#indemnification">11. Indemnification</a></li>
+            <li><a href="#termination">12. Termination</a></li>
+            <li><a href="#changes-to-these-terms">13. Changes to these Terms</a></li>
+            <li><a href="#governing-law-and-disputes">14. Governing law and disputes</a></li>
+            <li><a href="#general">15. General</a></li>
+            <li><a href="#contact">16. Contact</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Terms</span>
+        <h1>Terms of Service</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Noxen Browser</span>
+            <span><strong>Effective:</strong> 2026-08-07</span>
+            <span><strong>Last Updated:</strong> 2026-08-07</span>
+        </div>
+
+        <p>These Terms of Service ("Terms") govern your use of the Noxen Browser mobile application ("the App"), operated by Tranquil Mind Technology JSC ("we", "us", "our"). By downloading or using the App, you agree to these Terms and to our Privacy Policy (https://policy.tranquilmind.co/noxen-browser/privacy). If you do not agree, do not use the App.</p>
+        <h2 id="eligibility">1. Eligibility</h2>
+        <p>You must be at least <strong>13 years old</strong> — or older, if your country sets a higher age of digital consent — to use the App. If you are a minor in your jurisdiction, you may use the App only with the involvement and consent of a parent or legal guardian. By using the App you confirm that you meet these requirements.</p>
+        <p>The App provides access to the open internet and does not filter web content. Parents and guardians are responsible for supervising the use of the App by minors.</p>
+        <h2 id="licence">2. Licence</h2>
+        <p>We grant you a personal, limited, non-exclusive, non-transferable, revocable licence to install and use the App on devices you own or control, for your own non-commercial use.</p>
+        <p>You may not: copy, modify, translate, or create derivative works of the App; reverse-engineer, decompile, or disassemble it except to the extent applicable law expressly permits; rent, lease, sell, sublicense, or distribute it; remove or alter any proprietary notice; or use it to build a competing product.</p>
+        <h2 id="the-service">3. The service</h2>
+        <p>Noxen Browser is a private mobile web browser. It lets you open and manage multiple browser tabs, reach popular sites through one-tap shortcuts, search the web, block advertising and tracker domains on the pages you visit using an on-device blocklist, choose from 25 interface languages, and optionally receive reminders to return to the App.</p>
+        <p>The App is provided <strong>as a browser only</strong>: it does not host, publish, moderate, or curate any web content. We may change, improve, suspend, or discontinue any part of the App at any time, and availability may vary by region and by device. Some features depend on your device, its Android version, and your network connection.</p>
+        <h2 id="no-accounts-and-your-data">4. No accounts, and your data</h2>
+        <p>The App has no user account, login, or profile. Your browsing history, tabs, cookies, site data, and preferences are stored <strong>on your device</strong> and are under your control; you can remove them at any time by clearing the App's storage in Android Settings or by uninstalling the App. See our Privacy Policy for details.</p>
+        <h2 id="advertising-and-purchases">5. Advertising and purchases</h2>
+        <p>The App is free to download and <strong>does not display in-app advertising</strong>.</p>
+        <p>The App includes Google Play Billing so that any ad-free entitlement already associated with your Google account can be restored. The current version does not offer a purchase or subscription screen. If we introduce paid products or subscriptions in a future update:</p>
+        <ul><li>all payments will be charged to your Google Play account and processed by Google;</li><li>subscriptions renew automatically for the same period and at the same price unless you cancel at least <strong>24 hours before</strong> the end of the current period, in the <strong>Google Play → Subscriptions</strong> settings;</li><li>refunds are handled under Google Play's refund policy and your mandatory consumer rights;</li><li>prices may change with prior notice, and any change takes effect only on renewal after you have been notified.</li></ul>
+        <p>The App's ad-blocking feature applies to third-party websites you visit, not to the App itself.</p>
+        <h2 id="acceptable-use">6. Acceptable use</h2>
+        <p>You agree not to use the App:</p>
+        <ul><li>to break any applicable law or regulation, or to access, obtain, or distribute unlawful material — including, without limitation, child sexual abuse material, content that promotes terrorism or violence, or material that infringes someone else's intellectual property;</li><li>to infringe the rights of, harass, defraud, defame, or endanger any person;</li><li>to interfere with, disrupt, overload, or attack the App, our infrastructure, or any third-party website or service reached through it;</li><li>to circumvent access controls, paywalls, digital rights management, security measures, or advertising controls of any third-party website or of the App itself;</li><li>to run bots, crawlers, scrapers, or automated tools through the App, or to use it for bulk or commercial data collection;</li><li>to introduce malware, or to attempt to gain unauthorised access to any system or account.</li></ul>
+        <p>You are solely responsible for the sites you visit, the searches you run, the material you download, and your compliance with the terms of every third-party service you use through the App. We may suspend or terminate your access for any violation of these Terms.</p>
+        <h2 id="intellectual-property">7. Intellectual property</h2>
+        <p>The App, its source code, design, user interface, graphics, animations, icons, text, and the Noxen Browser name and logo are owned by Tranquil Mind Technology JSC or its licensors and are protected by copyright, trademark, and other laws.</p>
+        <p>Third-party names, logos, and trademarks that appear in the App — including the shortcut icons for Facebook, Instagram, Threads, X, WhatsApp, Pinterest, Reddit, and Twitch — belong to their respective owners and are used only to identify those services. Their appearance does <strong>not</strong> indicate any affiliation with, sponsorship by, or endorsement from those companies.</p>
+        <p>Content displayed inside the browser belongs to the operators of the websites you visit; nothing in these Terms grants you rights to that content.</p>
+        <h2 id="third-party-services-and-content">8. Third-party services and content</h2>
+        <p>The App relies on third-party services (analytics, crash reporting, remote configuration, attribution and store billing) and, by its nature, displays third-party websites. Each of these is governed by its own terms and privacy policy.</p>
+        <p>We do not control, endorse, verify, or take responsibility for any third-party website, service, advertisement, or content, or for any loss or damage arising from your use of them. The built-in ad and tracker blocker uses a fixed on-device list and cannot be guaranteed to block every advertisement or tracker, or to leave every website fully functional; some sites may behave unexpectedly while it is enabled.</p>
+        <h2 id="disclaimers">9. Disclaimers</h2>
+        <p>The App is provided <strong>"as is"</strong> and <strong>"as available"</strong>, without warranties of any kind, whether express, implied, or statutory, including any implied warranties of merchantability, fitness for a particular purpose, title, non-infringement, accuracy, or quiet enjoyment.</p>
+        <p>We do not warrant that the App will be uninterrupted, timely, error-free, or secure; that defects will be corrected; that any content you reach through it is accurate, lawful, or safe; or that the ad-blocking feature will block any particular advertisement or tracker. The App does not provide professional advice of any kind. You use it at your own risk.</p>
+        <p>Some jurisdictions do not allow the exclusion of implied warranties, so some of the above may not apply to you.</p>
+        <h2 id="limitation-of-liability">10. Limitation of liability</h2>
+        <p>To the maximum extent permitted by law, Tranquil Mind Technology JSC and its officers, employees, and suppliers will not be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages, or for any loss of profits, revenue, data, goodwill, or business opportunity, arising out of or related to your use of, or inability to use, the App — even if we have been advised of the possibility of such damages.</p>
+        <p>Our total aggregate liability for all claims relating to the App is limited to the greater of (a) the amount you paid us for the App in the twelve (12) months before the event giving rise to the claim, or (b) <strong>USD 50</strong>.</p>
+        <p>Some jurisdictions do not allow certain limitations of liability, so parts of this section may not apply to you; nothing in these Terms limits liability that cannot lawfully be limited, including liability for death or personal injury caused by negligence, or for fraud.</p>
+        <h2 id="indemnification">11. Indemnification</h2>
+        <p>You agree to indemnify, defend, and hold harmless Tranquil Mind Technology JSC and its officers, employees, and agents from and against any claim, demand, loss, liability, damage, cost, or expense (including reasonable legal fees) arising out of your misuse of the App, your violation of these Terms, your violation of any law, or your infringement of the rights of any third party.</p>
+        <h2 id="termination">12. Termination</h2>
+        <p>These Terms remain in force while you use the App. You may end them at any time by uninstalling the App. We may suspend or terminate your access, in whole or in part, at any time and without notice, including for breach of these Terms or where required by law.</p>
+        <p>Sections 7 (Intellectual property), 9 (Disclaimers), 10 (Limitation of liability), 11 (Indemnification), 13 (Governing law and disputes), and any other provision that by its nature should survive, remain in effect after termination.</p>
+        <h2 id="changes-to-these-terms">13. Changes to these Terms</h2>
+        <p>We may update these Terms from time to time. Material changes will be posted on this page with a new "Last updated" date, and where required we will notify you in the App. Continued use of the App after an update means you accept the revised Terms. If you do not accept them, stop using the App and uninstall it.</p>
+        <h2 id="governing-law-and-disputes">14. Governing law and disputes</h2>
+        <p>These Terms are governed by the laws of Vietnam, without regard to its conflict-of-laws rules. Any dispute arising out of or relating to these Terms or the App will be submitted to the competent courts of Hanoi, Vietnam.</p>
+        <p>If you are a consumer resident in the European Union, the United Kingdom, or another jurisdiction with mandatory consumer protection rules, you keep the benefit of any mandatory provisions of the law of your country of residence, including the right to bring proceedings before your local courts.</p>
+        <p>Nothing in these Terms affects your statutory rights as a consumer, or your rights under Google Play's own terms in respect of any purchase made through the Google Play Store.</p>
+        <h2 id="general">15. General</h2>
+        <p>These Terms, together with the Privacy Policy, are the entire agreement between you and us regarding the App. If any provision is found unenforceable, the remaining provisions stay in full force. Our failure to enforce a provision is not a waiver of it. You may not assign these Terms; we may assign them in connection with a merger, acquisition, or sale of assets. These Terms are between you and Tranquil Mind Technology JSC only, and not with Google; Google is not responsible for the App or its content.</p>
+        <h2 id="contact">16. Contact</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
