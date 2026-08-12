@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Privacy Policy for Aegicall — how we collect, use, and protect your data.">
+    <title>Privacy Policy — Aegicall</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        header.site {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+            border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #6366f1);
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta {
+            font-size: 13px;
+            color: var(--text-soft);
+            display: flex; gap: 14px;
+        }
+        main.shell {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        @media (min-width: 960px) {
+            main.shell { grid-template-columns: 240px 1fr; }
+        }
+        aside.toc {
+            position: sticky;
+            top: 84px;
+            align-self: start;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            font-size: 13.5px;
+            display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: 11px;
+            color: var(--text-soft);
+            margin-bottom: 10px;
+        }
+        aside.toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        aside.toc a {
+            display: block;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            color: var(--text-muted);
+            border-bottom: none;
+            line-height: 1.4;
+        }
+        aside.toc a:hover {
+            background: var(--bg-elev);
+            color: var(--text);
+        }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 38px 0 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 22px 0 8px;
+        }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul {
+            margin: 0 0 14px;
+            padding-left: 22px;
+            color: var(--text-muted);
+        }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            font-size: 13.5px;
+            color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px;
+            color: var(--text-soft);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 0 20px;
+            font-size: 14px;
+        }
+        thead th {
+            text-align: left;
+            font-weight: 600;
+            color: var(--text);
+            background: var(--bg-elev);
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        tbody td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+            vertical-align: top;
+        }
+        tbody tr:last-child td { border-bottom: none; }
+        .table-wrap {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        .table-wrap table { margin: 0; }
+        .callout {
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
+            margin: 0 0 16px;
+            color: var(--text-muted);
+        }
+        .callout strong { color: var(--text); }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">P</span>Aegicall</a>
+        <div class="nav-meta">
+            <span>Privacy Policy</span>
+            <span>·</span>
+            <span>2026-08-12</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#information-we-collect">1. Information we collect</a></li>
+            <li><a href="#how-we-use-information">2. How we use information</a></li>
+            <li><a href="#third-party-services">3. Third-party services</a></li>
+            <li><a href="#how-we-share-information">4. How we share information</a></li>
+            <li><a href="#legal-bases">5. Legal bases (EEA/UK — GDPR)</a></li>
+            <li><a href="#data-retention">6. Data retention</a></li>
+            <li><a href="#your-rights">7. Your rights</a></li>
+            <li><a href="#childrens-privacy">8. Children&#x27;s privacy</a></li>
+            <li><a href="#international-data-transfers">9. International data transfers</a></li>
+            <li><a href="#data-security">10. Data security</a></li>
+            <li><a href="#changes-to-this-policy">11. Changes to this Policy</a></li>
+            <li><a href="#contact-us">12. Contact us</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Privacy</span>
+        <h1>Privacy Policy</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Aegicall</span>
+            <span><strong>Effective:</strong> 2026-08-12</span>
+            <span><strong>Last Updated:</strong> 2026-08-12</span>
+        </div>
+
+        <p>Aegicall ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information we collect, how we use and share it, and the choices and rights you have. By using the App, you agree to this Policy.</p>
+        <p>Aegicall is a caller ID and spam-blocking app for Android that identifies unknown callers, silences spam and robocalls, and helps you keep track of your calls and messages. You do not need to create an account to use it.</p>
+        <h2 id="information-we-collect">1. Information we collect</h2>
+        <p>We collect only what the App needs to function and to show relevant advertising. We do <strong>not</strong> upload your contacts, call log, or message content to our servers.</p>
+        <p><strong>Processed on your device (not sent to us):</strong></p>
+        <ul><li><strong>Contacts</strong> (<code>READ_CONTACTS</code>) — matched locally against incoming numbers so we can show a saved name instead of a bare number. Your contact list is never collected, stored on our servers, or shared.</li><li><strong>Call log &amp; phone state</strong> (<code>READ_CALL_LOG</code>, <code>READ_PHONE_STATE</code>, <code>CALL_PHONE</code>) — read on-device to show your recent calls, identify callers, and let you place or screen calls.</li><li><strong>Notifications</strong> (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>) — the message-tracker feature reads notifications on your own device so you can review messages; their content stays on the device.</li><li><strong>Call screening</strong> (<code>BIND_SCREENING_SERVICE</code>) — used to filter spam/robocalls locally.</li><li>Your personal spam list and block list, stored locally on the device.</li></ul>
+        <p><strong>Collected automatically and sent to third parties (analytics/ads):</strong></p>
+        <ul><li>Device &amp; advertising identifiers (including the Android Advertising ID, <code>AD_ID</code>).</li><li>Approximate, IP-derived location (coarse, from ad/analytics networks).</li><li>App activity and diagnostics (feature usage, crash logs).</li><li>Purchase status (whether you hold a subscription/one-time purchase).</li></ul>
+        <h2 id="how-we-use-information">2. How we use information</h2>
+        <ul><li>Provide and operate the App (caller ID, spam blocking, call and message tracking).</li><li>Advertising and measurement (to show and measure ads, including personalized ads).</li><li>Analytics and improvement (understand usage, fix crashes, improve features).</li><li>Fraud prevention and security.</li><li>Process purchases and restore entitlements.</li><li>Comply with legal obligations.</li></ul>
+        <h2 id="third-party-services">3. Third-party services</h2>
+        <p>The App integrates the following data-transmitting SDKs. Each processes data under its own privacy policy:</p>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Google Firebase (Analytics, Crashlytics, Remote Config)</td><td>Usage analytics, crash reporting, remote configuration</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google AdMob</td><td>Advertising &amp; measurement</td><td>https://policies.google.com/privacy</td></tr><tr><td>Meta Audience Network</td><td>Ad mediation</td><td>https://www.facebook.com/about/privacy</td></tr><tr><td>Facebook SDK (Meta)</td><td>Attribution &amp; measurement</td><td>https://www.facebook.com/about/privacy</td></tr><tr><td>AppLovin</td><td>Ad mediation</td><td>https://www.applovin.com/privacy/</td></tr><tr><td>Pangle</td><td>Ad mediation</td><td>https://www.pangleglobal.com/privacy</td></tr><tr><td>Mintegral</td><td>Ad mediation</td><td>https://www.mintegral.com/en/privacy/</td></tr><tr><td>Adjust</td><td>Attribution &amp; analytics</td><td>https://www.adjust.com/terms/privacy-policy/</td></tr><tr><td>Google Play Billing</td><td>Process in-app purchases</td><td>https://policies.google.com/privacy</td></tr></tbody></table></div>
+        <p><strong>Ad consent (UMP):</strong> where required (e.g. the EEA/UK), we present a Google-certified consent form (UMP) before serving personalized ads, and honor your choice.</p>
+        <p><strong>Reset or opt out of the advertising ID:</strong> you can reset your Android Advertising ID or opt out of ad personalization in <strong>Settings → Privacy → Ads</strong> (path may vary by device). This limits personalized advertising.</p>
+        <h2 id="how-we-share-information">4. How we share information</h2>
+        <p>We do <strong>not</strong> sell your personal information for money. We share data with the third-party services listed in Section 3 for the purposes described, for legal reasons (to comply with law or protect rights), and in a business transfer (merger/acquisition). Because ads may be personalized, some U.S. state laws treat sharing ad identifiers with advertising partners as a "sale"/"sharing"; you can opt out as described in Sections 3 and 7.</p>
+        <h2 id="legal-bases">5. Legal bases (EEA/UK — GDPR)</h2>
+        <ul><li><strong>Consent</strong> — personalized ads and analytics where consent is required.</li><li><strong>Legitimate interests</strong> — core functionality, security, and improvement.</li><li><strong>Contract / legal obligation</strong> — processing purchases and meeting legal duties.</li></ul>
+        <h2 id="data-retention">6. Data retention</h2>
+        <p>We keep data only as long as necessary for the purposes above or as required by law. Advertising and analytics identifiers are retained according to each partner's retention periods; crash and diagnostic data are kept for a limited period. Data processed on your device (contacts, call log, notifications, spam/block lists) remains under your control and is removed when you clear it or uninstall the App.</p>
+        <h2 id="your-rights">7. Your rights</h2>
+        <ul><li><strong>GDPR (EEA/UK):</strong> access, correct, delete, port, object, restrict, withdraw consent, and lodge a complaint with a data protection authority.</li><li><strong>CCPA/CPRA (California) and similar U.S. states:</strong> know, delete, correct, opt out of sale/sharing and targeted advertising, and non-discrimination for exercising your rights.</li><li><strong>Other regions:</strong> LGPD (Brazil), PIPEDA (Canada), and comparable laws.</li></ul>
+        <p>To exercise any right, contact us at <strong>contact@tranquilmind.co</strong>. Because the App has no accounts, please include your Android Advertising ID and device details so we can locate any relevant data held by our partners.</p>
+        <h2 id="childrens-privacy">8. Children's privacy</h2>
+        <p>The App is intended for users aged <strong>18 and older</strong> and is not directed to children. We do not knowingly collect personal information from children. If you believe a child has provided us data, contact us and we will delete it. We handle age-of-consent requirements for the EEA and COPPA accordingly.</p>
+        <h2 id="international-data-transfers">9. International data transfers</h2>
+        <p>Your data may be processed outside your country, including in the United States. Where required, we and our partners rely on appropriate safeguards (e.g. Standard Contractual Clauses).</p>
+        <h2 id="data-security">10. Data security</h2>
+        <p>We use encryption in transit (HTTPS/TLS) and reasonable technical and organizational measures to protect data. No method of transmission or storage is 100% secure.</p>
+        <h2 id="changes-to-this-policy">11. Changes to this Policy</h2>
+        <p>We may update this Policy. Material changes will be posted here with a new "Last updated" date. Continued use of the App after changes take effect constitutes acceptance.</p>
+        <h2 id="contact-us">12. Contact us</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
