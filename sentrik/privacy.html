@@ -283,7 +283,7 @@
         <div class="nav-meta">
             <span>Privacy Policy</span>
             <span>·</span>
-            <span>2026-08-12</span>
+            <span>2026-08-20</span>
         </div>
     </div>
 </header>
@@ -303,8 +303,9 @@
             <li><a href="#childrens-privacy">8. Children&#x27;s privacy</a></li>
             <li><a href="#international-data-transfers">9. International data transfers</a></li>
             <li><a href="#data-security">10. Data security</a></li>
-            <li><a href="#changes-to-this-policy">11. Changes to this Policy</a></li>
-            <li><a href="#contact-us">12. Contact us</a></li>
+            <li><a href="#third-party-content">11. Third-party content</a></li>
+            <li><a href="#changes-to-this-policy">12. Changes to this Policy</a></li>
+            <li><a href="#contact-us">13. Contact us</a></li>
         </ol>
     </aside>
 
@@ -314,43 +315,46 @@
 
         <div class="meta">
             <span><strong>App:</strong> Sentrik</span>
-            <span><strong>Effective:</strong> 2026-08-12</span>
-            <span><strong>Last Updated:</strong> 2026-08-12</span>
+            <span><strong>Effective:</strong> 2026-08-20</span>
+            <span><strong>Last Updated:</strong> 2026-08-20</span>
         </div>
 
         <p>Sentrik ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information we collect, how we use and share it, and the choices and rights you have. By using the App, you agree to this Policy.</p>
-        <p>Sentrik is a call-screening and spam-blocking utility that identifies and filters unwanted calls and helps you manage nuisance callers on your device. You do not need to create an account to use it.</p>
+        <p>Sentrik is a caller-ID, call-blocking and unseen-message utility: it matches incoming and searched numbers against the contacts saved on your device, screens calls from the spam and block lists you build yourself, and gathers the notifications you have not opened yet. You do not need to create an account to use it, and we operate no server of our own that receives your data.</p>
         <h2 id="information-we-collect">1. Information we collect</h2>
-        <p>We do <strong>not</strong> ask you to create an account, and we do not upload your contacts or call log to our servers. The following data is processed to make the App work and is limited to what actually leaves the device:</p>
-        <p><strong>Automatically collected (via our SDK partners):</strong></p>
-        <ul><li><strong>Device &amp; advertising identifiers</strong> (including the Android Advertising ID) and general device information (model, OS version, language).</li><li><strong>Approximate location derived from IP address</strong> (country/region level), used by advertising and analytics partners.</li><li><strong>App activity &amp; diagnostics</strong> — feature usage, in-app events, and crash logs used to keep the App stable and improve it.</li></ul>
-        <p><strong>Processed on your device (used locally to provide call screening):</strong></p>
-        <ul><li><strong>Call information</strong> (<code>READ_CALL_LOG</code>, <code>READ_PHONE_STATE</code>, <code>CALL_PHONE</code>) and <strong>contacts</strong> (<code>READ_CONTACTS</code>) are read on-device to identify incoming numbers, match them against your allow/block preferences, and screen calls. This data is used <strong>locally to deliver the screening feature and is not sold or uploaded to us</strong>.</li><li><strong>Notification access</strong> (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>) and <strong>call-screening service</strong> (<code>BIND_SCREENING_SERVICE</code>) are used only to detect and act on incoming calls/notifications for screening.</li></ul>
+        <p>We do not ask you to create an account, and we do not upload your contacts, your call activity or your message content to any server of ours. The list below separates what actually leaves your device from what is processed only on it.</p>
+        <p><strong>Collected automatically through our SDK partners (this data leaves the device):</strong></p>
+        <ul><li><strong>Device and advertising identifiers</strong>, including the Android Advertising ID, together with general device information such as model, operating-system version and language.</li><li><strong>Approximate location derived from your IP address</strong> (country/region level), used by our advertising and analytics partners for ad delivery and measurement.</li><li><strong>App activity and diagnostics</strong> — screen views, in-app events such as taps on onboarding and tabs, session and installation data used for attribution, plus crash reports and performance diagnostics.</li><li><strong>Installed-apps signal.</strong> The App declares a limited <code>queries</code> entry so it can hand a call to your dialer and recognise which app a notification came from. While the advertising and attribution SDKs listed in §3 are present, information about apps installed on your device can be read and transmitted by those partners. We therefore disclose installed apps as data that may be collected and shared, even though our own code does not build or upload a list of your apps.</li></ul>
+        <p><strong>Processed on your device only (this data does not leave the device and is not sent to us):</strong></p>
+        <ul><li><strong>Contacts</strong> (<code>READ_CONTACTS</code>) are read on the device to put a name to an incoming or searched number. Your contact list is never uploaded to us or to any partner.</li><li><strong>Notification content</strong> (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>) is read on the device so the App can show you the messages you have not opened yet, grouped by the app that sent them. The text of your notifications stays on the device and is not transmitted, stored on a server, sold or shared.</li><li><strong>Call screening</strong> (<code>BIND_SCREENING_SERVICE</code>) is used, when you set Sentrik as your default caller ID &amp; spam app, to compare an incoming number with your own lists and decline or silence it. The App does not have access to your call log or to your phone number.</li><li><strong>Your spam list and block list</strong>, your favourites, your language and your theme choice are stored locally on the device using standard Android storage.</li><li><strong>Numbers you type into the Tracker search box</strong> are compared with your saved contacts on the device. They are not sent anywhere, and no history of them is uploaded.</li></ul>
+        <p>The App does not request the camera, microphone, SMS, call-log, storage or location permissions.</p>
         <h2 id="how-we-use-information">2. How we use information</h2>
-        <p>We use the information above to: provide and operate the call-screening features; show and measure advertising; run analytics and improve the App; detect fraud and keep the service secure; and comply with legal obligations. We do not use your contacts or call log for advertising.</p>
+        <p>We use the information above to: provide and operate the caller-ID, call-screening and unseen-message features; display and measure advertising; run analytics, attribution and product improvement; detect fraud and keep the service secure; and comply with legal obligations. We do not use your contacts, your notifications or your block lists for advertising.</p>
         <h2 id="third-party-services">3. Third-party services</h2>
         <p>The App includes the following data-transmitting SDKs. Each partner processes data under its own policy:</p>
-        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Google Firebase (Analytics, Crashlytics, Remote Config)</td><td>Analytics, crash reporting, remote configuration</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google AdMob</td><td>Advertising &amp; measurement</td><td>https://policies.google.com/privacy</td></tr><tr><td>Meta Audience Network</td><td>Ad mediation</td><td>https://www.facebook.com/about/privacy</td></tr><tr><td>AppLovin</td><td>Ad mediation</td><td>https://www.applovin.com/privacy/</td></tr><tr><td>Pangle</td><td>Ad mediation</td><td>https://www.pangleglobal.com/privacy</td></tr><tr><td>Mintegral</td><td>Ad mediation</td><td>https://www.mintegral.com/en/privacy/</td></tr><tr><td>Adjust</td><td>Attribution &amp; analytics</td><td>https://www.adjust.com/terms/privacy-policy/</td></tr></tbody></table></div>
-        <p><strong>Ad consent (UMP):</strong> Where required (e.g. in the EEA/UK), we present a consent request via Google's User Messaging Platform before personalized ads are shown.</p>
-        <p><strong>Reset / opt out of your advertising ID:</strong> You can reset or delete your Android Advertising ID, and opt out of ad personalization, in <strong>Settings → Google → Ads</strong> on your device.</p>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Google Firebase (Analytics, Crashlytics, Remote Config)</td><td>Analytics, crash reporting, remote configuration</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google AdMob</td><td>Advertising and measurement</td><td>https://policies.google.com/privacy</td></tr><tr><td>Meta Audience Network</td><td>Ad mediation</td><td>https://www.facebook.com/about/privacy</td></tr><tr><td>AppLovin</td><td>Ad mediation</td><td>https://www.applovin.com/privacy/</td></tr><tr><td>Pangle</td><td>Ad mediation</td><td>https://www.pangleglobal.com/privacy</td></tr><tr><td>Mintegral</td><td>Ad mediation</td><td>https://www.mintegral.com/en/privacy/</td></tr><tr><td>Adjust</td><td>Attribution and marketing analytics</td><td>https://www.adjust.com/terms/privacy-policy/</td></tr></tbody></table></div>
+        <p><strong>Ad consent (UMP):</strong> where required — for example in the EEA and the UK — we present a consent request through Google's User Messaging Platform before personalized ads are shown, and your choice is passed to the partners above.</p>
+        <p><strong>Reset or opt out of your advertising ID:</strong> you can reset or delete your Android Advertising ID, and opt out of ad personalization, in <strong>Settings → Google → Ads</strong> on your device. Doing so limits ad targeting without affecting the App's features.</p>
         <h2 id="how-we-share-information">4. How we share information</h2>
-        <p>We do <strong>not</strong> sell your personal information for money. We share data with the third-party partners listed in §3 to operate the App, for legal reasons, or in connection with a business transfer. If ads are personalized, certain U.S. state laws may treat ad-related data sharing as a "sale" or "sharing" — you may opt out as described in §3 and §7.</p>
+        <p>We do <strong>not</strong> sell your personal information for money. We share data with the third-party partners listed in §3 so they can deliver and measure ads, attribute installs and keep the App stable; we may also disclose data for legal reasons or in connection with a business transfer. If ads are personalized, certain U.S. state laws treat ad-related data sharing as a "sale" or "sharing" of personal information — you may opt out as described in §3 and §7. Your contacts, notification content and block lists are not shared with anyone.</p>
         <h2 id="legal-bases">5. Legal bases (EEA/UK — GDPR)</h2>
-        <p>We rely on: <strong>consent</strong> (personalized ads and analytics where required); <strong>legitimate interests</strong> (core functionality, security, improvement); and <strong>legal obligation</strong> where applicable.</p>
+        <p>We rely on: <strong>consent</strong> for personalized advertising and for analytics where consent is required; <strong>legitimate interests</strong> for core functionality, security and product improvement; and <strong>legal obligation</strong> where applicable. You may withdraw consent at any time through the ad-consent controls or your device settings.</p>
         <h2 id="data-retention">6. Data retention</h2>
-        <p>We keep data only as long as necessary for the purposes above or as required by law. Advertising and analytics identifiers are retained per each partner's retention periods; crash and diagnostic data are kept for a limited period.</p>
+        <p>We keep data only as long as necessary for the purposes above or as required by law. Advertising, attribution and analytics identifiers are retained according to each partner's retention periods; crash and diagnostic data are kept for a limited period. Data held only on your device is removed when you delete it in the App or uninstall the App.</p>
         <h2 id="your-rights">7. Your rights</h2>
-        <ul><li><strong>GDPR (EEA/UK):</strong> access, correct, delete, port, object, restrict, withdraw consent, and complain to a data protection authority.</li><li><strong>CCPA/CPRA (US):</strong> know, delete, correct, opt out of sale/sharing and targeted advertising, and non-discrimination.</li><li><strong>Other regions (LGPD, PIPEDA, etc.):</strong> equivalent rights where they apply.</li></ul>
-        <p>Because the App has no account, please include your <strong>advertising ID and device details</strong> when you contact us to exercise a right, so we can locate any related data with our partners.</p>
+        <ul><li><strong>GDPR (EEA/UK):</strong> access, correct, delete, port, object, restrict, withdraw consent, and complain to a data protection authority.</li><li><strong>CCPA/CPRA (US):</strong> know, delete, correct, opt out of sale/sharing and targeted advertising, and non-discrimination.</li><li><strong>Other regions (LGPD, PIPEDA and equivalents):</strong> the corresponding rights where they apply.</li></ul>
+        <p>Because the App has no account, please include your <strong>advertising ID and device details</strong> when you contact us to exercise a right, so that we can locate any related data held by our partners. Requests go to <strong>contact@tranquilmind.co</strong> and we respond within the period the applicable law allows.</p>
         <h2 id="childrens-privacy">8. Children's privacy</h2>
-        <p>The App is intended for users aged <strong>18 and over</strong> and is not directed to children. We do not knowingly collect personal information from children. If you believe a child has provided us data, contact us and we will delete it, consistent with COPPA and EEA age-of-consent rules.</p>
+        <p>The App is intended for users aged <strong>18 and over</strong> and is not directed to children. We do not knowingly collect personal information from children. If you believe a child has provided us with data, contact us and we will delete it, consistent with COPPA and EEA age-of-consent rules.</p>
         <h2 id="international-data-transfers">9. International data transfers</h2>
-        <p>Your data may be processed in countries other than yours, including the United States. Where required, we and our partners use appropriate safeguards (e.g. Standard Contractual Clauses).</p>
+        <p>Your data may be processed in countries other than your own, including the United States. Where required, we and our partners use appropriate safeguards such as the European Commission's Standard Contractual Clauses.</p>
         <h2 id="data-security">10. Data security</h2>
-        <p>We use encryption in transit (HTTPS/TLS) and other reasonable measures to protect your data. No method of transmission or storage is 100% secure.</p>
-        <h2 id="changes-to-this-policy">11. Changes to this Policy</h2>
-        <p>We may update this Policy. Material changes will be posted with a new "Last updated" date; continued use of the App means you accept the updated Policy.</p>
-        <h2 id="contact-us">12. Contact us</h2>
+        <p>We use encryption in transit (HTTPS/TLS) and other reasonable technical and organisational measures to protect data. Information that stays on your device is protected by Android's own application sandbox. No method of transmission or storage is completely secure.</p>
+        <h2 id="third-party-content">11. Third-party content</h2>
+        <p>Advertisements shown in the App may link to websites and services we do not control. We are not responsible for their content or their privacy practices; please review their policies before providing them with information.</p>
+        <h2 id="changes-to-this-policy">12. Changes to this Policy</h2>
+        <p>We may update this Policy. Material changes will be posted here with a new "Last updated" date; continued use of the App means you accept the updated Policy.</p>
+        <h2 id="contact-us">13. Contact us</h2>
         <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
         <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
     </article>
