@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Privacy Policy for Klarvo — how we collect, use, and protect your data.">
+    <title>Privacy Policy — Klarvo</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        header.site {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+            border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #6366f1);
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta {
+            font-size: 13px;
+            color: var(--text-soft);
+            display: flex; gap: 14px;
+        }
+        main.shell {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        @media (min-width: 960px) {
+            main.shell { grid-template-columns: 240px 1fr; }
+        }
+        aside.toc {
+            position: sticky;
+            top: 84px;
+            align-self: start;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            font-size: 13.5px;
+            display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: 11px;
+            color: var(--text-soft);
+            margin-bottom: 10px;
+        }
+        aside.toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        aside.toc a {
+            display: block;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            color: var(--text-muted);
+            border-bottom: none;
+            line-height: 1.4;
+        }
+        aside.toc a:hover {
+            background: var(--bg-elev);
+            color: var(--text);
+        }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 38px 0 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 22px 0 8px;
+        }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul {
+            margin: 0 0 14px;
+            padding-left: 22px;
+            color: var(--text-muted);
+        }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            font-size: 13.5px;
+            color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px;
+            color: var(--text-soft);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+        .table-wrap { border: 1px solid var(--border); border-radius: var(--radius-sm); overflow-x: auto; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; margin: 0; font-size: 14px; }
+        thead th { text-align: left; font-weight: 600; color: var(--text); background: var(--bg-elev); padding: 10px 12px; border-bottom: 1px solid var(--border); }
+        tbody td { padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
+        tbody tr:last-child td { border-bottom: none; }
+        .callout { background: var(--bg-elev); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: var(--radius-sm); padding: 12px 16px; margin: 0 0 16px; color: var(--text-muted); }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">P</span>Klarvo</a>
+        <div class="nav-meta">
+            <span>Privacy Policy</span>
+            <span>·</span>
+            <span>2026-08-21</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#information-we-collect">1. Information we collect</a></li>
+            <li><a href="#how-we-use-information">2. How we use information</a></li>
+            <li><a href="#third-party-services">3. Third-party services</a></li>
+            <li><a href="#how-we-share-information">4. How we share information</a></li>
+            <li><a href="#legal-bases">5. Legal bases (EEA/UK — GDPR)</a></li>
+            <li><a href="#data-retention">6. Data retention</a></li>
+            <li><a href="#your-rights">7. Your rights</a></li>
+            <li><a href="#childrens-privacy">8. Children&#x27;s privacy</a></li>
+            <li><a href="#international-data-transfers">9. International data transfers</a></li>
+            <li><a href="#data-security">10. Data security</a></li>
+            <li><a href="#third-party-content">11. Third-party content</a></li>
+            <li><a href="#changes-to-this-policy">12. Changes to this Policy</a></li>
+            <li><a href="#contact-us">13. Contact us</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Privacy</span>
+        <h1>Privacy Policy</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Klarvo</span>
+            <span><strong>Effective:</strong> 2026-08-21</span>
+            <span><strong>Last Updated:</strong> 2026-08-21</span>
+        </div>
+
+        <p>Klarvo ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information we collect, how we use and share it, and the choices and rights you have. By using the App, you agree to this Policy.</p>
+        <p>Klarvo is an IPTV player for the M3U, M3U8, and Xtream Codes playlists you supply. You do not need to create a Klarvo account to use it. Any username, password, or server address you enter (for example, Xtream Codes credentials) is used only to connect to the playlist provider you choose; it is stored on your device to load your channels and is not sent to us.</p>
+        <h2 id="information-we-collect">1. Information we collect</h2>
+        <p>We do not ask you to register or provide personal details to use Klarvo. The App works with data collected automatically by third-party services for ads, analytics, and stability:</p>
+        <ul><li><strong>Device &amp; advertising identifiers</strong> — including the Android Advertising ID (via the <code>AD_ID</code> permission), used for advertising and measurement.</li><li><strong>Approximate location</strong> — derived by ad partners from your IP address (we do not use GPS or precise-location permissions).</li><li><strong>App activity &amp; diagnostics</strong> — in-app events, feature usage, in-app search terms, and crash logs used to keep the App stable and to improve it.</li></ul>
+        <p>Content you add — playlist links, uploaded <code>.m3u</code> files, favorites, watch history, and your parental-control PIN — is stored <strong>locally on your device</strong> and is not transmitted to us.</p>
+        <h2 id="how-we-use-information">2. How we use information</h2>
+        <p>We use information to: provide and operate the App; remember your playlists, favorites, and playback progress; serve and measure advertising; run analytics to fix bugs and improve features; and detect fraud and protect security.</p>
+        <h2 id="third-party-services">3. Third-party services</h2>
+        <p>Klarvo integrates the following data-transmitting services:</p>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Policy</th></tr></thead><tbody><tr><td>Google Firebase (Analytics, Crashlytics, Remote Config)</td><td>Usage analytics, crash reporting, feature configuration</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google AdMob</td><td>Advertising and measurement</td><td>https://policies.google.com/technologies/ads</td></tr><tr><td>Ad mediation partners — Meta Audience Network, AppLovin, Unity Ads, Vungle (Liftoff), ironSource, InMobi, Pangle, Mintegral, DT Exchange (Fyber), Moloco, Chartboost</td><td>Serve mediated ads and fill ad inventory</td><td>Each partner's own privacy policy</td></tr><tr><td>Adjust</td><td>Mobile attribution and marketing analytics</td><td>https://www.adjust.com/terms/privacy-policy/</td></tr><tr><td>Meta (Facebook SDK)</td><td>Attribution and ad measurement</td><td>https://www.facebook.com/privacy/policy</td></tr></tbody></table></div>
+        <p><strong>Ad consent (UMP).</strong> Where required (e.g. EEA/UK), Klarvo uses Google's User Messaging Platform to request consent for personalized ads before ads are served.</p>
+        <p><strong>Reset or opt out of your advertising ID.</strong> You can reset or delete your advertising ID, or opt out of ad personalization, from your device's Google settings (Settings → Privacy → Ads).</p>
+        <h2 id="how-we-share-information">4. How we share information</h2>
+        <p>We do not sell your personal information for money. Information is shared with the third-party services listed above so they can perform their functions, and may be disclosed for legal reasons or as part of a business transfer. If ads are personalized, some U.S. state laws may treat this data flow as "sharing" for targeted advertising; you can opt out as described in Sections 3 and 7.</p>
+        <h2 id="legal-bases">5. Legal bases (EEA/UK — GDPR)</h2>
+        <p>We rely on: your <strong>consent</strong> for personalized ads and analytics where required; our <strong>legitimate interests</strong> in providing core functionality, security, and improvement; and <strong>legal obligations</strong> where applicable.</p>
+        <h2 id="data-retention">6. Data retention</h2>
+        <p>We keep data only as long as necessary for the purposes above or as required by law. Ad and analytics partners retain identifiers per their own retention periods. Crash and diagnostic data is kept for a limited period. Data stored on your device remains until you delete it or uninstall the App.</p>
+        <h2 id="your-rights">7. Your rights</h2>
+        <p>Depending on where you live, you may have rights to access, correct, delete, port, object to, or restrict processing of your data, and to withdraw consent or complain to a data protection authority (GDPR); to know, delete, correct, and opt out of the sale/sharing or targeted advertising of your data, without discrimination (CCPA/CPRA); and similar rights under LGPD, PIPEDA, and other laws. Because Klarvo has no account system, please contact us and include your advertising ID and device details so we can act on your request.</p>
+        <h2 id="childrens-privacy">8. Children's privacy</h2>
+        <p>Klarvo is intended for users aged 13 and older and is not directed to children. We do not knowingly collect personal information from children. If you believe a child has provided such information, contact us and we will delete it. We handle age-restricted regions in line with COPPA and applicable EEA age-of-consent rules.</p>
+        <h2 id="international-data-transfers">9. International data transfers</h2>
+        <p>Your data may be processed in countries other than your own, including the United States. Where required, we and our partners use appropriate safeguards such as Standard Contractual Clauses.</p>
+        <h2 id="data-security">10. Data security</h2>
+        <p>We use encryption in transit (HTTPS/TLS) and reasonable measures to protect data. No method of transmission or storage is 100% secure.</p>
+        <h2 id="third-party-content">11. Third-party content</h2>
+        <p>Klarvo is a player only. It does not host, provide, or control any channels, playlists, or media — all content comes from the playlists you supply, and some streams (including embedded live feeds) originate from third parties. We are not responsible for third-party content, streams, or links, or for your right to access them; please review the relevant providers' policies.</p>
+        <h2 id="changes-to-this-policy">12. Changes to this Policy</h2>
+        <p>We may update this Policy. Material changes will be posted here with a new "Last updated" date; continued use of the App means you accept the updated Policy.</p>
+        <h2 id="contact-us">13. Contact us</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
