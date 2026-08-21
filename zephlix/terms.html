@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Terms of Service for Zephlix — rules and conditions for using the app.">
+    <title>Terms of Service — Zephlix</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+        header.site {
+            position: sticky; top: 0; z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px; margin: 0 auto;
+            padding: 14px 24px;
+            display: flex; align-items: center; justify-content: space-between; gap: 16px;
+        }
+        .brand {
+            display: flex; align-items: center; gap: 10px;
+            font-weight: 700; font-size: 15px;
+            color: var(--text); border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #6366f1, var(--accent));
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta { font-size: 13px; color: var(--text-soft); display: flex; gap: 14px; }
+        main.shell {
+            max-width: 1100px; margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid; grid-template-columns: 1fr; gap: 32px;
+        }
+        @media (min-width: 960px) { main.shell { grid-template-columns: 240px 1fr; } }
+        aside.toc {
+            position: sticky; top: 84px; align-self: start;
+            max-height: calc(100vh - 100px); overflow-y: auto;
+            font-size: 13.5px; display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block; text-transform: uppercase;
+            letter-spacing: .08em; font-size: 11px;
+            color: var(--text-soft); margin-bottom: 10px;
+        }
+        aside.toc ol { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+        aside.toc a {
+            display: block; padding: 6px 10px; border-radius: var(--radius-sm);
+            color: var(--text-muted); border-bottom: none; line-height: 1.4;
+        }
+        aside.toc a:hover { background: var(--bg-elev); color: var(--text); }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft); color: var(--accent);
+            font-size: 12px; font-weight: 600;
+            letter-spacing: .04em; text-transform: uppercase;
+            border-radius: 999px; margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px); font-weight: 800;
+            letter-spacing: -0.02em; margin: 0 0 12px; line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px; font-weight: 700; letter-spacing: -0.01em;
+            margin: 38px 0 12px; padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 { font-size: 16px; font-weight: 600; color: var(--text); margin: 22px 0 8px; }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul { margin: 0 0 14px; padding-left: 22px; color: var(--text-muted); }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 8px 18px;
+            font-size: 13.5px; color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev); border: 1px solid var(--border);
+            border-radius: var(--radius-sm); margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px; padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px; color: var(--text-soft);
+            display: flex; justify-content: space-between;
+            flex-wrap: wrap; gap: 8px;
+        }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">T</span>Zephlix</a>
+        <div class="nav-meta">
+            <span>Terms of Service</span>
+            <span>·</span>
+            <span>August 21, 2026</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#eligibility">1. Eligibility</a></li>
+            <li><a href="#license">2. License</a></li>
+            <li><a href="#service">3. The Service</a></li>
+            <li><a href="#your-content">4. Your Content &amp; Sources</a></li>
+            <li><a href="#acceptable-use">5. Acceptable Use</a></li>
+            <li><a href="#ip">6. Intellectual Property</a></li>
+            <li><a href="#third-party">7. Third-Party Services &amp; Content</a></li>
+            <li><a href="#disclaimers">8. Disclaimers</a></li>
+            <li><a href="#liability">9. Limitation of Liability</a></li>
+            <li><a href="#indemnification">10. Indemnification</a></li>
+            <li><a href="#termination">11. Termination</a></li>
+            <li><a href="#changes">12. Changes</a></li>
+            <li><a href="#governing">13. Governing Law &amp; Disputes</a></li>
+            <li><a href="#contact">14. Contact</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Terms</span>
+        <h1>Terms of Service</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Zephlix</span>
+            <span><strong>Effective:</strong> August 21, 2026</span>
+            <span><strong>Last Updated:</strong> August 21, 2026</span>
+        </div>
+
+        <p>These Terms of Service ("Terms") govern your use of the Zephlix mobile application ("the App"), operated
+            by Tranquil Mind Technology JSC ("we", "us", "our"). By downloading or using the App, you agree to these
+            Terms and to our <a href="https://policy.tranquilmind.co/zephlix/privacy">Privacy Policy</a>. If you do
+            not agree, do not use the App.</p>
+
+        <h2 id="eligibility">1. Eligibility</h2>
+        <p>You must be at least <strong>18 years old</strong> (or the higher age of digital consent in your
+            jurisdiction) to use the App.</p>
+
+        <h2 id="license">2. License</h2>
+        <p>We grant you a personal, limited, non-exclusive, non-transferable, revocable license to use the App for your
+            own non-commercial purposes. You may not copy, modify, distribute, sell, or reverse-engineer the App except
+            to the extent permitted by law.</p>
+
+        <h2 id="service">3. The Service</h2>
+        <p>Zephlix is a <strong>media player</strong>. It lets you add your own IPTV playlists (M3U/M3U8 or Xtream
+            Codes) and play the Live TV, movies, and series they contain, with features such as EPG, favorites, resume
+            playback, casting, parental PIN lock, and a sleep timer. The App <strong>does not provide, host, or
+            distribute any channels, streams, or media</strong> — you supply your own sources. Availability may vary by
+            region and may change; we may modify, suspend, or discontinue the App or any feature.</p>
+        <p>The App is <strong>free and supported by advertising</strong>. It displays ads served through Google AdMob
+            and third-party mediation networks (banner, interstitial, native, rewarded, and app-open formats). Where
+            required, the App asks for your ad-consent choice before showing personalized ads. Details of the ad and
+            attribution partners and your choices are described in our
+            <a href="https://policy.tranquilmind.co/zephlix/privacy">Privacy Policy</a>.</p>
+
+        <h2 id="your-content">4. Your Content and Sources</h2>
+        <p>You are solely responsible for the playlists, URLs, and credentials you add to the App, and for ensuring you
+            have the lawful right to access and view that content. You must not use the App to access, stream, or
+            distribute content in violation of any third party's rights or applicable law. We do not monitor or control
+            the sources you configure.</p>
+
+        <h2 id="acceptable-use">5. Acceptable Use</h2>
+        <p>You agree not to use the App for any unlawful purpose; to disrupt or interfere with the App; to bypass access
+            controls; to use bots or scrapers; or to infringe any intellectual property or other rights. We may suspend
+            or terminate your access for violations.</p>
+
+        <h2 id="ip">6. Intellectual Property</h2>
+        <p>The App, its design, and its trademarks are owned by Tranquil Mind Technology JSC and its licensors. All
+            third-party channels, media, logos, and trademarks accessed through your own sources belong to their
+            respective owners; their appearance in playback does not imply any affiliation with, or endorsement by,
+            us.</p>
+
+        <h2 id="third-party">7. Third-Party Services and Content</h2>
+        <p>The App uses third-party services (advertising and mediation, attribution, analytics, and crash reporting)
+            and plays third-party content that you supply, each subject to its own terms and policies. We are not
+            responsible for third-party content, servers, services, or advertising.</p>
+
+        <h2 id="disclaimers">8. Disclaimers</h2>
+        <p>The App is provided "as is" and "as available", without warranties of any kind, express or implied. We do not
+            warrant that the App will be uninterrupted, error-free, or secure, or that any particular source will work.
+            The App is not a substitute for any professional advice.</p>
+
+        <h2 id="liability">9. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, we are not liable for any indirect, incidental, special,
+            consequential, or punitive damages. Our total aggregate liability is limited to the greater of the amounts
+            you paid us in the 12 months before the claim or USD 50. Some jurisdictions do not allow certain
+            limitations, so some of these may not apply to you.</p>
+
+        <h2 id="indemnification">10. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless Tranquil Mind Technology JSC from any claims arising out of your
+            misuse of the App, the sources you add, or your breach of these Terms.</p>
+
+        <h2 id="termination">11. Termination</h2>
+        <p>We may suspend or terminate your access at any time, including for breach of these Terms. Sections on
+            intellectual property, disclaimers, limitation of liability, and indemnification survive termination.</p>
+
+        <h2 id="changes">12. Changes to These Terms</h2>
+        <p>We may update these Terms from time to time. Material changes will be posted here with a new "Last updated"
+            date. Your continued use of the App after changes take effect constitutes acceptance.</p>
+
+        <h2 id="governing">13. Governing Law and Disputes</h2>
+        <p>These Terms are governed by the laws of Vietnam, with venue in Hanoi, Vietnam. Mandatory consumer-protection
+            rights available to you under your local law are preserved.</p>
+
+        <h2 id="contact">14. Contact</h2>
+        <p>Tranquil Mind Technology JSC<br>
+            No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam<br>
+            Email: <a href="mailto:contact@tranquilmind.co"><strong>contact@tranquilmind.co</strong></a></p>
+
+        <div class="footer-block">
+            <span>&copy; 2026 Tranquil Mind Technology JSC. All rights reserved.</span>
+            <a href="#top">↑ Back to top</a>
+        </div>
+    </article>
+
+</main>
+
+</body>
+</html>

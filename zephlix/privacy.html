@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Privacy Policy for Zephlix — how we collect, use, and protect your data.">
+    <title>Privacy Policy — Zephlix</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        header.site {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+            border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #6366f1);
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta {
+            font-size: 13px;
+            color: var(--text-soft);
+            display: flex; gap: 14px;
+        }
+        main.shell {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        @media (min-width: 960px) {
+            main.shell { grid-template-columns: 240px 1fr; }
+        }
+        aside.toc {
+            position: sticky;
+            top: 84px;
+            align-self: start;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            font-size: 13.5px;
+            display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: 11px;
+            color: var(--text-soft);
+            margin-bottom: 10px;
+        }
+        aside.toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        aside.toc a {
+            display: block;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            color: var(--text-muted);
+            border-bottom: none;
+            line-height: 1.4;
+        }
+        aside.toc a:hover {
+            background: var(--bg-elev);
+            color: var(--text);
+        }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 38px 0 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 22px 0 8px;
+        }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul {
+            margin: 0 0 14px;
+            padding-left: 22px;
+            color: var(--text-muted);
+        }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            font-size: 13.5px;
+            color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px;
+            color: var(--text-soft);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 0 20px;
+            font-size: 14px;
+        }
+        thead th {
+            text-align: left;
+            font-weight: 600;
+            color: var(--text);
+            background: var(--bg-elev);
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        tbody td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+            vertical-align: top;
+        }
+        tbody tr:last-child td { border-bottom: none; }
+        .table-wrap {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        .table-wrap table { margin: 0; }
+        .callout {
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
+            margin: 0 0 16px;
+            color: var(--text-muted);
+        }
+        .callout strong { color: var(--text); }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">P</span>Zephlix</a>
+        <div class="nav-meta">
+            <span>Privacy Policy</span>
+            <span>·</span>
+            <span>August 21, 2026</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#info-collect">1. Information We Collect</a></li>
+            <li><a href="#how-use">2. How We Use Information</a></li>
+            <li><a href="#third-party">3. Third-Party Services</a></li>
+            <li><a href="#share">4. How We Share Information</a></li>
+            <li><a href="#legal-bases">5. Legal Bases (GDPR)</a></li>
+            <li><a href="#retention">6. Data Retention</a></li>
+            <li><a href="#rights">7. Your Rights</a></li>
+            <li><a href="#children">8. Children's Privacy</a></li>
+            <li><a href="#intl">9. International Transfers</a></li>
+            <li><a href="#security">10. Data Security</a></li>
+            <li><a href="#third-content">11. Third-Party Content</a></li>
+            <li><a href="#changes">12. Changes</a></li>
+            <li><a href="#contact">13. Contact Us</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Privacy</span>
+        <h1>Privacy Policy</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Zephlix</span>
+            <span><strong>Effective:</strong> August 21, 2026</span>
+            <span><strong>Last Updated:</strong> August 21, 2026</span>
+        </div>
+
+        <p>Zephlix ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your
+            privacy. This Privacy Policy explains what information we collect, how we use and share it, and the
+            choices and rights you have. By using the App, you agree to this Policy.</p>
+        <p>Zephlix is a media player for IPTV playlists that you supply yourself (M3U/M3U8 or Xtream Codes). We do
+            not host, provide, or distribute any TV channels, streams, or media. You do not need to create an account to
+            use the App, and we do not operate a login or user-profile system.</p>
+
+        <h2 id="info-collect">1. Information We Collect</h2>
+        <p>We do <strong>not</strong> ask you to register, and we do not collect your name, email address, or phone
+            number.</p>
+        <h3>Data you provide that stays on your device</h3>
+        <p>Playlist URLs, uploaded playlist files, Xtream Codes login details (server, username, password), your
+            favorites, watch/resume positions, and your parental-control PIN are stored <strong>locally on your
+            device</strong> to operate the App. The PIN is saved only as a one-way hash. <strong>We do not operate any
+            server of our own, and we never transmit your playlists, credentials, favorites, or viewing history to
+            us or to any Tranquil Mind backend.</strong></p>
+        <p>When you sign in to or stream from a source, the App sends the details needed to connect
+            <strong>directly to the third-party IPTV provider or media server that you configured</strong> — for
+            example, your Xtream username and password are sent to your provider's server to authenticate, and playlist
+            or stream URLs are requested from the host you entered. Those requests, and the streams they return, travel
+            between your device and your chosen provider; they do not pass through us. Your provider handles that data
+            under its own privacy practices (see Section 11).</p>
+        <h3>Data collected automatically</h3>
+        <p>Through the third-party services in Section 3:</p>
+        <ul>
+            <li><strong>Device and advertising identifiers</strong> — e.g. an app-instance ID and the Android
+                Advertising ID (AAID). The App declares the <code>com.google.android.gms.permission.AD_ID</code>
+                permission. These identifiers are used for advertising, ad measurement, attribution, analytics, and
+                fraud prevention.</li>
+            <li><strong>Approximate location</strong> — a coarse, city/region-level location derived from your IP
+                address by our advertising, attribution, and analytics providers. We do <strong>not</strong> collect
+                precise/GPS location, and the App requests no location permission.</li>
+            <li><strong>App activity</strong> — in-app interactions and events (e.g. screens opened, features used,
+                ads requested, shown, clicked, or rewarded), used to operate the App, measure advertising, and improve
+                the App.</li>
+            <li><strong>Advertising and attribution data</strong> — ad impressions and interactions, and install and
+                marketing-attribution events processed by our advertising and attribution partners (AdMob and its
+                mediation networks, and Adjust) to serve and measure ads and to understand how the App is installed and
+                used.</li>
+            <li><strong>Crash logs and diagnostics</strong> — technical information about crashes and performance
+                (device model, OS version, stack traces, timing) so we can fix problems.</li>
+        </ul>
+        <p>We do not access your camera, microphone, contacts, photos, calendar, or SMS.</p>
+
+        <h2 id="how-use">2. How We Use Information</h2>
+        <ul>
+            <li>Provide, operate, and maintain the App.</li>
+            <li>Serve and measure advertising, including personalized advertising where you have consented, through
+                Google AdMob and its mediation networks.</li>
+            <li>Measure marketing and install attribution to understand how the App is discovered and used.</li>
+            <li>Diagnose crashes, monitor stability, and improve performance and features.</li>
+            <li>Understand aggregate usage through analytics.</li>
+            <li>Protect against fraud, abuse, and security threats, and comply with legal obligations.</li>
+        </ul>
+        <p>The App is <strong>free and supported by advertising</strong>. Ads are provided through Google AdMob and
+            the mediation networks listed in Section 3, which may display banner, interstitial, native, rewarded, and
+            app-open ad formats.</p>
+
+        <h2 id="third-party">3. Third-Party Services</h2>
+        <p>The App uses the following data-transmitting services. Each processes data under its own privacy policy:</p>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody>
+            <tr><td>Google Firebase (Analytics)</td><td>Aggregate usage analytics</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
+            <tr><td>Google Firebase (Crashlytics)</td><td>Crash reporting and diagnostics</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
+            <tr><td>Google Firebase (Remote Config)</td><td>Remote app configuration</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
+            <tr><td>Google AdMob</td><td>Advertising (banner, interstitial, native, rewarded, app-open)</td><td><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a></td></tr>
+            <tr><td>Meta Audience Network</td><td>Ad mediation</td><td><a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noopener">facebook.com/about/privacy</a></td></tr>
+            <tr><td>Pangle</td><td>Ad mediation</td><td><a href="https://www.pangleglobal.com/privacy" target="_blank" rel="noopener">pangleglobal.com/privacy</a></td></tr>
+            <tr><td>Mintegral</td><td>Ad mediation</td><td><a href="https://www.mintegral.com/en/privacy" target="_blank" rel="noopener">mintegral.com/en/privacy</a></td></tr>
+            <tr><td>Unity Ads</td><td>Ad mediation</td><td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">unity.com/legal/game-player-and-app-user-privacy-policy</a></td></tr>
+            <tr><td>Liftoff Monetize (Vungle)</td><td>Ad mediation</td><td><a href="https://liftoff.io/privacy-policy/" target="_blank" rel="noopener">liftoff.io/privacy-policy</a></td></tr>
+            <tr><td>Adjust</td><td>Attribution &amp; marketing analytics</td><td><a href="https://www.adjust.com/terms/privacy-policy/" target="_blank" rel="noopener">adjust.com/terms/privacy-policy</a></td></tr>
+            <tr><td>Google Play (in-app review)</td><td>In-app rating prompt</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
+        </tbody></table></div>
+        <p>Google Firebase acts as our <strong>service provider</strong> (data processor) and processes data on our
+            behalf. Our advertising and attribution partners (AdMob and its mediation networks, and Adjust) act as
+            independent controllers or processors for advertising purposes under their own policies. Google's handling
+            of data is also governed by the
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+        <p><strong>Ad consent (UMP / IAB TCF).</strong> Where required (e.g. in the EEA/UK), the App presents a consent
+            request managed through Google's User Messaging Platform (UMP) before serving personalized ads, and reads the
+            resulting IAB Transparency &amp; Consent Framework (TCF) signals stored on your device so that our ad
+            partners honour your choice. For networks that do not read the TCF string directly, the App forwards your
+            GDPR and U.S.-privacy (CCPA) consent state to those mediation partners. You can change your choice at any
+            time from the App's settings.</p>
+        <div class="callout"><strong>Advertising identifier.</strong> The App serves ads and its partners read the
+            Android Advertising ID. You can reset or delete this identifier, or opt out of ad personalization, at any
+            time in your device settings (Settings &rarr; Google &rarr; Ads, or Settings &rarr; Privacy &rarr; Ads).</div>
+
+        <h2 id="share">4. How We Share Information</h2>
+        <p>We do <strong>not</strong> sell your personal information for money. However, to show ads the App shares
+            device and advertising identifiers and ad-interaction data with our advertising partners. Under some U.S.
+            state laws this may be considered a "sale" or "sharing"/targeted advertising (see Section 7). We share data:</p>
+        <ul>
+            <li>with the advertising and attribution partners listed in Section 3 (AdMob and its mediation networks, and
+                Adjust), to serve and measure ads and attribute installs, subject to your consent choices;</li>
+            <li>with the service providers listed in Section 3, to the limited extent needed to run the App;</li>
+            <li>to comply with law, legal process, or enforceable governmental requests; and</li>
+            <li>in connection with a merger, acquisition, or asset transfer, subject to this Policy.</li>
+        </ul>
+        <p><strong>U.S. state privacy notice.</strong> Because the App serves personalized advertising, the sharing of
+            advertising and device identifiers with ad partners may be treated as a "sale" or "sharing" for targeted
+            advertising under certain U.S. state laws. You can opt out using the ad-consent controls and your device's
+            advertising-ID settings described in Sections 3 and 7.</p>
+
+        <h2 id="legal-bases">5. Legal Bases (EEA/UK — GDPR)</h2>
+        <p>Where GDPR applies, we rely on: <strong>consent</strong> for personalized advertising and for certain
+            analytics and attribution (collected via the UMP consent request described in Section 3); our
+            <strong>legitimate interests</strong> in operating, securing, and improving the App (including
+            non-personalized advertising, crash diagnostics, and fraud prevention); and <strong>legal obligation</strong>
+            where applicable. You may object to or withdraw consent as described in Section 7.</p>
+
+        <h2 id="retention">6. Data Retention</h2>
+        <p>We retain automatically-collected data only as long as necessary for the purposes above or as required by
+            law. Analytics and identifier data follow our analytics provider's standard retention periods; crash and
+            diagnostic data are kept for a limited period to investigate and fix issues. Data you store locally
+            (playlists, Xtream login) remains on your device until you delete it or uninstall the App.</p>
+
+        <h2 id="rights">7. Your Rights</h2>
+        <p>Depending on where you live, you may have the right to access, correct, delete, port, restrict, or object to
+            the processing of your personal data, and to withdraw consent or complain to a data protection authority
+            (GDPR); to know, delete, correct, and opt out of the "sale"/"sharing" of personal information and targeted
+            advertising, with no discrimination for exercising these rights (CCPA/CPRA); and similar rights under LGPD,
+            PIPEDA, and other laws.</p>
+        <p>Because the App has no accounts, we cannot look you up by name or email. To exercise a right, email us at the
+            address in Section 13 and include your <strong>Android Advertising ID</strong> and device details so we can
+            locate the relevant data. You can also stop all automatic collection by uninstalling the App and can reset
+            your advertising ID in device settings.</p>
+
+        <h2 id="children">8. Children's Privacy</h2>
+        <p>The App is intended for users aged <strong>18 and over</strong> and is <strong>not directed to
+            children</strong>. We do not knowingly collect personal information from children. If you believe a child
+            has provided us information, contact us and we will delete it. We handle age of digital consent in the EEA
+            and COPPA obligations in the U.S. accordingly.</p>
+
+        <h2 id="intl">9. International Data Transfers</h2>
+        <p>Your information may be processed in countries other than your own, including the United States, where our
+            service providers operate. Where required, transfers are protected by appropriate safeguards such as
+            Standard Contractual Clauses.</p>
+
+        <h2 id="security">10. Data Security</h2>
+        <p>We use HTTPS/TLS encryption in transit and reasonable technical and organizational measures to protect
+            information. No method of transmission or storage is 100% secure, and we cannot guarantee absolute
+            security.</p>
+
+        <h2 id="third-content">11. Third-Party Content and Connections</h2>
+        <p>The App plays streams and content from IPTV sources <strong>that you supply</strong>. We do not control,
+            host, endorse, or take responsibility for that content or for the third-party servers you connect to. You
+            are responsible for the sources you add and for ensuring you have the right to access them. Review the terms
+            and privacy practices of your own IPTV provider.</p>
+        <p>When you use certain features, your device also connects directly to other third parties, each under its own
+            privacy policy:</p>
+        <ul>
+            <li><strong>Built-in free channels.</strong> The App includes a small optional list of freely available
+                public live streams. Playing one connects your device directly to that broadcaster's content delivery
+                network.</li>
+            <li><strong>YouTube live channels.</strong> Some built-in free channels are official 24/7 live streams shown
+                through YouTube's embedded player. YouTube/Google may collect data as described in the
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+            <li><strong>Channel logos and program guide (EPG).</strong> Channel artwork and XMLTV program-guide files are
+                fetched directly from the URLs contained in your playlist or provided by your IPTV provider.</li>
+            <li><strong>Casting.</strong> If you cast, the App sends the stream address to the Google Cast (Chromecast)
+                device on your local network so it can play the media.</li>
+        </ul>
+
+        <h2 id="changes">12. Changes to This Policy</h2>
+        <p>We may update this Policy from time to time. Material changes will be posted here with a new "Last updated"
+            date. Your continued use of the App after changes take effect constitutes acceptance.</p>
+
+        <h2 id="contact">13. Contact Us</h2>
+        <p>Tranquil Mind Technology JSC<br>
+            No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam<br>
+            Email: <a href="mailto:contact@tranquilmind.co"><strong>contact@tranquilmind.co</strong></a></p>
+
+        <div class="footer-block">
+            <span>&copy; 2026 Tranquil Mind Technology JSC. All rights reserved.</span>
+            <a href="#top">↑ Back to top</a>
+        </div>
+    </article>
+
+</main>
+
+</body>
+</html>
