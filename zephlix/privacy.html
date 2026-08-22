@@ -283,7 +283,7 @@
         <div class="nav-meta">
             <span>Privacy Policy</span>
             <span>·</span>
-            <span>August 21, 2026</span>
+            <span>August 22, 2026</span>
         </div>
     </div>
 </header>
@@ -297,7 +297,7 @@
             <li><a href="#how-use">2. How We Use Information</a></li>
             <li><a href="#third-party">3. Third-Party Services</a></li>
             <li><a href="#share">4. How We Share Information</a></li>
-            <li><a href="#legal-bases">5. Legal Bases (GDPR)</a></li>
+            <li><a href="#legal-bases">5. Legal Bases (EEA/UK — GDPR)</a></li>
             <li><a href="#retention">6. Data Retention</a></li>
             <li><a href="#rights">7. Your Rights</a></li>
             <li><a href="#children">8. Children's Privacy</a></li>
@@ -315,177 +315,78 @@
 
         <div class="meta">
             <span><strong>App:</strong> Zephlix</span>
-            <span><strong>Effective:</strong> August 21, 2026</span>
-            <span><strong>Last Updated:</strong> August 21, 2026</span>
+            <span><strong>Effective:</strong> August 22, 2026</span>
+            <span><strong>Last Updated:</strong> August 22, 2026</span>
         </div>
 
-        <p>Zephlix ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your
-            privacy. This Privacy Policy explains what information we collect, how we use and share it, and the
-            choices and rights you have. By using the App, you agree to this Policy.</p>
-        <p>Zephlix is a media player for IPTV playlists that you supply yourself (M3U/M3U8 or Xtream Codes). We do
-            not host, provide, or distribute any TV channels, streams, or media. You do not need to create an account to
-            use the App, and we do not operate a login or user-profile system.</p>
+        <p>Zephlix ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information we collect, how we use and share it, and the choices and rights you have. By using the App, you agree to this Policy.</p>
+        <p>Zephlix is a media player for playlists you supply yourself: you add an M3U/M3U8 link, an Xtream Codes login, or a local <code>.m3u</code> file, and the App plays the live channels, movies and series those sources contain. <strong>You do not need to create an account to use Zephlix, and we do not operate any account system.</strong> The App also links to a small set of publicly available news channels, including official YouTube live streams.</p>
 
         <h2 id="info-collect">1. Information We Collect</h2>
-        <p>We do <strong>not</strong> ask you to register, and we do not collect your name, email address, or phone
-            number.</p>
-        <h3>Data you provide that stays on your device</h3>
-        <p>Playlist URLs, uploaded playlist files, Xtream Codes login details (server, username, password), your
-            favorites, watch/resume positions, and your parental-control PIN are stored <strong>locally on your
-            device</strong> to operate the App. The PIN is saved only as a one-way hash. <strong>We do not operate any
-            server of our own, and we never transmit your playlists, credentials, favorites, or viewing history to
-            us or to any Tranquil Mind backend.</strong></p>
-        <p>When you sign in to or stream from a source, the App sends the details needed to connect
-            <strong>directly to the third-party IPTV provider or media server that you configured</strong> — for
-            example, your Xtream username and password are sent to your provider's server to authenticate, and playlist
-            or stream URLs are requested from the host you entered. Those requests, and the streams they return, travel
-            between your device and your chosen provider; they do not pass through us. Your provider handles that data
-            under its own privacy practices (see Section 11).</p>
-        <h3>Data collected automatically</h3>
-        <p>Through the third-party services in Section 3:</p>
-        <ul>
-            <li><strong>Device and advertising identifiers</strong> — e.g. an app-instance ID and the Android
-                Advertising ID (AAID). The App declares the <code>com.google.android.gms.permission.AD_ID</code>
-                permission. These identifiers are used for advertising, ad measurement, attribution, analytics, and
-                fraud prevention.</li>
-            <li><strong>Approximate location</strong> — a coarse, city/region-level location derived from your IP
-                address by our advertising, attribution, and analytics providers. We do <strong>not</strong> collect
-                precise/GPS location, and the App requests no location permission.</li>
-            <li><strong>App activity</strong> — in-app interactions and events (e.g. screens opened, features used,
-                ads requested, shown, clicked, or rewarded), used to operate the App, measure advertising, and improve
-                the App.</li>
-            <li><strong>Advertising and attribution data</strong> — ad impressions and interactions, and install and
-                marketing-attribution events processed by our advertising and attribution partners (AdMob and its
-                mediation networks, and Adjust) to serve and measure ads and to understand how the App is installed and
-                used.</li>
-            <li><strong>Crash logs and diagnostics</strong> — technical information about crashes and performance
-                (device model, OS version, stack traces, timing) so we can fix problems.</li>
-        </ul>
-        <p>We do not access your camera, microphone, contacts, photos, calendar, or SMS.</p>
+        <h3>1.1 Information collected automatically</h3>
+        <p>We do not ask you for your name, email address, phone number, or any other directly identifying information. The following is collected automatically by the third-party services listed in Section 3:</p>
+        <div class="table-wrap"><table><thead><tr><th>Category</th><th>What it includes</th><th>Collected by</th></tr></thead><tbody><tr><td><strong>Device and advertising identifiers</strong></td><td>Google Advertising ID (AAID), device model, operating-system version, language, screen and hardware characteristics, app instance ID, app version</td><td>Firebase Analytics, AdMob and its mediation partners, Meta, Adjust</td></tr><tr><td><strong>Approximate location</strong></td><td>A coarse, city- or region-level location derived from your IP address. <strong>Zephlix does not request GPS or any location permission and cannot access your precise location.</strong></td><td>AdMob and its mediation partners, Meta, Adjust</td></tr><tr><td><strong>App activity</strong></td><td>Screens viewed, features used, ads shown and interacted with, session length, first-open and install-attribution events</td><td>Firebase Analytics, Adjust, AdMob and its mediation partners</td></tr><tr><td><strong>Installed applications</strong></td><td>To play a stream in an external player (VLC, MX Player), the App asks Android which installed apps can handle a video intent. The advertising and attribution SDKs listed in Section 3 may also read and transmit installed-app signals.</td><td>Android system, ad and attribution SDKs</td></tr><tr><td><strong>Crash logs and diagnostics</strong></td><td>Stack traces, error messages, device state at the time of a crash, and performance data</td><td>Firebase Crashlytics</td></tr></tbody></table></div>
+        <h3>1.2 Information that stays on your device</h3>
+        <p>The following is stored <strong>only on your device</strong> and is never uploaded to us:</p>
+        <ul><li>Your playlists — M3U/M3U8 URLs, Xtream Codes server addresses, usernames and passwords, and any local <code>.m3u</code> file you open.</li><li>Your favourites, watch history, custom collections, and recent searches.</li><li>Your parental-control PIN, stored as a SHA-256 hash rather than as the PIN itself.</li><li>Your language, appearance, sorting and playback preferences.</li></ul>
+        <p>Deleting the App, or clearing its storage in Android settings, removes all of it.</p>
+        <h3>1.3 Information you send directly to your own provider</h3>
+        <p>When you add a playlist, the App connects <strong>directly from your device to the server you specified</strong> — your IPTV provider, your M3U host, or your XMLTV/EPG host. Your Xtream username and password, your IP address, and the requests for channels and programme data go to that server, not to us. We have no access to those servers, no relationship with their operators, and no visibility into what they log.</p>
+        <p>Please note that many IPTV providers use plain <code>http://</code> rather than <code>https://</code>. If your provider does, the credentials and requests sent to it are not encrypted in transit, and anyone on the same network can potentially observe them. This is a property of the server you chose, not of the App. Prefer providers that offer <code>https://</code>.</p>
+        <h3>1.4 Third-party media and images</h3>
+        <p>Playing a stream, loading a channel logo or thumbnail, or opening the built-in YouTube news row causes your device to make a request to that third party's servers. Those servers necessarily see your IP address, and, in the case of YouTube, may set cookies and apply Google's own policies. Zephlix does not control what these third parties collect.</p>
+        <h3>1.5 What we do not collect</h3>
+        <p>We do not collect your name, email address, phone number, contacts, calendar, photos, camera or microphone input, files other than a playlist file you explicitly choose, precise location, health data, or payment information. Zephlix contains no in-app purchases and no payment mechanism of any kind.</p>
 
         <h2 id="how-use">2. How We Use Information</h2>
-        <ul>
-            <li>Provide, operate, and maintain the App.</li>
-            <li>Serve and measure advertising, including personalized advertising where you have consented, through
-                Google AdMob and its mediation networks.</li>
-            <li>Measure marketing and install attribution to understand how the App is discovered and used.</li>
-            <li>Diagnose crashes, monitor stability, and improve performance and features.</li>
-            <li>Understand aggregate usage through analytics.</li>
-            <li>Protect against fraud, abuse, and security threats, and comply with legal obligations.</li>
-        </ul>
-        <p>The App is <strong>free and supported by advertising</strong>. Ads are provided through Google AdMob and
-            the mediation networks listed in Section 3, which may display banner, interstitial, native, rewarded, and
-            app-open ad formats.</p>
+        <ul><li><strong>To provide and operate the App</strong> — load and play your playlists, render the programme guide, remember where you stopped watching, cast to a Chromecast device.</li><li><strong>To show advertising</strong> — Zephlix is free and is funded by ads. Advertising identifiers, approximate location and app activity are used to select, deliver, frequency-cap and measure ads, and (where you have consented) to personalise them.</li><li><strong>To measure installs and campaigns</strong> — attribution data tells us which marketing campaign an install came from.</li><li><strong>For analytics and improvement</strong> — aggregate usage patterns show which features are used and where people get stuck.</li><li><strong>For crash reporting and stability</strong> — diagnostics let us find and fix defects.</li><li><strong>For fraud prevention and security</strong> — advertising identifiers are used by our ad partners to detect invalid traffic and attribution fraud.</li><li><strong>To comply with law</strong> — where we are legally required to retain or disclose information.</li></ul>
+        <p>We do not use your information to build a profile of you outside the App, and we do not attempt to identify you by name.</p>
 
         <h2 id="third-party">3. Third-Party Services</h2>
-        <p>The App uses the following data-transmitting services. Each processes data under its own privacy policy:</p>
-        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody>
-            <tr><td>Google Firebase (Analytics)</td><td>Aggregate usage analytics</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
-            <tr><td>Google Firebase (Crashlytics)</td><td>Crash reporting and diagnostics</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
-            <tr><td>Google Firebase (Remote Config)</td><td>Remote app configuration</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
-            <tr><td>Google AdMob</td><td>Advertising (banner, interstitial, native, rewarded, app-open)</td><td><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a></td></tr>
-            <tr><td>Meta Audience Network</td><td>Ad mediation</td><td><a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noopener">facebook.com/about/privacy</a></td></tr>
-            <tr><td>Pangle</td><td>Ad mediation</td><td><a href="https://www.pangleglobal.com/privacy" target="_blank" rel="noopener">pangleglobal.com/privacy</a></td></tr>
-            <tr><td>Mintegral</td><td>Ad mediation</td><td><a href="https://www.mintegral.com/en/privacy" target="_blank" rel="noopener">mintegral.com/en/privacy</a></td></tr>
-            <tr><td>Unity Ads</td><td>Ad mediation</td><td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">unity.com/legal/game-player-and-app-user-privacy-policy</a></td></tr>
-            <tr><td>Liftoff Monetize (Vungle)</td><td>Ad mediation</td><td><a href="https://liftoff.io/privacy-policy/" target="_blank" rel="noopener">liftoff.io/privacy-policy</a></td></tr>
-            <tr><td>Adjust</td><td>Attribution &amp; marketing analytics</td><td><a href="https://www.adjust.com/terms/privacy-policy/" target="_blank" rel="noopener">adjust.com/terms/privacy-policy</a></td></tr>
-            <tr><td>Google Play (in-app review)</td><td>In-app rating prompt</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
-        </tbody></table></div>
-        <p>Google Firebase acts as our <strong>service provider</strong> (data processor) and processes data on our
-            behalf. Our advertising and attribution partners (AdMob and its mediation networks, and Adjust) act as
-            independent controllers or processors for advertising purposes under their own policies. Google's handling
-            of data is also governed by the
-            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
-        <p><strong>Ad consent (UMP / IAB TCF).</strong> Where required (e.g. in the EEA/UK), the App presents a consent
-            request managed through Google's User Messaging Platform (UMP) before serving personalized ads, and reads the
-            resulting IAB Transparency &amp; Consent Framework (TCF) signals stored on your device so that our ad
-            partners honour your choice. For networks that do not read the TCF string directly, the App forwards your
-            GDPR and U.S.-privacy (CCPA) consent state to those mediation partners. You can change your choice at any
-            time from the App's settings.</p>
-        <div class="callout"><strong>Advertising identifier.</strong> The App serves ads and its partners read the
-            Android Advertising ID. You can reset or delete this identifier, or opt out of ad personalization, at any
-            time in your device settings (Settings &rarr; Google &rarr; Ads, or Settings &rarr; Privacy &rarr; Ads).</div>
+        <p>The App integrates the following third-party services. Each operates under its own privacy policy, which we encourage you to read.</p>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Google Firebase — Analytics, Crashlytics, Remote Config</td><td>Usage analytics, crash reporting, remote configuration</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr><tr><td>Google AdMob</td><td>Advertising</td><td><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a></td></tr><tr><td>Meta Audience Network / Facebook SDK</td><td>Ad mediation, install measurement</td><td><a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener">facebook.com/privacy/policy</a></td></tr><tr><td>Pangle</td><td>Ad mediation</td><td><a href="https://www.pangleglobal.com/privacy" target="_blank" rel="noopener">pangleglobal.com/privacy</a></td></tr><tr><td>Mintegral</td><td>Ad mediation</td><td><a href="https://www.mintegral.com/en/privacy" target="_blank" rel="noopener">mintegral.com/en/privacy</a></td></tr><tr><td>AppLovin</td><td>Ad mediation</td><td><a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener">applovin.com/privacy</a></td></tr><tr><td>Unity Ads</td><td>Ad mediation</td><td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">unity.com/legal</a></td></tr><tr><td>Liftoff Monetize (Vungle)</td><td>Ad mediation</td><td><a href="https://liftoff.io/privacy-policy/" target="_blank" rel="noopener">liftoff.io/privacy-policy</a></td></tr><tr><td>ironSource</td><td>Ad mediation</td><td><a href="https://www.is.com/privacy-policy/" target="_blank" rel="noopener">is.com/privacy-policy</a></td></tr><tr><td>InMobi</td><td>Ad mediation</td><td><a href="https://www.inmobi.com/privacy-policy" target="_blank" rel="noopener">inmobi.com/privacy-policy</a></td></tr><tr><td>DT Exchange (Digital Turbine)</td><td>Ad mediation</td><td><a href="https://www.digitalturbine.com/privacy-policy" target="_blank" rel="noopener">digitalturbine.com/privacy-policy</a></td></tr><tr><td>Moloco</td><td>Ad mediation</td><td><a href="https://www.moloco.com/privacy-policy" target="_blank" rel="noopener">moloco.com/privacy-policy</a></td></tr><tr><td>Chartboost</td><td>Ad mediation</td><td><a href="https://www.chartboost.com/privacy/" target="_blank" rel="noopener">chartboost.com/privacy</a></td></tr><tr><td>Adjust</td><td>Install attribution and marketing measurement</td><td><a href="https://www.adjust.com/terms/privacy-policy/" target="_blank" rel="noopener">adjust.com/terms/privacy-policy</a></td></tr><tr><td>YouTube / Google</td><td>Playback of the built-in news channels via YouTube's official embedded player</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr></tbody></table></div>
+        <div class="callout"><strong>Ad consent.</strong> Where required by law — in the European Economic Area, the United Kingdom and other applicable regions — the App presents a consent form through Google's User Messaging Platform before personalised advertising is enabled. Your choice is passed to AdMob and to every mediation partner above. If you decline, you will still see ads, but they will not be personalised. You can revisit that choice at any time through the privacy options the App provides.</div>
+        <div class="callout"><strong>Resetting or limiting your advertising ID.</strong> On Android you can reset your advertising ID, or delete it entirely, in <strong>Settings → Google → Ads</strong>. Deleting it stops apps from receiving a persistent advertising identifier. On iOS, tracking permission is controlled in <strong>Settings → Privacy &amp; Security → Tracking</strong>.</div>
 
         <h2 id="share">4. How We Share Information</h2>
-        <p>We do <strong>not</strong> sell your personal information for money. However, to show ads the App shares
-            device and advertising identifiers and ad-interaction data with our advertising partners. Under some U.S.
-            state laws this may be considered a "sale" or "sharing"/targeted advertising (see Section 7). We share data:</p>
-        <ul>
-            <li>with the advertising and attribution partners listed in Section 3 (AdMob and its mediation networks, and
-                Adjust), to serve and measure ads and attribute installs, subject to your consent choices;</li>
-            <li>with the service providers listed in Section 3, to the limited extent needed to run the App;</li>
-            <li>to comply with law, legal process, or enforceable governmental requests; and</li>
-            <li>in connection with a merger, acquisition, or asset transfer, subject to this Policy.</li>
-        </ul>
-        <p><strong>U.S. state privacy notice.</strong> Because the App serves personalized advertising, the sharing of
-            advertising and device identifiers with ad partners may be treated as a "sale" or "sharing" for targeted
-            advertising under certain U.S. state laws. You can opt out using the ad-consent controls and your device's
-            advertising-ID settings described in Sections 3 and 7.</p>
+        <p><strong>We do not sell your personal information for money.</strong> We share information only as described here:</p>
+        <ul><li><strong>With the service providers and advertising partners listed in Section 3</strong>, for the purposes stated there.</li><li><strong>For legal reasons</strong> — where we believe disclosure is required by law, regulation, legal process, or an enforceable governmental request, or is necessary to protect rights, safety, or property.</li><li><strong>In a business transfer</strong> — if we are involved in a merger, acquisition, or sale of assets, information may be transferred as part of that transaction, subject to this Policy.</li></ul>
+        <p><strong>U.S. state privacy laws.</strong> Personalised advertising involves disclosing advertising identifiers and approximate location to advertising partners. Under the California Consumer Privacy Act as amended by the CPRA, and under comparable laws in other U.S. states, that disclosure may be treated as a "sale" or as "sharing" for cross-context behavioural advertising, even though no money changes hands. You may opt out by declining personalised advertising in the App's privacy options, by resetting or deleting your advertising ID as described in Section 3, or by contacting us at the address in Section 13.</p>
 
-        <h2 id="legal-bases">5. Legal Bases (EEA/UK — GDPR)</h2>
-        <p>Where GDPR applies, we rely on: <strong>consent</strong> for personalized advertising and for certain
-            analytics and attribution (collected via the UMP consent request described in Section 3); our
-            <strong>legitimate interests</strong> in operating, securing, and improving the App (including
-            non-personalized advertising, crash diagnostics, and fraud prevention); and <strong>legal obligation</strong>
-            where applicable. You may object to or withdraw consent as described in Section 7.</p>
+        <h2 id="legal-bases">5. Legal Bases for Processing (EEA and UK — GDPR)</h2>
+        <div class="table-wrap"><table><thead><tr><th>Purpose</th><th>Legal basis</th></tr></thead><tbody><tr><td>Personalised advertising; analytics where consent is required</td><td><strong>Consent</strong> (Article 6(1)(a)), collected through the consent form described in Section 3 and withdrawable at any time</td></tr><tr><td>Providing the App's core functionality; non-personalised advertising that funds it; security and fraud prevention; product improvement</td><td><strong>Legitimate interests</strong> (Article 6(1)(f))</td></tr><tr><td>Meeting our legal obligations</td><td><strong>Legal obligation</strong> (Article 6(1)(c))</td></tr></tbody></table></div>
 
         <h2 id="retention">6. Data Retention</h2>
-        <p>We retain automatically-collected data only as long as necessary for the purposes above or as required by
-            law. Analytics and identifier data follow our analytics provider's standard retention periods; crash and
-            diagnostic data are kept for a limited period to investigate and fix issues. Data you store locally
-            (playlists, Xtream login) remains on your device until you delete it or uninstall the App.</p>
+        <p>We retain automatically collected information only as long as necessary for the purposes described in this Policy, or as required by law.</p>
+        <ul><li>Analytics data is retained by Firebase for the retention window configured in that service, after which it is deleted or aggregated.</li><li>Crash and diagnostic reports are retained for a limited period sufficient to diagnose and fix the defect.</li><li>Advertising and attribution identifiers are retained by each partner according to its own retention schedule; see the policies in Section 3.</li><li>Everything described in Section 1.2 lives on your device and is retained until you delete it or uninstall the App.</li></ul>
 
         <h2 id="rights">7. Your Rights</h2>
-        <p>Depending on where you live, you may have the right to access, correct, delete, port, restrict, or object to
-            the processing of your personal data, and to withdraw consent or complain to a data protection authority
-            (GDPR); to know, delete, correct, and opt out of the "sale"/"sharing" of personal information and targeted
-            advertising, with no discrimination for exercising these rights (CCPA/CPRA); and similar rights under LGPD,
-            PIPEDA, and other laws.</p>
-        <p>Because the App has no accounts, we cannot look you up by name or email. To exercise a right, email us at the
-            address in Section 13 and include your <strong>Android Advertising ID</strong> and device details so we can
-            locate the relevant data. You can also stop all automatic collection by uninstalling the App and can reset
-            your advertising ID in device settings.</p>
+        <h3>7.1 EEA and UK (GDPR)</h3>
+        <p>You have the right to access your personal data; to rectify inaccurate data; to erasure; to restrict processing; to data portability; to object to processing based on legitimate interests, including profiling for advertising; to withdraw consent at any time without affecting prior processing; and to lodge a complaint with your national supervisory authority.</p>
+        <h3>7.2 California and other U.S. states (CCPA/CPRA and comparable laws)</h3>
+        <p>You have the right to know what categories of personal information are collected, used and disclosed; to request deletion; to request correction; to opt out of the sale or sharing of personal information and of targeted advertising; to limit the use of sensitive personal information (Zephlix collects none); and not to be discriminated against for exercising these rights.</p>
+        <h3>7.3 Other regions</h3>
+        <p>Residents of Brazil (LGPD), Canada (PIPEDA), and other jurisdictions with comparable laws have equivalent rights of access, correction, deletion and objection.</p>
+        <h3>7.4 How to exercise your rights</h3>
+        <p>Email <strong>contact@tranquilmind.co</strong>. Because Zephlix has no accounts and we hold no directly identifying information, <strong>we cannot locate your data from your name or email address alone.</strong> To let us act on your request, include your <strong>Google Advertising ID</strong> (Android: Settings → Google → Ads) or your iOS advertising identifier, together with your device model and the approximate dates you used the App. We will respond within the period required by applicable law — 30 days under the GDPR and 45 days under the CCPA, each extendable where the law permits.</p>
+        <p>You may also delete everything stored locally at any time by uninstalling the App or clearing its storage, and you may stop all future automatic collection by resetting or deleting your advertising ID.</p>
 
         <h2 id="children">8. Children's Privacy</h2>
-        <p>The App is intended for users aged <strong>18 and over</strong> and is <strong>not directed to
-            children</strong>. We do not knowingly collect personal information from children. If you believe a child
-            has provided us information, contact us and we will delete it. We handle age of digital consent in the EEA
-            and COPPA obligations in the U.S. accordingly.</p>
+        <p>Zephlix is intended for users aged <strong>16 and over</strong>, or the higher age of digital consent that applies where you live. It is <strong>not directed to children</strong>, it is not listed in Google Play's Designed for Families programme, and its store listing declares a target audience of 16-17 and 18+.</p>
+        <p>We do not knowingly collect personal information from children under 13 (or under the applicable age of digital consent in your jurisdiction). If you are a parent or guardian and believe a child has provided information through the App, contact us at <strong>contact@tranquilmind.co</strong> and we will delete it and take reasonable steps to prevent further collection.</p>
+        <p>Zephlix contains a parental-control feature: you can set a 4-digit PIN and hide categories that a playlist labels as adult. <strong>This is a convenience filter that matches category names supplied by your playlist, not a content-classification system.</strong> It cannot inspect the streams themselves and it cannot catch content that a playlist has mislabelled or left unlabelled. Because Zephlix plays sources chosen entirely by the user, an adult should decide what playlists are added to a device a minor can access.</p>
 
         <h2 id="intl">9. International Data Transfers</h2>
-        <p>Your information may be processed in countries other than your own, including the United States, where our
-            service providers operate. Where required, transfers are protected by appropriate safeguards such as
-            Standard Contractual Clauses.</p>
+        <p>We are based in Vietnam, and the third-party services in Section 3 operate globally. Your information may be processed in countries other than your own, including the United States, whose data-protection laws may differ from those of your country. Where transfers out of the EEA or the UK are involved, our providers rely on lawful transfer mechanisms such as the European Commission's Standard Contractual Clauses.</p>
 
         <h2 id="security">10. Data Security</h2>
-        <p>We use HTTPS/TLS encryption in transit and reasonable technical and organizational measures to protect
-            information. No method of transmission or storage is 100% secure, and we cannot guarantee absolute
-            security.</p>
+        <p>All data collected by the App's own SDKs is transmitted over encrypted HTTPS/TLS connections. We apply reasonable technical and organisational measures appropriate to the limited information we handle. Note, as explained in Section 1.3, that traffic between your device and a playlist server you configure is governed by that server, and is not encrypted when the provider offers only <code>http://</code>. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
 
-        <h2 id="third-content">11. Third-Party Content and Connections</h2>
-        <p>The App plays streams and content from IPTV sources <strong>that you supply</strong>. We do not control,
-            host, endorse, or take responsibility for that content or for the third-party servers you connect to. You
-            are responsible for the sources you add and for ensuring you have the right to access them. Review the terms
-            and privacy practices of your own IPTV provider.</p>
-        <p>When you use certain features, your device also connects directly to other third parties, each under its own
-            privacy policy:</p>
-        <ul>
-            <li><strong>Built-in free channels.</strong> The App includes a small optional list of freely available
-                public live streams. Playing one connects your device directly to that broadcaster's content delivery
-                network.</li>
-            <li><strong>YouTube live channels.</strong> Some built-in free channels are official 24/7 live streams shown
-                through YouTube's embedded player. YouTube/Google may collect data as described in the
-                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
-            <li><strong>Channel logos and program guide (EPG).</strong> Channel artwork and XMLTV program-guide files are
-                fetched directly from the URLs contained in your playlist or provided by your IPTV provider.</li>
-            <li><strong>Casting.</strong> If you cast, the App sends the stream address to the Google Cast (Chromecast)
-                device on your local network so it can play the media.</li>
-        </ul>
+        <h2 id="third-content">11. Third-Party Content</h2>
+        <p><strong>Zephlix does not provide, host, stream, or sell any channel, film, or series.</strong> All viewable content comes from playlists and servers you choose to add, or from third-party feeds the App links to. We do not control, endorse, review, or assume responsibility for that content, for its legality, or for the privacy practices of the servers that deliver it. Channel names, logos, and trademarks belong to their respective owners, and their appearance in the App does not imply any affiliation with or endorsement by them. Please review the terms and privacy policies of any provider whose service you use with the App.</p>
 
         <h2 id="changes">12. Changes to This Policy</h2>
-        <p>We may update this Policy from time to time. Material changes will be posted here with a new "Last updated"
-            date. Your continued use of the App after changes take effect constitutes acceptance.</p>
+        <p>We may update this Policy from time to time. Material changes will be posted at this URL with a revised "Last updated" date, and, where required by law, we will seek your consent again. Continued use of the App after a change takes effect constitutes acceptance of the revised Policy.</p>
 
         <h2 id="contact">13. Contact Us</h2>
         <p>Tranquil Mind Technology JSC<br>
@@ -493,7 +394,7 @@
             Email: <a href="mailto:contact@tranquilmind.co"><strong>contact@tranquilmind.co</strong></a></p>
 
         <div class="footer-block">
-            <span>&copy; 2026 Tranquil Mind Technology JSC. All rights reserved.</span>
+            <span>&copy; 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</span>
             <a href="#top">↑ Back to top</a>
         </div>
     </article>
