@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Terms of Service for Reeloop — the rules for using the app.">
+    <title>Terms of Service — Reeloop</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+        header.site {
+            position: sticky; top: 0; z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px; margin: 0 auto;
+            padding: 14px 24px;
+            display: flex; align-items: center; justify-content: space-between; gap: 16px;
+        }
+        .brand {
+            display: flex; align-items: center; gap: 10px;
+            font-weight: 700; font-size: 15px;
+            color: var(--text); border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #6366f1, var(--accent));
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta { font-size: 13px; color: var(--text-soft); display: flex; gap: 14px; }
+        main.shell {
+            max-width: 1100px; margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid; grid-template-columns: 1fr; gap: 32px;
+        }
+        @media (min-width: 960px) { main.shell { grid-template-columns: 240px 1fr; } }
+        aside.toc {
+            position: sticky; top: 84px; align-self: start;
+            max-height: calc(100vh - 100px); overflow-y: auto;
+            font-size: 13.5px; display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block; text-transform: uppercase;
+            letter-spacing: .08em; font-size: 11px;
+            color: var(--text-soft); margin-bottom: 10px;
+        }
+        aside.toc ol { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+        aside.toc a {
+            display: block; padding: 6px 10px; border-radius: var(--radius-sm);
+            color: var(--text-muted); border-bottom: none; line-height: 1.4;
+        }
+        aside.toc a:hover { background: var(--bg-elev); color: var(--text); }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft); color: var(--accent);
+            font-size: 12px; font-weight: 600;
+            letter-spacing: .04em; text-transform: uppercase;
+            border-radius: 999px; margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px); font-weight: 800;
+            letter-spacing: -0.02em; margin: 0 0 12px; line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px; font-weight: 700; letter-spacing: -0.01em;
+            margin: 38px 0 12px; padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 { font-size: 16px; font-weight: 600; color: var(--text); margin: 22px 0 8px; }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul { margin: 0 0 14px; padding-left: 22px; color: var(--text-muted); }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 8px 18px;
+            font-size: 13.5px; color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev); border: 1px solid var(--border);
+            border-radius: var(--radius-sm); margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px; padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px; color: var(--text-soft);
+            display: flex; justify-content: space-between;
+            flex-wrap: wrap; gap: 8px;
+        }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">T</span>Reeloop</a>
+        <div class="nav-meta">
+            <span>Terms of Service</span>
+            <span>·</span>
+            <span>2026-08-24</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#eligibility">1. Eligibility</a></li>
+            <li><a href="#license">2. License</a></li>
+            <li><a href="#the-service">3. The service</a></li>
+            <li><a href="#subscriptions-purchases-and-advertising">4. Subscriptions, purchases, and advertising</a></li>
+            <li><a href="#acceptable-use">5. Acceptable use</a></li>
+            <li><a href="#intellectual-property">6. Intellectual property</a></li>
+            <li><a href="#third-party-services-and-content">7. Third-party services and content</a></li>
+            <li><a href="#disclaimers">8. Disclaimers</a></li>
+            <li><a href="#limitation-of-liability">9. Limitation of liability</a></li>
+            <li><a href="#indemnification">10. Indemnification</a></li>
+            <li><a href="#termination">11. Termination</a></li>
+            <li><a href="#changes-to-these-terms">12. Changes to these Terms</a></li>
+            <li><a href="#governing-law-and-disputes">13. Governing law and disputes</a></li>
+            <li><a href="#contact">14. Contact</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Terms</span>
+        <h1>Terms of Service</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Reeloop</span>
+            <span><strong>Effective:</strong> 2026-08-24</span>
+            <span><strong>Last Updated:</strong> 2026-08-24</span>
+        </div>
+
+        <p>These Terms of Service ("Terms") govern your use of the Reeloop mobile application ("the App"), operated by Tranquil Mind Technology JSC ("we", "us", "our"). By downloading or using the App, you agree to these Terms and to our Privacy Policy (https://policy.tranquilmind.co/reeloop/privacy). If you do not agree, do not use the App.</p>
+        <h2 id="eligibility">1. Eligibility</h2>
+        <p>You must be at least <strong>16 years old</strong>, or older if your country sets a higher age of digital consent, to use the App. Some series contain mature dramatic themes. By using the App you confirm that you meet this requirement.</p>
+        <h2 id="license">2. License</h2>
+        <p>We grant you a personal, limited, non-exclusive, non-transferable and revocable licence to install and use the App on a device you own or control, for your own non-commercial entertainment. You may not copy, modify, translate, rent, resell, distribute, decompile or reverse-engineer the App or any part of it, except to the extent that applicable law expressly permits despite this restriction.</p>
+        <h2 id="the-service">3. The service</h2>
+        <p>Reeloop is a vertical short-drama streaming app: you swipe through bite-sized romance, revenge, billionaire and fantasy series whose episodes run one to two minutes each. No account is required. The catalogue is licensed and may differ by region, and titles may be added or removed at any time. We may modify, suspend or discontinue any part of the App, temporarily or permanently, without liability to you.</p>
+        <h2 id="subscriptions-purchases-and-advertising">4. Subscriptions, purchases, and advertising</h2>
+        <p>The App is free to download and is supported by advertising. Some episodes may be unlocked by watching a <strong>rewarded advertisement</strong>; watching one is always optional, and choosing not to watch simply means the episode stays locked unless unlocked another way.</p>
+        <p>The App also offers optional <strong>auto-renewing subscriptions</strong> that remove advertising and unlock the catalogue. Purchases are processed through <strong>Google Play Billing</strong>; we never receive or store your payment card details.</p>
+        <ul><li>The price and billing period are shown in the App before you confirm.</li><li>A subscription renews automatically at the end of each period unless you cancel it at least <strong>24 hours</strong> before the renewal date.</li><li>You manage or cancel a subscription in <strong>Google Play → Payments and subscriptions → Subscriptions</strong>. Uninstalling the App does not cancel a subscription.</li><li>Refunds are handled under the Google Play refund policy and any non-waivable consumer rights in your country.</li></ul>
+        <h2 id="acceptable-use">5. Acceptable use</h2>
+        <p>You agree not to use the App unlawfully, to disrupt or overload it, to bypass advertising, paywalls, geographic restrictions or other access controls, to download, record, redistribute or publicly perform the series, or to access the App with bots, scrapers, emulated or tampered clients. We may suspend or terminate your access for any violation.</p>
+        <h2 id="intellectual-property">6. Intellectual property</h2>
+        <p>The App, its design, source code, trademarks and all content are owned by Tranquil Mind Technology JSC or our licensors and are protected by copyright and other laws. All series are works of fiction; any resemblance to real persons, living or dead, or to actual events is coincidental. Third-party names and marks belong to their respective owners, and their appearance in the App does not imply any affiliation or endorsement.</p>
+        <h2 id="third-party-services-and-content">7. Third-party services and content</h2>
+        <p>The App uses third-party services for advertising, analytics, attribution, payments and app-integrity protection, and streams series supplied by content licensors. Each of these is governed by its own terms and privacy policy, listed in our Privacy Policy. We are not responsible for third-party content, advertisements or the sites they link to.</p>
+        <h2 id="disclaimers">8. Disclaimers</h2>
+        <p>The App is provided <strong>"as is"</strong> and <strong>"as available"</strong>, without warranties of any kind, whether express or implied, including merchantability, fitness for a particular purpose and non-infringement. We do not warrant that the App will be uninterrupted, error-free, secure, or that any particular title will remain available.</p>
+        <h2 id="limitation-of-liability">9. Limitation of liability</h2>
+        <p>To the maximum extent permitted by law, we are not liable for indirect, incidental, special, consequential or punitive damages, or for loss of data, profits or goodwill. Our total liability for any claim relating to the App is limited to the greater of the amount you paid us in the twelve months before the claim or <strong>USD 50</strong>. Some jurisdictions do not allow these exclusions, so parts of this section may not apply to you.</p>
+        <h2 id="indemnification">10. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless Tranquil Mind Technology JSC and its officers, employees and partners from any claim or demand arising out of your misuse of the App or your breach of these Terms.</p>
+        <h2 id="termination">11. Termination</h2>
+        <p>We may suspend or terminate your access to the App at any time, including for breach of these Terms. Sections 6, 8, 9, 10 and 13 survive termination.</p>
+        <h2 id="changes-to-these-terms">12. Changes to these Terms</h2>
+        <p>We may update these Terms from time to time. Material changes will be posted on this page with a new "Last updated" date. Continued use of the App after a change means you accept the updated Terms.</p>
+        <h2 id="governing-law-and-disputes">13. Governing law and disputes</h2>
+        <p>These Terms are governed by the laws of Vietnam, and the courts of Hanoi, Vietnam have jurisdiction over any dispute. Mandatory consumer-protection rights available to you in your country of residence are not affected.</p>
+        <h2 id="contact">14. Contact</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
