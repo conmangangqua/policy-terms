@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Privacy Policy for Callyx — how we collect, use, and protect your data.">
+    <title>Privacy Policy — Callyx</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        header.site {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+            border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #6366f1);
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta {
+            font-size: 13px;
+            color: var(--text-soft);
+            display: flex; gap: 14px;
+        }
+        main.shell {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        @media (min-width: 960px) {
+            main.shell { grid-template-columns: 240px 1fr; }
+        }
+        aside.toc {
+            position: sticky;
+            top: 84px;
+            align-self: start;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            font-size: 13.5px;
+            display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: 11px;
+            color: var(--text-soft);
+            margin-bottom: 10px;
+        }
+        aside.toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        aside.toc a {
+            display: block;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            color: var(--text-muted);
+            border-bottom: none;
+            line-height: 1.4;
+        }
+        aside.toc a:hover {
+            background: var(--bg-elev);
+            color: var(--text);
+        }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 38px 0 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 22px 0 8px;
+        }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul {
+            margin: 0 0 14px;
+            padding-left: 22px;
+            color: var(--text-muted);
+        }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            font-size: 13.5px;
+            color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px;
+            color: var(--text-soft);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 0 20px;
+            font-size: 14px;
+        }
+        thead th {
+            text-align: left;
+            font-weight: 600;
+            color: var(--text);
+            background: var(--bg-elev);
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        tbody td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+            vertical-align: top;
+        }
+        tbody tr:last-child td { border-bottom: none; }
+        .table-wrap {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        .table-wrap table { margin: 0; }
+        .callout {
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
+            margin: 0 0 16px;
+            color: var(--text-muted);
+        }
+        .callout strong { color: var(--text); }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">P</span>Callyx</a>
+        <div class="nav-meta">
+            <span>Privacy Policy</span>
+            <span>·</span>
+            <span>2026-08-28</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#information-we-collect">1. Information we collect</a></li>
+            <li><a href="#how-we-use-information">2. How we use information</a></li>
+            <li><a href="#third-party-services">3. Third-party services</a></li>
+            <li><a href="#how-we-share-information">4. How we share information</a></li>
+            <li><a href="#legal-bases">5. Legal bases (EEA/UK — GDPR)</a></li>
+            <li><a href="#data-retention">6. Data retention</a></li>
+            <li><a href="#your-rights">7. Your rights</a></li>
+            <li><a href="#childrens-privacy">8. Children&#x27;s privacy</a></li>
+            <li><a href="#international-data-transfers">9. International data transfers</a></li>
+            <li><a href="#data-security">10. Data security</a></li>
+            <li><a href="#third-party-content">11. Third-party content</a></li>
+            <li><a href="#changes-to-this-policy">12. Changes to this Policy</a></li>
+            <li><a href="#contact-us">13. Contact us</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Privacy</span>
+        <h1>Privacy Policy</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Callyx</span>
+            <span><strong>Effective:</strong> 2026-08-28</span>
+            <span><strong>Last Updated:</strong> 2026-08-28</span>
+        </div>
+
+        <p>Callyx ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information we collect, how we use and share it, and the choices and rights you have. By using the App, you agree to this Policy.</p>
+        <p>Callyx is an Android app that identifies incoming callers, blocks or silences spam and unwanted calls, and keeps a local log of message notifications so you can read messages that were later deleted or recalled by the sender. <strong>You do not need to create an account to use it.</strong> Callyx has no user accounts, no login, and no Callyx server: your contacts, your block and spam lists, and the message notifications the App logs are processed and stored <strong>only on your device</strong> and are never uploaded to us.</p>
+        <h2 id="information-we-collect">1. Information we collect</h2>
+        <h3>1.1 Information processed on your device only (never sent to us)</h3>
+        <p>The following data powers the core features of Callyx. It stays in the App's private storage on your phone. We have no server that receives it, and no third party listed in Section 3 receives it.</p>
+        <div class="table-wrap"><table><thead><tr><th>Data</th><th>Why the App needs it</th><th>Where it lives</th></tr></thead><tbody><tr><td><strong>Contacts</strong> (names, phone numbers, photos) — Android permission <code>READ_CONTACTS</code></td><td>To show who is calling (Caller ID), to power the Contacts tab, and to match incoming numbers against people you know</td><td>Read on demand from the device address book; not copied to any server</td></tr><tr><td><strong>Numbers you add to your Block list and Spam list</strong></td><td>So the App can reject or silence calls from those numbers</td><td>Device storage (Android <code>SharedPreferences</code>), readable by the App only</td></tr><tr><td><strong>Incoming call numbers</strong> — via Android's <code>CallScreeningService</code>, active only if you set Callyx as your default caller-ID &amp; spam app</td><td>To decide, at the moment of the call, whether to allow, silence, or reject it</td><td>Evaluated in memory during the call; not stored by us and not transmitted</td></tr><tr><td><strong>Notification content from your messaging apps</strong> (app name/package, notification title, notification text, timestamp) — via Android's Notification Access (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>), active only if you explicitly grant it in Android Settings</td><td>This is the "recalled / deleted message" feature: the App keeps its own copy of message notifications so you can still read a message after the sender deletes it</td><td>Device storage, capped at the most recent 500 entries; you can clear it in the App or by uninstalling. Never transmitted</td></tr></tbody></table></div>
+        <p>We do <strong>not</strong> read your call log or your SMS inbox. Callyx does not request the <code>READ_CALL_LOG</code>, <code>READ_PHONE_STATE</code>, <code>READ_SMS</code>, <code>CAMERA</code>, <code>RECORD_AUDIO</code>, or location permissions, and it has no file, photo, or microphone access.</p>
+        <h3>1.2 Information collected automatically and shared with third parties</h3>
+        <p>When you use the App with an internet connection, the advertising and analytics services listed in Section 3 collect the following:</p>
+        <ul><li><strong>Device and advertising identifiers</strong> — the Google Advertising ID (Android permission <code>com.google.android.gms.permission.AD_ID</code>), app-instance IDs, and similar identifiers used for ad delivery, ad measurement, attribution, and analytics.</li><li><strong>Device and technical information</strong> — device model, operating-system version, language, region, screen and network characteristics, and app version.</li><li><strong>Approximate location derived from your IP address</strong> — country/region level. The App does <strong>not</strong> request or use GPS or precise location.</li><li><strong>App activity</strong> — which screens you open, which features you use, ad impressions and clicks, session start/stop and similar in-app events. This never includes the content of your contacts, your block list, or the message notifications described in Section 1.1.</li><li><strong>Crash logs and diagnostics</strong> — stack traces, device state at the time of a crash, and performance data, used to fix bugs.</li><li><strong>Install attribution data</strong> — which campaign or referrer led to the install.</li></ul>
+        <h3>1.3 Information you give us directly</h3>
+        <p>Only if you choose to contact us by email. We then hold your email address and whatever you write, for as long as needed to answer you.</p>
+        <h2 id="how-we-use-information">2. How we use information</h2>
+        <ul><li><strong>Provide and operate the App</strong> — identify callers, block or silence calls you marked, and keep your local unseen-message log.</li><li><strong>Show advertising and measure it</strong> — Callyx is free and supported by ads (app-open, banner, interstitial, and native ads). See Section 3 for your controls.</li><li><strong>Analytics and improvement</strong> — understand which features are used so we can improve them.</li><li><strong>Stability and security</strong> — detect crashes, diagnose bugs, and prevent fraud and abuse of the ad system.</li><li><strong>Remote configuration</strong> — deliver feature flags and configuration to the App (Firebase Remote Config).</li><li><strong>Legal compliance</strong> — comply with applicable law and respond to lawful requests.</li></ul>
+        <h2 id="third-party-services">3. Third-party services</h2>
+        <p>The App includes the following third-party SDKs. Each acts as an independent controller of the data it collects and processes it under its own privacy policy.</p>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Provider</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Google AdMob (<code>play-services-ads</code>)</td><td>Google</td><td>Serving and measuring ads</td><td>https://policies.google.com/technologies/ads</td></tr><tr><td>Google User Messaging Platform (UMP)</td><td>Google</td><td>Ad-consent / GDPR &amp; CCPA consent form (IAB TCF)</td><td>https://policies.google.com/privacy</td></tr><tr><td>Meta Audience Network</td><td>Meta Platforms</td><td>Mediated ads</td><td>https://www.facebook.com/about/privacy</td></tr><tr><td>Meta (Facebook) Android SDK &amp; App Events</td><td>Meta Platforms</td><td>App-event measurement and ad attribution</td><td>https://www.facebook.com/about/privacy</td></tr><tr><td>AppLovin (AdMob mediation adapter)</td><td>AppLovin Corp.</td><td>Mediated ads</td><td>https://www.applovin.com/privacy/</td></tr><tr><td>Mintegral (AdMob mediation adapter)</td><td>Mintegral International</td><td>Mediated ads</td><td>https://www.mintegral.com/en/privacy/</td></tr><tr><td>Pangle (AdMob mediation adapter)</td><td>Bytedance / Pangle</td><td>Mediated ads</td><td>https://www.pangleglobal.com/privacy</td></tr><tr><td>Adjust</td><td>Adjust GmbH</td><td>Install attribution and marketing analytics</td><td>https://www.adjust.com/terms/privacy-policy/</td></tr><tr><td>Firebase Analytics</td><td>Google</td><td>Product analytics</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Firebase Crashlytics</td><td>Google</td><td>Crash reporting and stability diagnostics</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Firebase Remote Config</td><td>Google</td><td>Remote feature configuration</td><td>https://firebase.google.com/support/privacy</td></tr></tbody></table></div>
+        <p><strong>Ad consent (EEA/UK/Switzerland).</strong> On first launch in a region that requires it, the App shows a Google UMP consent form where you choose whether personalized ads and related processing are allowed. You can reopen and change that choice at any time from the App's Settings screen ("Privacy options" / consent).</p>
+        <p><strong>Resetting or limiting your advertising ID.</strong> On Android you can reset your advertising ID or delete it entirely in <strong>Settings → Google → Ads</strong> (path may vary by device). Deleting the advertising ID stops apps from receiving it and limits ad personalization.</p>
+        <h2 id="how-we-share-information">4. How we share information</h2>
+        <ul><li><strong>We do not sell your personal information for money.</strong> We do not sell or share the contacts, block lists, or message notifications described in Section 1.1 with anyone — that data never leaves your device.</li><li>We share the automatically-collected data in Section 1.2 with the providers in Section 3, solely for advertising, attribution, analytics, and crash reporting.</li><li><strong>U.S. state privacy laws.</strong> Where personalized advertising is enabled, sharing device/advertising identifiers with ad partners for cross-context behavioural advertising may be treated as a "sale" or "sharing" under laws such as the CCPA/CPRA. You can opt out via the App's consent controls and by resetting or deleting your advertising ID (Section 3), or by contacting us at the address in Section 13.</li><li>We may disclose information if required by law, legal process, or a lawful government request, or to protect our rights, users, or the security of the service.</li><li>If we are involved in a merger, acquisition, or asset sale, information may be transferred, subject to this Policy.</li></ul>
+        <h2 id="legal-bases">5. Legal bases (EEA/UK — GDPR)</h2>
+        <ul><li><strong>Consent</strong> — personalized advertising, ad measurement, and analytics where consent is required (collected through the UMP consent form).</li><li><strong>Legitimate interests</strong> — operating and securing the App, non-personalized advertising where permitted, crash diagnostics, and product improvement.</li><li><strong>Legal obligation</strong> — retaining or disclosing data where the law requires it.</li></ul>
+        <p>You may withdraw consent at any time via the App's privacy/consent option; withdrawal does not affect processing carried out before withdrawal.</p>
+        <h2 id="data-retention">6. Data retention</h2>
+        <ul><li><strong>On-device data</strong> (contacts access, block/spam lists, unseen-message log) is kept on your device until you delete it in the App or uninstall Callyx. The unseen-message log keeps only the most recent 500 entries and drops older ones automatically.</li><li><strong>Advertising, attribution, and analytics data</strong> is retained by the providers in Section 3 for the periods stated in their own policies.</li><li><strong>Crash and diagnostic data</strong> is retained for a limited period needed to diagnose and fix issues.</li><li><strong>Support emails</strong> are kept as long as needed to resolve your request and to keep a record of it.</li></ul>
+        <h2 id="your-rights">7. Your rights</h2>
+        <p><strong>EEA/UK (GDPR).</strong> You have the right to access, correct, delete, port, object to, and restrict processing of your personal data, to withdraw consent, and to lodge a complaint with your national data protection authority.</p>
+        <p><strong>California (CCPA/CPRA).</strong> You have the right to know what personal information is collected and disclosed, to delete it, to correct it, to opt out of "sale"/"sharing" and targeted advertising, to limit the use of sensitive personal information, and not to be discriminated against for exercising these rights.</p>
+        <p><strong>Other regions.</strong> Comparable rights apply under Brazil's LGPD, Canada's PIPEDA, and similar laws.</p>
+        <p><strong>How to exercise them.</strong> Email us at <strong>contact@tranquilmind.co</strong>. Because Callyx has no accounts, we cannot identify you from a name — please include your <strong>advertising ID</strong>, your device model, and your app version so we can pass the request to the relevant partner. Most data held about you sits with the third parties in Section 3; you may also exercise your rights directly with them using the links above. Data stored on your device can be erased by you at any time by clearing it in the App or uninstalling Callyx.</p>
+        <h2 id="childrens-privacy">8. Children's privacy</h2>
+        <p>Callyx is a general-audience utility intended for users aged <strong>13 and over</strong> (or the higher age of digital consent in your country — 16 in parts of the EEA). It is not directed to children. We do not knowingly collect personal information from children under 13, and the App has no social, chat, dating, or user-to-user communication features. If you believe a child has provided information to us, contact <strong>contact@tranquilmind.co</strong> and we will delete it.</p>
+        <h2 id="international-data-transfers">9. International data transfers</h2>
+        <p>The third-party providers in Section 3 operate globally, so data collected through the App may be processed in countries other than yours, including the United States. Where required, transfers rely on appropriate safeguards such as the EU Standard Contractual Clauses adopted by those providers.</p>
+        <h2 id="data-security">10. Data security</h2>
+        <p>Data transmitted by the App uses HTTPS/TLS encryption. On-device data is held in the App's private, sandboxed storage, which other apps cannot read. We apply reasonable technical and organisational measures, but no method of transmission or storage is 100% secure.</p>
+        <h2 id="third-party-content">11. Third-party content</h2>
+        <p>Callyx displays advertisements and may link to external sites and app stores. We do not control and are not responsible for third-party content or practices; please review their own policies.</p>
+        <h2 id="changes-to-this-policy">12. Changes to this Policy</h2>
+        <p>We may update this Policy from time to time. Material changes will be posted on this page with a new "Last updated" date. Continued use of the App after an update means you accept the revised Policy.</p>
+        <h2 id="contact-us">13. Contact us</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
