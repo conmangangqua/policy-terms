@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Privacy Policy for Wifora — how we collect, use, and protect your data.">
+    <title>Privacy Policy — Wifora</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        header.site {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+            border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #6366f1);
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta {
+            font-size: 13px;
+            color: var(--text-soft);
+            display: flex; gap: 14px;
+        }
+        main.shell {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        @media (min-width: 960px) {
+            main.shell { grid-template-columns: 240px 1fr; }
+        }
+        aside.toc {
+            position: sticky;
+            top: 84px;
+            align-self: start;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            font-size: 13.5px;
+            display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: 11px;
+            color: var(--text-soft);
+            margin-bottom: 10px;
+        }
+        aside.toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        aside.toc a {
+            display: block;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            color: var(--text-muted);
+            border-bottom: none;
+            line-height: 1.4;
+        }
+        aside.toc a:hover {
+            background: var(--bg-elev);
+            color: var(--text);
+        }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 38px 0 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 22px 0 8px;
+        }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul {
+            margin: 0 0 14px;
+            padding-left: 22px;
+            color: var(--text-muted);
+        }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            font-size: 13.5px;
+            color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px;
+            color: var(--text-soft);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 0 20px;
+            font-size: 14px;
+        }
+        thead th {
+            text-align: left;
+            font-weight: 600;
+            color: var(--text);
+            background: var(--bg-elev);
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        tbody td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+            vertical-align: top;
+        }
+        tbody tr:last-child td { border-bottom: none; }
+        .table-wrap {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        .table-wrap table { margin: 0; }
+        .callout {
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
+            margin: 0 0 16px;
+            color: var(--text-muted);
+        }
+        .callout strong { color: var(--text); }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">P</span>Wifora</a>
+        <div class="nav-meta">
+            <span>Privacy Policy</span>
+            <span>·</span>
+            <span>2026-08-28</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#information-we-collect">1. Information we collect</a></li>
+            <li><a href="#android-permissions-and-why-the-app-asks">2. Android permissions and why the App asks for them</a></li>
+            <li><a href="#how-we-use-information">3. How we use information</a></li>
+            <li><a href="#third-party-services">4. Third-party services</a></li>
+            <li><a href="#how-we-share-information">5. How we share information</a></li>
+            <li><a href="#legal-bases-for-processing">6. Legal bases for processing (EEA / UK — GDPR)</a></li>
+            <li><a href="#data-retention">7. Data retention</a></li>
+            <li><a href="#your-rights">8. Your rights</a></li>
+            <li><a href="#childrens-privacy">9. Children&#x27;s privacy</a></li>
+            <li><a href="#international-data-transfers">10. International data transfers</a></li>
+            <li><a href="#data-security">11. Data security</a></li>
+            <li><a href="#third-party-content-and-links">12. Third-party content and links</a></li>
+            <li><a href="#changes-to-this-policy">13. Changes to this Policy</a></li>
+            <li><a href="#contact-us">14. Contact us</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Privacy</span>
+        <h1>Privacy Policy</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Wifora</span>
+            <span><strong>Effective:</strong> 2026-08-28</span>
+            <span><strong>Last Updated:</strong> 2026-08-28</span>
+        </div>
+
+        <p>Wifora ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information the App handles, what little of it leaves your device, how it is used and shared, and the choices and rights you have. By using the App, you agree to this Policy.</p>
+        <p>Wifora is a Wi-Fi analysis toolkit: it lists the Wi-Fi networks around you, measures your connection speed, charts signal strength, scans the devices on your local network, generates and reads Wi-Fi QR codes, lets you save your own hotspot locations on a map, and helps you manage your phone's hotspot. <strong>The App has no user accounts and no login</strong> — you do not create a profile, and we operate no server that stores your data. <strong>The App contains no advertising SDK and no in-app purchases.</strong> Almost everything Wifora produces stays in a local database on your phone.</p>
+        <h2 id="information-we-collect">1. Information we collect</h2>
+        <h3>1.1 Information that leaves your device</h3>
+        <p>Only the following leaves your device, and only for the purposes described:</p>
+        <ul><li><strong>Crash logs and diagnostics.</strong> If the App crashes or hits a fatal error, a crash report is sent to Google Firebase Crashlytics. It contains the stack trace, the App version, your device model and manufacturer, the operating system version, device state at the time (such as free memory and orientation), a randomly generated Firebase installation identifier, and the time of the crash. It does not contain your Wi-Fi passwords, network names, measurement history, or saved locations.</li><li><strong>Your IP address, as an unavoidable part of connecting.</strong> Any internet request reveals your IP address to the server that answers it. This happens with the two services below.</li><li><strong>Speed-test traffic.</strong> When you run a speed test, the App downloads and uploads blocks of meaningless filler data to Cloudflare's public measurement endpoints (<code>speed.cloudflare.com</code>). The filler contains no personal information; Cloudflare sees the request itself, your IP address, and standard connection metadata.</li><li><strong>Map tile requests.</strong> When you open the map or download an offline map region, the App requests map image tiles from the OpenStreetMap tile service. Each request contains the coordinates of the map area you are viewing and identifies the App by name. Because you choose what area to view, these requests can indicate roughly where you are looking on a map. The App does not send your GPS position, your saved hotspots, or any identifier of you to the tile service.</li></ul>
+        <p>We do not operate our own backend for the App. There is no server of ours that receives your networks, measurements, passwords, scans, or locations.</p>
+        <h3>1.2 Information you provide</h3>
+        <p>None. The App has no registration, no login, no profile, no contact form, and no user-generated content that is uploaded anywhere. Anything you type in the App — a name for a saved hotspot, a note, a generated password — stays in the local database on your phone.</p>
+        <h3>1.3 Information processed only on your device</h3>
+        <p>The following is created or read on your phone and stored only there, in a local database (Hive) and local preferences. It is not transmitted to us or to any third party:</p>
+        <ul><li><strong>Nearby Wi-Fi networks:</strong> network names (SSID), hardware identifiers (BSSID), signal strength, channel, frequency band and security type, as reported by Android's Wi-Fi scanner.</li><li><strong>Speed test history:</strong> download and upload rates, ping and jitter, and the time of each test.</li><li><strong>Signal strength history:</strong> samples recorded while you watch a network's signal.</li><li><strong>Local network scan results:</strong> the IP addresses, host names and open ports of devices found on the network you are connected to, and the device type guessed from those ports.</li><li><strong>Saved hotspots:</strong> the coordinates, label and notes for locations you deliberately save, plus offline map tiles you choose to download, cached in the App's private storage.</li><li><strong>Wi-Fi QR codes:</strong> codes you scan with the camera or open from your gallery are decoded on the device; the resulting network name and password are shown to you and never uploaded. Codes you generate are rendered on the device.</li><li><strong>Saved Wi-Fi passwords (rooted devices only):</strong> on a rooted phone the App can read the Wi-Fi credentials the system has stored, in order to display them to you. This read happens entirely on the device and the result is never transmitted. On a normal, non-rooted phone Android does not permit this, and the App simply explains the limitation instead of reading anything.</li><li><strong>App settings and preferences</strong>, including your language choice and the state of onboarding.</li></ul>
+        <h2 id="android-permissions-and-why-the-app-asks">2. Android permissions and why the App asks for them</h2>
+        <ul><li><strong>Internet, network state, Wi-Fi state, change Wi-Fi state, change network state</strong> — to run speed tests, load map tiles, read the state of the connection, list and refresh Wi-Fi scans, and reconnect the Wi-Fi radio.</li><li><strong>Precise location and approximate location</strong> — <strong>Android itself requires a location permission before any app is allowed to see the list of nearby Wi-Fi networks</strong>, because Wi-Fi networks can be used to infer position. Wifora needs this permission to show you the network list and signal readings at all. Location is additionally used to centre the map on you and to fill in the coordinates when <em>you</em> choose to save a hotspot. <strong>We do not track you</strong>: your position is never sent to us or to any third party, and it is not stored anywhere except in the hotspots you deliberately save on your own device.</li><li><strong>Nearby Wi-Fi devices</strong> (Android 13 and later) — the modern replacement for the location requirement above when scanning Wi-Fi. The App declares it with the <code>neverForLocation</code> flag, meaning it is explicitly not used to derive your position.</li><li><strong>Camera</strong> — only to scan Wi-Fi QR codes. The camera preview is processed on the device; no image or video is stored or uploaded.</li><li><strong>Photos / media selection</strong> — only when you pick an existing image containing a QR code from your gallery. The image is decoded on the device and not uploaded.</li><li><strong>Notifications</strong> — to show local reminders on your phone, for example when a hotspot timer expires. These notifications are generated on the device; the App has no push-notification service.</li><li><strong>Schedule exact alarm</strong> — so a hotspot timer fires at the moment you set.</li><li><strong>Foreground service and wake lock</strong> — to keep a running measurement or timer alive while the screen is off.</li><li><strong>Shizuku (optional)</strong> — if you have the separate Shizuku app installed and you grant it, Wifora can ask it to run a local system command that turns your phone's hotspot off, which Android does not otherwise allow an ordinary app to do. This is a local device operation only: it collects nothing and sends nothing anywhere. Without Shizuku the App simply opens the system settings screen for you instead.</li></ul>
+        <h2 id="how-we-use-information">3. How we use information</h2>
+        <ul><li><strong>To provide and operate the App</strong> — scanning, measuring, charting, scanning the local network, reading and generating QR codes, mapping and managing your hotspot.</li><li><strong>To keep the App stable</strong> — crash reports are used to find and fix defects.</li><li><strong>To remember your preferences and history on your device</strong> — settings, language, and your measurement and hotspot records.</li><li><strong>To comply with the law</strong> — where we are legally required to act.</li></ul>
+        <p>We do not use your information for advertising, we do not profile you, and we make no automated decisions about you.</p>
+        <h2 id="third-party-services">4. Third-party services</h2>
+        <p>These are the only third parties that receive anything as a result of your use of the App:</p>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>What it receives</th><th>Purpose</th><th>Policy</th></tr></thead><tbody><tr><td>Google Firebase Crashlytics (Google LLC)</td><td>Crash and error reports, device and OS model, app version, Firebase installation identifier, IP address</td><td>Crash reporting and stability diagnostics</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr><tr><td>Cloudflare, Inc. — <code>speed.cloudflare.com</code></td><td>Speed-test requests and filler payloads, IP address, connection metadata</td><td>Measuring your download speed, upload speed, ping and jitter</td><td><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a></td></tr><tr><td>OpenStreetMap tile service (OpenStreetMap Foundation / OpenStreetMap Deutschland)</td><td>Requests for map tiles at the coordinates you are viewing, IP address, App user agent</td><td>Displaying and caching the map</td><td><a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">osmfoundation.org/wiki/Privacy_Policy</a></td></tr></tbody></table></div>
+        <p>The App uses Firebase Core solely as the plumbing required by Crashlytics. <strong>The App integrates no advertising SDK, no advertising identifier, no analytics product, no attribution or tracking SDK, no payment or billing SDK, and no sign-in provider.</strong></p>
+        <h2 id="how-we-share-information">5. How we share information</h2>
+        <p>We do not sell your personal information, and we do not share it for cross-context behavioural advertising or targeted advertising. We disclose information only:</p>
+        <ul><li>to the three service providers listed in section 4, strictly for the purposes stated there;</li><li>when required by law, legal process, or a valid government request;</li><li>to protect the rights, safety, or property of users, the public, or us;</li><li>in connection with a merger, acquisition or sale of assets, in which case this Policy continues to apply to the transferred information.</li></ul>
+        <h2 id="legal-bases-for-processing">6. Legal bases for processing (EEA / UK — GDPR)</h2>
+        <ul><li><strong>Legitimate interests</strong> — operating the App, diagnosing crashes, and keeping the App secure and functioning.</li><li><strong>Consent</strong> — where you grant an Android runtime permission (location, camera, photos, notifications) you consent to that specific use; you can withdraw it at any time in your device settings.</li><li><strong>Legal obligation</strong> — where we must retain or disclose information to comply with the law.</li></ul>
+        <h2 id="data-retention">7. Data retention</h2>
+        <ul><li><strong>On your device:</strong> your measurement history, saved hotspots, offline map tiles and settings remain until you delete them in the App, clear the App's storage, or uninstall the App. Uninstalling removes all of it.</li><li><strong>Crash reports:</strong> retained by Google Firebase Crashlytics in accordance with its own retention schedule (crash-free statistics and reports are kept for a limited period, typically up to 90 days for detailed reports).</li><li><strong>Speed-test and map-tile requests:</strong> handled by Cloudflare and the OpenStreetMap tile service under their own logging and retention practices; we receive no copy.</li></ul>
+        <h2 id="your-rights">8. Your rights</h2>
+        <p><strong>EEA / UK (GDPR).</strong> You have the right to access, correct, delete, restrict or object to the processing of your personal data, to data portability, to withdraw consent at any time, and to lodge a complaint with your national data-protection authority.</p>
+        <p><strong>California (CCPA / CPRA).</strong> You have the right to know what personal information is collected and how it is used and disclosed, to delete it, to correct it, to opt out of its sale or sharing for targeted advertising — <strong>we do not sell or share personal information for advertising</strong> — and not to be discriminated against for exercising these rights.</p>
+        <p><strong>Other regions.</strong> Comparable rights under Brazil's LGPD, Canada's PIPEDA and similar laws are honoured.</p>
+        <p>Because the App has no accounts and stores no data about you on our systems, you can exercise most rights yourself and immediately: delete records inside the App, revoke a permission in Android settings, clear the App's storage, or uninstall the App. If you want us to act on a crash report, write to the address in section 13; because we cannot identify you from a crash report on its own, please include your device model, the App version, and the approximate date and time of the crash so we can locate the report.</p>
+        <h2 id="childrens-privacy">9. Children's privacy</h2>
+        <p>The App is a general-purpose network utility intended for users aged <strong>13 and over</strong> (or the higher age of digital consent in your country). It is not directed at children, it has no social features, no chat, no user-to-user content and no advertising. We do not knowingly collect personal information from children. If you believe a child has provided information to us, contact us and we will delete it.</p>
+        <h2 id="international-data-transfers">10. International data transfers</h2>
+        <p>The service providers named in section 4 operate globally, so the limited information described in this Policy may be processed in countries other than yours, including the United States and countries in the European Union. Where required, transfers rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses.</p>
+        <h2 id="data-security">11. Data security</h2>
+        <p>Traffic between the App and the services in section 4 uses HTTPS/TLS. Your measurement history, saved hotspots and any credentials shown to you are stored in the App's private, sandboxed storage on your device, which other apps cannot read on a normal Android installation. Please note that a rooted device weakens these operating-system protections. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
+        <h2 id="third-party-content-and-links">12. Third-party content and links</h2>
+        <p>The map is drawn from map data and imagery provided by OpenStreetMap contributors, and the App can open external destinations such as your system settings or your app store. We do not control third-party content or destinations and are not responsible for them; their own terms and privacy policies apply.</p>
+        <h2 id="changes-to-this-policy">13. Changes to this Policy</h2>
+        <p>We may update this Policy from time to time. Material changes will be posted at this address with a new "Last updated" date. Continued use of the App after an update means you accept the revised Policy.</p>
+        <h2 id="contact-us">14. Contact us</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
