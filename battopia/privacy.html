@@ -251,7 +251,7 @@
         <div class="nav-meta">
             <span>Privacy Policy</span>
             <span>·</span>
-            <span>22/08/2026</span>
+            <span>05/09/2026</span>
         </div>
     </div>
 </header>
@@ -261,17 +261,20 @@
     <aside class="toc" aria-label="Table of contents">
         <strong>On this page</strong>
         <ol>
-            <li><a href="#info-collect">1. Information We Collect</a></li>
-            <li><a href="#how-use">2. How We Use Information</a></li>
-            <li><a href="#third-party">3. Advertising &amp; Third-Party</a></li>
-            <li><a href="#retention">4. Data Retention</a></li>
-            <li><a href="#intl">5. International Transfers</a></li>
-            <li><a href="#security">6. Storage &amp; Security</a></li>
-            <li><a href="#children">7. Children's Privacy</a></li>
-            <li><a href="#gdpr">8. GDPR (EU/UK)</a></li>
-            <li><a href="#ccpa">9. CCPA / CPRA (California)</a></li>
-            <li><a href="#changes">10. Changes</a></li>
-            <li><a href="#contact">11. Contact Us</a></li>
+            <li><a href="#accessibility">1. The Accessibility Service</a></li>
+            <li><a href="#info-collect">2. Information We Collect</a></li>
+            <li><a href="#how-use">3. How We Use Information</a></li>
+            <li><a href="#third-party">4. Third-Party Services</a></li>
+            <li><a href="#share">5. How We Share Information</a></li>
+            <li><a href="#legal-bases">6. Legal Bases (EEA/UK — GDPR)</a></li>
+            <li><a href="#retention">7. Data Retention</a></li>
+            <li><a href="#rights">8. Your Rights</a></li>
+            <li><a href="#children">9. Children's Privacy</a></li>
+            <li><a href="#intl">10. International Data Transfers</a></li>
+            <li><a href="#security">11. Data Security</a></li>
+            <li><a href="#permissions">12. Android Permissions</a></li>
+            <li><a href="#changes">13. Changes to this Policy</a></li>
+            <li><a href="#contact">14. Contact Us</a></li>
         </ol>
     </aside>
 
@@ -281,129 +284,95 @@
 
         <div class="meta">
             <span><strong>App:</strong> Battopia</span>
-            <span><strong>Effective:</strong> 22/08/2026</span>
-            <span><strong>Last Updated:</strong> 22/08/2026</span>
+            <span><strong>Effective:</strong> 05/09/2026</span>
+            <span><strong>Last Updated:</strong> 05/09/2026</span>
         </div>
 
-        <p>Battopia ("Battopia", "we", "our", or "us") respects your privacy. This Privacy Policy explains
-            how we collect, use, store, and protect your information when you use the Battopia mobile application
-            (the "App").</p>
-        <p>By using the App, you agree to the practices described in this Privacy Policy.</p>
+        <p>Battopia ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information we collect, how we use and share it, and the choices and rights you have. By using the App, you agree to this Policy.</p>
+        <p>Battopia is an Android personalization app that replaces your system battery icon with emoji and stickers, restyles your status bar and notch, and displays a decorative pet on your screen. <strong>You do not need to create an account to use it.</strong> There is no login, no profile, no chat, and no way for users to contact each other through the App.</p>
 
-        <h2 id="info-collect">1. Information We Collect</h2>
+        <h2 id="accessibility">1. The Accessibility Service — what it does and does not do</h2>
+        <p>Battopia includes an Android Accessibility Service (<code>BattopiaAccessibilityService</code>). You must enable it manually in Android Settings, and you can turn it off at any time. Because this is a powerful Android capability, we explain its use in full:</p>
+        <p><strong>We use the Accessibility Service only to:</strong></p>
+        <ul><li>Create a system overlay window so your chosen emoji, battery percentage and stickers can be drawn on top of the real system status bar.</li><li>Detect which application is currently in the foreground, so the overlay can hide itself automatically on the apps you added to your "Not-Allowed App" list.</li></ul>
+        <p><strong>We do not, and technically cannot, use it to:</strong></p>
+        <ul><li>Read the content of your screen. The service is configured with <code>canRetrieveWindowContent="false"</code>, which means Android does not give the App access to screen content at all.</li><li>Read your messages, passwords, notifications, form fields, or anything you type.</li><li>Record, log, or transmit your activity, your browsing, or which apps you open.</li><li>Request enhanced accessibility capabilities. The service declares only <code>flagDefault</code> and listens only for window-state-change events.</li></ul>
+        <p>The name of the foreground app is evaluated on your device, in memory, for the sole purpose of deciding whether to show or hide the overlay. It is never stored and never transmitted.</p>
+        <p>The App also requests the "Display over other apps" permission (<code>SYSTEM_ALERT_WINDOW</code>) to show the on-screen pet and the notch overlay outside the App, and runs a foreground service to keep that overlay visible while you use other apps. These overlays are purely decorative, entirely optional, and reversible at any time from within the App or by revoking the permission in Android Settings.</p>
 
-        <h3>1.1 Information You Provide</h3>
-        <p>Battopia does not require account registration and does not collect personal information such as your
-            name, email address, or phone number unless you voluntarily contact us.</p>
+        <h2 id="info-collect">2. Information We Collect</h2>
+        <h3>2.1 Information that leaves your device</h3>
+        <p>Only one category of data leaves your device:</p>
+        <div class="table-wrap"><table><thead><tr><th>Data</th><th>What it contains</th><th>Why</th></tr></thead><tbody><tr><td><strong>Crash logs and diagnostics</strong></td><td>Stack trace of the error, device model, operating system version, App version, device language and region, the amount of memory and storage available at the time of the crash, and a random installation identifier generated by Firebase so that multiple reports from the same installation can be grouped together.</td><td>To find and fix crashes and stability problems.</td></tr></tbody></table></div>
+        <p>This is collected by <strong>Google Firebase Crashlytics</strong>. It is sent only when the App crashes or encounters a fatal error, and it contains no name, no email address, no account, no contacts, no location, and no content from your screen.</p>
+        <h3>2.2 Information that stays on your device</h3>
+        <p>The following is stored locally on your phone (using Hive, SharedPreferences and Android's own storage) and is <strong>never sent to us or to anyone else</strong>:</p>
+        <ul><li>Your chosen emoji, sticker, pet, notch style, and status bar settings (size, colour, margins, background, percentage display).</li><li>Your Favourite and Recent lists.</li><li>The Battery Troll percentage you type in.</li><li>Your language selection and onboarding progress.</li><li><strong>The list of applications installed on your device</strong>, which the App reads on your device to build the picker on the "Not-Allowed App" screen. Only the package names of the apps you actually select are saved, and they are saved locally in the App's own settings so the overlay knows where to hide itself. The list is not uploaded, not indexed, and not shared with any third party.</li><li>Anything you type into the in-app Feedback screen. This text is currently not transmitted anywhere — the screen acknowledges your input locally. If you want us to receive your feedback, please email us at the address in section 14.</li></ul>
+        <p>Uninstalling the App removes all of this local data from your device.</p>
+        <h3>2.3 Information we do not collect</h3>
+        <p>We do not collect your name, email address, phone number, postal address, date of birth, contacts, calendar, photos, videos, camera or microphone input, files, health data, financial data, payment details, precise or approximate location, browsing history, or the content of any screen or message. The App requests no location permission, no camera permission, no contacts permission, and no storage permission.</p>
+        <p>The App contains <strong>no advertising SDK, no analytics SDK, and no attribution SDK</strong>. It does not use the Android advertising ID, and the App does not declare the <code>AD_ID</code> permission.</p>
 
-        <h3>1.2 Automatically Collected Information</h3>
-        <p>We may collect limited non-personal information automatically, including:</p>
-        <ul>
-            <li>Device type, model, and operating system version</li>
-            <li>App version and usage statistics</li>
-            <li>Crash logs and performance data</li>
-            <li>Anonymous advertising identifiers (e.g., GAID/IDFA where permitted)</li>
-            <li>Approximate location (derived from IP address, not GPS) for ad targeting and analytics</li>
-        </ul>
+        <h2 id="how-use">3. How We Use Information</h2>
+        <p>We use crash and diagnostic data solely to:</p>
+        <ul><li>Identify, reproduce, and fix crashes and errors.</li><li>Understand which device models and Android versions are affected by a problem.</li><li>Improve the stability and reliability of the App.</li></ul>
+        <p>We do not use it to build a profile of you, to target advertising, or to make automated decisions about you.</p>
 
-        <h3>1.3 User Content</h3>
-        <p>Battopia does not collect, store, or transmit any user-generated content or media files processed by the
-            App to our own servers. All such content is stored locally on your device and remains under your control.
-            AI-generated outputs (if applicable) may be processed via third-party AI providers — see Section 3.</p>
+        <h2 id="third-party">4. Third-Party Services</h2>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Provider</th><th>Purpose</th><th>Data received</th><th>Policy</th></tr></thead><tbody><tr><td><strong>Firebase Crashlytics</strong></td><td>Google LLC</td><td>Crash reporting and stability diagnostics</td><td>Crash logs and diagnostics as described in section 2.1</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr><tr><td><strong>Google Play</strong></td><td>Google LLC</td><td>Distribution, installation, and updates of the App</td><td>Handled by Google under its own policy; we receive only aggregate, anonymous statistics through the Play Console</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr></tbody></table></div>
+        <p>Google acts as our processor / service provider for crash reporting. There are no other third-party services, no advertising networks, no analytics providers, and no payment processors integrated in the App.</p>
 
-        <h2 id="how-use">2. How We Use Information</h2>
-        <p>We use collected information to:</p>
-        <ul>
-            <li>Improve app functionality and performance</li>
-            <li>Fix bugs and crashes</li>
-            <li>Analyze usage trends</li>
-            <li>Enhance user experience</li>
-            <li>Display relevant advertising</li>
-            <li>Comply with legal obligations</li>
-        </ul>
-        <p>We do not sell or rent your personal information to third parties.</p>
+        <h2 id="share">5. How We Share Information</h2>
+        <p><strong>We do not sell your personal information, and we do not share it for cross-context behavioural advertising or targeted advertising.</strong> We have no advertising partners.</p>
+        <p>We share data only:</p>
+        <ul><li>With Google, as our crash-reporting processor, as described in section 4.</li><li>Where required by law, legal process, or a valid governmental request.</li><li>In connection with a merger, acquisition, or sale of assets, in which case we will notify you and this Policy will continue to apply to the transferred data.</li></ul>
 
-        <h2 id="third-party">3. Advertising and Third-Party Services</h2>
-        <p>The App may use third-party services such as advertising networks, analytics, and AI providers. These
-            services may collect data in accordance with their own privacy policies:</p>
-        <ul>
-            <li>Google AdMob — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
-            <li>Firebase Analytics &amp; Crashlytics — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
-            <li>Meta Audience Network — <a href="https://www.facebook.com/policy.php" target="_blank" rel="noopener">Privacy Policy</a></li>
-            <li>AppsFlyer (attribution) — <a href="https://www.appsflyer.com/legal/services-privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></li>
-            <li>Third-party AI providers (e.g., OpenAI, Replicate, GetImg) for AI features, where applicable</li>
-        </ul>
-        <p>We are not responsible for the privacy practices of third-party services. We recommend reviewing their
-            privacy policies.</p>
+        <h2 id="legal-bases">6. Legal Bases for Processing (EEA/UK — GDPR)</h2>
+        <div class="table-wrap"><table><thead><tr><th>Processing</th><th>Legal basis</th></tr></thead><tbody><tr><td>Crash and diagnostic reporting</td><td>Our legitimate interest (Article 6(1)(f)) in keeping the App stable, secure, and functional.</td></tr><tr><td>Providing the App's core features and storing your settings on your device</td><td>Performance of a contract (Article 6(1)(b)) — this processing happens locally on your device.</td></tr><tr><td>Complying with legal obligations</td><td>Article 6(1)(c).</td></tr></tbody></table></div>
+        <p>You may object to processing based on legitimate interests at any time by contacting us at the address in section 14.</p>
 
-        <h2 id="retention">4. Data Retention</h2>
-        <p>We retain non-personal usage and crash data for up to <strong>24 months</strong> for analytics purposes,
-            after which it is automatically aggregated or deleted. Any media or content processed by the App is stored
-            only on your device and is not retained by us.</p>
+        <h2 id="retention">7. Data Retention</h2>
+        <ul><li><strong>Crash logs and diagnostics:</strong> retained by Firebase Crashlytics for up to 90 days, in line with Google's retention policy for that product, and then deleted automatically.</li><li><strong>Local data on your device:</strong> retained until you delete it in the App or uninstall the App. We have no copy of it.</li></ul>
 
-        <h2 id="intl">5. International Data Transfers</h2>
-        <p>Some third-party services (e.g., Google, Meta, AI providers) may process data in countries outside your
-            residence, including the United States. By using the App, you consent to such transfers. Where required,
-            these providers rely on Standard Contractual Clauses (SCCs) or equivalent mechanisms for cross-border data
-            transfer.</p>
+        <h2 id="rights">8. Your Rights</h2>
+        <h3>If you are in the EEA or the United Kingdom (GDPR / UK GDPR)</h3>
+        <p>You have the right to access, correct, delete, restrict, and port your personal data, to object to processing based on legitimate interests, to withdraw consent where processing is based on consent, and to lodge a complaint with your local supervisory authority.</p>
+        <h3>If you are in California (CCPA / CPRA) or another U.S. state with a comparable law</h3>
+        <p>You have the right to know what personal information is collected and how it is used, to request deletion or correction, to opt out of the sale or sharing of personal information and of targeted advertising (we do not sell or share, so there is nothing to opt out of), to limit the use of sensitive personal information (we collect none), and not to be discriminated against for exercising these rights.</p>
+        <h3>If you are in Brazil (LGPD), Canada (PIPEDA), or another region</h3>
+        <p>Comparable rights of access, correction, deletion, portability, and complaint apply, and you may exercise them using the same contact method below.</p>
+        <h3>How to make a request, including a request to delete your data</h3>
+        <p>Because Battopia has no accounts, we cannot identify you from a name or an email address. To make a request:</p>
+        <ol><li>Email us at <strong>contact@tranquilmind.co</strong> with the subject line "Privacy request — Battopia".</li><li>Tell us what you want us to do (for example: delete my crash reports).</li><li>Include your <strong>device model</strong>, your <strong>Android version</strong>, and the <strong>approximate date and time</strong> of the crash, so we can locate the relevant crash reports. Without this we may be unable to find any records relating to you.</li></ol>
+        <p>We will respond within 30 days, or sooner where the law requires it. There is no charge for a request unless it is manifestly unfounded or excessive.</p>
+        <p>You can delete all locally stored data at any time yourself by uninstalling the App, or by clearing the App's storage in Android Settings.</p>
 
-        <h2 id="security">6. Data Storage and Security</h2>
-        <p>We implement reasonable technical and organizational security measures to protect information collected
-            through the App. However, no method of electronic storage or transmission is 100% secure.</p>
-        <p>Any media files processed or generated remain stored only on your device. Battopia does not upload or
-            back up your files to our servers.</p>
+        <h2 id="children">9. Children's Privacy</h2>
+        <p>Battopia is <strong>not directed to children under 13</strong>, and we do not knowingly collect personal information from children under 13. The App requires you to enable an Android Accessibility Service and to configure system overlays, which is not an activity intended for young children.</p>
+        <p>If you are in the EEA or the UK, the applicable minimum age is 13, or the higher age of digital consent in your country (up to 16 in some Member States).</p>
+        <p>If you believe a child under the applicable age has provided us with personal information, contact us at <strong>contact@tranquilmind.co</strong> and we will delete it.</p>
+        <p>The App contains no chat, no comments, no user-generated content, no user-to-user contact of any kind, and no AI-generated content.</p>
 
-        <h2 id="children">7. Children's Privacy (COPPA)</h2>
-        <p>Battopia is not intended for children under the age of 13 (or 16 in the EEA, where applicable). We do
-            not knowingly collect personal information from children. If we discover that a child has provided personal
-            information, we will delete it promptly. Parents or guardians may contact us using the details in Section
-            11 to request review or deletion.</p>
+        <h2 id="intl">10. International Data Transfers</h2>
+        <p>Crash and diagnostic data is processed by Google on servers that may be located outside your country, including in the United States. Where such transfers involve personal data from the EEA or the UK, they are covered by Google's Standard Contractual Clauses and the safeguards described in Google's own privacy documentation.</p>
 
-        <h2 id="gdpr">8. Your Rights Under GDPR (EU/UK Users)</h2>
-        <p>If you reside in the European Economic Area, United Kingdom, or Switzerland, you have the following rights
-            under the General Data Protection Regulation (GDPR):</p>
-        <ul>
-            <li><strong>Right of access</strong> — request a copy of data we hold about you</li>
-            <li><strong>Right to rectification</strong> — correct inaccurate data</li>
-            <li><strong>Right to erasure</strong> ("right to be forgotten")</li>
-            <li><strong>Right to restrict processing</strong></li>
-            <li><strong>Right to data portability</strong></li>
-            <li><strong>Right to object</strong> to processing based on legitimate interests or direct marketing</li>
-            <li><strong>Right to withdraw consent</strong> at any time</li>
-            <li><strong>Right to lodge a complaint</strong> with your local Data Protection Authority</li>
-        </ul>
-        <p>Our lawful bases for processing are: (a) your consent, (b) legitimate interests in operating and improving
-            the App, and (c) compliance with legal obligations.</p>
+        <h2 id="security">11. Data Security</h2>
+        <p>All data transmitted by the App is encrypted in transit using HTTPS/TLS. Your settings and content selections are stored locally on your device and are protected by Android's application sandbox. We minimise data collection by design: the App has no user accounts, no backend server of our own, and no advertising or analytics tracking.</p>
+        <p>No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
 
-        <h2 id="ccpa">9. Your Rights Under CCPA / CPRA (California Users)</h2>
-        <p>If you are a California resident, you have the following rights under the California Consumer Privacy Act
-            (CCPA) and California Privacy Rights Act (CPRA):</p>
-        <ul>
-            <li>Right to know what personal information is collected, used, or shared</li>
-            <li>Right to delete personal information</li>
-            <li>Right to correct inaccurate personal information</li>
-            <li>Right to opt out of the "sale" or "sharing" of personal information</li>
-            <li>Right to limit the use of sensitive personal information</li>
-            <li>Right to non-discrimination for exercising these rights</li>
-        </ul>
-        <p><strong>Do Not Sell or Share My Personal Information:</strong> Battopia does not sell personal
-            information for monetary value. We may share anonymized identifiers with advertising partners (Google
-            AdMob, Meta) for interest-based advertising, which may be considered "sharing" under CCPA/CPRA. To opt out,
-            contact us at <a href="mailto:contact@tranquilmind.co">contact@tranquilmind.co</a> or disable personalized ads in your
-            device settings.</p>
+        <h2 id="permissions">12. Android Permissions the App Requests</h2>
+        <div class="table-wrap"><table><thead><tr><th>Permission</th><th>Why we request it</th><th>Optional?</th></tr></thead><tbody><tr><td>Accessibility Service (<code>BIND_ACCESSIBILITY_SERVICE</code>)</td><td>To draw the overlay on the real status bar and to detect the foreground app for the Not-Allowed App list — see section 1</td><td>Yes, you enable it manually and can revoke it</td></tr><tr><td>Display over other apps (<code>SYSTEM_ALERT_WINDOW</code>)</td><td>To show the on-screen pet and the notch overlay outside the App</td><td>Yes</td></tr><tr><td>Foreground service (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code>)</td><td>To keep the decorative overlay visible while you use other apps</td><td>Yes, it stops when you turn the overlay off</td></tr><tr><td>Notifications (<code>POST_NOTIFICATIONS</code>)</td><td>To alert you when your battery is low and when new content packs are added. These notifications are generated entirely on your device — the App has no push-messaging service</td><td>Yes</td></tr><tr><td>Start on boot (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>To restore your overlay after you restart your phone</td><td>Yes, it does nothing if no overlay is enabled</td></tr><tr><td>Query installed apps (<code>QUERY_ALL_PACKAGES</code>)</td><td>To list the apps with a launcher icon on the Not-Allowed App screen, so you can pick which apps hide the overlay. The list is read on your device and is not transmitted</td><td>Yes, only read when you open that screen</td></tr><tr><td>Network state (<code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code>)</td><td>To read the Wi-Fi and mobile signal <strong>level</strong> so the App can redraw those icons on the status bar it covers. It does not read your network traffic, the networks you connect to, or their names</td><td>No</td></tr><tr><td>Internet (<code>INTERNET</code>)</td><td>Used only to send crash reports and to open the Privacy Policy, Terms, and Play Store links in your browser</td><td>No</td></tr><tr><td>Vibrate (<code>VIBRATE</code>), Schedule exact alarm (<code>SCHEDULE_EXACT_ALARM</code>)</td><td>Haptic feedback in the interface and correctly timed local battery notifications</td><td>No</td></tr></tbody></table></div>
 
-        <h2 id="changes">10. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal
-            reasons. Material changes will be highlighted in-app or on our website. The "Last Updated" date above will
-            be revised.</p>
-        <p>Your continued use of the App after updates means you accept the revised Privacy Policy.</p>
+        <h2 id="changes">13. Changes to this Policy</h2>
+        <p>We may update this Policy from time to time. Material changes will be posted on this page with a new "Last updated" date. Continued use of the App after a change takes effect constitutes acceptance of the revised Policy.</p>
 
-        <h2 id="contact">11. Contact Us</h2>
-        <p>If you have questions, concerns, or wish to exercise your privacy rights, please contact us:</p>
-        <p>Email: <a href="mailto:contact@tranquilmind.co"><strong>contact@tranquilmind.co</strong></a></p>
+        <h2 id="contact">14. Contact Us</h2>
+        <p>Tranquil Mind Technology JSC<br>
+            No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam<br>
+            Email: <a href="mailto:contact@tranquilmind.co"><strong>contact@tranquilmind.co</strong></a></p>
 
         <div class="footer-block">
-            <span>&copy; 2026 Battopia. All rights reserved.</span>
+            <span>&copy; 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</span>
             <a href="#top">↑ Back to top</a>
         </div>
     </article>
