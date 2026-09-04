@@ -316,7 +316,7 @@
         <div class="meta">
             <span><strong>App:</strong> LunaAI Chat</span>
             <span><strong>Effective:</strong> July 12, 2026</span>
-            <span><strong>Last Updated:</strong> July 28, 2026</span>
+            <span><strong>Last Updated:</strong> September 4, 2026</span>
         </div>
 
         <p>LunaAI Chat ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your
@@ -328,8 +328,8 @@
         <p>We collect only the data needed to run the App, show ads, and improve the product. We do not collect data we do not use.</p>
         <h3>Information you provide</h3>
         <ul>
-            <li><strong>Chat content.</strong> The messages you type or dictate to the AI are sent to our AI provider (DeepSeek) so the App can generate a reply (see Section 3). Recent messages in a conversation may be sent together to give the AI context.</li>
-            <li><strong>Profile &amp; preferences.</strong> Your display name, age, gender, chosen avatar, and the interest topics you select are stored <strong>on your device only</strong>. They are not uploaded to our servers. Your chat history is likewise stored on your device; only the message text (and recent context) is sent to the AI provider to generate replies, as described above.</li>
+            <li><strong>Chat content.</strong> The messages you type or dictate to the AI are sent to our chat service (hosted on Cloudflare Workers), which processes your message and returns an AI-generated reply (see Section 3). If that service is turned off or unavailable, your messages are sent instead to our AI provider (DeepSeek) as a fallback. Recent messages in a conversation may be sent together to give the AI context.</li>
+            <li><strong>Profile &amp; preferences.</strong> Your display name, age, gender, chosen avatar, and the interest topics you select are stored <strong>on your device only</strong>. They are not uploaded to our servers. Your chat history is likewise stored on your device; only the message text (and recent context) is sent to the chat service (or the fallback AI provider) to generate replies, as described above.</li>
         </ul>
         <h3>Information collected automatically</h3>
         <ul>
@@ -365,7 +365,8 @@
             <tr><td>Mintegral</td><td>Advertising (mediation)</td><td><a href="https://www.mintegral.com/en/privacy" target="_blank" rel="noopener">mintegral.com/en/privacy</a></td></tr>
             <tr><td>Unity Ads</td><td>Advertising (mediation)</td><td><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">unity.com/legal/privacy-policy</a></td></tr>
             <tr><td>Adjust</td><td>Attribution &amp; analytics</td><td><a href="https://www.adjust.com/terms/privacy-policy" target="_blank" rel="noopener">adjust.com/terms/privacy-policy</a></td></tr>
-            <tr><td>DeepSeek</td><td>AI chat processing</td><td><a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html" target="_blank" rel="noopener">deepseek privacy policy</a></td></tr>
+            <tr><td>Cloudflare (Workers)</td><td>Chat service that processes your messages to generate AI replies (primary)</td><td><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a></td></tr>
+            <tr><td>DeepSeek</td><td>AI chat processing (fallback)</td><td><a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html" target="_blank" rel="noopener">deepseek privacy policy</a></td></tr>
             <tr><td>Google Cloud Translation</td><td>Language detection for read-aloud (text-to-speech)</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
             <tr><td>Google Play Billing</td><td>Subscription processing</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
         </tbody></table></div>
@@ -384,7 +385,7 @@
         </ul>
 
         <h2 id="retention">6. Data Retention</h2>
-        <p>We keep personal data only as long as necessary for the purposes above or as required by law. Advertising and analytics identifiers are retained according to each partner's retention periods; crash and diagnostic data are kept for a limited period. Chat content is processed to generate replies and may be cached on your device; server-side retention by the AI provider is governed by its own policy.</p>
+        <p>We keep personal data only as long as necessary for the purposes above or as required by law. Advertising and analytics identifiers are retained according to each partner's retention periods; crash and diagnostic data are kept for a limited period. Chat content is processed to generate replies and may be cached on your device; server-side retention by our chat service or the fallback AI provider is governed by its own policy.</p>
 
         <h2 id="rights">7. Your Rights</h2>
         <p><strong>GDPR (EEA/UK):</strong> access, correction, deletion, portability, objection, restriction, and withdrawal of consent, plus the right to complain to your data protection authority.</p>
