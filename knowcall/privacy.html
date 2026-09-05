@@ -251,7 +251,7 @@
         <div class="nav-meta">
             <span>Privacy Policy</span>
             <span>·</span>
-            <span>2026-08-30</span>
+            <span>2026-09-06</span>
         </div>
     </div>
 </header>
@@ -268,11 +268,12 @@
             <li><a href="#legal-bases">5. Legal bases (EEA/UK — GDPR)</a></li>
             <li><a href="#data-retention">6. Data retention</a></li>
             <li><a href="#your-rights">7. Your rights</a></li>
-            <li><a href="#childrens-privacy">8. Children&#x27;s privacy</a></li>
+            <li><a href="#childrens-privacy">8. Children's privacy &amp; Child Safety</a></li>
             <li><a href="#international-data-transfers">9. International data transfers</a></li>
             <li><a href="#data-security">10. Data security</a></li>
-            <li><a href="#changes-to-this-policy">11. Changes to this Policy</a></li>
-            <li><a href="#contact-us">12. Contact us</a></li>
+            <li><a href="#advertising-content">11. Advertising content</a></li>
+            <li><a href="#changes-to-this-policy">12. Changes to this Policy</a></li>
+            <li><a href="#contact-us">13. Contact us</a></li>
         </ol>
     </aside>
 
@@ -282,44 +283,117 @@
 
         <div class="meta">
             <span><strong>App:</strong> Knowcall</span>
-            <span><strong>Effective:</strong> 2026-08-30</span>
-            <span><strong>Last Updated:</strong> 2026-08-30</span>
+            <span><strong>Effective:</strong> 2026-09-06</span>
+            <span><strong>Last Updated:</strong> 2026-09-06</span>
         </div>
 
         <p>Knowcall ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information we collect, how we use and share it, and the choices and rights you have. By using the App, you agree to this Policy.</p>
-        <p>Knowcall is a caller ID, call-screening and spam-blocking utility that helps you identify incoming calls, manage your contacts and block unwanted numbers. You do not need to create an account to use it.</p>
+        <p>Knowcall is a caller-identification and call-screening utility for Android: it matches incoming and searched phone numbers against the contacts saved on your device, lets you build your own spam and block lists, and keeps a local log of message notifications you have not yet seen. You do not need to create an account to use it, and Knowcall does not operate a server of its own.</p>
+
         <h2 id="information-we-collect">1. Information we collect</h2>
-        <p><strong>Data processed on your device (does not leave your device):</strong></p>
-        <ul><li><strong>Contacts</strong> — read from your device (with your permission) to display caller names, power the Contacts tab and let you block numbers. Your contact list is used locally on the device to match callers and is not uploaded to our servers.</li><li><strong>Call information / phone state</strong> — used to identify and screen incoming calls, block spam and let you place calls from within the App. Call-log and phone-state data are processed on the device for these features.</li></ul>
-        <p><strong>Data collected automatically and shared with our service providers:</strong></p>
-        <ul><li><strong>Device &amp; advertising identifiers</strong> (including the Android Advertising ID) — for advertising and analytics.</li><li><strong>Approximate location</strong> derived from your IP address — for advertising, measurement and regional compliance.</li><li><strong>App activity &amp; diagnostics</strong> — in-app events, feature usage and interactions used for analytics and to improve the App.</li><li><strong>Crash logs &amp; diagnostics</strong> — to detect and fix stability problems.</li><li><strong>Purchase status</strong> — whether you hold an active premium subscription, to unlock ad-free/premium features.</li></ul>
-        <p>We do not require you to create an account, and we do not collect your name, email or password unless you contact us directly by email.</p>
+        <h3>1.1 Information that stays on your device and is never sent to us</h3>
+        <p>This is the most important part of this Policy. Knowcall has <strong>no backend server</strong>. The following information is read and stored <strong>only on your device</strong>, in the App's private storage, and is <strong>never transmitted to us or to any third party</strong>:</p>
+        <ul>
+            <li><strong>Your contacts.</strong> With your permission, Knowcall reads the contacts stored on your device so that a saved number can be displayed with a name instead of a bare number, and so the Contacts and Call tabs can list and dial them. Your contact list is <strong>not uploaded</strong> anywhere.</li>
+            <li><strong>Your spam list and block list.</strong> The phone numbers you add are stored in local application preferences and mirrored to a local native preference file so the call-screening service can read them while the App is closed.</li>
+            <li><strong>Your lookup history.</strong> Numbers you type into the Tracker tab, and the result of each lookup, are saved locally.</li>
+            <li><strong>Message notifications ("Unseen").</strong> If you grant notification access, Knowcall records the app name, title and text of message notifications delivered to your device so you can read them later, and stores them locally. This log never leaves the device.</li>
+            <li><strong>Your settings.</strong> Language, theme, toggles and similar preferences.</li>
+        </ul>
+        <p>You can erase all of this at any time by clearing the App's storage in your device settings or by uninstalling the App. Revoking the contacts permission or notification access in system settings stops the corresponding collection immediately.</p>
+        <h3>1.2 Information collected automatically by third-party services</h3>
+        <p>Knowcall includes third-party software development kits for advertising, analytics, crash reporting and payments. These SDKs collect and transmit the following off your device:</p>
+        <div class="table-wrap"><table><thead><tr><th>Category</th><th>What it includes</th><th>Collected by</th></tr></thead><tbody><tr><td><strong>Device and advertising identifiers</strong></td><td>Google Advertising ID (AAID), app-instance and install identifiers, device model, operating-system version, language and country</td><td>Google AdMob and its mediation partners, Meta, Adjust, Google Firebase</td></tr><tr><td><strong>Approximate location</strong></td><td>Coarse, city-level location derived from your IP address for ad targeting. Knowcall requests <strong>no</strong> location permission and never accesses GPS or precise location.</td><td>Google AdMob and its mediation partners</td></tr><tr><td><strong>App activity</strong></td><td>Screens opened, features used, buttons tapped, ad impressions and clicks, session start and duration</td><td>Google Firebase Analytics, Meta, Google AdMob and its mediation partners</td></tr><tr><td><strong>Installed applications</strong></td><td>Whether certain messaging applications are present on the device, and the source application of a notification. Knowcall does not request the "query all packages" permission, but the advertising and attribution SDKs it includes may derive installed-application signals.</td><td>Advertising and attribution partners</td></tr><tr><td><strong>Crash logs and diagnostics</strong></td><td>Stack traces, exception messages, device state at the time of a crash, and basic performance data</td><td>Google Firebase Crashlytics</td></tr><tr><td><strong>Purchase status</strong></td><td>Whether a subscription is active, the product identifier, and the transaction status. We never receive your card, bank or payment-instrument details.</td><td>Google Play Billing, Google Firebase Analytics</td></tr></tbody></table></div>
+        <p>We do <strong>not</strong> collect your name, email address, postal address, phone number, photos, camera or microphone input, precise location, SMS messages, or call logs. Knowcall requests <strong>no SMS permission and no call-log permission</strong>.</p>
+
         <h2 id="how-we-use-information">2. How we use information</h2>
-        <ul><li>Provide and operate the App's caller ID, screening and blocking features.</li><li>Display and manage your contacts on the device.</li><li>Serve and measure advertising (for non-subscribers).</li><li>Analytics and product improvement.</li><li>Fraud prevention and security.</li><li>Process and validate premium subscriptions.</li><li>Comply with legal obligations.</li></ul>
+        <ul>
+            <li><strong>To provide and operate the App</strong> — display caller names from your contacts, screen calls against your lists, and show your unseen-message log. This processing happens on your device.</li>
+            <li><strong>To show advertising</strong> — Knowcall is free and supported by ads. Advertising identifiers, IP-derived approximate location and app-activity signals are used by our advertising partners to select and measure ads, including personalized ads where you have consented.</li>
+            <li><strong>To measure and improve the App</strong> — aggregated analytics tell us which features are used so we can prioritise work.</li>
+            <li><strong>To diagnose problems</strong> — crash logs and diagnostics help us find and fix defects.</li>
+            <li><strong>To prevent fraud and abuse</strong> — our advertising and attribution partners use identifiers to detect invalid traffic and attribution fraud.</li>
+            <li><strong>To process purchases</strong> — if you buy an optional subscription, Google Play processes the payment and reports the purchase status to the App so the entitlement can be applied.</li>
+            <li><strong>To comply with law</strong> — where we are legally required to retain or disclose information.</li>
+        </ul>
+
         <h2 id="third-party-services">3. Third-party services</h2>
-        <p>The App integrates the following data-transmitting SDKs. Each processes data under its own privacy policy:</p>
-        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Google Firebase (Analytics, Crashlytics, Remote Config)</td><td>Analytics, crash reporting, remote configuration</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google AdMob</td><td>Advertising</td><td>https://policies.google.com/privacy</td></tr><tr><td>Google Play Billing</td><td>Subscription purchases</td><td>https://policies.google.com/privacy</td></tr><tr><td>Meta Audience Network</td><td>Ad mediation</td><td>https://www.facebook.com/about/privacy</td></tr><tr><td>AppLovin</td><td>Ad mediation</td><td>https://www.applovin.com/privacy/</td></tr><tr><td>Pangle (ByteDance)</td><td>Ad mediation</td><td>https://www.pangleglobal.com/privacy</td></tr><tr><td>Mintegral</td><td>Ad mediation</td><td>https://www.mintegral.com/en/privacy/</td></tr><tr><td>Liftoff Monetize (Vungle)</td><td>Ad mediation</td><td>https://vungle.com/privacy/</td></tr><tr><td>InMobi</td><td>Ad mediation</td><td>https://www.inmobi.com/privacy-policy</td></tr><tr><td>DT Exchange (Fyber / Digital Turbine)</td><td>Ad mediation</td><td>https://www.digitalturbine.com/privacy-policy</td></tr><tr><td>Adjust</td><td>Mobile attribution &amp; analytics</td><td>https://www.adjust.com/terms/privacy-policy/</td></tr></tbody></table></div>
-        <p><strong>Ad consent (UMP).</strong> In regions where required (e.g. the EEA/UK), the App shows a Google User Messaging Platform (UMP) consent form so you can accept or decline personalized advertising.</p>
-        <p><strong>Resetting / opting out of the advertising ID.</strong> You can reset or delete your advertising ID at any time in your device settings (Settings → Privacy → Ads), and limit ad personalization there.</p>
+        <p>Each of the following services processes data as described above and under its own privacy policy. We encourage you to read them.</p>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Google Firebase — Analytics, Crashlytics, Remote Config</td><td>Usage analytics, crash reporting, remote feature configuration</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google AdMob</td><td>Advertising and ad measurement</td><td>https://policies.google.com/privacy</td></tr><tr><td>Google Play Billing</td><td>Processing optional subscription purchases</td><td>https://policies.google.com/privacy</td></tr><tr><td>Meta Audience Network / Meta SDK</td><td>Ad mediation and advertising measurement</td><td>https://www.facebook.com/privacy/policy</td></tr><tr><td>Pangle</td><td>Ad mediation</td><td>https://www.pangleglobal.com/privacy</td></tr><tr><td>Mintegral</td><td>Ad mediation</td><td>https://www.mintegral.com/en/privacy</td></tr><tr><td>AppLovin</td><td>Ad mediation</td><td>https://www.applovin.com/privacy</td></tr><tr><td>Liftoff Monetize (Vungle)</td><td>Ad mediation</td><td>https://vungle.com/privacy</td></tr><tr><td>InMobi</td><td>Ad mediation</td><td>https://www.inmobi.com/privacy-policy</td></tr><tr><td>DT Exchange (Digital Turbine / Fyber)</td><td>Ad mediation</td><td>https://www.digitalturbine.com/privacy-policy</td></tr><tr><td>Adjust</td><td>Marketing attribution and ad-revenue measurement</td><td>https://www.adjust.com/terms/privacy-policy</td></tr></tbody></table></div>
+        <h3>Advertising consent (EEA, UK and Switzerland)</h3>
+        <p>When you are located in the European Economic Area, the United Kingdom or Switzerland, Knowcall presents a consent message on first launch using Google's User Messaging Platform, in accordance with the IAB Transparency and Consent Framework. Your choice determines whether our advertising partners may use your data for personalized advertising. You can change your choice at any time through the privacy options available in the App.</p>
+        <h3>Resetting or opting out of your advertising ID</h3>
+        <p>Android lets you control the advertising identifier that our partners use. Open <strong>Settings → Privacy → Ads</strong> (the exact path varies by device and Android version) and choose <strong>Reset advertising ID</strong> to break the link to past activity, or <strong>Delete advertising ID</strong> to stop apps from receiving one at all. You will still see ads, but they will be less relevant.</p>
+
         <h2 id="how-we-share-information">4. How we share information</h2>
-        <p>We do not sell your personal information for money. We share data with the third-party service providers listed in Section 3 to operate advertising, analytics and purchases; for legal reasons; or in a business transfer. Where personalized advertising is used, some U.S. state laws may treat this as a "sale" or "sharing" of personal information — you can opt out via the in-app consent controls and your device advertising settings.</p>
-        <h2 id="legal-bases">5. Legal bases (EEA/UK — GDPR)</h2>
-        <ul><li><strong>Consent</strong> — for personalized ads and analytics where required.</li><li><strong>Legitimate interests</strong> — core functionality, security and improvement.</li><li><strong>Contract / legal obligation</strong> — processing purchases and complying with law.</li></ul>
+        <p><strong>We do not sell your personal information for money.</strong> We share information only as follows:</p>
+        <ul>
+            <li><strong>With the third-party services listed in Section 3</strong>, for the purposes described there. Advertising and mediation partners act as independent controllers of the identifiers and signals they receive and use them for their own advertising purposes.</li>
+            <li><strong>For legal reasons</strong> — to comply with a law, regulation, legal process or enforceable governmental request; to enforce our Terms of Service; or to protect the rights, property or safety of our users, the public or us.</li>
+            <li><strong>In a business transfer</strong> — if we are involved in a merger, acquisition, financing or sale of assets, information may be transferred as part of that transaction, subject to this Policy.</li>
+        </ul>
+        <p><strong>Notice for residents of California and other U.S. states.</strong> Under laws such as the California Consumer Privacy Act as amended by the CPRA, the use of advertising identifiers for personalized advertising may be treated as a "sale" or "sharing" of personal information, or as "targeted advertising", even though no money changes hands. You may opt out at any time by declining personalized advertising in the App's consent options, by resetting or deleting your advertising ID as described in Section 3, or by contacting us at contact@tranquilmind.co. We will not discriminate against you for exercising this right.</p>
+        <p><strong>We never share your contacts, your spam or block lists, your lookup history, or your unseen-message log</strong> — those never leave your device in the first place.</p>
+
+        <h2 id="legal-bases">5. Legal bases for processing (EEA and UK — GDPR)</h2>
+        <ul>
+            <li><strong>Consent</strong> (Article 6(1)(a)) — personalized advertising, and analytics where consent is required in your jurisdiction. You may withdraw consent at any time through the App's privacy options.</li>
+            <li><strong>Legitimate interests</strong> (Article 6(1)(f)) — operating and securing the App, non-personalized advertising, crash reporting, fraud prevention and product improvement, balanced against your rights and freedoms.</li>
+            <li><strong>Performance of a contract</strong> (Article 6(1)(b)) — delivering an optional subscription you have purchased.</li>
+            <li><strong>Legal obligation</strong> (Article 6(1)(c)) — retaining transaction records and responding to lawful requests.</li>
+        </ul>
+
         <h2 id="data-retention">6. Data retention</h2>
-        <p>We keep data only as long as necessary for the purposes above or as required by law. Advertising and analytics identifiers are retained by our partners for their own defined periods; crash and diagnostic data are kept for a limited period.</p>
+        <ul>
+            <li>Information stored <strong>on your device</strong> (Section 1.1) is kept until you delete it in the App, clear the App's storage, or uninstall the App. We cannot access or delete it for you, because we never receive it.</li>
+            <li><strong>Analytics and advertising data</strong> is retained by our partners under their own retention schedules; Google Analytics for Firebase event data is retained for a limited period configured in our Firebase project, and identifiers are retained by advertising partners under their policies.</li>
+            <li><strong>Crash logs and diagnostics</strong> are retained for a limited period sufficient to diagnose and fix the underlying defect.</li>
+            <li><strong>Purchase records</strong> are retained as long as required to support the entitlement and to meet tax and accounting obligations.</li>
+        </ul>
+
         <h2 id="your-rights">7. Your rights</h2>
-        <ul><li><strong>GDPR (EEA/UK):</strong> access, correct, delete, port, object, restrict, withdraw consent, and complain to a data protection authority.</li><li><strong>CCPA/CPRA (California):</strong> know, delete, correct, opt out of sale/sharing and targeted advertising, and non-discrimination.</li><li><strong>Other regions (LGPD, PIPEDA, etc.):</strong> equivalent rights under local law.</li></ul>
-        <p>Because the App has no user accounts, when you exercise these rights please contact us by email and include your device advertising ID so we can identify the relevant data.</p>
-        <h2 id="childrens-privacy">8. Children's privacy</h2>
-        <p>The App is intended for users aged 18 and over and is not directed to children. We do not knowingly collect personal information from children. If you believe a child has provided us information, contact us and we will delete it, consistent with COPPA and applicable age-of-consent rules.</p>
+        <h3>7.1 EEA, UK and Switzerland (GDPR / UK GDPR)</h3>
+        <p>You have the right to access your personal data; to have inaccurate data corrected; to have your data erased; to restrict or object to processing, including profiling for direct marketing; to data portability; to withdraw consent at any time without affecting the lawfulness of processing before withdrawal; and to lodge a complaint with your national supervisory authority.</p>
+        <h3>7.2 California and other U.S. states (CCPA / CPRA and equivalents)</h3>
+        <p>You have the right to know what personal information is collected, used and disclosed; to delete personal information; to correct inaccurate personal information; to opt out of the sale or sharing of personal information and of targeted advertising; to limit the use of sensitive personal information; and not to be discriminated against for exercising these rights. Knowcall does not knowingly collect sensitive personal information.</p>
+        <h3>7.3 Other regions</h3>
+        <p>Residents of Brazil (LGPD), Canada (PIPEDA), Australia, Japan, South Korea and other jurisdictions have comparable rights of access, correction, deletion and objection under their local laws. We honour those requests on the same terms.</p>
+        <h3>7.4 How to exercise your rights</h3>
+        <p>Email <strong>contact@tranquilmind.co</strong> with the subject line "Privacy request".</p>
+        <p>Because Knowcall has <strong>no accounts and no server</strong>, we cannot identify you from a name or email address. To let us locate any data held about you by our partners, please include in your request:</p>
+        <ul>
+            <li>your <strong>advertising ID</strong> (Android Settings → Privacy → Ads shows it, where available),</li>
+            <li>your <strong>device model and Android version</strong>, and</li>
+            <li>the <strong>approximate date</strong> you first installed the App.</li>
+        </ul>
+        <p>We will respond within the period required by applicable law — 30 days under the GDPR and 45 days under the CCPA, each extendable where the law permits. Where the data is held solely by a third-party partner, we will forward your request to that partner and tell you we have done so.</p>
+        <p>You can also delete everything the App holds locally at any time, without contacting us, by clearing the App's storage or uninstalling it.</p>
+
+        <h2 id="childrens-privacy">8. Children's privacy and Child Safety Standards</h2>
+        <p>Knowcall is intended for users aged <strong>16 and over</strong>, or the higher age of digital consent that applies where you live. It is not directed to children, is not designed to appeal to children, and is not distributed through Google Play's Designed for Families programme.</p>
+        <p>We do not knowingly collect personal information from children under 13 (or under the applicable age of digital consent in the EEA and the UK, which is between 13 and 16 depending on the country). If you believe a child has provided information to us or to one of our partners through the App, contact <strong>contact@tranquilmind.co</strong> and we will take steps to have it deleted.</p>
+        <h3>8.1 Child Safety Standards (CSAE)</h3>
+        <p>These are the published Child Safety Standards of <strong>Knowcall</strong>, developed and operated by <strong>Tranquil Mind Technology JSC</strong>, adopted in alignment with the Google Play Child Safety Standards policy.</p>
+        <p><strong>Zero tolerance for child sexual abuse and exploitation.</strong> We prohibit, without exception, child sexual abuse material and any child sexual abuse or exploitation ("CSAE") in connection with Knowcall. This prohibition covers images, video, audio, text and artificially or AI-generated material, and it applies to: the sexualization of minors; the grooming, solicitation, sextortion or trafficking of minors; and any attempt to create, request, access, store, share, promote or facilitate access to such material. There is no context in which this content is acceptable.</p>
+        <p><strong>How Knowcall is designed to prevent it.</strong> Knowcall does not host, transmit or publish any user-generated content. It provides no chat, no comments, no user profiles, no user-to-user messaging and no way for one user to send content to another. All content the App displays — your contacts, your own spam and block lists, and message notifications delivered to your own device by other applications — is read and stored locally on your device and is never uploaded to us or made visible to anyone else. There is therefore no surface within Knowcall through which CSAE material can be shared, distributed or discovered, and no user-generated content for us to moderate.</p>
+        <p><strong>Reporting and response.</strong> If you encounter anything relating to child safety in connection with Knowcall, contact our child-safety point of contact at <strong>contact@tranquilmind.co</strong>. We review every report we receive. Where a report concerns apparent child sexual abuse material, we will report it to the <strong>National Center for Missing &amp; Exploited Children (NCMEC)</strong> at https://report.cybertip.org and, where required or appropriate, to the competent authorities in Vietnam and in the relevant jurisdiction, and we will preserve the related information as the law requires. Where we identify a user misusing the App in violation of these standards, we will terminate their access. Suspected child sexual abuse or exploitation occurring outside the App should be reported directly to your local law enforcement authority; in an emergency, contact emergency services first.</p>
+        <p><strong>Compliance.</strong> We comply with applicable child-safety laws in the jurisdictions where Knowcall is distributed, and we review these standards whenever the App's functionality changes. Should Knowcall ever introduce a feature allowing users to communicate with one another or to publish content, we will implement content standards, proactive and reactive moderation, and an in-app reporting mechanism before that feature is released, and we will update these standards accordingly.</p>
+        <p><strong>Child-safety point of contact:</strong> contact@tranquilmind.co</p>
+
         <h2 id="international-data-transfers">9. International data transfers</h2>
-        <p>Your data may be processed in countries other than your own, including the United States. Where required, we and our partners rely on appropriate safeguards (e.g. Standard Contractual Clauses).</p>
+        <p>Tranquil Mind Technology JSC is based in Vietnam. The third-party services listed in Section 3 process data on servers in the United States, the European Union and other countries, which may have data-protection laws different from those in your country. Where personal data of individuals in the EEA or the UK is transferred outside those areas, our partners rely on appropriate safeguards, including the European Commission's Standard Contractual Clauses and the UK International Data Transfer Addendum, or on an adequacy decision.</p>
+
         <h2 id="data-security">10. Data security</h2>
-        <p>We use encryption in transit (HTTPS/TLS) and reasonable technical and organizational measures to protect your data. No method of transmission or storage is 100% secure.</p>
-        <h2 id="changes-to-this-policy">11. Changes to this Policy</h2>
-        <p>We may update this Policy. Material changes will be posted here with a new "Last updated" date. Continued use of the App after changes means you accept the updated Policy.</p>
-        <h2 id="contact-us">12. Contact us</h2>
-        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>Data transmitted by the third-party SDKs described in this Policy is encrypted in transit using HTTPS/TLS. Data stored on your device is held in the App's private storage area, which the Android operating system isolates from other applications. We apply reasonable technical and organisational measures appropriate to the limited data we handle. No method of transmission or storage is completely secure, however, and we cannot guarantee absolute security.</p>
+
+        <h2 id="advertising-content">11. Advertising content</h2>
+        <p>Advertisements displayed in Knowcall are supplied by the third-party networks listed in Section 3 and are not created, selected or endorsed by us. Tapping an advertisement may open a third-party website or store listing that is governed by that third party's own terms and privacy policy. We are not responsible for third-party content, websites or practices; please review their policies before providing them with any information.</p>
+
+        <h2 id="changes-to-this-policy">12. Changes to this Policy</h2>
+        <p>We may update this Policy from time to time. When we do, we will change the "Last updated" date at the top and post the revised Policy at this URL. For material changes we will provide additional notice within the App where practicable. Your continued use of the App after a change takes effect constitutes acceptance of the revised Policy.</p>
+
+        <h2 id="contact-us">13. Contact us</h2>
+        <p>Tranquil Mind Technology JSC<br>No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam<br>Email: <strong>contact@tranquilmind.co</strong></p>
         <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
     </article>
 </main>
