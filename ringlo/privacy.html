@@ -282,7 +282,7 @@
 
         <div class="meta">
             <span><strong>App:</strong> Ringlo</span>
-            <span><strong>Effective:</strong> 2026-08-09</span>
+            <span><strong>Effective:</strong> 2026-09-06</span>
             <span><strong>Last Updated:</strong> 2026-08-17</span>
         </div>
 
@@ -303,6 +303,7 @@
         <p>Because the App is free and supported by advertising, our advertising, analytics and attribution partners (listed in Section 3) automatically receive:</p>
         <ul>
             <li><strong>Device and advertising identifiers</strong> — the Android advertising ID (the App declares <code>com.google.android.gms.permission.AD_ID</code>), the Firebase installation/app-instance ID, and the identifiers our attribution partner generates.</li>
+            <li><strong>Device push token (Firebase Cloud Messaging registration token).</strong> The App retrieves your device's Firebase Cloud Messaging (FCM) registration token and provides it to our attribution partner (Adjust) so it can measure whether the App is later uninstalled or reinstalled. Adjust periodically sends a silent, content-free push to that token; if the token is reported as unregistered, an uninstall is recorded. This token is used only for uninstall/reinstall measurement — the App does not use it to display notifications to you, and it carries no contacts, phone numbers or message content.</li>
             <li><strong>Device and technical information</strong> — device model, manufacturer, operating-system version, language, screen and app version.</li>
             <li><strong>Approximate location derived from your IP address</strong> — country/region level. The App does <strong>not</strong> request or use the Android fine or coarse location permissions and never accesses GPS.</li>
             <li><strong>App activity</strong> — screens opened, taps on the main features, ad impressions, clicks and ad revenue events. These events carry no contact names, no phone numbers and no message content.</li>
@@ -316,7 +317,7 @@
             <li>Provide and operate the App: identify callers, screen blocked and spam numbers, list unopened messages, place a call through your phone's dialler at your request.</li>
             <li>Remember your preferences (language, theme, block list) between sessions.</li>
             <li>Show advertising and measure it, including frequency capping and ad revenue measurement.</li>
-            <li>Attribute installs and measure the performance of our marketing campaigns.</li>
+            <li>Attribute installs, and measure uninstalls and reinstalls, to evaluate the performance of our marketing campaigns.</li>
             <li>Analyse aggregate usage and fix bugs and crashes so we can improve the App.</li>
             <li>Deliver remote configuration so we can adjust features and ad placements without shipping a new build.</li>
             <li>Prevent fraud and abuse, and keep the App and our partners secure.</li>
@@ -327,9 +328,9 @@
         <p>The App includes the following third-party software development kits. Each one operates under its own privacy policy:</p>
         <div class="table-wrap"><table><thead><tr><th>Service</th><th>Provider</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody>
         <tr><td>Google AdMob / Google Mobile Ads</td><td>Google</td><td>Serving banner, native, interstitial and other standard ad formats; ad measurement</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
-        <tr><td>Google Firebase — Analytics, Crashlytics, Remote Config</td><td>Google</td><td>Usage analytics, crash reporting, remote feature configuration</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
+        <tr><td>Google Firebase — Analytics, Crashlytics, Remote Config, Cloud Messaging</td><td>Google</td><td>Usage analytics, crash reporting, remote feature configuration, and issuing the device push token used for uninstall/reinstall measurement</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
         <tr><td>Google Play services</td><td>Google</td><td>Core platform services, advertising ID and ad-consent</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
-        <tr><td>Adjust</td><td>Adjust GmbH</td><td>Install attribution, marketing measurement, ad-revenue reporting</td><td><a href="https://www.adjust.com/terms/privacy-policy/" target="_blank" rel="noopener">adjust.com/terms/privacy-policy</a></td></tr>
+        <tr><td>Adjust</td><td>Adjust GmbH</td><td>Install attribution, uninstall/reinstall measurement (via the device push token), marketing measurement, ad-revenue reporting</td><td><a href="https://www.adjust.com/terms/privacy-policy/" target="_blank" rel="noopener">adjust.com/terms/privacy-policy</a></td></tr>
         <tr><td>Meta Audience Network and the Meta SDK</td><td>Meta Platforms, Inc.</td><td>Mediated advertising and app-event measurement</td><td><a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener">facebook.com/privacy/policy</a></td></tr>
         <tr><td>AppLovin</td><td>AppLovin Corporation</td><td>Mediated advertising</td><td><a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener">applovin.com/privacy</a></td></tr>
         <tr><td>Pangle</td><td>Beijing Zitiao Network Technology (ByteDance)</td><td>Mediated advertising</td><td><a href="https://www.pangleglobal.com/privacy" target="_blank" rel="noopener">pangleglobal.com/privacy</a></td></tr>
