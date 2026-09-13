@@ -283,7 +283,7 @@
         <div class="nav-meta">
             <span>Privacy Policy</span>
             <span>·</span>
-            <span>2026-08-28</span>
+            <span>2026-09-14</span>
         </div>
     </div>
 </header>
@@ -314,41 +314,104 @@
 
         <div class="meta">
             <span><strong>App:</strong> Retriva</span>
-            <span><strong>Effective:</strong> 2026-08-28</span>
-            <span><strong>Last Updated:</strong> 2026-08-28</span>
+            <span><strong>Effective:</strong> 2026-09-14</span>
+            <span><strong>Last Updated:</strong> 2026-09-14</span>
         </div>
 
         <p>Retriva ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information we collect, how we use and share it, and the choices and rights you have. By using the App, you agree to this Policy.</p>
-        <p>Retriva saves incoming notifications from your messaging apps so you can review messages even after the sender deletes them, and helps you find and restore deleted photos, videos and files on your device. You do not need to create an account to use it, and all saved content stays on your device.</p>
+        <p>Retriva saves incoming notifications from the messaging apps you choose, so you can still read messages after the sender deletes or recalls them. It also backs up photos, videos, voice notes and other files those messaging apps have already downloaded to your device. You do not need to create an account to use it. The messages and files Retriva saves are stored on your device and are not sent to us.</p>
+
         <h2 id="information-we-collect">1. Information we collect</h2>
-        <p><strong>Content that stays on your device (NOT collected by us).</strong> Retriva reads notifications from the messaging apps you choose and stores the captured messages, photos, videos, documents, audio, voice notes and stickers <strong>locally on your device only</strong> (in the app's local database). Recovered media found on your device is likewise handled locally. <strong>This content is never uploaded to us or to any server, and we cannot access it.</strong></p>
-        <p><strong>Data collected automatically for stability.</strong> When the App crashes, Google Firebase Crashlytics collects <strong>crash logs and diagnostic information</strong> (e.g. device model, operating-system version, app version, and the technical state at the time of the crash). This is the only category of data that leaves your device.</p>
-        <p>We do <strong>not</strong> collect your name, email, contacts, precise location, or the content of your messages, and the App contains <strong>no advertising SDKs and no analytics beyond crash reporting</strong>.</p>
+        <h3>1.1 Content the App processes on your device (not collected by us)</h3>
+        <p>With your permission, the App works with the following content <strong>locally on your device</strong>. This content is <strong>not uploaded to our servers, not shared with our service providers, and we cannot access it</strong>:</p>
+        <ul>
+            <li><strong>Notification content.</strong> After you turn on <em>Notification access</em>, the App reads notifications posted by the messaging apps you select (for example, the sender's display name, the message text and the time received) and keeps a copy in the App's private storage. Notifications may contain messages sent to you by other people, including text messages if you select an SMS app.</li>
+            <li><strong>Media files.</strong> After you grant file access, the App reads media folders of the supported messaging apps (photos, videos, GIFs, audio, voice notes, stickers and documents) and copies those files into the App's private storage.</li>
+            <li><strong>Files you restore or share.</strong> When you choose <em>Restore</em>, the App saves a copy to your device's shared storage (for example, Pictures, Movies, Music or Download), where other apps on your device can see it. When you choose <em>Share</em>, the file is passed to the app you pick through Android's share sheet.</li>
+            <li><strong>App settings.</strong> Your language, the list of messaging apps to monitor, and similar preferences.</li>
+        </ul>
+        <p><strong>Device backup.</strong> If Android backup is turned on for your device, Android may include the App's data in your own device backup (for example, your Google account backup), under the settings and terms of your device and backup provider. We do not receive or have access to that backup. You can control this in your device's backup settings.</p>
+        <h3>1.2 Information collected automatically</h3>
+        <p>The App uses Google Firebase services, which automatically collect a limited amount of information when you use the App:</p>
+        <ul>
+            <li><strong>Crash logs and diagnostics</strong> (Firebase Crashlytics): stack traces, device model, operating-system version, app version, memory and disk state, and a crash-reporting installation identifier. Collected when the App crashes or hits an error.</li>
+            <li><strong>App activity</strong> (Google Analytics for Firebase): automatically recorded events such as first open, app updates, session start and screens viewed, plus engagement time. <strong>This does not include the content of your messages or files.</strong></li>
+            <li><strong>Device and other identifiers</strong>: the Firebase app-instance identifier, the Firebase installation ID (also used by Firebase Remote Config), and your device's <strong>advertising ID</strong>, which Google Analytics for Firebase reads for analytics. <strong>The App does not show ads and does not use the advertising ID for advertising.</strong></li>
+            <li><strong>Approximate location</strong>: Google Analytics for Firebase derives an approximate (country/region/city-level) location from your IP address. The App does not request location permissions and does not collect precise location.</li>
+            <li><strong>Installed messaging apps</strong>: the App checks which of its supported messaging apps are installed so you can choose which ones to monitor. This check runs on your device. Because this information may be available to the SDKs integrated in the App, we disclose it as information collected for app functionality. The App cannot see the full list of apps on your device.</li>
+        </ul>
+        <p>We do <strong>not</strong> collect your name, email address, phone number, contacts or precise location, and we do <strong>not</strong> collect the content of the notifications, messages or files the App saves.</p>
+        <h3>1.3 Information you send us</h3>
+        <p>If you contact us by email, we receive your email address and whatever you include in your message.</p>
+
         <h2 id="how-we-use-information">2. How we use information</h2>
-        <p>We use crash and diagnostic data only to detect, diagnose and fix stability problems and to improve the App. The content Retriva saves is used solely to display it back to you inside the App on your device.</p>
+        <p>We use the information described above to:</p>
+        <ul>
+            <li><strong>Provide the App's features</strong>: save notifications, back up media, and display, restore, share and delete saved items on your device;</li>
+            <li><strong>Operate and configure the App remotely</strong> (Firebase Remote Config), for example to adjust the wording and timing of the App's reminder notifications without releasing an update;</li>
+            <li><strong>Detect, diagnose and fix crashes</strong> and keep the App stable and secure;</li>
+            <li><strong>Understand how the App is used in aggregate</strong> (analytics) and improve it;</li>
+            <li><strong>Respond to your support requests</strong>; and</li>
+            <li><strong>Comply with legal obligations.</strong></li>
+        </ul>
+        <p>We do not use your information for advertising, and we do not build advertising profiles.</p>
+
         <h2 id="third-party-services">3. Third-party services</h2>
-        <p>The App integrates the following data-transmitting service:</p>
-        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Data involved</th><th>Policy</th></tr></thead><tbody><tr><td>Google Firebase Crashlytics</td><td>Crash reporting &amp; diagnostics</td><td>Crash logs, device &amp; app diagnostic info</td><td>https://firebase.google.com/support/privacy</td></tr></tbody></table></div>
-        <p>The App contains <strong>no advertising SDKs</strong>, so there is no ad personalization, no ad-consent (UMP) flow, and no advertising identifier used for ads.</p>
+        <p>The App integrates the following data-transmitting services, which process data as our service providers:</p>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Data involved</th><th>Policy</th></tr></thead><tbody><tr><td>Google Firebase Crashlytics</td><td>Crash reporting and diagnostics</td><td>Crash logs, diagnostic information, installation identifier</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google Analytics for Firebase</td><td>App usage analytics</td><td>App activity events, app-instance ID, advertising ID, IP-derived approximate location, device and app information</td><td>https://policies.google.com/privacy · https://firebase.google.com/support/privacy</td></tr><tr><td>Google Firebase Remote Config</td><td>Remote app configuration</td><td>Firebase installation ID, app and device information</td><td>https://firebase.google.com/support/privacy</td></tr></tbody></table></div>
+        <p>The App contains <strong>no advertising SDKs</strong>, has no ad-consent flow, and does not show ads.</p>
+        <p><strong>Your advertising ID.</strong> You can reset or delete your advertising ID at any time in your device settings (on most Android devices: <em>Settings → Privacy → Ads</em>, or <em>Settings → Google → Ads</em>). Once it is deleted, analytics services receive a string of zeros instead of an identifier.</p>
+        <p><strong>Integration with other apps.</strong> Retriva is an independent app and is not affiliated with WhatsApp, Meta, Instagram, Telegram, Zalo, Viber, Snap, Discord, Google or any other messaging service. Retriva does not connect to those services' servers and does not access your accounts with them. Those services' own privacy policies govern how they handle your data.</p>
+
         <h2 id="how-we-share-information">4. How we share information</h2>
-        <p>We do <strong>not</strong> sell your personal information for money, and we do <strong>not</strong> share the content Retriva saves with anyone — it never leaves your device. Diagnostic data is shared only with the service listed in Section 3 for the purpose described, or where required by law, or in connection with a business transfer.</p>
+        <p>We do <strong>not</strong> sell your personal information, and we do <strong>not</strong> "share" it for cross-context behavioral advertising (as those terms are defined under U.S. state privacy laws). We never share the notifications, messages or files the App saves, because they do not leave your device through us.</p>
+        <p>We share the automatically collected information described in Section 1.2 only:</p>
+        <ul>
+            <li>with the service providers listed in Section 3, for the purposes described there;</li>
+            <li>when required by law or to protect rights, safety and security; or</li>
+            <li>in connection with a merger, acquisition or sale of assets, subject to this Policy.</li>
+        </ul>
+
         <h2 id="legal-bases">5. Legal bases (EEA/UK — GDPR)</h2>
-        <p>We rely on our <strong>legitimate interests</strong> in maintaining a secure, stable, and functioning App (crash diagnostics), and on <strong>legal obligation</strong> where applicable. We do not process data for advertising.</p>
+        <ul>
+            <li><strong>Legitimate interests</strong>: operating and configuring the App, crash diagnostics, security, and understanding aggregate usage so we can improve the App. Where applicable law requires consent for analytics, we will ask for it.</li>
+            <li><strong>Consent</strong>: the App accesses notification content and media files only after you grant the corresponding Android permissions. You can withdraw these permissions at any time in your device settings.</li>
+            <li><strong>Legal obligation</strong>: where we must keep or disclose information by law.</li>
+        </ul>
+        <p>Content from other people that appears in your notifications is processed only on your device, at your direction, for your personal use.</p>
+
         <h2 id="data-retention">6. Data retention</h2>
-        <p>Content saved by Retriva remains on your device until you delete it or uninstall the App; you can clear saved data at any time from within the App. Crash and diagnostic data is retained by Firebase Crashlytics for a limited period in line with Google's retention practices.</p>
+        <ul>
+            <li><strong>Saved notifications and files</strong> stay on your device until you delete them in the App, clear the App's data, or uninstall the App. Copies you restore to shared storage remain until you delete them there.</li>
+            <li><strong>Crash and diagnostic data</strong> is kept by Firebase Crashlytics for a limited period (currently about 90 days), then deleted.</li>
+            <li><strong>Analytics data</strong> is kept according to our Google Analytics data-retention settings (no longer than 14 months for user-level data). Aggregated reports that do not identify you may be kept longer.</li>
+            <li><strong>Support emails</strong> are kept as long as needed to handle your request and meet legal obligations.</li>
+        </ul>
+
         <h2 id="your-rights">7. Your rights</h2>
-        <p>Because the content Retriva saves never leaves your device, you control it directly — you can view, filter and delete it inside the App at any time.</p>
-        <p>For the diagnostic data described above, subject to applicable law you have the right to <strong>access, correct, delete, port, object to or restrict</strong> processing, and to <strong>withdraw consent</strong> and <strong>lodge a complaint</strong> with a supervisory authority (GDPR); and to <strong>know, delete, correct, and opt out of the sale/sharing</strong> of personal information (CCPA/CPRA). Residents of other regions (e.g. LGPD, PIPEDA) have comparable rights. As the App has no accounts, please contact us at the email below and include your device model and app version so we can locate any diagnostic records.</p>
+        <p><strong>Content saved on your device.</strong> You control it directly: you can view, restore, share and delete saved items in the App at any time, stop saving by turning off <em>Notification access</em> or deselecting apps, and remove everything by clearing the App's data or uninstalling it.</p>
+        <p><strong>Information described in Section 1.2.</strong> Subject to applicable law, you may have the right to:</p>
+        <ul>
+            <li><strong>GDPR / UK GDPR</strong>: access, correct, delete, port, object to or restrict processing; withdraw consent; and lodge a complaint with your local data protection authority;</li>
+            <li><strong>CCPA/CPRA and other U.S. state laws</strong>: know what personal information we collect, delete it, correct it, and not be discriminated against for exercising your rights. We do not sell or share personal information, so there is nothing to opt out of;</li>
+            <li><strong>Other regions</strong> (for example LGPD in Brazil and PIPEDA in Canada): comparable rights under local law.</li>
+        </ul>
+        <p>To make a request, email <strong>contact@tranquilmind.co</strong>. Because the App has no accounts, please include your device model and App version, and describe the approximate time you used the App, so we can try to locate related records. You can also reset or delete your advertising ID (see Section 3). We will respond within the time required by law.</p>
+
         <h2 id="childrens-privacy">8. Children's privacy</h2>
-        <p>The App is intended for a general audience and is <strong>not directed to children under 13</strong> (or the minimum age of digital consent in your region). We do not knowingly collect personal information from children. If you believe a child has provided us diagnostic data, contact us and we will delete it.</p>
+        <p>The App is intended for adults and is <strong>not directed to anyone under 18</strong>. We do not knowingly collect personal information from children, including children under 13 as defined by the U.S. Children's Online Privacy Protection Act (COPPA) or under the age of digital consent in the EEA/UK. If you believe a child has used the App and that we hold their information, contact us and we will delete it.</p>
+
         <h2 id="international-data-transfers">9. International data transfers</h2>
-        <p>Diagnostic data may be processed on servers outside your country, including in the United States, by Google. Where required, appropriate safeguards (e.g. Standard Contractual Clauses) apply.</p>
+        <p>Google processes the information described in Section 1.2 on servers that may be located outside your country, including in the United States. Where required, transfers rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses.</p>
+
         <h2 id="data-security">10. Data security</h2>
-        <p>Diagnostic data is transmitted using encryption in transit (HTTPS/TLS). Content saved by Retriva remains within your device's app storage. No method of storage or transmission is 100% secure.</p>
+        <p>Information sent to our service providers is encrypted in transit (HTTPS/TLS). Content Retriva saves is kept in the App's private storage, which other apps cannot access under Android's security model, unless you restore or share it. Anyone who can unlock your device may be able to open the App and see saved content, so protect your device with a screen lock. No method of storage or transmission is 100% secure.</p>
+
         <h2 id="changes-to-this-policy">11. Changes to this Policy</h2>
-        <p>We may update this Policy; material changes will be posted here with a new date. Continued use of the App after changes means you accept the updated Policy.</p>
+        <p>We may update this Policy from time to time. Material changes will be posted on this page with a new "Last updated" date. Continued use of the App after changes means you accept the updated Policy.</p>
+
         <h2 id="contact-us">12. Contact us</h2>
-        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>Tranquil Mind Technology JSC<br>No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam<br>Email: <strong>contact@tranquilmind.co</strong></p>
         <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
     </article>
 </main>
