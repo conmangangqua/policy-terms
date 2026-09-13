@@ -283,7 +283,7 @@
         <div class="nav-meta">
             <span>Privacy Policy</span>
             <span>·</span>
-            <span>2026-08-21</span>
+            <span>2026-09-13</span>
         </div>
     </div>
 </header>
@@ -315,59 +315,122 @@
 
         <div class="meta">
             <span><strong>App:</strong> Klipnest</span>
-            <span><strong>Effective:</strong> 2026-08-21</span>
-            <span><strong>Last Updated:</strong> 2026-08-21</span>
+            <span><strong>Effective:</strong> 2026-09-13</span>
+            <span><strong>Last Updated:</strong> 2026-09-13</span>
         </div>
 
         <p>Klipnest ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information the App collects, how that information is used and shared, and the choices and rights you have. By using the App, you agree to this Policy.</p>
-        <p>Klipnest is an Android media downloader with a built-in browser. It lets you open TikTok, YouTube, Instagram, Facebook, X (Twitter), Dailymotion and other websites inside the App, save the videos, music and images you are allowed to download to your phone, and manage everything offline in a local library with tabs, browsing history and bookmarks. The App has <strong>no user account</strong>: there is no registration, no login, no profile, no cloud sync, no messaging and no user-to-user content — you can use every feature without telling us who you are.</p>
+        <p>Klipnest is an Android media downloader with a built-in browser. You can paste a link or open a web page inside the App, save the videos, music, images and documents you are allowed to download to your phone, and manage them offline in a local library with tabs, browsing history and bookmarks. The App has <strong>no user account</strong>: there is no registration, no login, no profile, no cloud sync, no messaging and no user-to-user content. You can use every feature without telling us who you are.</p>
+
         <h2 id="information-we-collect">1. Information we collect</h2>
-        <p>We never ask you for your name, email address, phone number, contacts, calendar or precise location. There is no form in the App that requests personal details.</p>
-        <p>Two categories of information exist: what stays <strong>only on your device</strong> (Section 1.1), and what is collected <strong>automatically</strong> by the App and by the third-party services listed in Section 3 (Sections 1.2 to 1.6).</p>
-        <h3>1.1 What never leaves your device</h3>
-        <ul><li><strong>Your browsing inside the App</strong> — web addresses you open, page content, open tabs, terms typed in the address bar, cookies, cache and site data are handled by the Android WebView engine and kept in the App's private, sandboxed storage.</li><li><strong>Browsing history, bookmarks and tabs</strong> — the App keeps a local history list, a bookmark list and a tab list in an on-device database (Hive). We operate no server that receives them, so there is nothing for us to upload or back up. Deleting an entry, clearing the App's storage or uninstalling the App removes this data.</li><li><strong>Downloaded files</strong> — videos, audio, images and documents you save are written to your device's storage. They are never uploaded to us. The <code>READ_MEDIA_VIDEO</code>, <code>READ_MEDIA_IMAGES</code> and (on Android 9 and older) <code>READ_EXTERNAL_STORAGE</code> / <code>WRITE_EXTERNAL_STORAGE</code> permissions exist solely so the App can write your downloads and show them back to you in the local library.</li><li><strong>Media handling on device</strong> — thumbnail generation, video compression, playback, and the built-in document/PDF viewer all run locally.</li><li><strong>App settings</strong> — language, theme and preferences are stored locally.</li></ul>
-        <p>Downloads themselves are direct: when you tap download, your device requests the file from the website that hosts it. That website — not Klipnest — receives your IP address, user-agent and any cookies your browser session carries. We never see, log or proxy the address of the page you visit or the file you download.</p>
-        <h3>1.2 Device and app information</h3>
-        <p>Device model and manufacturer, operating system version, screen metrics, language and region settings, time zone, network connection type, App version and build number. Used to run the App correctly, deliver the right remote configuration, serve and measure advertising, and investigate problems.</p>
-        <h3>1.3 Identifiers</h3>
-        <ul><li><strong>Advertising ID</strong> (Google Advertising ID / GAID) — a resettable identifier supplied by Android and used by the advertising, analytics and attribution services in Section 3. The App declares <code>com.google.android.gms.permission.AD_ID</code> for this purpose.</li><li><strong>App-instance identifiers</strong> — the Firebase installation / app-instance ID used by Firebase Analytics, Crashlytics and Remote Config, and an installation identifier used by Adjust for attribution.</li><li><strong>Android Privacy Sandbox signals</strong> — the bundled advertising libraries may use Android's Ad Services APIs where your device supports them.</li></ul>
-        <h3>1.4 Approximate location derived from your IP address</h3>
-        <p>The App requests no location permission and never reads GPS, Wi-Fi or cell positioning. Our advertising, analytics and attribution providers may infer an approximate location — usually country or city level — from the IP address your device presents when it contacts them.</p>
-        <h3>1.5 App activity and diagnostics</h3>
-        <ul><li><strong>In-app events</strong> — which screens are opened, which buttons are tapped, that a download started or completed, that a purchase was made, and similar interaction events, sent to Firebase Analytics and Adjust. These events record the interaction only; they <strong>do not</strong> carry the URL, page title, domain, search term or file name involved.</li><li><strong>Crash logs and diagnostics</strong> — stack traces, native crash traces, device state and performance data collected by Firebase Crashlytics (including its NDK component) so we can fix stability problems.</li></ul>
-        <h3>1.6 Purchase status</h3>
-        <p>If you buy Klipnest Premium, Google Play Billing tells the App which entitlement you hold (weekly, monthly or lifetime) so it can remove advertising. Google processes the payment; <strong>we never receive your card number or billing address.</strong> The purchase event is also reported to Firebase Analytics and Adjust as revenue attribution.</p>
+        <p>We never ask for your name, email address, phone number, contacts, calendar or location. No form in the App requests personal details.</p>
+        <p>Information falls into three groups:</p>
+        <ul>
+            <li>data that stays <strong>only on your device</strong> (Section 1.1);</li>
+            <li>the <strong>links you choose to download</strong>, which the App may need to send to a download-processing service (Section 1.2);</li>
+            <li>data collected <strong>automatically</strong> by the App and the third-party services listed in Section 3 (Sections 1.3 to 1.7).</li>
+        </ul>
+        <h3>1.1 What stays on your device</h3>
+        <ul>
+            <li><strong>Your browsing inside the App.</strong> The Android WebView engine handles the web addresses you open, page content, open tabs, terms typed in the address bar, cookies, cache and site data. All of it is kept in the App's private, sandboxed storage.</li>
+            <li><strong>Browsing history, bookmarks and tabs.</strong> The App keeps a local history list, bookmark list and tab list in an on-device database (Hive). They are not uploaded to us or backed up by us. Deleting an entry, clearing the App's storage or uninstalling the App removes this data.</li>
+            <li><strong>Downloaded files.</strong> The videos, audio, images and documents you save are written to your device's storage and are never uploaded to us. The App uses the <code>READ_MEDIA_VIDEO</code> and <code>READ_MEDIA_IMAGES</code> permissions (and <code>READ_EXTERNAL_STORAGE</code> / <code>WRITE_EXTERNAL_STORAGE</code> on Android 9 and older) only to save your downloads and show them in your local library.</li>
+            <li><strong>Media handling.</strong> Thumbnails, video compression, playback and the built-in PDF, text and presentation viewers all run on your device.</li>
+            <li><strong>Notifications.</strong> Download-progress notifications and occasional reminders are created and scheduled on your device. We run no push-messaging service. You can turn notifications off in Android settings.</li>
+            <li><strong>App settings.</strong> Your language, theme and other preferences are stored locally.</li>
+        </ul>
+        <h3>1.2 Links you choose to download</h3>
+        <p>A download starts when you paste a link or tap <strong>Download</strong> on a page. The App first has to work out where the actual media file is. How it does this depends on the source:</p>
+        <ul>
+            <li><strong>Directly from the website.</strong> For direct file links, public cloud-drive share links and some social sites, your device contacts the hosting website or its public embed service itself. In some cases this happens in a hidden in-app browser view. That website receives your IP address, user-agent and any cookies your in-app browsing session holds, under its own privacy policy.</li>
+            <li><strong>Through a download-processing service.</strong> For some video sites, the App sends the <strong>link of the post or video you chose</strong> to a third-party download-processing service. This includes API providers reached through the RapidAPI marketplace. The service replies with the address of the downloadable file. It receives the link, your device's IP address and standard technical request headers. <strong>It does not receive your name, your advertising ID, or your history, bookmarks or files.</strong> These providers may keep request logs under their own terms and privacy policies. We do not combine these links with your advertising ID or analytics data.</li>
+        </ul>
+        <p>After the file address is found, the file itself is downloaded directly from the website that hosts it.</p>
+        <p>These links are sent only when you ask to download something. If you don't use the download feature for a given page, nothing about that page is sent.</p>
+        <h3>1.3 Device and app information</h3>
+        <p>We collect your device model and manufacturer, operating system version, screen metrics, language and region settings, time zone, network connection type, and the App version and build number. We use this to run the App correctly, deliver the right remote configuration, serve and measure advertising, and investigate problems.</p>
+        <h3>1.4 Identifiers</h3>
+        <ul>
+            <li><strong>Advertising ID</strong> (Google Advertising ID / GAID): a resettable identifier supplied by Android and used by the advertising, analytics and attribution services in Section 3. The App declares <code>com.google.android.gms.permission.AD_ID</code> for this purpose.</li>
+            <li><strong>App-instance identifiers:</strong> the Firebase installation / app-instance ID used by Firebase Analytics, Crashlytics and Remote Config; an installation identifier used by Adjust for attribution; and the identifiers the Facebook SDK uses for app events.</li>
+            <li><strong>Android Privacy Sandbox signals:</strong> the bundled advertising libraries may use Android's Ad Services APIs on devices that support them.</li>
+        </ul>
+        <h3>1.5 Approximate location derived from your IP address</h3>
+        <p>The App requests no location permission and never reads GPS, Wi-Fi or cell positioning. Our advertising, analytics and attribution providers may estimate an approximate location, usually at country or city level, from the IP address your device uses to contact them.</p>
+        <h3>1.6 App activity and diagnostics</h3>
+        <ul>
+            <li><strong>In-app events:</strong> screens opened, buttons tapped, downloads started or completed, ads shown or clicked, and similar interaction events. They are sent to Firebase Analytics, Adjust and the Facebook SDK. These events record only the interaction. They <strong>do not</strong> include the URL, page title, domain, search term or file name involved.</li>
+            <li><strong>Crash logs and diagnostics:</strong> stack traces, native crash traces, device state and performance data, collected by Firebase Crashlytics (including its NDK component) so we can fix stability problems.</li>
+        </ul>
+        <h3>1.7 Purchase status</h3>
+        <p>If the App offers an optional <strong>Klipnest Premium</strong> purchase in your region and you buy it, Google Play Billing tells the App which entitlement you hold so it can remove advertising. Google processes the payment, and <strong>we never receive your card number or billing address.</strong> Purchase events may be reported to Firebase Analytics and Adjust for revenue attribution. When you open the App, it may also ask Google Play whether you have an earlier purchase to restore.</p>
+
         <h2 id="how-we-use-information">2. How we use information</h2>
-        <ul><li>Provide and operate the App, its browser, its downloader and its local library.</li><li>Remember your settings, tabs, history and bookmarks on your device.</li><li>Show advertising, and measure ad performance, install attribution and campaign effectiveness.</li><li>Analytics and product improvement.</li><li>Fraud prevention, security and abuse detection.</li><li>Process and validate purchases and subscriptions.</li><li>Comply with legal obligations.</li></ul>
+        <ul>
+            <li>Provide and operate the App, including its browser, downloader, local library and players.</li>
+            <li>Locate the downloadable file for a link you chose (Section 1.2).</li>
+            <li>Keep your settings, tabs, history and bookmarks on your device.</li>
+            <li>Show advertising and measure ad performance, install attribution and campaign effectiveness.</li>
+            <li>Analytics, stability monitoring and product improvement.</li>
+            <li>Prevent fraud and invalid ad traffic, and keep the App secure.</li>
+            <li>Process and validate purchases, where offered.</li>
+            <li>Comply with legal obligations.</li>
+        </ul>
+
         <h2 id="third-party-services">3. Third-party services</h2>
-        <p>The App integrates the following data-transmitting SDKs. Each processes data under its own privacy policy:</p>
-        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Policy</th></tr></thead><tbody><tr><td>Google AdMob (Google Mobile Ads)</td><td>Advertising &amp; mediation</td><td>https://policies.google.com/privacy</td></tr><tr><td>Google Firebase — Analytics</td><td>Analytics</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google Firebase — Crashlytics (incl. NDK)</td><td>Crash reporting &amp; diagnostics</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google Firebase — Remote Config</td><td>Feature &amp; ad configuration</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Meta Audience Network</td><td>Advertising (ad mediation)</td><td>https://www.facebook.com/about/privacy</td></tr><tr><td>Facebook SDK (Meta)</td><td>Attribution, app events &amp; analytics</td><td>https://www.facebook.com/about/privacy</td></tr><tr><td>Pangle (ByteDance)</td><td>Advertising (ad mediation)</td><td>https://www.pangleglobal.com/privacy</td></tr><tr><td>Mintegral</td><td>Advertising (ad mediation)</td><td>https://www.mintegral.com/en/privacy</td></tr><tr><td>AppLovin</td><td>Advertising (ad mediation)</td><td>https://www.applovin.com/privacy</td></tr><tr><td>Liftoff Monetize (Vungle)</td><td>Advertising (ad mediation)</td><td>https://vungle.com/privacy</td></tr><tr><td>Unity Ads</td><td>Advertising (ad mediation)</td><td>https://unity.com/legal/game-player-and-app-user-privacy-policy</td></tr><tr><td>ironSource (Unity LevelPlay)</td><td>Advertising (ad mediation)</td><td>https://unity.com/legal/game-player-and-app-user-privacy-policy</td></tr><tr><td>InMobi</td><td>Advertising (ad mediation)</td><td>https://www.inmobi.com/privacy-policy</td></tr><tr><td>Adjust</td><td>Install attribution &amp; marketing analytics</td><td>https://www.adjust.com/terms/privacy-policy</td></tr><tr><td>Google Play Billing</td><td>Subscriptions &amp; one-time purchases</td><td>https://policies.google.com/privacy</td></tr><tr><td>Google Play In-App Review</td><td>Optional in-app rating prompt</td><td>https://policies.google.com/privacy</td></tr><tr><td>Android System WebView (Google)</td><td>Renders the pages you open in the in-app browser</td><td>https://policies.google.com/privacy</td></tr></tbody></table></div>
-        <p><strong>Websites you visit.</strong> The in-app browser and the downloader connect directly to the sites you choose (for example TikTok, YouTube, Instagram, Facebook, X or Dailymotion). Those sites receive your IP address, user-agent and their own cookies, and they apply <strong>their own</strong> privacy policies and terms. Klipnest is not affiliated with, endorsed by, or operated by any of them.</p>
-        <p><strong>Ad consent (UMP).</strong> Where required (for example in the EEA and the UK), the App asks for your advertising consent through Google's User Messaging Platform before personalized ads are served, and reads the resulting IAB TCF consent string so the mediation partners above honour your choice. You can reopen the consent form from the App's settings where the option is offered.</p>
-        <p><strong>Advertising ID.</strong> You can reset or delete your advertising ID at any time in your device settings (Settings → Google → Ads), which limits ad personalization.</p>
+        <p>The App uses the following services, which receive data. Each processes data under its own privacy policy:</p>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Policy</th></tr></thead><tbody><tr><td>Google AdMob (Google Mobile Ads)</td><td>Advertising &amp; mediation</td><td>https://policies.google.com/privacy</td></tr><tr><td>Google User Messaging Platform (UMP)</td><td>Advertising consent (EEA/UK and other regions where required)</td><td>https://policies.google.com/privacy</td></tr><tr><td>Google Firebase — Analytics</td><td>Analytics</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google Firebase — Crashlytics (incl. NDK)</td><td>Crash reporting &amp; diagnostics</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google Firebase — Remote Config</td><td>Feature, ad and download-service configuration</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Meta Audience Network</td><td>Advertising (ad mediation)</td><td>https://www.facebook.com/about/privacy</td></tr><tr><td>Facebook SDK (Meta)</td><td>Attribution, app events &amp; analytics</td><td>https://www.facebook.com/about/privacy</td></tr><tr><td>Pangle (ByteDance)</td><td>Advertising (ad mediation)</td><td>https://www.pangleglobal.com/privacy</td></tr><tr><td>Mintegral</td><td>Advertising (ad mediation)</td><td>https://www.mintegral.com/en/privacy</td></tr><tr><td>AppLovin</td><td>Advertising (ad mediation)</td><td>https://www.applovin.com/privacy</td></tr><tr><td>Liftoff Monetize (Vungle)</td><td>Advertising (ad mediation)</td><td>https://vungle.com/privacy</td></tr><tr><td>Unity Ads</td><td>Advertising (ad mediation)</td><td>https://unity.com/legal/game-player-and-app-user-privacy-policy</td></tr><tr><td>ironSource (Unity LevelPlay)</td><td>Advertising (ad mediation)</td><td>https://unity.com/legal/game-player-and-app-user-privacy-policy</td></tr><tr><td>InMobi</td><td>Advertising (ad mediation)</td><td>https://www.inmobi.com/privacy-policy</td></tr><tr><td>Adjust</td><td>Install attribution &amp; marketing analytics</td><td>https://www.adjust.com/terms/privacy-policy</td></tr><tr><td>Download-processing API providers (including providers reached through RapidAPI)</td><td>Finding the downloadable file for a link you chose (Section 1.2)</td><td>https://rapidapi.com/privacy</td></tr><tr><td>Google Play Billing</td><td>Optional purchases, where offered</td><td>https://policies.google.com/privacy</td></tr><tr><td>Google Play In-App Review &amp; Play Store</td><td>Optional rating prompt; checking whether an App update is available</td><td>https://policies.google.com/privacy</td></tr><tr><td>Android System WebView (Google)</td><td>Displaying the pages you open in the in-app browser</td><td>https://policies.google.com/privacy</td></tr></tbody></table></div>
+        <p><strong>Websites you visit.</strong> The in-app browser and the downloader connect directly to the sites you choose. Those sites receive your IP address, user-agent and their own cookies, and they apply <strong>their own</strong> privacy policies and terms. Klipnest is not affiliated with, endorsed by, or operated by any of them.</p>
+        <p><strong>Ad consent (UMP).</strong> Where required (for example in the EEA and the UK), the App asks for your advertising consent through Google's User Messaging Platform before personalized ads are served. It reads the resulting IAB TCF consent string so the mediation partners above respect your choice. Where the option is offered, you can reopen the consent form from the App's settings.</p>
+        <p><strong>Advertising ID.</strong> You can reset or delete your advertising ID at any time in your device settings (Settings → Google → Ads). This limits ad personalization.</p>
+
         <h2 id="how-we-share-information">4. How we share information</h2>
-        <p>We do <strong>not</strong> sell your personal information for money. We share the automatically collected data described in Sections 1.2 to 1.6 with the third-party partners listed in Section 3 so they can serve and measure ads, provide analytics and attribution, and process purchases. We may also disclose information for legal reasons (to comply with law or a valid request, or to protect our rights and users' safety) or as part of a merger, acquisition or other business transfer.</p>
-        <p>Because the App serves personalized advertising, some U.S. state privacy laws may treat that as a "sale" or "sharing" of personal information, or as "targeted advertising". You may opt out as described in Sections 3 and 7.</p>
+        <p>We do <strong>not</strong> sell your personal information for money. We share the automatically collected data described in Sections 1.3 to 1.7 with the partners listed in Section 3, so they can serve and measure ads, provide analytics and attribution, and process purchases. Links you choose to download are passed to download-processing services only as described in Section 1.2. We may also disclose information for legal reasons (to comply with the law or a valid request, or to protect our rights and the safety of users) or as part of a merger, acquisition or other business transfer.</p>
+        <p>The App serves personalized advertising, so some U.S. state privacy laws may treat this as a "sale" or "sharing" of personal information, or as "targeted advertising". You can opt out as described in Sections 3 and 7.</p>
+
         <h2 id="legal-bases">5. Legal bases (EEA/UK — GDPR)</h2>
-        <ul><li><strong>Consent</strong> — personalized advertising and analytics where consent is required (collected via the UMP consent form).</li><li><strong>Legitimate interests</strong> — core functionality, security, fraud prevention and product improvement.</li><li><strong>Contract / legal obligation</strong> — processing purchases and meeting legal duties.</li></ul>
+        <ul>
+            <li><strong>Consent:</strong> personalized advertising and analytics where consent is required (collected through the UMP consent form).</li>
+            <li><strong>Performance of our service at your request:</strong> sending a link you chose to a download-processing service so the download can happen.</li>
+            <li><strong>Legitimate interests:</strong> core functionality, security, fraud prevention and product improvement.</li>
+            <li><strong>Contract / legal obligation:</strong> processing purchases and meeting legal duties.</li>
+        </ul>
+
         <h2 id="data-retention">6. Data retention</h2>
-        <p>We keep data only as long as necessary for the purposes above or as required by law. Advertising, attribution and analytics identifiers are retained according to each partner's own retention periods; crash and diagnostic data is kept for a limited period. Everything described in Section 1.1 stays on your device until you delete it or uninstall the App.</p>
+        <p>We keep data only as long as necessary for the purposes above or as required by law:</p>
+        <ul>
+            <li>Advertising, attribution and analytics identifiers are kept according to each partner's retention periods.</li>
+            <li>Crash and diagnostic data is kept for a limited period.</li>
+            <li>Download-processing providers may keep request logs for their own operational periods.</li>
+            <li>Everything described in Section 1.1 stays on your device until you delete it or uninstall the App.</li>
+        </ul>
+
         <h2 id="your-rights">7. Your rights</h2>
-        <ul><li><strong>GDPR (EEA/UK):</strong> access, correction, deletion, portability, objection, restriction, withdrawal of consent, and the right to complain to a data protection authority.</li><li><strong>CCPA/CPRA (U.S.):</strong> the right to know, delete and correct, to opt out of the sale/sharing of personal information and of targeted advertising, and to non-discrimination.</li><li><strong>Other regions (LGPD, PIPEDA and equivalents):</strong> the corresponding rights where applicable.</li></ul>
-        <p>Because the App has no accounts, we hold no profile that identifies you by name. To exercise a right, email us at the address in Section 13 and include your <strong>advertising ID</strong> and device details so we can locate any related data with our partners. You can also delete everything the App stores locally at any time by clearing the App's storage or uninstalling it.</p>
+        <ul>
+            <li><strong>GDPR (EEA/UK):</strong> access, correction, deletion, portability, objection, restriction, withdrawal of consent, and the right to complain to a data protection authority.</li>
+            <li><strong>CCPA/CPRA (U.S.):</strong> the right to know, delete and correct, to opt out of the sale or sharing of personal information and of targeted advertising, and to non-discrimination.</li>
+            <li><strong>Other regions (LGPD, PIPEDA and equivalents):</strong> the corresponding rights where applicable.</li>
+        </ul>
+        <p>The App has no accounts, so we hold no profile that identifies you by name. To exercise a right, email us at the address in Section 13. Include your <strong>advertising ID</strong> and device details so we can find related data held by our partners. You can also delete everything the App stores locally at any time by clearing the App's storage or uninstalling it. To limit ad personalization right away, reset your advertising ID or change your consent choice as described in Section 3.</p>
+
         <h2 id="childrens-privacy">8. Children's privacy</h2>
-        <p>Klipnest is intended for users aged <strong>13 or over</strong>, or the higher age of digital consent in your country. It is a general-audience utility and is not directed to children. The App opens the public internet, and the pages reachable through it are neither produced nor filtered by us; parents and guardians should supervise younger users and consider Android Family Link parental controls.</p>
-        <p>We do not knowingly collect personal information from children under 13 (or under 16 in the EEA/UK where a higher age applies). If you believe a child has provided personal information, write to us at the address in Section 13 and we will delete it along with any associated identifiers.</p>
+        <p>Klipnest is intended for users aged <strong>13 or over</strong>, or the higher age of digital consent in your country. It is a general-audience utility and is not directed to children. The App opens the public internet, and we neither produce nor filter the pages you can reach through it. Parents and guardians should supervise younger users and may want to use parental controls such as Android Family Link.</p>
+        <p>We do not knowingly collect personal information from children under 13 (or under 16 in the EEA/UK, where a higher age applies). If you believe a child has provided personal information, write to us at the address in Section 13. We will delete it together with any associated identifiers.</p>
+
         <h2 id="international-data-transfers">9. International data transfers</h2>
-        <p>We are based in Vietnam and our service providers operate globally, including in the United States and the European Union. Where required, we and our partners rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses.</p>
+        <p>We are based in Vietnam, and our service providers operate globally, including in the United States and the European Union. Where required, we and our partners rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses.</p>
+
         <h2 id="data-security">10. Data security</h2>
-        <p>We use encryption in transit (HTTPS/TLS) for our own and our partners' connections, and reasonable technical and organisational safeguards. Pages you open in the in-app browser use whatever protocol the destination site offers; the App permits plain HTTP so that older download sources remain reachable, so please be careful with sensitive information on non-HTTPS pages. No method of transmission or storage is 100% secure.</p>
+        <p>Our analytics, advertising and attribution partners receive data over encrypted connections (HTTPS/TLS), and we use reasonable technical and organisational safeguards. Pages you open in the in-app browser use whatever protocol the destination site offers. The App allows plain HTTP so that older download sources still work, so please take care with sensitive information on non-HTTPS pages. No method of transmission or storage is 100% secure.</p>
+
         <h2 id="third-party-content">11. Third-party content</h2>
-        <p>The App is a browser and downloader: the sites, media and files you reach through it are created and hosted by third parties. We do not host, upload, index, cache on our servers, or control any of that content, and we are not responsible for it or for the privacy practices of the sites you visit. Please review their policies and terms before using them.</p>
+        <p>The App is a browser and downloader. The sites, media and files you reach through it are created and hosted by third parties. We do not host, upload, index, store on our servers, or control any of that content. We are not responsible for it or for the privacy practices of the sites you visit, so please review their policies and terms before using them.</p>
+
         <h2 id="changes-to-this-policy">12. Changes to this Policy</h2>
-        <p>We may update this Policy. Material changes will be posted here with a new "Last updated" date; continued use of the App means you accept the updated Policy.</p>
+        <p>We may update this Policy. Material changes will be posted here with a new "Last updated" date. By continuing to use the App, you accept the updated Policy.</p>
+
         <h2 id="contact-us">13. Contact us</h2>
-        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>Tranquil Mind Technology JSC<br>No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam<br>Email: <strong>contact@tranquilmind.co</strong></p>
         <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
     </article>
 </main>
