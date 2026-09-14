@@ -251,7 +251,7 @@
         <div class="nav-meta">
             <span>Privacy Policy</span>
             <span>·</span>
-            <span>2026-08-28</span>
+            <span>2026-09-14</span>
         </div>
     </div>
 </header>
@@ -282,47 +282,126 @@
 
         <div class="meta">
             <span><strong>App:</strong> Rizzora</span>
-            <span><strong>Effective:</strong> 2026-08-28</span>
-            <span><strong>Last Updated:</strong> 2026-08-28</span>
+            <span><strong>Effective:</strong> 2026-09-14</span>
+            <span><strong>Last Updated:</strong> 2026-09-14</span>
         </div>
 
         <p>Rizzora ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information we collect, how we use and share it, and the choices and rights you have. By using the App, you agree to this Policy.</p>
-        <p>Rizzora is a pickup-line and conversation-opener app: it offers a curated library of lines, an on-device tester, and an AI "Wingman" that suggests openers and replies. You do not need to create an account to use it, and we do not ask for your name, email, or phone number.</p>
+        <p>Rizzora helps you find something to say: it offers a built-in library of pickup lines and dating tips, AI-written openers and reply suggestions (the "Wingman"), a quote-card editor, and optional daily reminders. You do not need to create an account to use it, and the App does not show ads or sell in-app purchases.</p>
+
         <h2 id="information-we-collect">1. Information we collect</h2>
-        <p><strong>1.1 Information you provide.</strong> Rizzora has no accounts or sign-up. If you use the AI Wingman, the text you type (topics, tone, notes) and — when you pick a chat screenshot — the message text extracted from that image on your device are sent to our AI provider to generate suggestions. Choose what you share; do not submit sensitive personal information you do not want processed.</p>
-        <p><strong>1.2 Images you select.</strong> When you use the screenshot reader, the image you capture or pick stays on your device. Text is extracted <strong>on your device</strong> using Google ML Kit Text Recognition; the picture itself is <strong>not</strong> uploaded. Only the extracted text is sent to the AI provider to craft a reply suggestion.</p>
-        <p><strong>1.3 Automatically collected information.</strong> For stability and configuration we collect crash logs and diagnostics (device model, OS version, app version, crash stack traces) and standard technical identifiers used to deliver remote configuration. We do not use advertising identifiers and we do not serve ads.</p>
-        <p><strong>1.4 Data stored only on your device.</strong> Your favourites, saved lines, settings, language choice, and Love-Tester results are stored locally on your device and are not transmitted to us.</p>
+        <p>We collect only the information described below. We do not collect your name, email address, phone number, contacts, or precise or approximate location through device permissions, and we do not operate our own user database.</p>
+        <h3>1.1 Information you choose to send to the AI Wingman</h3>
+        <p>When you use the Wingman or "Write more with AI", the App sends a text request to our AI provider (see Section 3) to generate suggestions:</p>
+        <ul>
+            <li><strong>Opener requests:</strong> the name you optionally type for the other person, the interests you select, the tone you pick, and the language of the App.</li>
+            <li><strong>Reply requests from a screenshot:</strong> the <strong>message text</strong> that the App extracts from the chat screenshot you choose, labelled by speaker ("me" or "them"), and the tone you pick.</li>
+            <li><strong>More lines for a category:</strong> the category name, the language, and a few existing lines from the App's own library. No personal information is included.</li>
+        </ul>
+        <p>The screenshot image itself is <strong>never uploaded</strong>. Text is read from it on your device (see 1.3). Screenshots can contain other people's messages and names, so only send what you are comfortable having processed, and do not include sensitive information such as financial, health, or government-ID details.</p>
+        <h3>1.2 Information collected automatically</h3>
+        <ul>
+            <li><strong>App usage (Google Analytics for Firebase):</strong> events such as app opens, screens viewed, session length and engagement, plus device information (model, OS version, language, screen size), app version, and country or region derived from your IP address. This data is linked to an app-instance identifier and, where the permission is available on your device, your <strong>advertising ID</strong>. We use it <strong>only for analytics</strong>, never for advertising.</li>
+            <li><strong>Crash reports and diagnostics (Firebase Crashlytics):</strong> crash stack traces, device state at the time of the crash (model, OS version, memory, orientation), app version, and a Crashlytics installation identifier.</li>
+            <li><strong>Configuration (Firebase Remote Config):</strong> a Firebase installation identifier and basic app/device information used to deliver settings such as feature limits and notification content.</li>
+            <li><strong>On-device text recognition (Google ML Kit):</strong> ML Kit may send Google limited technical metrics (for example device model, app package and version, API performance and errors) and download recognition models through Google Play services. It does <strong>not</strong> send your images or the recognized text.</li>
+        </ul>
+        <h3>1.3 Information that stays on your device</h3>
+        <p>The following is processed and stored <strong>only on your device</strong> and is not sent to us:</p>
+        <ul>
+            <li>Screenshots you pick for the Wingman. Text recognition runs on-device with Google ML Kit.</li>
+            <li>Photos you choose or take with the camera as a quote-card background, and the images you save to your gallery.</li>
+            <li>Favourites, saved tips, recent searches, AI-written lines added to your library, Love Tester names and results, language choice, and settings.</li>
+            <li>Daily line reminders, the lock-screen line, and the floating bubble, which are scheduled and shown locally.</li>
+        </ul>
+        <p>This data remains until you delete it in the App, clear the App's data, or uninstall the App.</p>
+        <h3>1.4 Device permissions</h3>
+        <ul>
+            <li><strong>Photos / media and camera:</strong> only to let you pick or take an image for a quote card or a chat screenshot. Images are processed on-device.</li>
+            <li><strong>Notifications, exact alarms, and run at startup:</strong> to show and reschedule the optional daily line.</li>
+            <li><strong>Display over other apps and full-screen notifications:</strong> only if you turn on the floating bubble or the lock-screen line.</li>
+            <li><strong>Internet:</strong> for AI suggestions, analytics, crash reporting, and configuration.</li>
+        </ul>
+        <p>You can deny or revoke any permission in your device settings. The related feature will stop working, but the rest of the App keeps working.</p>
+
         <h2 id="how-we-use-information">2. How we use information</h2>
-        <ul><li>Provide and operate the App and its features (library, Love Tester, AI Wingman).</li><li>Generate AI opener/reply suggestions from the text and inputs you submit.</li><li>Deliver remote configuration (e.g. feature settings and AI model parameters).</li><li>Diagnose crashes and improve stability and quality.</li><li>Send the local daily-line notification you opt into.</li><li>Comply with legal obligations.</li></ul>
-        <p>We do <strong>not</strong> use your data for advertising, and we do <strong>not</strong> sell it.</p>
+        <ul>
+            <li>To provide the App's features, including generating AI openers, replies, and extra lines you request.</li>
+            <li>To keep the App stable and fix crashes and bugs.</li>
+            <li>To understand, in aggregate, how the App is used so we can improve it.</li>
+            <li>To configure features remotely, such as daily AI limits and reminder content.</li>
+            <li>To protect the App and its AI service from abuse, for example through per-device daily limits.</li>
+            <li>To comply with legal obligations and respond to lawful requests.</li>
+        </ul>
+        <p>We do <strong>not</strong> use your information for advertising, and we do not build advertising profiles.</p>
+
         <h2 id="third-party-services">3. Third-party services</h2>
-        <p>The App uses the following data-transmitting services. Each processes data under its own privacy policy:</p>
-        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Data involved</th><th>Policy</th></tr></thead><tbody><tr><td>Google Firebase Crashlytics</td><td>Crash reporting &amp; diagnostics</td><td>Crash logs, device/app info</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google Firebase Remote Config</td><td>Remote feature/model configuration</td><td>Device &amp; app info (config delivery)</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Groq (AI inference)</td><td>Generate opener/reply suggestions</td><td>Text you submit and text extracted on-device from a chosen screenshot</td><td>https://groq.com/privacy-policy/</td></tr></tbody></table></div>
-        <p>Google ML Kit Text Recognition runs <strong>on-device</strong> and does not send your images or extracted text to Google. The App uses no advertising, analytics-profiling, or attribution SDKs.</p>
+        <p>The App uses the following services, each of which processes data under its own privacy policy:</p>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Provider</th><th>Purpose</th><th>Data involved</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Google Analytics for Firebase</td><td>Google LLC</td><td>Usage analytics</td><td>App-instance ID, advertising ID (where available), app interactions, device info, IP-derived region</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Firebase Crashlytics</td><td>Google LLC</td><td>Crash reporting &amp; diagnostics</td><td>Crash logs, diagnostics, installation ID, device info</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Firebase Remote Config</td><td>Google LLC</td><td>Remote feature configuration</td><td>Firebase installation ID, app/device info</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Groq API</td><td>Groq, Inc.</td><td>Generate AI openers, replies, and lines</td><td>Text described in Section 1.1</td><td>https://groq.com/privacy-policy/</td></tr><tr><td>Google ML Kit Text Recognition (on-device)</td><td>Google LLC</td><td>Read text from chosen screenshots on your device</td><td>No images or text leave the device; limited technical metrics only</td><td>https://developers.google.com/ml-kit/terms</td></tr></tbody></table></div>
+        <p><strong>Advertising ID.</strong> The App shows no ads, but Google Analytics for Firebase may read your device's advertising ID to measure usage. You can reset or delete your advertising ID at any time in your device settings (on most Android devices: <strong>Settings → Privacy → Ads</strong>, or <strong>Settings → Google → Ads</strong>). After you delete it, it can no longer be read.</p>
+
         <h2 id="how-we-share-information">4. How we share information</h2>
-        <p>We do <strong>not</strong> sell your personal information for money, and we do <strong>not</strong> share it for cross-context behavioural advertising. We share the limited data described above only with the processors in Section 3, to run the App's features, and where required by law or in a business transfer.</p>
+        <ul>
+            <li><strong>We do not sell your personal information</strong>, and we do not share it for cross-context behavioral advertising or targeted advertising.</li>
+            <li>We share information only with the service providers listed in Section 3, which process it on our behalf to operate the App.</li>
+            <li>We may disclose information if required by law, regulation, legal process, or a governmental request, or to protect the rights, safety, and security of our users, the public, or us.</li>
+            <li>If we are involved in a merger, acquisition, or sale of assets, information may be transferred as part of that transaction, subject to this Policy.</li>
+        </ul>
+
         <h2 id="legal-bases">5. Legal bases (EEA/UK — GDPR)</h2>
-        <ul><li><strong>Consent</strong> — sending your inputs to the AI provider when you choose to use the Wingman; the local daily notification.</li><li><strong>Legitimate interests</strong> — core functionality, security, crash diagnostics, and improvement.</li><li><strong>Legal obligation</strong> — where the law requires.</li></ul>
+        <ul>
+            <li><strong>Consent:</strong> sending the text you choose to the AI provider when you use the Wingman or "Write more with AI"; optional notifications, floating bubble, and lock-screen line. You can withdraw consent by no longer using those features or turning them off.</li>
+            <li><strong>Legitimate interests:</strong> operating and securing the App, crash diagnostics, aggregate usage analytics, and preventing abuse of the AI service. Where local law requires consent for analytics, we rely on consent.</li>
+            <li><strong>Legal obligation:</strong> where the law requires us to process or retain information.</li>
+        </ul>
+
         <h2 id="data-retention">6. Data retention</h2>
-        <p>Text you submit to the AI provider is processed to return a suggestion and retained by that provider only per its own policy; we do not build a personal profile from it. Crash and diagnostic data is retained for a limited period for debugging. On-device data remains until you delete it or uninstall the App.</p>
+        <ul>
+            <li><strong>AI requests:</strong> we do not store your Wingman requests or AI responses on any server we control. Groq processes the request to return a response and retains data only as described in its own policies. Suggestions you save stay on your device.</li>
+            <li><strong>Analytics:</strong> retained for a limited period set in our Google Analytics configuration, no longer than 14 months, after which event-level data is deleted.</li>
+            <li><strong>Crash reports:</strong> retained by Firebase Crashlytics for a limited period (approximately 90 days).</li>
+            <li><strong>On-device data:</strong> kept until you delete it, clear the App's data, or uninstall the App.</li>
+        </ul>
+        <p>We may keep information longer where the law requires it.</p>
+
         <h2 id="your-rights">7. Your rights</h2>
-        <ul><li><strong>GDPR (EEA/UK):</strong> access, rectification, erasure, portability, restriction, objection, withdrawal of consent, and the right to complain to a supervisory authority.</li><li><strong>CCPA/CPRA (California):</strong> know, delete, correct, and opt out of "sale"/"sharing" (we do neither), with non-discrimination.</li><li><strong>Other regions (LGPD, PIPEDA, etc.):</strong> equivalent rights apply.</li></ul>
-        <p>Because the App has no accounts, contact us at the address below to exercise your rights; include enough detail (e.g. device and approximate time of use) so we can locate any relevant records.</p>
+        <p>Depending on where you live, you may have the following rights:</p>
+        <ul>
+            <li><strong>EEA/UK (GDPR):</strong> access, rectification, erasure, restriction, portability, objection, withdrawal of consent, and the right to lodge a complaint with your local data protection authority.</li>
+            <li><strong>California and other U.S. states (CCPA/CPRA and similar laws):</strong> the right to know, access, delete, and correct personal information, and to opt out of the sale or sharing of personal information and targeted advertising (we do none of these), without discrimination.</li>
+            <li><strong>Other regions (e.g. Brazil LGPD, Canada PIPEDA):</strong> equivalent rights under local law.</li>
+        </ul>
+        <p><strong>How to exercise your rights.</strong> Email <strong>contact@tranquilmind.co</strong>. The App has no accounts, so data we receive is linked only to device and app identifiers, not to your name. To help us locate it, include your device model, the approximate dates you used the App, and, if available, your advertising ID. We will respond within the time required by applicable law.</p>
+        <p><strong>Deleting data yourself.</strong> You can:</p>
+        <ul>
+            <li>Clear the App's data or uninstall the App. This removes all on-device data and resets the app identifiers used by Firebase.</li>
+            <li>Delete or reset your advertising ID in device settings.</li>
+            <li>Stop using the AI features, so no further text is sent.</li>
+        </ul>
+
         <h2 id="childrens-privacy-child-safety-standards">8. Children's privacy &amp; Child Safety Standards</h2>
-        <p>Rizzora is intended for users <strong>aged 17 and older</strong> and is not directed to children. We do not knowingly collect data from children under the applicable minimum age; if you believe a child has provided data, contact us and we will delete it.</p>
-        <h3>Child Safety Standards (CSAE)</h3>
-        <p>Rizzora enforces a <strong>zero-tolerance</strong> policy against child sexual abuse and exploitation (CSAE) and child sexual abuse material (CSAM). This prohibition covers images, video, audio, and text, and applies to both user input and AI-generated output. Strictly forbidden: any content that sexualizes minors; grooming, sextortion, solicitation, or trafficking; and any attempt to create, request, share, or promote such material.</p>
-        <p><strong>Prevention &amp; response.</strong> The AI Wingman is instructed to refuse and not produce sexual content involving minors. If you encounter content or behaviour that violates this standard, report it to us at <strong>contact@tranquilmind.co</strong> (subject: "Child Safety Report"); reports are reviewed and, where warranted, we remove content and restrict access. Apparent CSAM is reported to the <strong>National Center for Missing &amp; Exploited Children (NCMEC)</strong> and/or local authorities as required by law.</p>
-        <p><strong>Note on current controls:</strong> Rizzora has no public user-to-user feed or shared profiles; interactions are between you and an AI assistant, and generated content is not published to other users. We align with the Google Play Child Safety Standards policy and applicable child-safety laws. Child-safety point of contact: <strong>contact@tranquilmind.co</strong>.</p>
+        <h3>8.1 Children's privacy</h3>
+        <p>Rizzora is intended for adults aged <strong>18 and over</strong>. It is not directed to children, and we do not knowingly collect personal information from anyone under 18, or under the age of digital consent in their country (for example, under 13 in the U.S. under COPPA, or up to 16 in parts of the EEA). If you believe a child has used the App and provided information, contact <strong>contact@tranquilmind.co</strong> and we will delete any information we hold.</p>
+        <h3 id="child-safety">8.2 Child Safety Standards (CSAE)</h3>
+        <p>These are the published Child Safety Standards for <strong>Rizzora</strong>, developed by <strong>Tranquil Mind Technology JSC</strong>.</p>
+        <p><strong>Zero tolerance.</strong> Rizzora strictly prohibits child sexual abuse and exploitation (CSAE) and child sexual abuse material (CSAM) in any form: images, video, audio, text, or AI-generated content. This includes sexualizing minors; grooming; sextortion; soliciting minors; trafficking; and any attempt to create, request, share, or promote such material. This prohibition applies both to what users submit (text they type and screenshots they choose) and to AI-generated output. Rizzora's pickup lines, openers, and replies are meant for communication between consenting adults only. Using the App to contact, flirt with, or pursue a minor is prohibited.</p>
+        <p><strong>How the App is designed.</strong> Rizzora does not let users message, find, or share content with other users inside the App; there are no profiles, feeds, or chats between users. Its AI features generate text suggestions only for the person using the App. The built-in line library is written and reviewed by our team. The AI model is instructed never to produce sexual content, and it runs with its provider's built-in safety protections, which refuse sexual content involving minors.</p>
+        <p><strong>Reporting.</strong> If you encounter any content or behavior connected to Rizzora that may involve child sexual abuse or exploitation, including AI output, report it to <strong>contact@tranquilmind.co</strong> with the subject line <strong>"Child Safety Report"</strong>. Include what you saw, and where possible the text and the approximate date and time. Reports are reviewed promptly.</p>
+        <p><strong>Our response.</strong> When we receive a credible report, we investigate. We take action such as changing AI instructions, adding content filters, removing affected content from the App's library, and restricting access to the AI features. We report apparent CSAM to the <strong>National Center for Missing &amp; Exploited Children (NCMEC)</strong> and/or the relevant local authorities, as required by law, and we cooperate with law enforcement.</p>
+        <p><strong>Compliance.</strong> We comply with applicable child-safety laws and align our practices with the Google Play Child Safety Standards policy.</p>
+        <p><strong>Child-safety point of contact:</strong> contact@tranquilmind.co</p>
+
         <h2 id="international-data-transfers">9. International data transfers</h2>
-        <p>Your data (e.g. text sent to the AI provider and crash diagnostics) may be processed in countries other than yours, including the United States. Where required, we rely on appropriate safeguards such as Standard Contractual Clauses.</p>
+        <p>Our service providers may process your information in countries other than your own, including the United States, where data protection laws may differ. Where required, transfers rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses.</p>
+
         <h2 id="data-security">10. Data security</h2>
-        <p>We use encryption in transit (HTTPS/TLS) and reasonable technical measures. No method of transmission or storage is 100% secure.</p>
+        <p>Data sent by the App to our service providers is encrypted in transit using HTTPS/TLS. We use reasonable technical and organizational measures to protect information, for example by keeping service keys out of the App's installation file. No method of transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+
         <h2 id="changes-to-this-policy">11. Changes to this Policy</h2>
-        <p>We may update this Policy; material changes will be posted here with a new "Last updated" date. Continued use of the App after changes means you accept the updated Policy.</p>
+        <p>We may update this Privacy Policy from time to time. When we make material changes, we will post the updated Policy at this address with a new "Last updated" date. Your continued use of the App after changes take effect means you accept the updated Policy.</p>
+
         <h2 id="contact-us">12. Contact us</h2>
-        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>Tranquil Mind Technology JSC<br>No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam<br>Email: <strong>contact@tranquilmind.co</strong></p>
         <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
     </article>
 </main>
