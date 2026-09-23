@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Privacy Policy for Pocket Retro — how we collect, use, and protect your data.">
+    <title>Privacy Policy — Pocket Retro</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        header.site {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+            border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #6366f1);
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta {
+            font-size: 13px;
+            color: var(--text-soft);
+            display: flex; gap: 14px;
+        }
+        main.shell {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        @media (min-width: 960px) {
+            main.shell { grid-template-columns: 240px 1fr; }
+        }
+        aside.toc {
+            position: sticky;
+            top: 84px;
+            align-self: start;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            font-size: 13.5px;
+            display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: 11px;
+            color: var(--text-soft);
+            margin-bottom: 10px;
+        }
+        aside.toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        aside.toc a {
+            display: block;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            color: var(--text-muted);
+            border-bottom: none;
+            line-height: 1.4;
+        }
+        aside.toc a:hover {
+            background: var(--bg-elev);
+            color: var(--text);
+        }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 38px 0 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 22px 0 8px;
+        }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul {
+            margin: 0 0 14px;
+            padding-left: 22px;
+            color: var(--text-muted);
+        }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            font-size: 13.5px;
+            color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px;
+            color: var(--text-soft);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 0 20px;
+            font-size: 14px;
+        }
+        thead th {
+            text-align: left;
+            font-weight: 600;
+            color: var(--text);
+            background: var(--bg-elev);
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        tbody td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+            vertical-align: top;
+        }
+        tbody tr:last-child td { border-bottom: none; }
+        .table-wrap {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        .table-wrap table { margin: 0; }
+        .callout {
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
+            margin: 0 0 16px;
+            color: var(--text-muted);
+        }
+        .callout strong { color: var(--text); }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">P</span>Pocket Retro</a>
+        <div class="nav-meta">
+            <span>Privacy Policy</span>
+            <span>·</span>
+            <span>2026-09-23</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#information-we-collect">1. Information we collect</a></li>
+            <li><a href="#how-we-use-information">2. How we use information</a></li>
+            <li><a href="#third-party-services">3. Third-party services</a></li>
+            <li><a href="#how-we-share-information">4. How we share information</a></li>
+            <li><a href="#legal-bases">5. Legal bases (EEA / UK — GDPR)</a></li>
+            <li><a href="#data-retention">6. Data retention</a></li>
+            <li><a href="#your-rights">7. Your rights</a></li>
+            <li><a href="#childrens-privacy">8. Children&#x27;s privacy</a></li>
+            <li><a href="#international-data-transfers">9. International data transfers</a></li>
+            <li><a href="#data-security">10. Data security</a></li>
+            <li><a href="#third-party-content">11. Third-party content</a></li>
+            <li><a href="#permissions-the-app-requests">12. Permissions the App requests</a></li>
+            <li><a href="#changes-to-this-policy">13. Changes to this Policy</a></li>
+            <li><a href="#contact-us">14. Contact us</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Privacy</span>
+        <h1>Privacy Policy</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Pocket Retro</span>
+            <span><strong>Effective:</strong> 2026-09-23</span>
+            <span><strong>Last Updated:</strong> 2026-09-23</span>
+        </div>
+
+        <p>Pocket Retro ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information we collect, how we use and share it, and the choices and rights you have. By using the App, you agree to this Policy.</p>
+        <p>Pocket Retro is a retro console emulator that lets you play classic game files on your phone, organise them in a local library, and customise controls, skins and video filters. You do <strong>not</strong> need to create an account to use the App. Signing in with a Google account is optional and is used only if you turn on save-file sync to your own Google Drive.</p>
+        <h2 id="information-we-collect">1. Information we collect</h2>
+        <p><strong>Information collected automatically</strong></p>
+        <ul><li><strong>Device and advertising identifiers</strong> — advertising ID (AAID), app instance ID, and similar device identifiers, used by our advertising, attribution and analytics providers.</li><li><strong>Approximate (IP-derived) location</strong> — our advertising partners derive a coarse, country/region-level location from your IP address to select and measure ads. The App does <strong>not</strong> request or use GPS, and declares no location permission.</li><li><strong>App activity and diagnostics</strong> — screens opened, buttons used, ad impressions and clicks, purchase and paywall events, session and device technical data (device model, OS version, language, region, network type).</li><li><strong>Crash logs and performance data</strong> — stack traces and diagnostic data when the App crashes or misbehaves, collected through Firebase Crashlytics.</li><li><strong>Push notification token</strong> — a Firebase Cloud Messaging registration token, used to deliver notifications you have allowed.</li><li><strong>Purchase status</strong> — whether a subscription or one-time purchase is active, received from Google Play Billing. We never receive or store your card or payment details; payment is handled entirely by Google Play.</li></ul>
+        <p><strong>Information you provide or authorise</strong></p>
+        <ul><li><strong>Google account identifiers (optional)</strong> — if you enable save-file sync, Google Sign-In gives the App your Google account identifier, name and email address, and permission to read and write the App's save files in <strong>your own</strong> Google Drive. We do not operate a server for this: your save files travel between your device and your Drive. You can revoke this at any time in the App or in your Google account settings.</li></ul>
+        <p><strong>Information that stays on your device</strong></p>
+        <p>Your game files, save states, library metadata, control layouts, skins and app settings are stored <strong>locally on your device</strong> (and, if you enable it, in your own Google Drive). They are not uploaded to our servers — we do not operate a content server for your library.</p>
+        <h2 id="how-we-use-information">2. How we use information</h2>
+        <ul><li>Provide and operate the App: run games, keep your library, remember your settings and language.</li><li>Deliver the optional game catalogue and downloads you request.</li><li>Show advertising, including rewarded ads shown before launching a game, and measure ad performance.</li><li>Attribute installs and campaigns, and detect invalid or fraudulent traffic.</li><li>Analyse usage to fix defects and improve the App.</li><li>Process and restore purchases and subscription status through Google Play.</li><li>Send notifications you have allowed (for example download progress or sync status).</li><li>Comply with legal obligations and enforce our Terms of Service.</li></ul>
+        <h2 id="third-party-services">3. Third-party services</h2>
+        <p>The App integrates the following services, which may receive data as described above. Each operates under its own privacy policy:</p>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Google AdMob (Google Mobile Ads SDK)</td><td>Advertising and ad measurement</td><td>https://policies.google.com/privacy</td></tr><tr><td>AppLovin</td><td>Ad mediation partner</td><td>https://www.applovin.com/privacy/</td></tr><tr><td>Meta Audience Network / Meta (Facebook) SDK</td><td>Ad mediation partner and ad measurement</td><td>https://www.facebook.com/privacy/policy</td></tr><tr><td>Mintegral</td><td>Ad mediation partner</td><td>https://www.mintegral.com/en/privacy/</td></tr><tr><td>Pangle</td><td>Ad mediation partner</td><td>https://www.pangleglobal.com/privacy</td></tr><tr><td>Liftoff Monetize (Vungle)</td><td>Ad mediation partner</td><td>https://liftoff.io/privacy-policy/</td></tr><tr><td>Chartboost</td><td>Ad mediation partner</td><td>https://performance.chartboost.com/privacy/privacy-policy/</td></tr><tr><td>InMobi</td><td>Ad mediation partner</td><td>https://www.inmobi.com/privacy-policy</td></tr><tr><td>DT Exchange (Digital Turbine / Fyber)</td><td>Ad mediation partner</td><td>https://www.digitalturbine.com/privacy-policy</td></tr><tr><td>Moloco</td><td>Ad mediation partner</td><td>https://www.moloco.com/privacy-policy</td></tr><tr><td>Adjust</td><td>Install attribution and campaign measurement</td><td>https://www.adjust.com/terms/privacy-policy/</td></tr><tr><td>Google Firebase (Analytics, Crashlytics, Remote Config, Cloud Messaging)</td><td>Analytics, crash reporting, remote configuration, push notifications</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google Play Billing</td><td>Subscriptions and one-time purchases</td><td>https://policies.google.com/privacy</td></tr><tr><td>Google Play In-App Review</td><td>In-app rating prompt</td><td>https://policies.google.com/privacy</td></tr><tr><td>Google Sign-In and Google Drive API (optional)</td><td>Sync your save files to your own Google Drive</td><td>https://policies.google.com/privacy</td></tr><tr><td>GitHub Pages</td><td>Hosts the public game catalogue index the App reads</td><td>https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement</td></tr></tbody></table></div>
+        <p><strong>Ad consent (UMP).</strong> Where required (for example in the EEA, the UK and Switzerland), the App shows Google's User Messaging Platform consent form before advertising is initialised. Your choice determines whether ads are personalised. You can reopen the privacy options form from the App's settings at any time to change or withdraw your choice.</p>
+        <p><strong>Advertising ID.</strong> You can reset or delete your advertising ID at any time in <strong>Android Settings → Privacy → Ads</strong>. Deleting it stops personalised advertising across apps on that device.</p>
+        <p><strong>Removing ads.</strong> An optional purchase removes advertising. Analytics and crash reporting continue to operate in that case.</p>
+        <h2 id="how-we-share-information">4. How we share information</h2>
+        <p>We do <strong>not</strong> sell your personal information for money. We share data with the providers listed in §3 so they can perform their function, for legal reasons (to comply with law, enforce our Terms, or protect rights and safety), and in the context of a merger, acquisition or asset transfer, in which case this Policy continues to apply.</p>
+        <p>Under certain U.S. state privacy laws (for example the CCPA/CPRA), showing <strong>personalised advertising</strong> may be treated as a "sale" or "sharing" of personal information. If you have consented to personalised ads, you can opt out at any time by reopening the privacy options form in the App's settings, by resetting or deleting your advertising ID, or by contacting us at the address in §12.</p>
+        <h2 id="legal-bases">5. Legal bases (EEA / UK — GDPR)</h2>
+        <ul><li><strong>Consent</strong> — personalised advertising and, where required, analytics; push notifications; optional Google Drive sync.</li><li><strong>Legitimate interests</strong> — operating and securing the App, non-personalised advertising and frequency capping, crash diagnostics, fraud prevention, product improvement.</li><li><strong>Performance of a contract</strong> — providing the App and processing purchases you make.</li><li><strong>Legal obligation</strong> — retaining records where the law requires it.</li></ul>
+        <h2 id="data-retention">6. Data retention</h2>
+        <p>We keep data only as long as necessary for the purposes above or as required by law. Analytics and advertising identifiers are retained by the providers in §3 according to their own retention schedules (typically between 2 and 26 months). Crash and diagnostic data is kept for a limited troubleshooting period. Purchase status is retained while your entitlement is active and for as long as tax and accounting rules require. Your game files and save data live on your device (and in your own Drive if you enable sync) and are removed when you delete them or uninstall the App.</p>
+        <h2 id="your-rights">7. Your rights</h2>
+        <p><strong>EEA / UK (GDPR).</strong> You have the right to access, correct, delete, port, object to and restrict processing of your personal data, to withdraw consent at any time, and to lodge a complaint with your national data protection authority.</p>
+        <p><strong>California (CCPA/CPRA).</strong> You have the right to know what personal information is collected and disclosed, to request deletion or correction, to opt out of the sale or sharing of personal information and of targeted advertising, and not to be discriminated against for exercising these rights.</p>
+        <p><strong>Other regions.</strong> Comparable rights exist under Brazil's LGPD, Canada's PIPEDA and similar laws, and we honour them in the same way.</p>
+        <p><strong>How to exercise them.</strong> Write to <strong>contact@tranquilmind.co</strong>. Because the App has no account of ours, we cannot identify you from our records alone: please include your <strong>advertising ID</strong> and, if relevant, the Google account email you used for save sync, plus your device model and approximate date of use, so we can locate and act on the data. We respond within the period the applicable law requires.</p>
+        <p><strong>Deleting your data yourself.</strong> Uninstalling the App deletes local data on your device. Resetting or deleting your advertising ID in Android settings severs the advertising and attribution identifier. Revoking the App's access in your Google account settings ends Drive sync; save files already in your Drive can be deleted from Drive.</p>
+        <h2 id="childrens-privacy">8. Children's privacy</h2>
+        <p>The App is intended for users aged <strong>13 and over</strong> (16 where a higher age of digital consent applies, such as parts of the EEA). It is not directed to children, and we do not knowingly collect personal information from children below those ages. If you believe a child has provided us with personal information, contact us at <strong>contact@tranquilmind.co</strong> and we will delete it. The App contains no chat, messaging, comments, user-to-user content sharing or social discovery features.</p>
+        <h2 id="international-data-transfers">9. International data transfers</h2>
+        <p>The providers listed in §3 operate globally, so your data may be processed outside your country, including in the United States. Where required, transfers rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses or an adequacy decision.</p>
+        <h2 id="data-security">10. Data security</h2>
+        <p>Data in transit is protected with HTTPS/TLS. We apply reasonable administrative and technical measures to protect the data we handle. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
+        <h2 id="third-party-content">11. Third-party content</h2>
+        <p>The App can download game files from a public catalogue hosted by a third party, and it plays files you supply from your own device. We do not own, control or endorse that content, and we are not responsible for third-party sites, catalogues or the material they host. Their own terms and privacy policies apply. You are responsible for holding the rights to any game file you use with the App.</p>
+        <h2 id="permissions-the-app-requests">12. Permissions the App requests</h2>
+        <div class="table-wrap"><table><thead><tr><th>Permission</th><th>Why</th></tr></thead><tbody><tr><td><code>INTERNET</code></td><td>Load ads, analytics, remote configuration and the game catalogue</td></tr><tr><td><code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code></td><td>Read game files you already have and store downloads, save files and save states</td></tr><tr><td><code>VIBRATE</code></td><td>Haptic feedback for the on-screen gamepad</td></tr><tr><td><code>POST_NOTIFICATIONS</code></td><td>Show download and sync notifications you allow</td></tr><tr><td><code>USE_FULL_SCREEN_INTENT</code></td><td>Show a full-screen notification for a long-running task</td></tr><tr><td><code>com.google.android.gms.permission.AD_ID</code></td><td>Access the advertising ID for advertising and attribution (Android 13+)</td></tr><tr><td><code>com.android.providers.tv.permission.WRITE_EPG_DATA</code></td><td>Publish a game channel on the Android TV home screen (TV devices only)</td></tr></tbody></table></div>
+        <p>The App does <strong>not</strong> request camera, microphone, contacts or location permissions.</p>
+        <h2 id="changes-to-this-policy">13. Changes to this Policy</h2>
+        <p>We may update this Policy. Material changes will be posted on this page with a new "Last updated" date. Continuing to use the App after the change means you accept the updated Policy.</p>
+        <h2 id="contact-us">14. Contact us</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
