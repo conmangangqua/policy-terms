@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Privacy Policy for Pixarel — how we collect, use, and protect your data.">
+    <title>Privacy Policy — Pixarel</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        header.site {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+            border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #6366f1);
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta {
+            font-size: 13px;
+            color: var(--text-soft);
+            display: flex; gap: 14px;
+        }
+        main.shell {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        @media (min-width: 960px) {
+            main.shell { grid-template-columns: 240px 1fr; }
+        }
+        aside.toc {
+            position: sticky;
+            top: 84px;
+            align-self: start;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            font-size: 13.5px;
+            display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: 11px;
+            color: var(--text-soft);
+            margin-bottom: 10px;
+        }
+        aside.toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        aside.toc a {
+            display: block;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            color: var(--text-muted);
+            border-bottom: none;
+            line-height: 1.4;
+        }
+        aside.toc a:hover {
+            background: var(--bg-elev);
+            color: var(--text);
+        }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 38px 0 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 22px 0 8px;
+        }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul {
+            margin: 0 0 14px;
+            padding-left: 22px;
+            color: var(--text-muted);
+        }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            font-size: 13.5px;
+            color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px;
+            color: var(--text-soft);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 0 20px;
+            font-size: 14px;
+        }
+        thead th {
+            text-align: left;
+            font-weight: 600;
+            color: var(--text);
+            background: var(--bg-elev);
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        tbody td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+            vertical-align: top;
+        }
+        tbody tr:last-child td { border-bottom: none; }
+        .table-wrap {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        .table-wrap table { margin: 0; }
+        .callout {
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
+            margin: 0 0 16px;
+            color: var(--text-muted);
+        }
+        .callout strong { color: var(--text); }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">P</span>Pixarel</a>
+        <div class="nav-meta">
+            <span>Privacy Policy</span>
+            <span>·</span>
+            <span>2026-09-24</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#information-we-collect">1. Information we collect</a></li>
+            <li><a href="#how-we-use-information">2. How we use information</a></li>
+            <li><a href="#third-party-services">3. Third-party services</a></li>
+            <li><a href="#how-we-share-information">4. How we share information</a></li>
+            <li><a href="#legal-bases">5. Legal bases (EEA / UK — GDPR)</a></li>
+            <li><a href="#data-retention">6. Data retention</a></li>
+            <li><a href="#your-rights">7. Your rights</a></li>
+            <li><a href="#childrens-privacy-child-safety-standards">8. Children&#x27;s privacy &amp; Child Safety Standards</a></li>
+            <li><a href="#international-data-transfers">9. International data transfers</a></li>
+            <li><a href="#data-security">10. Data security</a></li>
+            <li><a href="#changes-to-this-policy">11. Changes to this Policy</a></li>
+            <li><a href="#contact-us">12. Contact us</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Privacy</span>
+        <h1>Privacy Policy</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Pixarel</span>
+            <span><strong>Effective:</strong> 2026-09-24</span>
+            <span><strong>Last Updated:</strong> 2026-09-24</span>
+        </div>
+
+        <p>Pixarel ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information we collect, how we use and share it, and the choices and rights you have. By using the App, you agree to this Policy.</p>
+        <p>Pixarel turns a photo or a written prompt into AI-generated artwork, and includes a photo editor for cropping, filtering and adjusting images. You do not need to create an account to use it. The App has no login, no user profile and no user-to-user messaging.</p>
+        <h2 id="information-we-collect">1. Information we collect</h2>
+        <p><strong>Information you provide when you create art</strong></p>
+        <ul><li><strong>Prompts</strong> — the text you type to describe an image.</li><li><strong>Photos you choose</strong> — when you use a template or an AI tool that starts from a picture, the selected photo is sent to our image service so the result can be produced. Photos are resized before upload. We do not browse or upload any other photo from your device.</li><li><strong>Content reports</strong> — if you use the Report button on a result, we receive the reason you selected, an optional note, the prompt and tool used, your platform (Android or iOS), and a short numeric fingerprint of the reported image. <strong>The reported image itself is never uploaded.</strong></li></ul>
+        <p><strong>Information collected automatically</strong></p>
+        <ul><li><strong>Crash logs and diagnostics</strong> (Firebase Crashlytics) — stack traces, device model, operating system version, app version and a random installation identifier.</li><li><strong>App usage events</strong> (Firebase Analytics) — screens opened and actions taken inside the App, with a random app-instance identifier, device model, OS version, language and country derived from IP address. The App does <strong>not</strong> request the Android advertising ID permission and does <strong>not</strong> collect an advertising ID.</li><li><strong>Configuration requests</strong> (Firebase Remote Config) — a random installation identifier is sent so the App can fetch its current settings.</li><li><strong>Network information</strong> — our image service receives your IP address as an unavoidable part of any internet request.</li></ul>
+        <p><strong>Information that stays on your device and is never uploaded</strong></p>
+        <ul><li>Saved artwork, favourites and your in-app gallery (stored locally with Hive).</li><li>Your language choice, onboarding state and other preferences.</li><li>All photo-editor work (crop, rotate, filters, brightness / contrast / saturation) is performed on your device.</li></ul>
+        <h2 id="how-we-use-information">2. How we use information</h2>
+        <ul><li>To generate the image you asked for and return it to you.</li><li>To operate and maintain the App, including diagnosing crashes and fixing defects.</li><li>To understand which features are used so we can improve them.</li><li>To review content reports and act on violations.</li><li>To deliver configuration and feature settings to the App.</li><li>To comply with law and to protect against abuse, fraud and security incidents.</li></ul>
+        <p>We do <strong>not</strong> use your prompts or photos to serve advertising, and we do <strong>not</strong> build advertising profiles. The App contains <strong>no advertising SDK</strong>.</p>
+        <h2 id="third-party-services">3. Third-party services</h2>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Data received</th><th>Policy</th></tr></thead><tbody><tr><td>Pixarel Image Service (Cloudflare Workers, operated by us)</td><td>Generate images from prompts / photos; receive content reports</td><td>Prompt text, selected photo, tool and aspect-ratio settings, IP address; report metadata</td><td>https://www.cloudflare.com/privacypolicy/</td></tr><tr><td>Google Firebase Crashlytics</td><td>Crash reporting and stability</td><td>Crash traces, device and app version, installation ID</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google Firebase Analytics</td><td>Aggregate usage measurement</td><td>App events, app-instance ID, device model, OS, coarse country from IP</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google Firebase Remote Config</td><td>Deliver app settings</td><td>Installation ID, app and device version</td><td>https://firebase.google.com/support/privacy</td></tr></tbody></table></div>
+        <p>The App does not use ad networks, ad mediation, attribution SDKs, or a consent (UMP) flow, because it shows no advertising.</p>
+        <h2 id="how-we-share-information">4. How we share information</h2>
+        <p>We do <strong>not</strong> sell personal information, and we do <strong>not</strong> share it for cross-context behavioural advertising. We share data only with the service providers listed in Section 3, acting on our instructions; when required by law, legal process or a valid government request; and in connection with a merger, acquisition or asset transfer, in which case this Policy continues to apply.</p>
+        <h2 id="legal-bases">5. Legal bases (EEA / UK — GDPR)</h2>
+        <ul><li><strong>Contract</strong> — processing your prompt or photo in order to generate the artwork you requested.</li><li><strong>Legitimate interests</strong> — crash diagnostics, aggregate usage measurement, security and abuse prevention, and reviewing content reports.</li><li><strong>Legal obligation</strong> — retaining and disclosing information where the law requires it, including child-safety reporting.</li></ul>
+        <h2 id="data-retention">6. Data retention</h2>
+        <ul><li><strong>Prompts and uploaded photos</strong> are processed to produce your result and are not retained as part of a user profile; operational logs at the image service are kept for a limited period for abuse prevention and then deleted.</li><li><strong>Content reports</strong> are retained while the report is reviewed and for as long as needed to act on repeat abuse or to meet legal obligations.</li><li><strong>Crash and analytics data</strong> are retained according to Google Firebase's standard retention periods.</li><li><strong>Your artwork and settings</strong> remain on your device until you delete them or uninstall the App.</li></ul>
+        <h2 id="your-rights">7. Your rights</h2>
+        <p>Depending on where you live you may have the right to access, correct, delete, port or restrict your data, to object to processing, to withdraw consent, and to complain to a data-protection authority. Residents of California (CCPA/CPRA) may request to know, delete or correct their information and to opt out of sale or sharing — we do not sell or share personal information. Similar rights exist under LGPD (Brazil), PIPEDA (Canada) and other regional laws.</p>
+        <p>Because the App has no accounts, we cannot link data to a named person. To make a request, email <strong>contact@tranquilmind.co</strong> and include enough detail for us to locate the records — for example the approximate date and time of use and your device model. You can delete all locally stored artwork and settings at any time by deleting items in the App or uninstalling it.</p>
+        <h2 id="childrens-privacy-child-safety-standards">8. Children's privacy &amp; Child Safety Standards</h2>
+        <p>The App is intended for users aged <strong>13 and over</strong> (or the higher age of digital consent in your country) and is not directed to children. We do not knowingly collect personal information from children. If we learn that we have, we will delete it; a parent or guardian may contact us at <strong>contact@tranquilmind.co</strong>.</p>
+        <h3>Child Safety Standards (CSAE)</h3>
+        <p>Tranquil Mind Technology JSC and the Pixarel app have <strong>zero tolerance</strong> for child sexual abuse and exploitation (CSAE) and for child sexual abuse material (CSAM).</p>
+        <p><strong>Prohibited without exception.</strong> It is forbidden to use Pixarel to create, request, upload, store, share or promote any material that sexualises a minor, in any form — image, video, audio, text or <strong>AI-generated content</strong>. This includes grooming, sextortion, solicitation, trafficking, and any attempt to produce sexualised depictions of a person under 18, whether real, stylised or entirely synthetic. The prohibition applies both to what you submit and to what the App is asked to generate.</p>
+        <p><strong>How we prevent it.</strong></p>
+        <ul><li>Prompts are screened <strong>on the device</strong> before any network request; terms relating to minors, sexual content, suggestive content and graphic violence are blocked and the request is refused. The filter normalises accents and spacing so that obfuscated spellings are still caught.</li><li>The same screening runs again <strong>at our image service</strong>, so it cannot be bypassed by calling the service directly.</li><li>Requests that pass the filters but are refused by the generation engine return an error rather than an image.</li></ul>
+        <p><strong>How to report.</strong> Every generated result carries a <strong>Report</strong> button. You can report sexual or explicit content, violence or gore, hate or harassment, or anything else, with an optional note. Reports are transmitted to our service and are confirmed only when the server has recorded them; the image itself is not uploaded, only a numeric fingerprint that lets us identify repeat reports. You may also email <strong>contact@tranquilmind.co</strong> at any time.</p>
+        <p><strong>How we respond.</strong> We review every report. Where a violation is confirmed we remove the material from our systems, block the prompts and patterns involved, and may suspend access to the service. <strong>Apparent child sexual abuse material is reported to the National Center for Missing &amp; Exploited Children (NCMEC) and/or to the competent local authorities</strong>, and relevant records are preserved as the law requires.</p>
+        <p><strong>Compliance.</strong> We comply with applicable child-safety laws in the jurisdictions where Pixarel is available and align our practices with the Google Play Child Safety Standards policy.</p>
+        <p><strong>Child-safety point of contact:</strong> <strong>contact@tranquilmind.co</strong> (Tranquil Mind Technology JSC, developer of Pixarel).</p>
+        <h2 id="international-data-transfers">9. International data transfers</h2>
+        <p>Our image service runs on a global edge network and Firebase is operated by Google; your data may therefore be processed outside your country, including in the United States. Where required we rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses.</p>
+        <h2 id="data-security">10. Data security</h2>
+        <p>Traffic between the App and our services is encrypted in transit using HTTPS/TLS. We apply reasonable technical and organisational measures appropriate to the limited data we handle. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
+        <h2 id="changes-to-this-policy">11. Changes to this Policy</h2>
+        <p>We may update this Policy. Material changes will be posted on this page with a new "Last updated" date. Continuing to use the App after a change means you accept the revised Policy.</p>
+        <h2 id="contact-us">12. Contact us</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
