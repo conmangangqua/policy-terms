@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Terms of Service for Flashlynx — the rules for using the app.">
+    <title>Terms of Service — Flashlynx</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+        header.site {
+            position: sticky; top: 0; z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px; margin: 0 auto;
+            padding: 14px 24px;
+            display: flex; align-items: center; justify-content: space-between; gap: 16px;
+        }
+        .brand {
+            display: flex; align-items: center; gap: 10px;
+            font-weight: 700; font-size: 15px;
+            color: var(--text); border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #6366f1, var(--accent));
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta { font-size: 13px; color: var(--text-soft); display: flex; gap: 14px; }
+        main.shell {
+            max-width: 1100px; margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid; grid-template-columns: 1fr; gap: 32px;
+        }
+        @media (min-width: 960px) { main.shell { grid-template-columns: 240px 1fr; } }
+        aside.toc {
+            position: sticky; top: 84px; align-self: start;
+            max-height: calc(100vh - 100px); overflow-y: auto;
+            font-size: 13.5px; display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block; text-transform: uppercase;
+            letter-spacing: .08em; font-size: 11px;
+            color: var(--text-soft); margin-bottom: 10px;
+        }
+        aside.toc ol { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+        aside.toc a {
+            display: block; padding: 6px 10px; border-radius: var(--radius-sm);
+            color: var(--text-muted); border-bottom: none; line-height: 1.4;
+        }
+        aside.toc a:hover { background: var(--bg-elev); color: var(--text); }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft); color: var(--accent);
+            font-size: 12px; font-weight: 600;
+            letter-spacing: .04em; text-transform: uppercase;
+            border-radius: 999px; margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px); font-weight: 800;
+            letter-spacing: -0.02em; margin: 0 0 12px; line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px; font-weight: 700; letter-spacing: -0.01em;
+            margin: 38px 0 12px; padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 { font-size: 16px; font-weight: 600; color: var(--text); margin: 22px 0 8px; }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul { margin: 0 0 14px; padding-left: 22px; color: var(--text-muted); }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 8px 18px;
+            font-size: 13.5px; color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev); border: 1px solid var(--border);
+            border-radius: var(--radius-sm); margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px; padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px; color: var(--text-soft);
+            display: flex; justify-content: space-between;
+            flex-wrap: wrap; gap: 8px;
+        }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">T</span>Flashlynx</a>
+        <div class="nav-meta">
+            <span>Terms of Service</span>
+            <span>·</span>
+            <span>2026-10-02</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#eligibility">1. Eligibility</a></li>
+            <li><a href="#license">2. License</a></li>
+            <li><a href="#the-service">3. The service</a></li>
+            <li><a href="#no-purchases-and-no-advertising">4. No purchases and no advertising</a></li>
+            <li><a href="#device-permissions-you-control">5. Device permissions you control</a></li>
+            <li><a href="#acceptable-use">6. Acceptable use</a></li>
+            <li><a href="#safety-and-responsible-use">7. Safety and responsible use</a></li>
+            <li><a href="#intellectual-property">8. Intellectual property</a></li>
+            <li><a href="#third-party-services-and-content">9. Third-party services and content</a></li>
+            <li><a href="#disclaimers">10. Disclaimers</a></li>
+            <li><a href="#limitation-of-liability">11. Limitation of liability</a></li>
+            <li><a href="#indemnification">12. Indemnification</a></li>
+            <li><a href="#termination">13. Termination</a></li>
+            <li><a href="#changes-to-these-terms">14. Changes to these Terms</a></li>
+            <li><a href="#governing-law-and-disputes">15. Governing law and disputes</a></li>
+            <li><a href="#contact">16. Contact</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Terms</span>
+        <h1>Terms of Service</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Flashlynx</span>
+            <span><strong>Effective:</strong> 2026-10-02</span>
+            <span><strong>Last Updated:</strong> 2026-10-02</span>
+        </div>
+
+        <p>These Terms of Service ("Terms") govern your use of the Flashlynx mobile application ("the App"), operated by Tranquil Mind Technology JSC ("we", "us", "our"). By downloading or using the App, you agree to these Terms and to our Privacy Policy (https://policy.tranquilmind.co/flashlynx/privacy). If you do not agree, do not use the App.</p>
+        <h2 id="eligibility">1. Eligibility</h2>
+        <p>You must be at least <strong>13 years old</strong>, or older if your country sets a higher age of digital consent, to use the App. By using the App you confirm that you meet this requirement.</p>
+        <h2 id="license">2. License</h2>
+        <p>We grant you a personal, limited, non-exclusive, non-transferable, revocable license to install and use the App on devices you own or control, for your own non-commercial use. You may not copy, modify, translate, rent, lease, sell, redistribute, decompile or reverse-engineer the App, or create derivative works from it, except to the extent such restrictions are prohibited by applicable law.</p>
+        <h2 id="the-service">3. The service</h2>
+        <p>Flashlynx turns your camera flash into a torch with adjustable on/off rhythms, SOS Morse and disco strobe modes, a coloured screen light, flash alerts for incoming calls and app notifications, a Quick Settings tile, and a torch-first home screen with clock, calendar, dock, folders and an app drawer. Availability of individual features depends on your device and operating-system version, and we may modify, suspend or discontinue features at any time.</p>
+        <h2 id="no-purchases-and-no-advertising">4. No purchases and no advertising</h2>
+        <p>The App is <strong>free to download and use. It contains no advertising and no in-app purchases or subscriptions.</strong> We do not charge you for any feature. Should this ever change, we will update these Terms and the store listing before introducing any charge.</p>
+        <h2 id="device-permissions-you-control">5. Device permissions you control</h2>
+        <p>Some features require permissions that you grant and may revoke at any time in your device settings:</p>
+        <ul><li><strong>Notification access</strong> — required for flash alerts triggered by app notifications. The App uses it only to detect which app posted a notification; it does not read notification content.</li><li><strong>Phone state</strong> — required for flash alerts on incoming calls. The App uses it only to detect ringing/idle/off-hook state; it does not read phone numbers or your call log.</li><li><strong>Post notifications</strong> and <strong>exact alarms</strong> — used to run timed torch behaviour reliably.</li></ul>
+        <p>If you revoke a permission, the related feature will stop working but the rest of the App remains usable.</p>
+        <h2 id="acceptable-use">6. Acceptable use</h2>
+        <p>You agree not to use the App unlawfully, to disrupt or interfere with its operation or security, to bypass technical restrictions, to use bots or scrapers against it, or to infringe the rights of others. We may suspend or terminate your access for violations of these Terms.</p>
+        <h2 id="safety-and-responsible-use">7. Safety and responsible use</h2>
+        <p>The torch, strobe and SOS features produce bright and rapidly flashing light. <strong>Do not shine the light into anyone's eyes, and do not use strobe or disco modes if you or anyone nearby is sensitive to flashing light or has a photosensitive condition such as photosensitive epilepsy.</strong> Do not operate the App while driving or while performing any activity that requires your attention. Prolonged torch use may heat your device and will drain the battery. The SOS mode is a convenience feature only and is <strong>not</strong> an emergency service, a distress beacon or a substitute for contacting the emergency services — never rely on it as your only means of signalling for help.</p>
+        <h2 id="intellectual-property">8. Intellectual property</h2>
+        <p>The App, including its design, source code, graphics and the Flashlynx name and logo, is owned by Tranquil Mind Technology JSC or its licensors and is protected by intellectual-property laws. Names, logos and trademarks of third-party applications that appear in the home screen, app drawer or alert selection belong to their respective owners; their appearance does not imply any affiliation with, sponsorship by or endorsement from those owners.</p>
+        <h2 id="third-party-services-and-content">9. Third-party services and content</h2>
+        <p>The App uses third-party services for crash reporting and aggregate usage measurement (Google Firebase Crashlytics and Firebase Analytics), each subject to its own terms and privacy policy. When you launch another application from the App's home screen or app drawer, that application is governed solely by its own terms, and we are not responsible for it or for its content.</p>
+        <h2 id="disclaimers">10. Disclaimers</h2>
+        <p>The App is provided <strong>"as is"</strong> and <strong>"as available"</strong>, without warranties of any kind, whether express, implied or statutory, including any implied warranties of merchantability, fitness for a particular purpose and non-infringement. Torch features require a device with a camera flash, and torch-brightness control is available only on devices that support it. The reliability of flash alerts depends on the permissions you grant and on your device's power-saving and manufacturer settings. We do not warrant that the App will be uninterrupted, timely, error-free or secure.</p>
+        <h2 id="limitation-of-liability">11. Limitation of liability</h2>
+        <p>To the maximum extent permitted by law, we are not liable for any indirect, incidental, special, consequential or punitive damages, or for any loss of data, profits, or device damage, arising out of or related to your use of the App. Our total aggregate liability shall not exceed the greater of the amounts you paid us in the twelve months preceding the claim (which, for a free app, is zero) or USD 50. Some jurisdictions do not allow certain exclusions or limitations, so parts of this section may not apply to you.</p>
+        <h2 id="indemnification">12. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless Tranquil Mind Technology JSC and its officers, employees and agents from any claims, damages, liabilities and expenses arising from your misuse of the App or your breach of these Terms.</p>
+        <h2 id="termination">13. Termination</h2>
+        <p>We may suspend or terminate your access to the App at any time, including for breach of these Terms. You may terminate at any time by uninstalling the App. Sections 8, 10, 11 and 12 survive termination.</p>
+        <h2 id="changes-to-these-terms">14. Changes to these Terms</h2>
+        <p>We may update these Terms from time to time. Material changes will be posted on this page with a new "Last updated" date. Continued use of the App after a change means you accept the updated Terms.</p>
+        <h2 id="governing-law-and-disputes">15. Governing law and disputes</h2>
+        <p>These Terms are governed by the laws of Vietnam, and the courts of Hanoi, Vietnam shall have jurisdiction over any dispute. Mandatory consumer-protection rights available to you under the law of your country of residence are not affected.</p>
+        <h2 id="contact">16. Contact</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
