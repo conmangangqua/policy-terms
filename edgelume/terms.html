@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Terms of Service for Edgelume — the rules for using the app.">
+    <title>Terms of Service — Edgelume</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+        header.site {
+            position: sticky; top: 0; z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px; margin: 0 auto;
+            padding: 14px 24px;
+            display: flex; align-items: center; justify-content: space-between; gap: 16px;
+        }
+        .brand {
+            display: flex; align-items: center; gap: 10px;
+            font-weight: 700; font-size: 15px;
+            color: var(--text); border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #6366f1, var(--accent));
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta { font-size: 13px; color: var(--text-soft); display: flex; gap: 14px; }
+        main.shell {
+            max-width: 1100px; margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid; grid-template-columns: 1fr; gap: 32px;
+        }
+        @media (min-width: 960px) { main.shell { grid-template-columns: 240px 1fr; } }
+        aside.toc {
+            position: sticky; top: 84px; align-self: start;
+            max-height: calc(100vh - 100px); overflow-y: auto;
+            font-size: 13.5px; display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block; text-transform: uppercase;
+            letter-spacing: .08em; font-size: 11px;
+            color: var(--text-soft); margin-bottom: 10px;
+        }
+        aside.toc ol { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+        aside.toc a {
+            display: block; padding: 6px 10px; border-radius: var(--radius-sm);
+            color: var(--text-muted); border-bottom: none; line-height: 1.4;
+        }
+        aside.toc a:hover { background: var(--bg-elev); color: var(--text); }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft); color: var(--accent);
+            font-size: 12px; font-weight: 600;
+            letter-spacing: .04em; text-transform: uppercase;
+            border-radius: 999px; margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px); font-weight: 800;
+            letter-spacing: -0.02em; margin: 0 0 12px; line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px; font-weight: 700; letter-spacing: -0.01em;
+            margin: 38px 0 12px; padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 { font-size: 16px; font-weight: 600; color: var(--text); margin: 22px 0 8px; }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul { margin: 0 0 14px; padding-left: 22px; color: var(--text-muted); }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 8px 18px;
+            font-size: 13.5px; color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev); border: 1px solid var(--border);
+            border-radius: var(--radius-sm); margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px; padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px; color: var(--text-soft);
+            display: flex; justify-content: space-between;
+            flex-wrap: wrap; gap: 8px;
+        }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">T</span>Edgelume</a>
+        <div class="nav-meta">
+            <span>Terms of Service</span>
+            <span>·</span>
+            <span>October 8, 2026</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#eligibility">1. Eligibility</a></li>
+            <li><a href="#license">2. License</a></li>
+            <li><a href="#the-service">3. The service</a></li>
+            <li><a href="#fees-and-purchases">4. Fees and purchases</a></li>
+            <li><a href="#acceptable-use">5. Acceptable use</a></li>
+            <li><a href="#intellectual-property">6. Intellectual property</a></li>
+            <li><a href="#third-party-services-and-content">7. Third-party services and content</a></li>
+            <li><a href="#disclaimers">8. Disclaimers</a></li>
+            <li><a href="#limitation-of-liability">9. Limitation of liability</a></li>
+            <li><a href="#indemnification">10. Indemnification</a></li>
+            <li><a href="#termination">11. Termination</a></li>
+            <li><a href="#changes-to-these-terms">12. Changes to these Terms</a></li>
+            <li><a href="#governing-law-and-disputes">13. Governing law and disputes</a></li>
+            <li><a href="#contact">14. Contact</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Terms</span>
+        <h1>Terms of Service</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Edgelume</span>
+            <span><strong>Effective:</strong> October 8, 2026</span>
+            <span><strong>Last Updated:</strong> October 8, 2026</span>
+        </div>
+
+        <p>These Terms of Service ("Terms") govern your download, installation, access to, and use of the Edgelume mobile application ("the App"), operated by Tranquil Mind Technology JSC ("we", "us", "our"). By downloading, installing, accessing, or using the App, you agree to be bound by these Terms and our Privacy Policy (https://policy.tranquilmind.co/edgelume/privacy). If you do not agree to these Terms, do not install or use the App.</p>
+        <p>This document applies exclusively to the Android version of Edgelume (<code>com.tranquiltmt.edgelume</code>).</p>
+        <h2 id="eligibility">1. Eligibility</h2>
+        <p>You must be at least 13 years of age (or the minimum legal age of digital consent required in your country or jurisdiction, such as 16 in certain member states of the European Union) to download, access, and use Edgelume. By accessing or using the App, you represent and warrant that you meet this age requirement and have the legal capacity to enter into these Terms.</p>
+        <h2 id="license">2. License</h2>
+        <p>Subject to your strict compliance with these Terms, Tranquil Mind Technology JSC grants you a personal, revocable, non-exclusive, non-transferable, non-sublicensable, limited license to download, install, and use Edgelume solely for your personal, non-commercial personalization purposes on a compatible Android device that you own or control.</p>
+        <p>You agree not to:</p>
+        <ul><li>Copy, reproduce, redistribute, lease, rent, sell, or distribute the App or any of its constituent code, graphics, or assets.</li><li>Reverse engineer, decompile, disassemble, or attempt to derive the source code of the App, in whole or in part, except to the extent permitted by applicable mandatory law.</li><li>Modify, adapt, translate, or create derivative works based upon the App or any part thereof.</li><li>Remove, alter, or obscure any copyright, trademark, or other proprietary notices affixed to or contained within the App.</li></ul>
+        <h2 id="the-service">3. The service</h2>
+        <p>Edgelume is a personalization utility designed for Android devices that enables customizable glowing edge lighting effects around your screen perimeter, an interactive overlay over other apps, an LED live wallpaper service, visual edge lighting triggers for incoming calls, device charging, and notifications, and a pre-packaged gallery of static wallpapers that can be applied to your Home screen, Lock screen, or both.</p>
+        <p>The availability, compatibility, and visual rendering of edge lighting effects and live wallpapers may vary depending on your specific Android hardware model, screen resolution, display cutouts (notch or camera hole dimensions), operating system version, and manufacturer-specific battery optimization settings. We reserve the right to modify, update, enhance, suspend, or discontinue the App or any specific feature at any time without prior notice or liability.</p>
+        <h2 id="fees-and-purchases">4. Fees and purchases</h2>
+        <p>Edgelume is currently provided free of charge to download and use. The App contains no in-app purchases (IAP), paid subscriptions, digital items for sale, or third-party advertising networks. We reserve the right, at our sole discretion, to introduce premium features, optional purchases, or service modifications in future versions, subject to clear prior notification and compliance with applicable Google Play billing policies.</p>
+        <h2 id="acceptable-use">5. Acceptable use</h2>
+        <p>You agree to use Edgelume strictly in compliance with all applicable local, national, and international laws and regulations. You shall not:</p>
+        <ul><li>Use the App for any fraudulent, unlawful, malicious, or unauthorized purpose.</li><li>Interfere with, disrupt, overburden, or compromise the integrity or security of the App or its underlying operating environments.</li><li>Attempt to circumvent, disable, or tamper with any technological protections, security controls, or diagnostic safeguards of the App.</li><li>Use automated scripts, spiders, bots, scrapers, or other automated means to extract data, graphics, or assets from the App.</li><li>Introduce viruses, worms, Trojan horses, spyware, or other harmful computer code.</li></ul>
+        <p>We reserve the right to investigate and take appropriate technical or legal measures against any user who violates these acceptable use standards.</p>
+        <h2 id="intellectual-property">6. Intellectual property</h2>
+        <p>All rights, title, and interest in and to Edgelume—including but not limited to the software code, algorithms, visual border styles, lighting animations, graphics, icons, pre-packaged wallpapers, layouts, user interface designs, and trademarks—are and will remain the exclusive property of Tranquil Mind Technology JSC and its licensors.</p>
+        <p>Nothing in these Terms grants you any right, title, or interest in or to our intellectual property rights other than the limited, revocable license granted in Section 2. Any third-party trademarks, product names, or logos referenced within the App or its store listings are the property of their respective owners, and their appearance does not imply any affiliation, sponsorship, or endorsement.</p>
+        <h2 id="third-party-services-and-content">7. Third-party services and content</h2>
+        <p>The App integrates trusted third-party analytics and diagnostic services provided by Google LLC (specifically Google Firebase Analytics and Google Firebase Crashlytics). Your use of these integrated features is subject to the respective terms and privacy policies of Google LLC.</p>
+        <p>The App may also contain links to external third-party websites or services, such as the Google Play Store or external web pages opened via your device's browser. We do not operate, control, endorse, or assume responsibility for any third-party services, websites, or content. Your interactions with third-party services are solely between you and the respective third party.</p>
+        <h2 id="disclaimers">8. Disclaimers</h2>
+        <p>THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE. TO THE FULLEST EXTENT PERMISSIBLE UNDER APPLICABLE LAW, TRANQUIL MIND TECHNOLOGY JSC EXPRESSLY DISCLAIMS ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, ACCURACY, NON-INFRINGEMENT, AND FREEDOM FROM VIRUSES OR MALICIOUS CODE.</p>
+        <p>WITHOUT LIMITING THE FOREGOING, WE DO NOT WARRANT THAT:</p>
+        <ul><li>THE APP WILL MEET YOUR INDIVIDUAL REQUIREMENTS OR PERSONAL EXPECTATIONS.</li><li>THE OPERATION OF THE APP, ITS EDGE LIGHTING OVERLAYS, OR WALLPAPERS WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE.</li><li>EDGE LIGHTING EFFECTS WILL CONSISTENTLY DISPLAY OVER CERTAIN RESTRICTED THIRD-PARTY APPLICATIONS OR OVERCOME OEM BATTERY-SAVER RESTRICTIONS.</li><li>ANY DEFECTS OR SOFTWARE BUGS WILL BE IMMEDIATELY DETECTED OR CORRECTED.</li></ul>
+        <p>SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN IMPLIED WARRANTIES. IN SUCH JURISDICTIONS, SOME OR ALL OF THE FOREGOING DISCLAIMERS MAY NOT APPLY TO YOU TO THE EXTENT PROHIBITED BY MANDATORY LOCAL CONSUMER LAW.</p>
+        <h2 id="limitation-of-liability">9. Limitation of liability</h2>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL TRANQUIL MIND TECHNOLOGY JSC, ITS DIRECTORS, EMPLOYEES, AFFILIATES, AGENTS, SUPPLIERS, OR LICENSORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES, INCLUDING BUT NOT LIMITED TO DAMAGES FOR LOSS OF PROFITS, DATA, USE, GOODWILL, DEVICE DAMAGE, BATTERY CONSUMPTION, OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR IN CONNECTION WITH:</p>
+        <ul><li>YOUR ACCESS TO OR USE OF, OR INABILITY TO ACCESS OR USE, THE APP.</li><li>ANY BEHAVIOR, OVERLAY INTERFERENCE, OR CONTENT OF ANY THIRD PARTY.</li><li>UNAUTHORIZED ACCESS, USE, OR ALTERATION OF YOUR DEVICE OR TRANSMISSIONS.</li></ul>
+        <p>IN NO EVENT SHALL OUR TOTAL AGGREGATE LIABILITY FOR ALL CLAIMS ARISING OUT OF OR RELATING TO THESE TERMS OR THE APP EXCEED THE GREATER OF:</p>
+        <ol><li>THE TOTAL AMOUNT YOU PAID TO US FOR USE OF THE APP IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM; OR</li><li>FIFTY UNITED STATES DOLLARS (USD $50.00).</li></ol>
+        <p>NOTHING IN THESE TERMS PURPORTS TO EXCLUDE OR LIMIT LIABILITY FOR DEATH, PERSONAL INJURY CAUSED BY NEGLIGENCE, GROSS NEGLIGENCE, WILLFUL MISCONDUCT, OR ANY OTHER LIABILITY THAT CANNOT BE LAWFULLY EXCLUDED OR LIMITED UNDER APPLICABLE CONSUMER PROTECTION LAW.</p>
+        <h2 id="indemnification">10. Indemnification</h2>
+        <p>You agree to defend, indemnify, and hold harmless Tranquil Mind Technology JSC, its officers, directors, employees, agents, and successors from and against any and all claims, liabilities, damages, losses, costs, expenses, and reasonable attorneys' fees arising out of or in any way connected with:</p>
+        <ul><li>Your access to or use of the App.</li><li>Your breach or alleged breach of any provision of these Terms.</li><li>Your violation of any third-party right, including without limitation any intellectual property, privacy, or proprietary right.</li><li>Your violation of any applicable law, rule, or regulation.</li></ul>
+        <h2 id="termination">11. Termination</h2>
+        <p>These Terms remain in effect until terminated by either you or us.</p>
+        <p>You may terminate these Terms at any time by uninstalling and deleting Edgelume and all associated files from your device.</p>
+        <p>We reserve the right, at our sole discretion, to suspend or terminate your license to access or use the App at any time, with or without notice, if we believe you have violated these Terms, engaged in unlawful behavior, or for any other legitimate operational reason. Upon termination, all licenses granted to you under these Terms will immediately cease, and you must discontinue all use of the App.</p>
+        <p>Sections 2 (restrictions), 6 (Intellectual Property), 7 (Third-Party Services), 8 (Disclaimers), 9 (Limitation of Liability), 10 (Indemnification), 13 (Governing Law and Disputes), and 14 (Contact) shall survive any termination of these Terms.</p>
+        <h2 id="changes-to-these-terms">12. Changes to these Terms</h2>
+        <p>We reserve the right to revise, modify, or update these Terms at any time. When we make changes, we will post the revised Terms at our official terms URL:</p>
+        <p><strong>https://policy.tranquilmind.co/edgelume/terms</strong></p>
+        <p>We will update the "Last updated" date at the top of these Terms. Material changes will be communicated through appropriate channels, such as an in-app notice or release notes where feasible. Your continued use of the App after the effective date of any updated Terms constitutes your agreement to be bound by the revised Terms. If you do not agree to the modified Terms, you must stop using and uninstall the App.</p>
+        <h2 id="governing-law-and-disputes">13. Governing law and disputes</h2>
+        <p>These Terms and any dispute, controversy, or claim arising out of or in connection with them or your use of the App shall be governed by and construed in accordance with the laws of <strong>Vietnam</strong>, without regard to its conflict of law principles.</p>
+        <p>Any dispute arising out of or relating to these Terms that cannot be resolved through amicable negotiation shall be submitted to the exclusive jurisdiction of the competent courts located in <strong>Hanoi, Vietnam</strong>.</p>
+        <p>Notwithstanding the foregoing, nothing in these Terms deprives you of the mandatory statutory protections and rights guaranteed to you as a consumer under the laws of your country or jurisdiction of residence that cannot be derogated from by contract.</p>
+        <h2 id="contact">14. Contact</h2>
+        <p>If you have any questions, feedback, inquiries, or legal notices concerning these Terms, please contact us at:</p>
+        <p><strong>Tranquil Mind Technology JSC</strong> No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
