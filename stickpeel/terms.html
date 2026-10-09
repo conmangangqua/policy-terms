@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Terms of Service for Stickpeel — the rules for using the app.">
+    <title>Terms of Service — Stickpeel</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+        header.site {
+            position: sticky; top: 0; z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px; margin: 0 auto;
+            padding: 14px 24px;
+            display: flex; align-items: center; justify-content: space-between; gap: 16px;
+        }
+        .brand {
+            display: flex; align-items: center; gap: 10px;
+            font-weight: 700; font-size: 15px;
+            color: var(--text); border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #6366f1, var(--accent));
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta { font-size: 13px; color: var(--text-soft); display: flex; gap: 14px; }
+        main.shell {
+            max-width: 1100px; margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid; grid-template-columns: 1fr; gap: 32px;
+        }
+        @media (min-width: 960px) { main.shell { grid-template-columns: 240px 1fr; } }
+        aside.toc {
+            position: sticky; top: 84px; align-self: start;
+            max-height: calc(100vh - 100px); overflow-y: auto;
+            font-size: 13.5px; display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block; text-transform: uppercase;
+            letter-spacing: .08em; font-size: 11px;
+            color: var(--text-soft); margin-bottom: 10px;
+        }
+        aside.toc ol { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+        aside.toc a {
+            display: block; padding: 6px 10px; border-radius: var(--radius-sm);
+            color: var(--text-muted); border-bottom: none; line-height: 1.4;
+        }
+        aside.toc a:hover { background: var(--bg-elev); color: var(--text); }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft); color: var(--accent);
+            font-size: 12px; font-weight: 600;
+            letter-spacing: .04em; text-transform: uppercase;
+            border-radius: 999px; margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px); font-weight: 800;
+            letter-spacing: -0.02em; margin: 0 0 12px; line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px; font-weight: 700; letter-spacing: -0.01em;
+            margin: 38px 0 12px; padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 { font-size: 16px; font-weight: 600; color: var(--text); margin: 22px 0 8px; }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul { margin: 0 0 14px; padding-left: 22px; color: var(--text-muted); }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 8px 18px;
+            font-size: 13.5px; color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev); border: 1px solid var(--border);
+            border-radius: var(--radius-sm); margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px; padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px; color: var(--text-soft);
+            display: flex; justify-content: space-between;
+            flex-wrap: wrap; gap: 8px;
+        }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">T</span>Stickpeel</a>
+        <div class="nav-meta">
+            <span>Terms of Service</span>
+            <span>·</span>
+            <span>2026-10-09</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#eligibility">1. Eligibility</a></li>
+            <li><a href="#license">2. License</a></li>
+            <li><a href="#the-service">3. The service</a></li>
+            <li><a href="#your-content">4. Your content</a></li>
+            <li><a href="#subscriptions-purchases-and-ads">5. Subscriptions, purchases, and ads</a></li>
+            <li><a href="#acceptable-use">6. Acceptable use</a></li>
+            <li><a href="#intellectual-property">7. Intellectual property</a></li>
+            <li><a href="#third-party-services-and-content">8. Third-party services and content</a></li>
+            <li><a href="#disclaimers">9. Disclaimers</a></li>
+            <li><a href="#limitation-of-liability">10. Limitation of liability</a></li>
+            <li><a href="#indemnification">11. Indemnification</a></li>
+            <li><a href="#termination">12. Termination</a></li>
+            <li><a href="#changes-to-these-terms">13. Changes to these Terms</a></li>
+            <li><a href="#governing-law-and-disputes">14. Governing law and disputes</a></li>
+            <li><a href="#contact">15. Contact</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Terms</span>
+        <h1>Terms of Service</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Stickpeel</span>
+            <span><strong>Effective:</strong> 2026-10-09</span>
+            <span><strong>Last Updated:</strong> 2026-10-09</span>
+        </div>
+
+        <p>These Terms of Service ("Terms") govern your use of the Stickpeel mobile application ("the App"), operated by Tranquil Mind Technology JSC ("we", "us", "our"). By downloading or using the App, you agree to these Terms and to our Privacy Policy (https://policy.tranquilmind.co/stickpeel/privacy). If you do not agree, do not use the App.</p>
+        <h2 id="eligibility">1. Eligibility</h2>
+        <p>You must be at least <strong>13 years old</strong> (or the higher age of digital consent in your country) to use the App. If you are a minor in your jurisdiction, you may use the App only with the consent and supervision of a parent or legal guardian.</p>
+        <h2 id="license">2. License</h2>
+        <p>We grant you a personal, limited, non-exclusive, non-transferable, revocable license to install and use the App on devices you own or control, for your own non-commercial use. You may not copy, modify, translate, decompile, reverse-engineer or create derivative works of the App, remove proprietary notices, or redistribute or resell it, except to the extent such restrictions are prohibited by applicable law.</p>
+        <h2 id="the-service">3. The service</h2>
+        <p>Stickpeel lets you turn your own photos into stickers: import an image from your gallery or camera, remove its background on your device, edit and decorate it, build sticker packs and export them to WhatsApp, WhatsApp Business or Telegram, or as a <code>.zip</code> file. Features, bundled sticker packs and availability may vary by region, device and app version, and we may modify, suspend or discontinue any part of the App at any time.</p>
+        <p>Background removal and image processing run locally on your device (powered by the open-source <code>image_background_remover</code> library on ONNX Runtime). Results depend on your photo and your device and may not always be accurate; the App is provided as a creative tool, not as a guaranteed-quality image service.</p>
+        <h2 id="your-content">4. Your content</h2>
+        <p>You keep all rights in the photos and stickers you create. We do not claim ownership of them and we do not upload them to our servers.</p>
+        <p>You are solely responsible for the images you import and the packs you export, and you confirm that you have the right to use them. You must not use the App to create or distribute content that: infringes anyone's copyright, trademark, privacy or publicity rights; depicts a person without their consent in a demeaning, sexual or harassing way; is sexually explicit; depicts or sexualizes minors; promotes hatred, harassment, violence or illegal activity; or violates the terms of the app you export to (for example WhatsApp's or Telegram's own policies). We may remove bundled content or restrict access to the App if we learn it is being used for such purposes.</p>
+        <h2 id="subscriptions-purchases-and-ads">5. Subscriptions, purchases, and ads</h2>
+        <p>The App is free to download and is supported by advertising. Some features are gated behind <strong>rewarded ads</strong> — you may choose to watch an ad to unlock a sticker pack or feature; watching is always optional.</p>
+        <p>The App also offers optional paid upgrades purchased through <strong>Google Play Billing</strong>: a weekly subscription, a monthly subscription, and a one-time lifetime unlock. Prices are shown in the App before purchase.</p>
+        <ul><li><strong>Auto-renewal.</strong> Subscriptions renew automatically at the end of each billing period at the then-current price, unless you cancel at least <strong>24 hours</strong> before the period ends.</li><li><strong>Managing and cancelling.</strong> Manage or cancel your subscription in the Google Play Store under <strong>Subscriptions</strong>. Uninstalling the App does not cancel a subscription.</li><li><strong>Refunds</strong> are handled by Google Play according to its refund policy and your mandatory consumer rights under local law.</li><li><strong>Restoring purchases.</strong> You can restore a previous purchase on the same Google account from the App's paywall.</li></ul>
+        <h2 id="acceptable-use">6. Acceptable use</h2>
+        <p>You agree not to: use the App for any unlawful purpose; disrupt or overload the App or our providers' systems; bypass, remove or interfere with advertising, paywalls, rewarded-ad gating or other access controls; use bots, scrapers, emulators, modified clients or automation to generate ad impressions or unlock paid features; or infringe our or any third party's rights. We may suspend or terminate your access for violations.</p>
+        <h2 id="intellectual-property">7. Intellectual property</h2>
+        <p>The App, its source code, design, user interface, trademarks, bundled sticker artwork and other content provided by us are owned by Tranquil Mind Technology JSC or its licensors and are protected by intellectual-property laws. The App includes third-party open-source components (including <code>image_background_remover</code>, BSD-3 licensed, and ONNX Runtime), used under their respective licenses. Third-party names and marks — including WhatsApp, Telegram and Google — belong to their owners; their appearance in the App does not imply affiliation with or endorsement by them.</p>
+        <h2 id="third-party-services-and-content">8. Third-party services and content</h2>
+        <p>The App uses third-party services for advertising, analytics, attribution and payments (see §3 of the Privacy Policy), and hands your exported files to the messaging or file app you select. Each of those services is governed by its own terms and privacy policy, and we are not responsible for their content, availability or practices.</p>
+        <h2 id="disclaimers">9. Disclaimers</h2>
+        <p>The App is provided <strong>"as is"</strong> and <strong>"as available"</strong>, without warranties of any kind, whether express or implied, including merchantability, fitness for a particular purpose and non-infringement. We do not warrant that the App will be uninterrupted, timely, error-free or secure, that background removal or export will succeed on every image or device, or that any content you create will be preserved. You are responsible for backing up anything you want to keep.</p>
+        <h2 id="limitation-of-liability">10. Limitation of liability</h2>
+        <p>To the maximum extent permitted by law, we are not liable for any indirect, incidental, special, consequential or punitive damages, or for loss of data, images, sticker packs, profits or goodwill. Our total liability for any claim relating to the App is limited to the greater of the amounts you paid us in the 12 months before the claim, or USD 50. Some jurisdictions do not allow certain exclusions or limitations, so parts of this section may not apply to you.</p>
+        <h2 id="indemnification">11. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless Tranquil Mind Technology JSC and its officers, employees and partners from any claim, demand, loss or expense arising out of your misuse of the App, the content you import or export, or your breach of these Terms.</p>
+        <h2 id="termination">12. Termination</h2>
+        <p>We may suspend or terminate your access to the App at any time, including for breach of these Terms. You may stop using the App at any time by uninstalling it. Sections on intellectual property, disclaimers, limitation of liability and indemnification survive termination.</p>
+        <h2 id="changes-to-these-terms">13. Changes to these Terms</h2>
+        <p>We may update these Terms from time to time. Material changes will be posted on this page with a new "Last updated" date. Continued use of the App after an update means you accept the revised Terms.</p>
+        <h2 id="governing-law-and-disputes">14. Governing law and disputes</h2>
+        <p>These Terms are governed by the laws of Vietnam, without regard to conflict-of-laws rules. Disputes will be brought before the competent courts of Hanoi, Vietnam. Mandatory consumer-protection rights available to you in your country of residence are not affected.</p>
+        <h2 id="contact">15. Contact</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
