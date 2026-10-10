@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Privacy Policy for Edgelume — how we collect, use, and protect your data.">
+    <title>Privacy Policy — Edgelume</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        header.site {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+            border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #6366f1);
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta {
+            font-size: 13px;
+            color: var(--text-soft);
+            display: flex; gap: 14px;
+        }
+        main.shell {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        @media (min-width: 960px) {
+            main.shell { grid-template-columns: 240px 1fr; }
+        }
+        aside.toc {
+            position: sticky;
+            top: 84px;
+            align-self: start;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            font-size: 13.5px;
+            display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: 11px;
+            color: var(--text-soft);
+            margin-bottom: 10px;
+        }
+        aside.toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        aside.toc a {
+            display: block;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            color: var(--text-muted);
+            border-bottom: none;
+            line-height: 1.4;
+        }
+        aside.toc a:hover {
+            background: var(--bg-elev);
+            color: var(--text);
+        }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 38px 0 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 22px 0 8px;
+        }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul {
+            margin: 0 0 14px;
+            padding-left: 22px;
+            color: var(--text-muted);
+        }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            font-size: 13.5px;
+            color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px;
+            color: var(--text-soft);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 0 20px;
+            font-size: 14px;
+        }
+        thead th {
+            text-align: left;
+            font-weight: 600;
+            color: var(--text);
+            background: var(--bg-elev);
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        tbody td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+            vertical-align: top;
+        }
+        tbody tr:last-child td { border-bottom: none; }
+        .table-wrap {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        .table-wrap table { margin: 0; }
+        .callout {
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
+            margin: 0 0 16px;
+            color: var(--text-muted);
+        }
+        .callout strong { color: var(--text); }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">P</span>Edgelume</a>
+        <div class="nav-meta">
+            <span>Privacy Policy</span>
+            <span>·</span>
+            <span>October 8, 2026</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#information-we-collect">1. Information we collect</a></li>
+            <li><a href="#how-we-use-information">2. How we use information</a></li>
+            <li><a href="#third-party-services">3. Third-party services</a></li>
+            <li><a href="#how-we-share-information">4. How we share information</a></li>
+            <li><a href="#legal-bases">5. Legal bases (EEA/UK — GDPR)</a></li>
+            <li><a href="#data-retention">6. Data retention</a></li>
+            <li><a href="#your-rights">7. Your rights</a></li>
+            <li><a href="#childrens-privacy">8. Children&#x27;s privacy</a></li>
+            <li><a href="#international-data-transfers">9. International data transfers</a></li>
+            <li><a href="#data-security">10. Data security</a></li>
+            <li><a href="#third-party-content-and-links">11. Third-party content and links</a></li>
+            <li><a href="#changes-to-this-privacy-policy">12. Changes to this Privacy Policy</a></li>
+            <li><a href="#contact-us">13. Contact us</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Privacy</span>
+        <h1>Privacy Policy</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Edgelume</span>
+            <span><strong>Effective:</strong> October 8, 2026</span>
+            <span><strong>Last Updated:</strong> October 8, 2026</span>
+        </div>
+
+        <p>Edgelume ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information we collect, how we use and share it, and the choices and rights you have. By downloading, installing, or using the App, you agree to this Privacy Policy.</p>
+        <p>Edgelume is an Android edge lighting and wallpaper personalization application that provides glowing animated borders around your device screen, edge lighting triggers for incoming calls, charging, and notifications, dynamic live wallpapers, and a curated library of pre-packaged static wallpapers. You do not need to create an account, log in, or provide any personal contact information to use the App.</p>
+        <p>This Privacy Policy applies solely to the Android version of Edgelume available under the application identifier <code>com.tranquiltmt.edgelume</code>.</p>
+        <h2 id="information-we-collect">1. Information we collect</h2>
+        <p>We believe in strict data minimization. We only collect data that is strictly necessary to provide and maintain the App's core functionality, diagnostics, and analytics.</p>
+        <h3>A. Information automatically collected by third-party SDKs (data transmitted off-device)</h3>
+        <p>When you use the App on your Android device, certain diagnostic and analytical information is automatically collected and transmitted to our trusted third-party service provider (Google Firebase):</p>
+        <ul><li><strong>Device and software identifiers:</strong> Mobile device hardware model, operating system version (Android OS), unique installation identifiers (such as the Firebase Installation ID / App Instance ID), and system performance characteristics.</li><li><strong>Approximate location:</strong> Coarse geographical location at the country, territory, or city level derived automatically from the device's IP address. We do not access, collect, or transmit your precise GPS coordinates.</li><li><strong>Usage and interaction data:</strong> App opens, screen views, feature interactions (e.g., selecting border styles or setting wallpapers), session durations, and general engagement statistics collected in aggregated form via Firebase Analytics.</li><li><strong>Crash reports and diagnostics:</strong> Technical stack traces, device state at the time of an application crash or freeze, operating system state, and performance diagnostics collected via Firebase Crashlytics to detect and fix technical bugs.</li></ul>
+        <h3>B. Sensitive Android permissions and on-device processing (data that NEVER leaves your device)</h3>
+        <p>To provide its dynamic edge lighting effects, Edgelume requests specific Android permissions. All data processed through these sensitive permissions is handled strictly on your local device in volatile memory and is <strong>never recorded, stored on disk, or transmitted over the internet</strong>:</p>
+        <ol><li><strong>Phone state access (<code>android.permission.READ_PHONE_STATE</code>):</strong> - <strong>Purpose:</strong> Edgelume requests this permission solely to detect incoming and active telephone call states (specifically <code>CALL_STATE_RINGING</code>, <code>CALL_STATE_OFFHOOK</code>, and <code>CALL_STATE_IDLE</code>) to trigger the glowing screen border when your phone rings or during a call, and to stop the animation when the call ends. - <strong>What we DO NOT do:</strong> The App does <strong>not</strong> read, log, access, or transmit your telephone number, caller identification, contacts, call history, address book, or call audio. The detection is performed transiently in device memory through official Android Telephony APIs and immediately discarded.</li></ol>
+        <ol><li><strong>Notification listener service (<code>android.permission.BIND_NOTIFICATION_LISTENER_SERVICE</code>):</strong> - <strong>Purpose:</strong> If you choose to enable the notification glow feature, Android requires granting Notification Access so our <code>EdgeNotificationListener</code> can detect when a new notification arrives on your device, triggering a temporary 8-second animated edge border pulse. - <strong>What we DO NOT do:</strong> The App does <strong>not</strong> inspect, read, copy, log, or transmit any notification text, messages, chat content, sender names, notification titles, or notification extras. It only checks the presence of a notification event from third-party apps to trigger the visual lighting pulse.</li></ol>
+        <ol><li><strong>Display over other apps (<code>android.permission.SYSTEM_ALERT_WINDOW</code>):</strong> - <strong>Purpose:</strong> Allows Edgelume to render an overlay window displaying the animated lighting border around the perimeter of your screen while using other applications. - <strong>What we DO NOT do:</strong> The overlay window is configured with <code>FLAG_NOT_FOCUSABLE</code> and <code>FLAG_NOT_TOUCHABLE</code>. It does <strong>not</strong> intercept touch events, does not interfere with underlying user interactions, and cannot view, read, or record screen content, keystrokes, or text displayed by other applications.</li></ol>
+        <ol><li><strong>Foreground service permissions (<code>android.permission.FOREGROUND_SERVICE</code>, <code>android.permission.FOREGROUND_SERVICE_SPECIAL_USE</code>):</strong> - <strong>Purpose:</strong> Required by modern Android versions (Android 14+) to keep the overlay lighting service (<code>edge_lighting_overlay</code>) active and stable while edge lighting is triggered. It displays a mandatory ongoing system notification ("Edgelume is running") with a quick "Turn off" action.</li></ol>
+        <ol><li><strong>Post notifications permission (<code>android.permission.POST_NOTIFICATIONS</code>):</strong> - <strong>Purpose:</strong> Required on Android 13+ to display the ongoing foreground service notification while the edge overlay is active, and to deliver occasional local engagement reminders scheduled on your device.</li></ol>
+        <ol><li><strong>Start at boot (<code>android.permission.RECEIVE_BOOT_COMPLETED</code>):</strong> - <strong>Purpose:</strong> Allows our local <code>BootReceiver</code> to automatically restore your active edge lighting settings after your device restarts, so you do not need to manually re-enable the lighting overlay.</li></ol>
+        <ol><li><strong>Set wallpaper permission (<code>android.permission.SET_WALLPAPER</code> and Live Wallpaper service):</strong> - <strong>Purpose:</strong> Allows you to apply pre-packaged wallpapers to your device's Home screen, Lock screen, or both via the standard Android <code>WallpaperManager</code>, and enables the optional LED live wallpaper engine (<code>LedWallpaperService</code>).</li></ol>
+        <h3>C. Information stored locally on your device</h3>
+        <p>Edgelume stores your personal customization preferences locally on your device using Android SharedPreferences and local database storage (Hive). This information never leaves your device and includes:</p>
+        <ul><li>Customized edge border parameters (colors, animation speeds, border widths, corner radius, notch dimensions, display hole styles, run styles).</li><li>Custom border presets and saved favorite combinations.</li><li>Onboarding status, selected application language, and user interface preferences.</li><li>Category interest preferences selected during setup to prioritize the ordering of wallpaper categories.</li></ul>
+        <h3>D. Information we DO NOT collect</h3>
+        <ul><li><strong>No user accounts:</strong> We do not collect names, email addresses, phone numbers, usernames, or passwords.</li><li><strong>No financial or payment data:</strong> The App is free; we do not collect credit card, billing, or banking details.</li><li><strong>No precise location:</strong> We do not access GPS hardware or precise location data.</li><li><strong>No camera, microphone, or biometric data:</strong> We do not request or access camera, microphone, or biometric sensors.</li><li><strong>No user files or media:</strong> All wallpapers and border shapes provided by Edgelume are bundled locally within the App assets. The App does not read, scan, or access your personal photo library, storage files, or media.</li><li><strong>No advertising identifiers for ad tracking:</strong> Edgelume contains no third-party advertising SDKs or ad mediation networks.</li></ul>
+        <h2 id="how-we-use-information">2. How we use information</h2>
+        <p>We use the limited information collected through the App for the following legitimate purposes:</p>
+        <ul><li><strong>Operating and maintaining the App:</strong> Ensuring edge lighting animations, live wallpapers, and wallpaper customization functions operate properly on your device.</li><li><strong>Diagnostics and technical stability:</strong> Monitoring application crashes, software exceptions, and performance bottlenecks via Firebase Crashlytics to resolve bugs and enhance stability across various Android hardware configurations.</li><li><strong>Analytics and product improvement:</strong> Evaluating aggregate engagement trends, screen navigation paths, and feature popularity via Firebase Analytics to guide product design and improve user experience.</li><li><strong>Security and fraud prevention:</strong> Protecting the integrity of the App, preventing abusive automated interactions, and ensuring compliance with Google Play Developer policies.</li><li><strong>Legal obligations:</strong> Satisfying applicable laws, regulations, and legal processes where mandatory.</li></ul>
+        <p>We do not use your information for targeted behavioral advertising, cross-app tracking, profiling, or automated decision-making.</p>
+        <h2 id="third-party-services">3. Third-party services</h2>
+        <p>The App integrates trusted third-party SDKs provided by Google LLC to perform analytics and crash diagnostics. These service providers process data in accordance with their respective privacy policies.</p>
+        <div class="table-wrap"><table><thead><tr><th>Third-Party Service</th><th>Provider</th><th>Purpose</th><th>Data Transmitted</th><th>Privacy Policy</th></tr></thead><tbody><tr><td><strong>Google Firebase Analytics</strong></td><td>Google LLC</td><td>App analytics, aggregate usage metrics, and product improvement</td><td>Device identifiers (Firebase Installation ID), approximate location (country/city derived from IP), app interactions, session metrics</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td></tr><tr><td><strong>Google Firebase Crashlytics</strong></td><td>Google LLC</td><td>Crash reporting, stack traces, stability diagnostics, fraud prevention</td><td>Device model, OS version, technical stack traces, state of the application at crash time</td><td><a href="https://firebase.google.com/terms/crashlytics" target="_blank" rel="noopener">Firebase Crashlytics Terms</a></td></tr></tbody></table></div>
+        <h3>Note on local libraries and utilities</h3>
+        <ul><li><strong>Local notifications (<code>flutter_local_notifications</code> and internal <code>co.tranquilmind:binding-helper</code>):</strong> Used strictly to schedule and display local notifications on your device via the Android <code>WorkManager</code> system (e.g., reminding you of new lighting styles). These components execute entirely on your device and do not transmit data over the network.</li><li><strong>System utility packages (<code>share_plus</code>, <code>url_launcher</code>, <code>package_info_plus</code>):</strong> Used only to trigger native Android share dialogs, open external web links (such as this Privacy Policy or the Google Play Store), and display the current app version number in Settings. They do not collect or transmit personal information.</li><li><strong>No advertising networks:</strong> Edgelume contains no advertising SDKs, ad trackers, or mediation platforms (such as Google AdMob, Meta Audience Network, AppLovin, or Unity Ads).</li></ul>
+        <h2 id="how-we-share-information">4. How we share information</h2>
+        <p>We do not sell, rent, or trade your personal information to any third parties for monetary or other valuable consideration.</p>
+        <p>We may share information only in the following limited circumstances:</p>
+        <ul><li><strong>With service providers:</strong> We share data with Google LLC for Firebase Analytics and Firebase Crashlytics to support our core analytics and crash diagnostic operations.</li><li><strong>For legal and safety reasons:</strong> We may disclose information if required to do so by applicable law, regulation, subpoena, or legal process, or if we have a good faith belief that disclosure is reasonably necessary to protect the rights, property, or safety of Tranquil Mind Technology JSC, our users, or the public.</li><li><strong>Business transfers:</strong> In the event of a merger, acquisition, reorganization, bankruptcy, or sale of company assets, information collected by the App may be transferred as part of the transaction, subject to the recipient honoring this Privacy Policy.</li></ul>
+        <h2 id="legal-bases">5. Legal bases (EEA/UK — GDPR)</h2>
+        <p>If you reside in the European Economic Area (EEA) or the United Kingdom (UK), our legal bases under the General Data Protection Regulation (GDPR) and UK GDPR for processing data collected through Edgelume are:</p>
+        <ul><li><strong>Legitimate interests (Article 6(1)(f) GDPR):</strong> We process technical diagnostic data, crash logs, and aggregated usage metrics to maintain the security, stability, functionality, and continuous improvement of Edgelume. Our legitimate interests do not override your fundamental privacy rights and freedoms.</li><li><strong>Consent (Article 6(1)(a) GDPR):</strong> Where required by applicable local law (such as for certain analytics identifiers or specific device permissions), we process data based on your explicit consent granted through your Android device permission dialogs or application settings. You may withdraw your consent at any time by revoking permissions in your device settings.</li><li><strong>Compliance with legal obligations (Article 6(1)(c) GDPR):</strong> Processing required to comply with statutory and regulatory obligations.</li></ul>
+        <h2 id="data-retention">6. Data retention</h2>
+        <p>We adhere to data minimization and retain data only for as long as necessary to fulfill the purposes described in this Privacy Policy:</p>
+        <ul><li><strong>Firebase Crashlytics data:</strong> Technical crash logs, stack traces, and associated device metrics are retained by Firebase for up to 90 days, after which they are automatically purged.</li><li><strong>Firebase Analytics data:</strong> Aggregated analytics events and user property metrics are retained by Google Firebase for standard retention periods (ranging between 2 and 14 months depending on event configurations).</li><li><strong>Local device preferences:</strong> Your border styles, custom presets, language selection, and category preferences remain stored locally on your device until you clear the App's storage via Android Settings or uninstall the App.</li></ul>
+        <h2 id="your-rights">7. Your rights</h2>
+        <p>Depending on your geographic location, you may have specific statutory privacy rights regarding your information under laws such as the GDPR, UK GDPR, California Consumer Privacy Act (CCPA/CPRA), Brazil LGPD, and Canada PIPEDA:</p>
+        <h3>A. European Economic Area (EEA) and United Kingdom (UK)</h3>
+        <p>You have the right to:</p>
+        <ul><li>Access the personal data held about you.</li><li>Request the correction (rectification) of inaccurate or incomplete data.</li><li>Request the deletion (erasure) of your personal data.</li><li>Object to or restrict the processing of your data based on legitimate interests.</li><li>Request data portability in a structured, commonly used format.</li><li>Withdraw previously given consent at any time with future effect.</li><li>Lodge a complaint with a supervisory data protection authority in your EU/EEA member state or the UK Information Commissioner's Office (ICO).</li></ul>
+        <h3>B. California and United States privacy rights (CCPA/CPRA)</h3>
+        <p>If you are a California resident:</p>
+        <ul><li><strong>Right to know and access:</strong> You may request details about the categories and specific pieces of personal information collected, disclosed, or shared over the preceding 12 months.</li><li><strong>Right to deletion:</strong> You may request the deletion of personal information collected from you.</li><li><strong>Right to correction:</strong> You may request correction of inaccurate personal information.</li><li><strong>No sale or sharing:</strong> We do not "sell" or "share" personal information for cross-context behavioral advertising as defined by the CCPA/CPRA.</li><li><strong>Non-discrimination:</strong> We will not discriminate against you for exercising any of your statutory privacy rights.</li></ul>
+        <h3>C. How to exercise your rights</h3>
+        <p>Because Edgelume does not require user accounts, emails, or login credentials, we do not store identifying personal records linked to your real identity. To exercise any applicable privacy rights regarding analytics data, please contact us at <strong>contact@tranquilmind.co</strong>. To help us identify your diagnostic records, you may provide your Firebase Installation ID (available in your device App settings or app data inspection). Alternatively, you can permanently delete all local preferences and reset all installation identifiers at any time by clearing the App's data or uninstalling Edgelume from your device.</p>
+        <h2 id="childrens-privacy">8. Children's privacy</h2>
+        <p>Edgelume is a general-audience personalization tool and is <strong>not directed to children under the age of 13</strong> (or under 16 in the European Union and other applicable jurisdictions). We do not knowingly solicit, collect, or process personal information from children under these ages.</p>
+        <p>If you are a parent or legal guardian and believe that your child has provided us with personal information without required parental consent, please contact us immediately at <strong>contact@tranquilmind.co</strong>. Upon receiving verified notification, we will promptly take steps to delete any such data from our records.</p>
+        <h2 id="international-data-transfers">9. International data transfers</h2>
+        <p>Tranquil Mind Technology JSC is based in Vietnam. Our third-party service provider, Google LLC (Firebase), operates servers and data centers located in the United States and globally. As a result, technical diagnostics and aggregated analytics data may be transferred to, stored, and processed in jurisdictions other than your home country.</p>
+        <p>When transferring personal data from the EEA, UK, or Switzerland to countries that have not received an adequacy decision from the relevant regulatory authorities, Google utilizes recognized legal transfer mechanisms, such as European Commission Standard Contractual Clauses (SCCs) and the EU-U.S. Data Privacy Framework, to ensure your information receives an adequate level of data protection.</p>
+        <h2 id="data-security">10. Data security</h2>
+        <p>We implement appropriate technical and organizational security measures to protect the information processed by the App:</p>
+        <ul><li><strong>Encryption in transit:</strong> All network communication between the App and Google Firebase endpoints is encrypted using industry-standard Transport Layer Security (HTTPS/TLS).</li><li><strong>On-device isolation:</strong> Local preferences, presets, and configuration data are stored within the App's secure private sandbox storage using Android standard file permissions, inaccessible to other standard applications.</li><li><strong>No storage of sensitive content:</strong> Sensitive operational states (such as incoming call detection and notification triggers) are processed strictly in volatile memory and never committed to disk.</li></ul>
+        <p>While we take rigorous precautions, no electronic transmission over the internet or mobile system architecture can be guaranteed to be 100% secure. We encourage you to maintain appropriate security protections on your personal device.</p>
+        <h2 id="third-party-content-and-links">11. Third-party content and links</h2>
+        <p>The App may contain links to external third-party websites or services, such as the Google Play Store or our official policy pages. We are not responsible for the content, privacy practices, or policies of third-party websites or services. We encourage you to review the privacy policies of any third-party websites you visit.</p>
+        <h2 id="changes-to-this-privacy-policy">12. Changes to this Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in our legal obligations, features of the App, or third-party SDK requirements. Any updates will be published at our official privacy policy URL:</p>
+        <p><strong>https://policy.tranquilmind.co/edgelume/privacy</strong></p>
+        <p>The "Last updated" date at the top of this document indicates when the latest modifications were made. Your continued use of the App following the posting of an updated Privacy Policy constitutes your acceptance of the revised terms.</p>
+        <h2 id="contact-us">13. Contact us</h2>
+        <p>If you have any questions, concerns, feedback, or requests regarding this Privacy Policy or our data practices, please contact us at:</p>
+        <p><strong>Tranquil Mind Technology JSC</strong> No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
