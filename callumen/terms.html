@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Terms of Service for Callumen — the rules for using the app.">
+    <title>Terms of Service — Callumen</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+        header.site {
+            position: sticky; top: 0; z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px; margin: 0 auto;
+            padding: 14px 24px;
+            display: flex; align-items: center; justify-content: space-between; gap: 16px;
+        }
+        .brand {
+            display: flex; align-items: center; gap: 10px;
+            font-weight: 700; font-size: 15px;
+            color: var(--text); border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #6366f1, var(--accent));
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta { font-size: 13px; color: var(--text-soft); display: flex; gap: 14px; }
+        main.shell {
+            max-width: 1100px; margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid; grid-template-columns: 1fr; gap: 32px;
+        }
+        @media (min-width: 960px) { main.shell { grid-template-columns: 240px 1fr; } }
+        aside.toc {
+            position: sticky; top: 84px; align-self: start;
+            max-height: calc(100vh - 100px); overflow-y: auto;
+            font-size: 13.5px; display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block; text-transform: uppercase;
+            letter-spacing: .08em; font-size: 11px;
+            color: var(--text-soft); margin-bottom: 10px;
+        }
+        aside.toc ol { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+        aside.toc a {
+            display: block; padding: 6px 10px; border-radius: var(--radius-sm);
+            color: var(--text-muted); border-bottom: none; line-height: 1.4;
+        }
+        aside.toc a:hover { background: var(--bg-elev); color: var(--text); }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft); color: var(--accent);
+            font-size: 12px; font-weight: 600;
+            letter-spacing: .04em; text-transform: uppercase;
+            border-radius: 999px; margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px); font-weight: 800;
+            letter-spacing: -0.02em; margin: 0 0 12px; line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px; font-weight: 700; letter-spacing: -0.01em;
+            margin: 38px 0 12px; padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 { font-size: 16px; font-weight: 600; color: var(--text); margin: 22px 0 8px; }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul { margin: 0 0 14px; padding-left: 22px; color: var(--text-muted); }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 8px 18px;
+            font-size: 13.5px; color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev); border: 1px solid var(--border);
+            border-radius: var(--radius-sm); margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px; padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px; color: var(--text-soft);
+            display: flex; justify-content: space-between;
+            flex-wrap: wrap; gap: 8px;
+        }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">T</span>Callumen</a>
+        <div class="nav-meta">
+            <span>Terms of Service</span>
+            <span>·</span>
+            <span>2026-10-14</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#eligibility">1. Eligibility</a></li>
+            <li><a href="#licence">2. Licence</a></li>
+            <li><a href="#the-service">3. The service</a></li>
+            <li><a href="#price-and-advertising">4. Price and advertising</a></li>
+            <li><a href="#acceptable-use">5. Acceptable use</a></li>
+            <li><a href="#intellectual-property">6. Intellectual property</a></li>
+            <li><a href="#third-party-services-and-content">7. Third-party services and content</a></li>
+            <li><a href="#disclaimers">8. Disclaimers</a></li>
+            <li><a href="#limitation-of-liability">9. Limitation of liability</a></li>
+            <li><a href="#indemnification">10. Indemnification</a></li>
+            <li><a href="#termination">11. Termination</a></li>
+            <li><a href="#changes-to-these-terms">12. Changes to these Terms</a></li>
+            <li><a href="#governing-law-and-disputes">13. Governing law and disputes</a></li>
+            <li><a href="#contact">14. Contact</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Terms</span>
+        <h1>Terms of Service</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Callumen</span>
+            <span><strong>Effective:</strong> 2026-10-14</span>
+            <span><strong>Last Updated:</strong> 2026-10-14</span>
+        </div>
+
+        <p>These Terms of Service ("Terms") govern your use of the Callumen mobile application ("the App"), operated by Tranquil Mind Technology JSC ("we", "us", "our"). By downloading or using the App, you agree to these Terms and to our Privacy Policy (https://policy.tranquilmind.co/callumen/privacy). If you do not agree, do not use the App.</p>
+        <h2 id="eligibility">1. Eligibility</h2>
+        <p>You must be at least <strong>16 years old</strong>, or older if the age of digital consent where you live is higher, to use the App. By using the App you represent that you meet this requirement. The App is not directed to children and is not distributed through Google Play's Designed for Families programme.</p>
+        <h2 id="licence">2. Licence</h2>
+        <p>We grant you a personal, limited, non-exclusive, non-transferable, revocable licence to install and use the App on a device you own or control, for your own non-commercial use. You may not copy, modify, translate, adapt, distribute, sell, rent, sublicense, or create derivative works of the App; nor reverse-engineer, decompile or disassemble it, except to the extent that applicable law expressly permits despite this limitation. All rights not expressly granted are reserved.</p>
+        <h2 id="the-service">3. The service</h2>
+        <p>Callumen is a caller-identification, call-screening and message-tracking utility for Android. It matches incoming and searched phone numbers against the contacts saved on your device, lets you maintain your own spam and block lists, keeps a local log of message notifications you have not yet seen, keeps the App's own record of calls it placed or screened, and provides contacts, favourites and dialling shortcuts.</p>
+        <p><strong>What the App is and is not.</strong> Callumen identifies callers using <strong>only</strong> the contacts stored on your own device and the lists you create yourself. It does <strong>not</strong> query any online directory, crowd-sourced database or third-party register of phone numbers, and it therefore <strong>cannot identify a number that you have never saved</strong>. Any expectation that the App will name an unknown caller is outside what the App does.</p>
+        <p><strong>Functional requirements and limits.</strong> Call screening requires Android 10 or later and requires you to set Callumen as your device's default caller-ID and spam application in system settings. Reading message notifications requires you to grant notification access in system settings. Both permissions can be withdrawn by you at any time, which will disable the corresponding feature. Android may restrict background execution or terminate the App to save power, and device manufacturers apply their own power-management rules; we cannot guarantee that every call will be screened or every notification captured.</p>
+        <p><strong>No emergency or safety service.</strong> The App is not an emergency service and must not be relied upon for urgent, safety-critical or life-critical purposes. Blocking a number may prevent you from receiving calls you wanted; you are responsible for the numbers you add to your lists. Always use your device's native dialler for emergency calls.</p>
+        <p>Availability and features may vary by region and may change. We may modify, suspend or discontinue the App or any of its features at any time, with or without notice.</p>
+        <h2 id="price-and-advertising">4. Price and advertising</h2>
+        <p><strong>The App is free to download and free to use.</strong> All of its features — caller identification from your contacts, number lookup, spam and block lists, the unseen-message log, contacts, favourites, reminders and dialling — are available without payment. The App contains <strong>no in-app purchases</strong> and does not process payments; we never receive or store payment-card or bank details.</p>
+        <p><strong>Advertising.</strong> The App is supported by advertising supplied by third-party networks, in banner, native, interstitial and app-open formats. Where you are in the European Economic Area, the United Kingdom or Switzerland, you will be asked for advertising consent when you first open the App and can change that choice later. Advertisements are not created or endorsed by us; see Section 7.</p>
+        <p>If we introduce an optional paid subscription in a future version, it will be processed by <strong>Google Play Billing</strong> and its price, billing period, renewal and cancellation terms will be shown to you on the purchase screen before you confirm, in accordance with Google Play's policies and your mandatory consumer rights.</p>
+        <h2 id="acceptable-use">5. Acceptable use</h2>
+        <p>You agree not to:</p>
+        <ul><li>use the App for any unlawful purpose, or in violation of any applicable telecommunications, anti-harassment, wiretapping or data-protection law;</li><li>use the App to harass, stalk, intimidate or monitor another person, or to access another person's contacts, calls or message notifications without that person's knowledge and consent;</li><li>install or configure the App on a device belonging to someone else in order to observe their communications;</li><li>interfere with, disrupt or place undue load on the App or the services it relies on;</li><li>circumvent, disable or defeat advertising, access controls or licence checks;</li><li>use bots, scrapers, automated tools or emulators to interact with the App or to generate fraudulent advertising impressions or clicks;</li><li>infringe our intellectual property or that of any third party.</li></ul>
+        <p>You are solely responsible for ensuring that your use of the App's notification-reading and call-screening features is lawful where you live. In some jurisdictions, accessing another person's communications without consent is a criminal offence. We may suspend or terminate your access to the App for any violation of this section.</p>
+        <h2 id="intellectual-property">6. Intellectual property</h2>
+        <p>The App, including its source code, design, user interface, graphics, icons, typography and the "Callumen" name and logo, is owned by Tranquil Mind Technology JSC or its licensors and is protected by copyright, trademark and other intellectual-property laws. Third-party names, marks and logos that may appear in or through the App — including those of messaging applications whose notifications the App displays — belong to their respective owners; their appearance does not imply any affiliation with, sponsorship by, or endorsement from those owners.</p>
+        <h2 id="third-party-services-and-content">7. Third-party services and content</h2>
+        <p>The App uses third-party services for advertising, analytics, crash reporting and marketing attribution. These services are listed in our Privacy Policy and each is governed by its own terms and privacy policy. Advertisements shown in the App are selected and served by third-party advertising networks; we do not create, review or endorse them, and tapping one may take you to a third-party website or store listing outside our control. We are not responsible for third-party services, advertisements, websites or content, or for any loss arising from your dealings with them.</p>
+        <p>The App reads notifications delivered to your device by other applications solely to display them to you locally. We have no relationship with, and no control over, those applications.</p>
+        <h2 id="disclaimers">8. Disclaimers</h2>
+        <p>The App is provided <strong>"as is"</strong> and <strong>"as available"</strong>, without warranties of any kind, whether express, implied or statutory, including any implied warranties of merchantability, fitness for a particular purpose, accuracy, or non-infringement, to the fullest extent permitted by law.</p>
+        <p>Without limiting the above, we do not warrant that: the App will identify any particular caller; that spam or unwanted calls will be blocked or silenced; that any notification will be captured or preserved; that the App will operate uninterrupted, error-free or securely; or that defects will be corrected. Caller identification depends entirely on the contents of your own device's address book, and call screening depends on your device's operating system, manufacturer power-management behaviour and system-role settings.</p>
+        <p>Nothing in the App constitutes professional, legal or security advice.</p>
+        <p>Some jurisdictions do not allow the exclusion of implied warranties; in those jurisdictions the above exclusions apply only to the extent permitted.</p>
+        <h2 id="limitation-of-liability">9. Limitation of liability</h2>
+        <p>To the fullest extent permitted by law, Tranquil Mind Technology JSC and its officers, employees and agents will not be liable for any indirect, incidental, special, consequential, exemplary or punitive damages, or for any loss of profits, revenue, data, goodwill or business opportunity, arising out of or in connection with your use of or inability to use the App — including any missed, blocked, screened or unidentified call, or any message notification that was not captured — whether based in contract, tort, negligence, strict liability or any other theory, and whether or not we were advised of the possibility of such damages.</p>
+        <p>Our total aggregate liability for all claims relating to the App will not exceed the greater of (a) the total amount you paid us for the App in the twelve months preceding the event giving rise to the claim, or (b) fifty United States dollars (USD 50).</p>
+        <p>Some jurisdictions do not allow the exclusion or limitation of certain damages; in those jurisdictions our liability is limited to the smallest extent permitted by law, and your mandatory statutory rights as a consumer are not affected.</p>
+        <h2 id="indemnification">10. Indemnification</h2>
+        <p>You agree to indemnify, defend and hold harmless Tranquil Mind Technology JSC and its officers, employees and agents from and against any claims, liabilities, damages, losses and expenses, including reasonable legal fees, arising out of or in any way connected with your misuse of the App, your violation of these Terms, or your violation of any law or the rights of a third party — including any claim arising from your use of the App to access another person's contacts, calls or message notifications without their consent.</p>
+        <h2 id="termination">11. Termination</h2>
+        <p>You may stop using the App at any time by uninstalling it. We may suspend or terminate your access to the App at any time, with or without notice, including for breach of these Terms. On termination, the licence granted in Section 2 ends immediately. Sections 6, 7, 8, 9, 10, 13 and any other provision that by its nature should survive will survive termination.</p>
+        <h2 id="changes-to-these-terms">12. Changes to these Terms</h2>
+        <p>We may update these Terms from time to time. When we do, we will change the "Last updated" date at the top and post the revised Terms at this URL. For material changes we will provide additional notice within the App where practicable. Your continued use of the App after a change takes effect constitutes acceptance of the revised Terms. If you do not accept the revised Terms, stop using the App and uninstall it.</p>
+        <h2 id="governing-law-and-disputes">13. Governing law and disputes</h2>
+        <p>These Terms are governed by the laws of <strong>Vietnam</strong>, without regard to its conflict-of-laws rules. Any dispute arising out of or in connection with these Terms or the App will be submitted to the competent courts of <strong>Hanoi, Vietnam</strong>.</p>
+        <p>If you are a consumer resident in the European Union, the United Kingdom, or another jurisdiction whose law grants you the right to bring proceedings in your country of residence or to the protection of mandatory local consumer rules, nothing in this section deprives you of that right or of those protections.</p>
+        <h2 id="contact">14. Contact</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
