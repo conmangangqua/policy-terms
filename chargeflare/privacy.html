@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Privacy Policy for Chargeflare — how we collect, use, and protect your data.">
+    <title>Privacy Policy — Chargeflare</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        header.site {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+            border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #6366f1);
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta {
+            font-size: 13px;
+            color: var(--text-soft);
+            display: flex; gap: 14px;
+        }
+        main.shell {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        @media (min-width: 960px) {
+            main.shell { grid-template-columns: 240px 1fr; }
+        }
+        aside.toc {
+            position: sticky;
+            top: 84px;
+            align-self: start;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            font-size: 13.5px;
+            display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: 11px;
+            color: var(--text-soft);
+            margin-bottom: 10px;
+        }
+        aside.toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        aside.toc a {
+            display: block;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            color: var(--text-muted);
+            border-bottom: none;
+            line-height: 1.4;
+        }
+        aside.toc a:hover {
+            background: var(--bg-elev);
+            color: var(--text);
+        }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 38px 0 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 22px 0 8px;
+        }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul {
+            margin: 0 0 14px;
+            padding-left: 22px;
+            color: var(--text-muted);
+        }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            font-size: 13.5px;
+            color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px;
+            color: var(--text-soft);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+        .table-wrap { border: 1px solid var(--border); border-radius: var(--radius-sm); overflow-x: auto; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; margin: 0; font-size: 14px; }
+        thead th { text-align: left; font-weight: 600; color: var(--text); background: var(--bg-elev); padding: 10px 12px; border-bottom: 1px solid var(--border); }
+        tbody td { padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
+        tbody tr:last-child td { border-bottom: none; }
+        .callout { background: var(--bg-elev); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: var(--radius-sm); padding: 12px 16px; margin: 0 0 16px; color: var(--text-muted); }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">P</span>Chargeflare</a>
+        <div class="nav-meta">
+            <span>Privacy Policy</span>
+            <span>·</span>
+            <span>2026-10-15</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#information-we-collect">1. Information we collect</a></li>
+            <li><a href="#how-we-use-information">2. How we use information</a></li>
+            <li><a href="#third-party-services">3. Third-party services</a></li>
+            <li><a href="#how-we-share-information">4. How we share information</a></li>
+            <li><a href="#legal-bases">5. Legal bases (EEA/UK — GDPR)</a></li>
+            <li><a href="#data-retention">6. Data retention</a></li>
+            <li><a href="#your-rights">7. Your rights</a></li>
+            <li><a href="#childrens-privacy">8. Children&#x27;s privacy</a></li>
+            <li><a href="#international-data-transfers">9. International data transfers</a></li>
+            <li><a href="#data-security">10. Data security</a></li>
+            <li><a href="#changes-to-this-policy">11. Changes to this Policy</a></li>
+            <li><a href="#contact-us">12. Contact us</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Privacy</span>
+        <h1>Privacy Policy</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Chargeflare</span>
+            <span><strong>Effective:</strong> 2026-10-15</span>
+            <span><strong>Last Updated:</strong> 2026-10-15</span>
+        </div>
+
+        <p>Chargeflare ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information we collect, how we use and share it, and the choices and rights you have. By using the App, you agree to this Policy.</p>
+        <p>Chargeflare plays a full-screen charging animation when you plug in your device, shows battery information, and lets you set wallpapers. You do not need to create an account to use it, and the App has no login, no advertising SDK and no in-app purchases.</p>
+        <h2 id="information-we-collect">1. Information we collect</h2>
+        <p><strong>Information you provide</strong> Nothing. The App has no account, no sign-up form, no profile and no user-generated content upload.</p>
+        <p><strong>Information collected automatically</strong></p>
+        <div class="table-wrap"><table><thead><tr><th>Data</th><th>Why it is collected</th><th>Leaves your device?</th></tr></thead><tbody><tr><td>Crash reports and diagnostics (stack traces, device model, OS version, app version, Firebase installation identifier)</td><td>Detect and fix crashes (Firebase Crashlytics)</td><td>Yes</td></tr><tr><td>App usage events and device/app information (screens opened, session length, app instance identifier, device model, OS version, language, country, and on Android the advertising identifier where available)</td><td>Understand which features are used and improve the App (Firebase Analytics)</td><td>Yes</td></tr><tr><td>Approximate location (coarse latitude/longitude) — <strong>only if</strong> you turn on the weather display and grant the location permission</td><td>Fetch the current temperature for your area from Open-Meteo</td><td>Yes (coordinates only)</td></tr></tbody></table></div>
+        <p><strong>Information that stays on your device</strong> Your selected charging animation, the wallpapers you choose, notification and display preferences, the cached weather result, and battery readings (level, charging state, temperature) are stored locally on your device (local database and app preferences). Battery data is read on-device to drive the animation and the battery info screen; it is not uploaded to us.</p>
+        <p>The App does not collect your name, email address, phone number, contacts, photos library, microphone, camera or precise GPS location.</p>
+        <h2 id="how-we-use-information">2. How we use information</h2>
+        <ul><li>Provide and operate the App: show the charging animation, battery information and wallpapers.</li><li>Remember your preferences between sessions.</li><li>Diagnose crashes and fix bugs (Crashlytics).</li><li>Measure aggregate feature usage so we can improve the App (Analytics).</li><li>Show local weather in the charging screen, if you enable it.</li><li>Security, fraud prevention and compliance with legal obligations.</li></ul>
+        <p>We do <strong>not</strong> use your information for advertising or ad targeting: the App contains no advertising SDK.</p>
+        <h2 id="third-party-services">3. Third-party services</h2>
+        <p>These are the only third parties that receive data from the App:</p>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Provider</th><th>Purpose</th><th>Data received</th><th>Policy</th></tr></thead><tbody><tr><td>Firebase Crashlytics</td><td>Google LLC</td><td>Crash reporting and stability diagnostics</td><td>Crash logs, device &amp; app info, Firebase installation ID</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td></tr><tr><td>Firebase Analytics</td><td>Google LLC</td><td>Aggregate product analytics</td><td>App usage events, app instance ID, device &amp; app info, advertising ID where available</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td></tr><tr><td>Open-Meteo weather API</td><td>Open-Meteo (Zurich, Switzerland)</td><td>Return current temperature for the requested coordinates</td><td>Approximate latitude/longitude only, sent at request time; no identifier is attached</td><td><a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Open-Meteo Terms &amp; Privacy</a></td></tr><tr><td>Google Play services / Google Play Store</td><td>Google LLC</td><td>App distribution and updates; the in-app "rate the app" link opens your store listing</td><td>Handled by Google under its own policy</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td></tr></tbody></table></div>
+        <p>There is <strong>no</strong> advertising network, no ad-mediation SDK, no attribution SDK (such as Adjust or AppsFlyer), no payment processing and no social login in the App.</p>
+        <h2 id="how-we-share-information">4. How we share information</h2>
+        <p>We do not sell your personal information for money, and we do not share it for cross-context behavioural advertising or targeted advertising. We share data only:</p>
+        <ul><li>with the service providers listed in Section 3, for the purposes stated there;</li><li>when required by law, legal process, or a valid government request;</li><li>to protect our rights, users' safety, or investigate fraud or abuse;</li><li>in connection with a merger, acquisition or asset transfer, where this Policy will continue to apply to the transferred data.</li></ul>
+        <h2 id="legal-bases">5. Legal bases (EEA/UK — GDPR)</h2>
+        <ul><li><strong>Legitimate interests</strong> — operating the App, keeping it stable and secure, and improving it through aggregate analytics.</li><li><strong>Consent</strong> — the approximate-location/weather feature (you grant the OS permission), notifications, and analytics where local law requires consent. You can withdraw consent at any time in your device settings.</li><li><strong>Legal obligation</strong> — retaining records where law requires.</li></ul>
+        <h2 id="data-retention">6. Data retention</h2>
+        <ul><li>Crash reports: retained by Firebase Crashlytics for up to 90 days (Google's standard retention).</li><li>Analytics events: retained according to our Firebase Analytics retention setting, by default up to 14 months, then deleted or aggregated.</li><li>Approximate location: used in the moment of the request to Open-Meteo and not stored by us; the resulting temperature is cached only on your device for up to 30 minutes.</li><li>On-device preferences: kept until you clear the app data or uninstall the App.</li></ul>
+        <h2 id="your-rights">7. Your rights</h2>
+        <p><strong>EEA/UK (GDPR):</strong> access, rectification, erasure, portability, restriction, objection, withdrawal of consent, and the right to complain to your supervisory authority.</p>
+        <p><strong>California (CCPA/CPRA):</strong> the right to know, delete, and correct personal information, the right to opt out of sale or sharing (we do neither), and the right not to be discriminated against for exercising these rights.</p>
+        <p><strong>Other regions (LGPD, PIPEDA, and similar laws):</strong> equivalent rights to access, correct and delete your data.</p>
+        <p>Because the App has no account, we cannot identify you by name. To exercise a right, email us at <strong>contact@tranquilmind.co</strong> and include your device model, OS version and, if available, your Android advertising ID, so we can locate any related records. You can also:</p>
+        <ul><li>revoke the location permission in Android Settings → Apps → Chargeflare → Permissions;</li><li>turn off notifications in Android Settings → Apps → Chargeflare → Notifications;</li><li>reset or delete your advertising ID in Android Settings → Privacy → Ads;</li><li>delete all locally stored data by clearing app data or uninstalling the App.</li></ul>
+        <h2 id="childrens-privacy">8. Children's privacy</h2>
+        <p>The App is intended for users aged <strong>13 and over</strong> and is not directed to children. We do not knowingly collect personal information from children under 13 (or under the applicable age of digital consent in the EEA/UK). If you believe a child has provided information to us, contact <strong>contact@tranquilmind.co</strong> and we will delete it.</p>
+        <h2 id="international-data-transfers">9. International data transfers</h2>
+        <p>Our service providers (Google, Open-Meteo) may process data outside your country, including in the United States and the European Union. Where required, transfers rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses.</p>
+        <h2 id="data-security">10. Data security</h2>
+        <p>Data transmitted by the App is sent over encrypted connections (HTTPS/TLS). We apply reasonable technical and organisational measures to protect information. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
+        <h2 id="changes-to-this-policy">11. Changes to this Policy</h2>
+        <p>We may update this Policy. Material changes will be posted on this page with a new "Last updated" date. Continued use of the App after an update means you accept the revised Policy.</p>
+        <h2 id="contact-us">12. Contact us</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
