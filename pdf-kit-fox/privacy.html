@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Privacy Policy for PDF Kit Fox — how we collect, use, and protect your data.">
+    <title>Privacy Policy — PDF Kit Fox</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        header.site {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+            border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #6366f1);
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta {
+            font-size: 13px;
+            color: var(--text-soft);
+            display: flex; gap: 14px;
+        }
+        main.shell {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        @media (min-width: 960px) {
+            main.shell { grid-template-columns: 240px 1fr; }
+        }
+        aside.toc {
+            position: sticky;
+            top: 84px;
+            align-self: start;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            font-size: 13.5px;
+            display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: 11px;
+            color: var(--text-soft);
+            margin-bottom: 10px;
+        }
+        aside.toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        aside.toc a {
+            display: block;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            color: var(--text-muted);
+            border-bottom: none;
+            line-height: 1.4;
+        }
+        aside.toc a:hover {
+            background: var(--bg-elev);
+            color: var(--text);
+        }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 38px 0 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 22px 0 8px;
+        }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul {
+            margin: 0 0 14px;
+            padding-left: 22px;
+            color: var(--text-muted);
+        }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            font-size: 13.5px;
+            color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px;
+            color: var(--text-soft);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 0 20px;
+            font-size: 14px;
+        }
+        thead th {
+            text-align: left;
+            font-weight: 600;
+            color: var(--text);
+            background: var(--bg-elev);
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        tbody td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+            vertical-align: top;
+        }
+        tbody tr:last-child td { border-bottom: none; }
+        .table-wrap {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        .table-wrap table { margin: 0; }
+        .callout {
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
+            margin: 0 0 16px;
+            color: var(--text-muted);
+        }
+        .callout strong { color: var(--text); }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">P</span>PDF Kit Fox</a>
+        <div class="nav-meta">
+            <span>Privacy Policy</span>
+            <span>·</span>
+            <span>2026-10-16</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#information-we-collect">1. Information we collect</a></li>
+            <li><a href="#how-we-use-information">2. How we use information</a></li>
+            <li><a href="#third-party-services">3. Third-party services</a></li>
+            <li><a href="#how-we-share-information">4. How we share information</a></li>
+            <li><a href="#legal-bases">5. Legal bases (EEA/UK — GDPR)</a></li>
+            <li><a href="#data-retention">6. Data retention</a></li>
+            <li><a href="#your-rights">7. Your rights</a></li>
+            <li><a href="#childrens-privacy">8. Children&#x27;s privacy</a></li>
+            <li><a href="#international-data-transfers">9. International data transfers</a></li>
+            <li><a href="#data-security">10. Data security</a></li>
+            <li><a href="#third-party-content">11. Third-party content</a></li>
+            <li><a href="#changes-to-this-policy">12. Changes to this Policy</a></li>
+            <li><a href="#contact-us">13. Contact us</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Privacy</span>
+        <h1>Privacy Policy</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> PDF Kit Fox</span>
+            <span><strong>Effective:</strong> 2026-10-16</span>
+            <span><strong>Last Updated:</strong> 2026-10-16</span>
+        </div>
+
+        <p>PDF Kit Fox ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information we collect, how we use and share it, and the choices and rights you have. By using the App, you agree to this Policy.</p>
+        <p>PDF Kit Fox is a PDF scanner, viewer and editor: you can scan paper documents with the camera, convert between images and PDF, merge, split, lock and unlock PDF files, add text, images, watermarks, highlights, freehand drawing and handwritten signatures, and open PDF, Word, Excel, PowerPoint, text and image files stored on your device. You do not need to create an account to use it: the App has no login and no user profile. The App is free to download, is supported by advertising, and offers an optional weekly subscription that removes ads and unlocks premium features.</p>
+        <h2 id="information-we-collect">1. Information we collect</h2>
+        <p><strong>Information you provide</strong> The App has no account, no sign-up form and no user profile. If you contact us by email for support, we receive your email address and the content of your message.</p>
+        <p><strong>Collected automatically and sent to our service providers (Google Firebase):</strong></p>
+        <ul><li><strong>App usage (app interactions)</strong> — which screens and tools are opened and how often, collected through Firebase Analytics.</li><li><strong>Crash logs and diagnostics</strong> — crash reports, error traces and technical performance data, collected through Firebase Crashlytics.</li><li><strong>Device and app identifiers</strong> — the Firebase app instance / installation identifier, used to count unique installations, deliver remote configuration and group crash reports.</li><li><strong>Push token</strong> — a Firebase Cloud Messaging registration token, so the App can receive notifications (you can turn notifications off in your device settings).</li><li><strong>Device information</strong> — device model, operating system version, language setting and App version.</li><li><strong>Approximate location</strong> — Firebase Analytics derives a coarse location (country or city level) from your IP address for aggregate usage statistics. The App does <strong>not</strong> request any location permission and never accesses your GPS location.</li></ul>
+        <p><strong>Collected automatically and sent to our advertising and attribution partners:</strong></p>
+        <ul><li><strong>Advertising ID</strong> — your Android advertising ID (and on iOS, the IDFA only if you allow tracking in the App Tracking Transparency prompt), plus identifiers generated by our advertising and attribution partners, used to serve and measure ads and to attribute app installs.</li><li><strong>Ad interaction and performance data</strong> — ad requests, impressions, clicks, ad revenue estimates and the ad format and placement shown, collected by Google AdMob, the mediation networks it selects, and Adjust.</li><li><strong>Network and device information</strong> — IP address, device model, operating system version, language, screen size, network type and time zone, used for ad delivery, frequency capping, fraud prevention and diagnostics.</li><li><strong>Approximate location derived from your IP address</strong> — coarse (country or region-level) location inferred by our advertising partners from your IP address.</li><li><strong>Install attribution data</strong> — referral and campaign information (for example the Google Play install referrer) collected by Adjust to measure which marketing campaign brought you to the App.</li><li><strong>Ad consent choice</strong> — your choices from the Google User Messaging Platform (UMP) consent form, stored on your device in IAB TCF format and passed to our advertising partners.</li></ul>
+        <p><strong>Purchase data</strong> If you buy the optional weekly subscription, the purchase is processed by <strong>Google Play Billing</strong> (Android) or the <strong>Apple App Store</strong> (iOS). We never see or receive your card or payment details; we only receive the purchase/subscription status needed to unlock premium features.</p>
+        <p><strong>Processed only on your device (never uploaded to us):</strong></p>
+        <ul><li><strong>Your documents</strong> — every PDF, Word, Excel, PowerPoint, text and image file you open, scan, convert, merge, split, lock, unlock, edit or sign is processed <strong>entirely on your device</strong>. We operate no document server: your files, their contents, the passwords you set on a PDF and the signatures you draw are <strong>never uploaded to us or to any third party</strong>.</li><li><strong>Camera</strong> (permission <code>CAMERA</code>, only when you use Scan to PDF) — the camera preview and the captured page are used on-device to build the PDF, and the result is saved to your device storage. We do not upload, store or share camera images.</li><li><strong>Photos you pick</strong> — images you select through the system photo picker are converted to PDF on your device. The App does not request broad media-library permissions.</li><li><strong>Device storage</strong> (<code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>, <code>MANAGE_EXTERNAL_STORAGE</code> on Android) — used to list, open and save documents and to let you manage the files you create. The App reads a file only when you select it or open it with the App; file contents are never transmitted.</li><li><strong>App settings, bookmarks and recent files</strong> — your language, theme, bookmarks and recent-file list are stored locally (local database and app preferences).</li><li><strong>Notifications</strong> (<code>POST_NOTIFICATIONS</code>) — the App may show local reminder notifications, scheduled on your device.</li></ul>
+        <p>The App does not collect your name, phone number, contacts, call logs, microphone audio, message content, health data or precise GPS location.</p>
+        <h2 id="how-we-use-information">2. How we use information</h2>
+        <ul><li>To provide and operate the App's scanning, viewing, conversion, merge/split, password, editing and signing features.</li><li>To remember your preferences, bookmarks and recent files between sessions.</li><li>To display advertising in the free version, and to measure and optimise ad performance and revenue.</li><li>To measure marketing campaigns and app-install attribution (Adjust).</li><li>To process and restore your subscription and to remove ads for subscribers.</li><li>To understand how the App is used and improve it (analytics), and to deliver remote configuration of features and ad placements.</li><li>To detect, diagnose and fix crashes and errors (diagnostics).</li><li>To detect and prevent invalid traffic, ad fraud and abuse.</li><li>To answer support requests you send us, and to comply with legal obligations.</li></ul>
+        <p>We do <strong>not</strong> use the content of your documents for advertising, analytics, profiling or AI training. Document content never leaves your device.</p>
+        <h2 id="third-party-services">3. Third-party services</h2>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Data</th><th>Policy</th></tr></thead><tbody><tr><td>Google Firebase Analytics</td><td>Usage analytics</td><td>App interactions, app instance ID, device info, IP-derived approximate location</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google Firebase Crashlytics</td><td>Crash reporting and diagnostics</td><td>Crash logs, diagnostics, device info, installation ID</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google Firebase Remote Config</td><td>Remotely configures features and ad placements</td><td>App instance ID, device and app info</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google Firebase Cloud Messaging</td><td>Delivers push notifications</td><td>Push registration token, device info</td><td>https://firebase.google.com/support/privacy</td></tr><tr><td>Google Play services / Google Play Store</td><td>App distribution and updates</td><td>As described by Google</td><td>https://policies.google.com/privacy</td></tr><tr><td>Google Play Billing</td><td>Processes the optional subscription</td><td>Purchase and subscription status (no card details reach us)</td><td>https://policies.google.com/privacy</td></tr><tr><td>Google Play In-App Review</td><td>Lets you rate the App without leaving it</td><td>Handled by Google Play; we only learn that the review flow was shown</td><td>https://policies.google.com/privacy</td></tr><tr><td>Google AdMob (Google Mobile Ads SDK)</td><td>Serves and measures banner, native, interstitial and app-open ads</td><td>Advertising ID, ad interactions, IP address and IP-derived approximate location, device info</td><td>https://policies.google.com/technologies/ads</td></tr><tr><td>Google User Messaging Platform (UMP)</td><td>Collects and stores your consent choice for ads (IAB TCF)</td><td>Consent string stored on your device, device info</td><td>https://policies.google.com/privacy</td></tr><tr><td>Adjust GmbH</td><td>App-install attribution, ad-revenue and event measurement</td><td>Advertising ID, IP address, device info, install referrer, ad revenue and ad impression events</td><td>https://www.adjust.com/terms/privacy-policy/</td></tr><tr><td>Meta Audience Network / Meta (Facebook) SDK</td><td>Ad mediation network and ad/app-event measurement</td><td>Advertising ID, ad interactions, IP address, device info</td><td>https://www.facebook.com/privacy/policy</td></tr><tr><td>Mintegral</td><td>Ad mediation network</td><td>Advertising ID, ad interactions, IP address, device info</td><td>https://www.mintegral.com/en/privacy/</td></tr><tr><td>Pangle (ByteDance)</td><td>Ad mediation network</td><td>Advertising ID, ad interactions, IP address, device info</td><td>https://www.pangleglobal.com/privacy/enduser</td></tr><tr><td>Apple App Store (iOS)</td><td>App distribution and subscription processing</td><td>Purchase and subscription status, handled by Apple</td><td>https://www.apple.com/legal/privacy/</td></tr></tbody></table></div>
+        <p>Firebase and Google Play act as our service providers and process data on our behalf. Ads in the App are served by Google AdMob together with the mediation networks listed above; a mediation network receives data only when AdMob selects it to fill an ad request, so not every network listed will receive data from every device. There is <strong>no</strong> document-processing server, no cloud storage and no social login in the App.</p>
+        <p><strong>Ad consent (EEA/UK and other regions where required).</strong> The App shows the Google User Messaging Platform (UMP) consent form, which asks for your choices about personalised advertising under the IAB Transparency &amp; Consent Framework. Your choice is stored on your device and passed to our advertising partners. To change or withdraw your choice you can clear the App's data (Android Settings → Apps → PDF Kit Fox → Storage → Clear data) or reinstall the App, after which the form is shown again.</p>
+        <p><strong>App Tracking Transparency (iOS).</strong> On iOS the App asks for your permission before tracking you across apps and websites. If you decline, the IDFA is not used and you will still see ads, but they will not be personalised.</p>
+        <p><strong>Advertising ID choices (Android).</strong> You can reset or delete your device's advertising ID at any time in your device settings (Settings → Privacy → Ads, or Settings → Google → Ads), and opt out of Ads Personalisation there. If you delete your advertising ID or opt out, the App will still show ads, but they will not be personalised.</p>
+        <h2 id="how-we-share-information">4. How we share information</h2>
+        <p>We do not sell your personal information for money, and we never share the content of your documents with anyone. Information is shared only:</p>
+        <ul><li>with the service providers and advertising partners listed above;</li><li>when required by law, or to protect the rights, property or safety of our users, the public or us;</li><li>as part of a business transfer (merger, acquisition or sale of assets), subject to this Policy.</li></ul>
+        <p>Where you allow personalised advertising, we share your advertising ID and ad-interaction data with advertising partners so they can show you more relevant ads. Under some U.S. state privacy laws (for example the CCPA/CPRA in California) this may be considered a "sale" or "sharing" of personal information for cross-context behavioural advertising. You can opt out at any time by declining personalised ads in the consent form, or by opting out of Ads Personalisation in your device settings. We do not knowingly sell or share the personal information of users under 16.</p>
+        <h2 id="legal-bases">5. Legal bases (EEA/UK — GDPR)</h2>
+        <ul><li><strong>Consent</strong> — for personalised advertising and, where local law requires it, for analytics and notifications; collected through the UMP consent form (and the App Tracking Transparency prompt on iOS) and withdrawable as described in Section 3.</li><li><strong>Contract</strong> — processing your subscription purchase and providing premium features.</li><li><strong>Legitimate interests</strong> — operating the App, keeping it secure, fixing crashes, measuring installs and showing non-personalised advertising to fund the free version.</li><li><strong>Legal obligation</strong> — where we must keep or disclose information by law.</li></ul>
+        <h2 id="data-retention">6. Data retention</h2>
+        <p>Analytics data is kept according to Google Firebase retention settings (up to 14 months) and crash reports for up to 90 days, after which they are deleted or aggregated. Advertising and attribution data is kept by Google AdMob, Adjust and the mediation networks according to their own retention schedules (typically up to 24 months). Your documents, bookmarks, recent files, settings and ad-consent choice stay on your device until you delete them, clear the App's data or uninstall the App. Support emails are kept only as long as needed to handle your request.</p>
+        <h2 id="your-rights">7. Your rights</h2>
+        <p>Depending on where you live, you may have the right to access, correct, delete or port your personal data, to object to or restrict processing, to withdraw consent, and to lodge a complaint with a data-protection authority (GDPR/UK GDPR). California residents have the right to know, delete and correct personal information, to opt out of the sale or sharing of personal information and of targeted advertising, and to non-discrimination for exercising these rights (CCPA/CPRA). Similar rights apply under LGPD (Brazil), PIPEDA (Canada) and other laws.</p>
+        <p><strong>How to request deletion or access:</strong> email <strong>contact@tranquilmind.co</strong> with the subject "Privacy request – PDF Kit Fox". Because the App has no accounts, please include your device model, the approximate dates you used the App and, if you can, your device's advertising ID, so we can locate related analytics, advertising and crash records. We will respond within the time required by applicable law (normally 30 days). You can delete everything the App holds on your device by clearing the App's data or uninstalling it, and you can stop all future collection at any time by uninstalling the App.</p>
+        <h2 id="childrens-privacy">8. Children's privacy</h2>
+        <p>The App is intended for users aged <strong>13 and older</strong> and is not directed to children. We do not knowingly collect personal information from children under 13 (or the higher age of digital consent in your country, such as 16 in parts of the EEA). We do not request personalised advertising for users we know to be below the applicable age of consent. If you believe a child has provided us with personal information, contact us and we will delete it.</p>
+        <h2 id="international-data-transfers">9. International data transfers</h2>
+        <p>Our service providers and advertising partners may process information in countries other than yours, including the United States. Where required, transfers are protected by appropriate safeguards such as the European Commission's Standard Contractual Clauses.</p>
+        <h2 id="data-security">10. Data security</h2>
+        <p>Data sent to our service providers is encrypted in transit (HTTPS/TLS), and we take reasonable technical and organisational measures to protect it. Your documents are processed locally and are protected by your device's own security; passwords you set on a PDF are applied to the file itself and are not stored by us or recoverable by us. No method of transmission or storage is completely secure.</p>
+        <h2 id="third-party-content">11. Third-party content</h2>
+        <p>Advertising shown in the App may link to third-party websites or app listings that we do not control; their own privacy policies apply once you leave the App. Documents you open may contain links to third-party sites, which we likewise do not control.</p>
+        <h2 id="changes-to-this-policy">12. Changes to this Policy</h2>
+        <p>We may update this Policy from time to time. Material changes will be posted on this page with a new "Last updated" date. Continued use of the App after changes means you accept the updated Policy.</p>
+        <h2 id="contact-us">13. Contact us</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
