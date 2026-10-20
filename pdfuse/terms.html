@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Terms of Service for PDFuse — the rules for using the app.">
+    <title>Terms of Service — PDFuse</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+        header.site {
+            position: sticky; top: 0; z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px; margin: 0 auto;
+            padding: 14px 24px;
+            display: flex; align-items: center; justify-content: space-between; gap: 16px;
+        }
+        .brand {
+            display: flex; align-items: center; gap: 10px;
+            font-weight: 700; font-size: 15px;
+            color: var(--text); border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #6366f1, var(--accent));
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta { font-size: 13px; color: var(--text-soft); display: flex; gap: 14px; }
+        main.shell {
+            max-width: 1100px; margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid; grid-template-columns: 1fr; gap: 32px;
+        }
+        @media (min-width: 960px) { main.shell { grid-template-columns: 240px 1fr; } }
+        aside.toc {
+            position: sticky; top: 84px; align-self: start;
+            max-height: calc(100vh - 100px); overflow-y: auto;
+            font-size: 13.5px; display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block; text-transform: uppercase;
+            letter-spacing: .08em; font-size: 11px;
+            color: var(--text-soft); margin-bottom: 10px;
+        }
+        aside.toc ol { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+        aside.toc a {
+            display: block; padding: 6px 10px; border-radius: var(--radius-sm);
+            color: var(--text-muted); border-bottom: none; line-height: 1.4;
+        }
+        aside.toc a:hover { background: var(--bg-elev); color: var(--text); }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft); color: var(--accent);
+            font-size: 12px; font-weight: 600;
+            letter-spacing: .04em; text-transform: uppercase;
+            border-radius: 999px; margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px); font-weight: 800;
+            letter-spacing: -0.02em; margin: 0 0 12px; line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px; font-weight: 700; letter-spacing: -0.01em;
+            margin: 38px 0 12px; padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 { font-size: 16px; font-weight: 600; color: var(--text); margin: 22px 0 8px; }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul { margin: 0 0 14px; padding-left: 22px; color: var(--text-muted); }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 8px 18px;
+            font-size: 13.5px; color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev); border: 1px solid var(--border);
+            border-radius: var(--radius-sm); margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px; padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px; color: var(--text-soft);
+            display: flex; justify-content: space-between;
+            flex-wrap: wrap; gap: 8px;
+        }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">T</span>PDFuse</a>
+        <div class="nav-meta">
+            <span>Terms of Service</span>
+            <span>·</span>
+            <span>2026-10-20</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#eligibility">1. Eligibility</a></li>
+            <li><a href="#license">2. License</a></li>
+            <li><a href="#the-service">3. The service</a></li>
+            <li><a href="#your-documents-and-your-responsibility">4. Your documents and your responsibility</a></li>
+            <li><a href="#premium-plans-and-payments">5. Premium plans and payments</a></li>
+            <li><a href="#advertising">6. Advertising</a></li>
+            <li><a href="#acceptable-use">7. Acceptable use</a></li>
+            <li><a href="#intellectual-property">8. Intellectual property</a></li>
+            <li><a href="#third-party-services">9. Third-party services</a></li>
+            <li><a href="#disclaimers">10. Disclaimers</a></li>
+            <li><a href="#limitation-of-liability">11. Limitation of liability</a></li>
+            <li><a href="#indemnification">12. Indemnification</a></li>
+            <li><a href="#termination">13. Termination</a></li>
+            <li><a href="#changes-to-these-terms">14. Changes to these Terms</a></li>
+            <li><a href="#governing-law-and-disputes">15. Governing law and disputes</a></li>
+            <li><a href="#contact">16. Contact</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Terms</span>
+        <h1>Terms of Service</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> PDFuse</span>
+            <span><strong>Effective:</strong> 2026-10-20</span>
+            <span><strong>Last Updated:</strong> 2026-10-20</span>
+        </div>
+
+        <p>These Terms of Service ("Terms") govern your use of the PDFuse mobile application ("the App"), operated by Tranquil Mind Technology JSC ("we", "us", "our"). By downloading or using the App, you agree to these Terms and to our Privacy Policy (https://policy.tranquilmind.co/pdfuse/privacy). If you do not agree, do not use the App.</p>
+        <h2 id="eligibility">1. Eligibility</h2>
+        <p>You must be at least 13 years old (or the higher age of digital consent in your country) to use the App.</p>
+        <h2 id="license">2. License</h2>
+        <p>We grant you a personal, limited, non-exclusive, non-transferable and revocable license to use the App. You may not copy, modify, distribute, sell, decompile or reverse-engineer the App except as permitted by law.</p>
+        <h2 id="the-service">3. The service</h2>
+        <p>PDFuse is a document utility: it scans paper with your camera into PDF, turns photos into PDF, merges and splits PDF files, exports pages as separate images or as one long image, locks and unlocks password-protected PDFs you own, lets you add text, images, watermarks, highlights and freehand drawing, lets you add a handwritten signature, and opens PDF, Word, Excel, PowerPoint, text and image files with bookmarks, recent files, an optional home-screen widget, printing and sharing.</p>
+        <p>All document processing happens <strong>on your device</strong>. We operate no document server and never receive, store or transmit your files. You are solely responsible for keeping your own backups: if you delete a file, clear the App's data or uninstall the App, we cannot recover anything for you.</p>
+        <p>Features depend on your device hardware, operating system version and the permissions you grant. We may modify, suspend or discontinue any part of the App at any time.</p>
+        <h2 id="your-documents-and-your-responsibility">4. Your documents and your responsibility</h2>
+        <p>You keep all rights in the documents you create, open, edit or sign with the App. You are responsible for having the legal right to open, modify, unlock, sign or share each document you use with the App, including any document protected by a password, copyright or confidentiality obligation. You agree not to use the App to remove protection from files you do not own or are not authorised to access.</p>
+        <p><strong>Signatures.</strong> A handwritten signature image you add with the App is a visual mark on the document. It is not a certified or qualified electronic signature, and we make no representation that a document signed with the App will be legally binding, admissible or accepted in any particular jurisdiction or by any particular counterparty. Where a certified signature is required, use a qualified provider.</p>
+        <p><strong>Passwords.</strong> When you lock a PDF, the password is applied to the file itself. We do not store, escrow or recover passwords. If you lose a password, the file cannot be opened by us or by anyone else.</p>
+        <h2 id="premium-plans-and-payments">5. Premium plans and payments</h2>
+        <p>The App is free to download and offers optional premium plans that remove ads and unlock premium features:</p>
+        <ul><li>a <strong>weekly auto-renewing subscription</strong>, including a free-trial period where offered;</li><li>a <strong>yearly auto-renewing subscription</strong>;</li><li>a <strong>lifetime</strong> one-time purchase, which does not renew and does not expire.</li></ul>
+        <p>Terms that apply:</p>
+        <ul><li>Purchases are processed by <strong>Google Play Billing</strong>. We never receive your payment-card details.</li><li>Payment is charged to your Google Play account at confirmation of purchase.</li><li>The weekly and yearly subscriptions <strong>renew automatically</strong> at the end of each period unless you cancel at least 24 hours before the current period ends. Your account is charged for renewal within 24 hours before the end of the current period.</li><li>Where a free trial is offered, any unused part of the trial is forfeited when you buy a subscription.</li><li>The <strong>lifetime</strong> purchase is a one-time payment for the premium features available in the App; it is tied to the store account used to buy it, is not a subscription, and is not transferable between accounts. "Lifetime" means for as long as the App is available and operated by us; it does not guarantee any specific future feature.</li><li><strong>Manage or cancel</strong> a subscription in Google Play → Subscriptions. Uninstalling the App does <strong>not</strong> cancel a subscription.</li><li>You can <strong>restore</strong> a previous purchase on a new device by signing in with the same Google Play account and using the restore option in the App.</li><li>Refunds are handled by Google Play under its own policies; we cannot issue store refunds directly.</li><li>Prices may change; we will tell you in advance and any change applies only to future periods, never to a purchase already made.</li></ul>
+        <h2 id="advertising">6. Advertising</h2>
+        <p>The free version is funded by advertising. Ads are served by Google AdMob and the mediation networks it selects, and may appear as banners, native ads placed within screens, full-screen (interstitial) ads between actions, and app-open ads when you launch or return to the App.</p>
+        <p>We do not control the content of third-party ads and are not responsible for the products, services or websites they promote; you interact with advertisers at your own risk. Interfering with ad delivery — for example blocking, automating or spoofing ad requests, or generating artificial clicks or impressions — breaches these Terms and our advertising partners' terms, and may result in your access being terminated. How advertising data is collected, and your consent and opt-out choices, are described in our Privacy Policy.</p>
+        <h2 id="acceptable-use">7. Acceptable use</h2>
+        <p>You agree not to use the App unlawfully, to process content that is illegal or that infringes anyone's rights, to disrupt or interfere with the App, to bypass its access controls, to use bots or scrapers, or to attempt to defeat document protection you are not authorised to remove. We may suspend or terminate access for violations.</p>
+        <h2 id="intellectual-property">8. Intellectual property</h2>
+        <p>The App, its design, graphics, trademarks and content are owned by Tranquil Mind Technology JSC or its licensors. Third-party names, marks and file formats — including PDF, Word, Excel and PowerPoint — belong to their respective owners; their appearance does not imply affiliation or endorsement. We are not affiliated with Adobe, Microsoft or any other format owner.</p>
+        <h2 id="third-party-services">9. Third-party services</h2>
+        <p>The App uses third-party services — Google Firebase (analytics, crash reporting, remote configuration and push notifications), Google Play (distribution, billing and in-app review), Google AdMob together with its mediation networks (advertising), and Adjust (install and marketing attribution) — each subject to its own terms. We are not responsible for third-party services or for third-party advertising content.</p>
+        <h2 id="disclaimers">10. Disclaimers</h2>
+        <p>The App is provided "as is" and "as available", without warranties of any kind. We do not guarantee that every document will render, convert, merge, split, unlock or print exactly as in the original, that scanned pages will be accurate, that the App will be uninterrupted, error-free or secure, or that ads will always be available. The App is a document utility and is <strong>not</strong> a substitute for professional medical, financial or legal advice; nothing you produce with it constitutes such advice from us.</p>
+        <h2 id="limitation-of-liability">11. Limitation of liability</h2>
+        <p>To the maximum extent permitted by law, we are not liable for indirect, incidental, special or consequential damages, or for any loss of, corruption of, or inability to access documents, including files lost after editing, conversion, merging, splitting, locking or uninstalling. Our total liability is limited to the greater of the amount you paid us in the last 12 months or USD 50. Some jurisdictions do not allow these limitations, so they may not apply to you.</p>
+        <h2 id="indemnification">12. Indemnification</h2>
+        <p>You agree to indemnify Tranquil Mind Technology JSC against claims arising from your misuse of the App, from documents you process with it, or from your breach of these Terms.</p>
+        <h2 id="termination">13. Termination</h2>
+        <p>We may suspend or terminate your access at any time, including for breach of these Terms. Sections on intellectual property, disclaimers, limitation of liability and governing law survive termination. You may stop using the App at any time by uninstalling it; remember to cancel any active subscription in the store first.</p>
+        <h2 id="changes-to-these-terms">14. Changes to these Terms</h2>
+        <p>We may update these Terms. Material changes will be posted with a new "Last updated" date; continued use means you accept them.</p>
+        <h2 id="governing-law-and-disputes">15. Governing law and disputes</h2>
+        <p>These Terms are governed by the laws of Vietnam, with venue in Hanoi, Vietnam, without prejudice to mandatory consumer protections in your country of residence.</p>
+        <h2 id="contact">16. Contact</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
