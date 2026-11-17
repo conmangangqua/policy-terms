@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Privacy Policy for Palmtale — how we collect, use, and protect your data.">
+    <title>Privacy Policy — Palmtale</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        header.site {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+            border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #6366f1);
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta {
+            font-size: 13px;
+            color: var(--text-soft);
+            display: flex; gap: 14px;
+        }
+        main.shell {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        @media (min-width: 960px) {
+            main.shell { grid-template-columns: 240px 1fr; }
+        }
+        aside.toc {
+            position: sticky;
+            top: 84px;
+            align-self: start;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            font-size: 13.5px;
+            display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: 11px;
+            color: var(--text-soft);
+            margin-bottom: 10px;
+        }
+        aside.toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        aside.toc a {
+            display: block;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            color: var(--text-muted);
+            border-bottom: none;
+            line-height: 1.4;
+        }
+        aside.toc a:hover {
+            background: var(--bg-elev);
+            color: var(--text);
+        }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 38px 0 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 22px 0 8px;
+        }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul {
+            margin: 0 0 14px;
+            padding-left: 22px;
+            color: var(--text-muted);
+        }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            font-size: 13.5px;
+            color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px;
+            color: var(--text-soft);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 0 20px;
+            font-size: 14px;
+        }
+        thead th {
+            text-align: left;
+            font-weight: 600;
+            color: var(--text);
+            background: var(--bg-elev);
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        tbody td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+            vertical-align: top;
+        }
+        tbody tr:last-child td { border-bottom: none; }
+        .table-wrap {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        .table-wrap table { margin: 0; }
+        .callout {
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
+            margin: 0 0 16px;
+            color: var(--text-muted);
+        }
+        .callout strong { color: var(--text); }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">P</span>Palmtale</a>
+        <div class="nav-meta">
+            <span>Privacy Policy</span>
+            <span>·</span>
+            <span>2026-11-17</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#information-we-collect">1. Information we collect</a></li>
+            <li><a href="#how-we-use-information">2. How we use information</a></li>
+            <li><a href="#third-party-services">3. Third-party services</a></li>
+            <li><a href="#how-we-share-information">4. How we share information</a></li>
+            <li><a href="#legal-bases">5. Legal bases (EEA/UK — GDPR)</a></li>
+            <li><a href="#data-retention">6. Data retention</a></li>
+            <li><a href="#your-rights">7. Your rights</a></li>
+            <li><a href="#childrens-privacy-child-safety-standards">8. Children&#x27;s privacy &amp; Child Safety Standards</a></li>
+            <li><a href="#international-data-transfers">9. International data transfers</a></li>
+            <li><a href="#data-security">10. Data security</a></li>
+            <li><a href="#changes-to-this-policy">11. Changes to this Policy</a></li>
+            <li><a href="#contact-us">12. Contact us</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Privacy</span>
+        <h1>Privacy Policy</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Palmtale</span>
+            <span><strong>Effective:</strong> 2026-11-17</span>
+            <span><strong>Last Updated:</strong> 2026-11-17</span>
+        </div>
+
+        <p>Palmtale ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information the App uses, where it is stored, and the choices and rights you have. By using the App, you agree to this Policy.</p>
+        <p>Palmtale is a palm reading, horoscope and tarot app for entertainment and self-reflection. You do not need to create an account to use it, and the App works fully on your device: it contains no advertising SDK, no analytics SDK, no crash-reporting SDK and no in-app purchases, and it does not send your photos, readings, profile or chat messages to our servers or to any third party.</p>
+        <h2 id="information-we-collect">1. Information we collect</h2>
+        <p><strong>We do not collect personal information on our servers.</strong> Everything the App uses is created and kept on your device:</p>
+        <ul><li><strong>Palm photos.</strong> When you scan your palm with the camera or pick a photo from your gallery, the image is analyzed on your device by an on-device hand-landmark model (Google MediaPipe Tasks Vision, bundled in the App). The photo is not uploaded anywhere.</li><li><strong>Profile details you enter</strong> (for example name, birth date, birth time and birthplace used for horoscope and birth-chart readings, and profiles of other people you add). These are stored only in the App's local storage on your device.</li><li><strong>Readings and history</strong> (palm readings, tarot draws, horoscope results) — stored locally on your device.</li><li><strong>Chat with Mira, the in-app palm guide.</strong> Mira is an on-device assistant that answers from your own readings and content bundled in the App. Your questions and Mira's answers are stored only on your device and are never sent to a server or to an AI provider.</li><li><strong>Settings</strong> such as language and notification preferences — stored locally.</li></ul>
+        <h3>Device permissions the App requests</h3>
+        <div class="table-wrap"><table><thead><tr><th>Permission</th><th>Why the App uses it</th><th>Optional?</th></tr></thead><tbody><tr><td><code>android.permission.CAMERA</code> (Camera)</td><td>To take a photo of your palm for the on-device palm reading. Images stay on your device.</td><td>Yes — you can pick an existing photo instead, or deny the permission.</td></tr><tr><td><code>android.permission.POST_NOTIFICATIONS</code> (Notifications)</td><td>To show the daily horoscope / reading reminders you turn on.</td><td>Yes — you can turn reminders off in the App or in system settings.</td></tr><tr><td><code>android.permission.RECEIVE_BOOT_COMPLETED</code> (Run at startup)</td><td>To restore your scheduled daily reminders after the device restarts. No data is collected.</td><td>Only used if reminders are on.</td></tr></tbody></table></div>
+        <p>Photos picked from your gallery are selected through the Android system photo picker; the App does not request access to your whole photo library.</p>
+        <p><strong>Text-to-speech.</strong> If you use the "read aloud" feature, the text is spoken by the text-to-speech engine already installed on your device (for example Google Text-to-Speech). The App does not send this text to us.</p>
+        <p><strong>Sharing.</strong> If you choose to share a reading or the App link, the content is passed to the app you pick in the Android share sheet; what happens next is governed by that app's privacy policy.</p>
+        <h2 id="how-we-use-information">2. How we use information</h2>
+        <p>All processing happens on your device, only to:</p>
+        <ul><li>provide the palm, horoscope, tarot and chat features;</li><li>remember your profiles, readings, language and settings between sessions;</li><li>show the reminders you enable.</li></ul>
+        <p>We do not use your information for advertising, profiling, or analytics.</p>
+        <h2 id="third-party-services">3. Third-party services</h2>
+        <p>The App does not include third-party advertising, analytics, attribution or payment SDKs. The only third-party components are libraries that run entirely on your device:</p>
+        <div class="table-wrap"><table><thead><tr><th>Component</th><th>Purpose</th><th>Data leaves the device?</th><th>Policy</th></tr></thead><tbody><tr><td>Google MediaPipe Tasks Vision</td><td>On-device hand landmark detection for palm reading</td><td>No</td><td>https://policies.google.com/privacy</td></tr><tr><td>Android system text-to-speech engine</td><td>Reading text aloud</td><td>Governed by the engine you have installed</td><td>https://policies.google.com/privacy</td></tr><tr><td>Google Play (app distribution)</td><td>Downloading and updating the App</td><td>Handled by Google Play</td><td>https://policies.google.com/privacy</td></tr></tbody></table></div>
+        <h2 id="how-we-share-information">4. How we share information</h2>
+        <p>We do not sell, rent or share your personal information, because we do not receive it. We do not share data with advertisers or data brokers. Content leaves your device only when <strong>you</strong> choose to share it through the Android share sheet.</p>
+        <h2 id="legal-bases">5. Legal bases (EEA/UK — GDPR)</h2>
+        <p>Because your data is processed only on your own device to provide the features you request, the processing rests on the performance of the service you asked for and on your consent (for example, when you grant the camera or notification permission). You can withdraw consent at any time by revoking the permission in system settings.</p>
+        <h2 id="data-retention">6. Data retention</h2>
+        <p>Your data stays on your device until you delete it. You can delete everything at any time in <strong>Me → Delete all my data</strong>, which clears your readings, profiles and chat history. Uninstalling the App or clearing its storage in Android settings also removes all of it. We hold no copy.</p>
+        <h2 id="your-rights">7. Your rights</h2>
+        <p>Depending on where you live, you may have rights under the GDPR/UK GDPR (access, rectification, erasure, portability, restriction, objection, withdrawal of consent, and the right to complain to a data protection authority), the CCPA/CPRA (to know, delete, correct, and to opt out of the sale or sharing of personal information, and non-discrimination), and other laws such as Brazil's LGPD and Canada's PIPEDA.</p>
+        <p>Because we do not store your data on our servers, you can exercise access and deletion directly in the App (see section 6). For any question or request, contact us at <strong>contact@tranquilmind.co</strong>. We do not sell or share personal information.</p>
+        <h2 id="childrens-privacy-child-safety-standards">8. Children's privacy &amp; Child Safety Standards</h2>
+        <p>The App is intended for users aged <strong>13 and older</strong> and is not directed to children under 13 (or the higher minimum age of digital consent in your country, such as 16 in parts of the EEA). We do not knowingly collect personal information from children. Because the App does not transmit personal data to us, we hold no children's data; if you believe a child has used the App, you can delete all data in the App or uninstall it, and you may contact us at the address below.</p>
+        <h3>Child Safety Standards (CSAE)</h3>
+        <p>Palmtale includes a chat with "Mira", an on-device palm guide. Tranquil Mind Technology JSC, the developer of Palmtale, has <strong>zero tolerance for child sexual abuse and exploitation (CSAE)</strong> and child sexual abuse material (CSAM).</p>
+        <ul><li><strong>Prohibited content.</strong> Using the App to create, request, share or promote any content that sexualizes minors — including images, video, audio, text or AI-generated content — and any grooming, sextortion, solicitation or trafficking of minors is strictly prohibited. This applies both to what users type and to any response the App produces.</li><li><strong>How the App prevents it.</strong> Mira does not use a generative AI model and does not connect users with other people: it only answers from the user's own readings and fixed content written and reviewed by us and bundled in the App. There is no user-to-user messaging, no public posting and no uploading of content to other users.</li><li><strong>Reporting.</strong> Every Mira message has an in-app <strong>Report</strong> action that flags the message on your device. To make sure a concern reaches us, please also email our child-safety contact below with a description or screenshot; we review every report we receive and act on it, including removing or correcting bundled content in an update.</li><li><strong>Cooperation with authorities.</strong> We comply with applicable child-safety laws and the Google Play Child Safety Standards policy, and we report apparent CSAM we become aware of to the National Center for Missing &amp; Exploited Children (NCMEC) and/or the relevant local authorities.</li><li><strong>Child-safety point of contact:</strong> <strong>contact@tranquilmind.co</strong> (Palmtale — Tranquil Mind Technology JSC).</li></ul>
+        <h2 id="international-data-transfers">9. International data transfers</h2>
+        <p>The App does not transfer your personal data to us or to other countries. If you contact us by email, your message is processed by our email provider, which may be located outside your country, with appropriate safeguards where required.</p>
+        <h2 id="data-security">10. Data security</h2>
+        <p>Your data is stored in the App's private storage on your device, which other apps cannot read. Please protect your device with a screen lock. No method of storage is 100% secure.</p>
+        <h2 id="changes-to-this-policy">11. Changes to this Policy</h2>
+        <p>We may update this Policy from time to time. Material changes will be posted on this page with a new "Last updated" date. Continued use of the App after changes means you accept the updated Policy.</p>
+        <h2 id="contact-us">12. Contact us</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
