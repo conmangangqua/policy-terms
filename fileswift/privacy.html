@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Privacy Policy for Fileswift — how we collect, use, and protect your data.">
+    <title>Privacy Policy — Fileswift</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        header.site {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+            border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #6366f1);
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta {
+            font-size: 13px;
+            color: var(--text-soft);
+            display: flex; gap: 14px;
+        }
+        main.shell {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        @media (min-width: 960px) {
+            main.shell { grid-template-columns: 240px 1fr; }
+        }
+        aside.toc {
+            position: sticky;
+            top: 84px;
+            align-self: start;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            font-size: 13.5px;
+            display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: 11px;
+            color: var(--text-soft);
+            margin-bottom: 10px;
+        }
+        aside.toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        aside.toc a {
+            display: block;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            color: var(--text-muted);
+            border-bottom: none;
+            line-height: 1.4;
+        }
+        aside.toc a:hover {
+            background: var(--bg-elev);
+            color: var(--text);
+        }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 38px 0 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 22px 0 8px;
+        }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul {
+            margin: 0 0 14px;
+            padding-left: 22px;
+            color: var(--text-muted);
+        }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            font-size: 13.5px;
+            color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px;
+            color: var(--text-soft);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 0 20px;
+            font-size: 14px;
+        }
+        thead th {
+            text-align: left;
+            font-weight: 600;
+            color: var(--text);
+            background: var(--bg-elev);
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        tbody td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+            vertical-align: top;
+        }
+        tbody tr:last-child td { border-bottom: none; }
+        .table-wrap {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        .table-wrap table { margin: 0; }
+        .callout {
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
+            margin: 0 0 16px;
+            color: var(--text-muted);
+        }
+        .callout strong { color: var(--text); }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">P</span>Fileswift</a>
+        <div class="nav-meta">
+            <span>Privacy Policy</span>
+            <span>·</span>
+            <span>November 22, 2026</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#information-we-collect">1. Information we collect</a></li>
+            <li><a href="#how-we-use-information">2. How we use information</a></li>
+            <li><a href="#third-party-services">3. Third-party services</a></li>
+            <li><a href="#sharing">4. Sharing</a></li>
+            <li><a href="#security">5. Security</a></li>
+            <li><a href="#retention-and-deletion">6. Retention and deletion</a></li>
+            <li><a href="#your-rights">7. Your rights</a></li>
+            <li><a href="#childrens-privacy">8. Children&#x27;s privacy</a></li>
+            <li><a href="#international-transfers">9. International transfers</a></li>
+            <li><a href="#changes-to-this-policy">10. Changes to this policy</a></li>
+            <li><a href="#contact">11. Contact</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Privacy</span>
+        <h1>Privacy Policy</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Fileswift</span>
+            <span><strong>Effective:</strong> November 22, 2026</span>
+            <span><strong>Last Updated:</strong> November 22, 2026</span>
+        </div>
+
+        <p><strong>Effective date:</strong> November 22, 2026</p>
+        <p>Fileswift ("the App") is published by <strong>Tranquil Mind Technology JSC</strong> ("we", "us"). Fileswift sends files and text between nearby phones over Wi-Fi or a hotspot, using a direct connection between the two devices. This policy explains what the App handles and what leaves your device.</p>
+        <p>Contact: contact@tranquilmind.co</p>
+        <h2 id="information-we-collect">1. Information we collect</h2>
+        <p><strong>Files and text you transfer.</strong> When you send or receive, the files or text travel directly from one phone to the other over your local network (a TCP connection opened on the sender's phone and joined by scanning a QR code that contains a one-time token). We do not operate a server that receives, stores or relays your transferred content, and we cannot see it.</p>
+        <p><strong>Information kept on your device only.</strong></p>
+        <ul><li>Transfer history (file names, sizes, direction, time) stored locally in an on-device database (Hive).</li><li>App settings, such as language and preferences, stored locally.</li><li>Files you receive are saved in the App's own received-files folder on your device. The Cleaner tool lists and deletes only files in that folder.</li><li>Vault: files you move into the Vault stay on your device. Your PIN is not stored in plain text; only a salted SHA-256 hash is kept locally. The PIN works as an app lock: Vault files sit in the App's private storage and are not separately encrypted.</li><li>Your device name (the system hostname) is shown to the other phone during a transfer so the receiver can recognize the sender. It is sent only to the phone you are connected to.</li></ul>
+        <p><strong>Information handled by Firebase (Google).</strong> The App uses Firebase services, which may collect technical data such as device model, operating system version, app version, app-instance identifiers, crash reports and stack traces, and basic usage events:</p>
+        <ul><li>Firebase Crashlytics — crash and error reports to fix bugs.</li><li>Firebase Analytics — aggregated app usage statistics.</li><li>Firebase Remote Config — fetches configuration values (for example, whether an update is required). It does not send your files.</li></ul>
+        <p><strong>Google Play update check.</strong> The App may check for a newer version and, if you choose to update, opens the Google Play listing.</p>
+        <p>Picking photos, videos and files uses the Android system picker, so the App only gets access to the items you select.</p>
+        <p><strong>Advertising.</strong> The App displays no ads. We verified this against the actual release build (November 22, 2026): the build's dependency tree and its merged Android manifest contain no third-party advertising SDK and no ad-display component — no Bigo, AdMob, Mintegral, Moloco, Unity Ads, AppLovin, IronSource, Vungle or Pangle. The only advertising-related components present are Google's own, brought in by Firebase Analytics for measurement: the Google Play advertising ID (AD_ID) permission and Android's Privacy Sandbox ad-services permissions. The App does not use them to show ads. The App has no account or sign-in, and does not collect your contacts, location, microphone recordings or payment data. We do not sell your personal information.</p>
+        <p><strong>Permissions the App declares (Android):</strong> <code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code>, <code>CAMERA</code>, <code>INTERNET</code>, <code>POST_NOTIFICATIONS</code>, <code>SCHEDULE_EXACT_ALARM</code></p>
+        <ul><li><code>INTERNET</code> — lets the App open the local network connection between two phones for transfers, and lets Firebase send crash reports, analytics and fetch configuration.</li><li><code>ACCESS_NETWORK_STATE</code> — checks whether a network is available before starting a transfer, and shows a "no network" message if not.</li><li><code>ACCESS_WIFI_STATE</code> — reads the Wi-Fi connection state so the App can work out the phone's local address to share with the other phone.</li><li><code>CAMERA</code> — used only on the Receive screen to scan the sender's QR code with the live camera preview. Camera frames are processed on the device to read the QR code; no photo or video is recorded, saved or uploaded. If you deny the permission, you can still send files.</li><li><code>POST_NOTIFICATIONS</code> — shows notifications about transfers (Android 13 and above). You can decline or turn them off in system settings.</li><li><code>SCHEDULE_EXACT_ALARM</code> — declared for timed local notifications through the App's notification library. It is not used to collect any data.</li></ul>
+        <p>The App's libraries also merge a few standard permissions of their own into the final build (verified in the same release-build manifest check of November 22, 2026): notification and background-library permissions (<code>WAKE_LOCK</code>, <code>VIBRATE</code>, <code>RECEIVE_BOOT_COMPLETED</code>, <code>FOREGROUND_SERVICE</code>), media-read permissions used by the system photo/file pickers (<code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>, <code>READ_MEDIA_AUDIO</code>, <code>READ_EXTERNAL_STORAGE</code>), and Google/Firebase measurement permissions (<code>com.google.android.gms.permission.AD_ID</code>, <code>ACCESS_ADSERVICES_AD_ID</code>, <code>ACCESS_ADSERVICES_ATTRIBUTION</code>, <code>BIND_GET_INSTALL_REFERRER_SERVICE</code>). None of these are used for advertising, and none are used to read your media in the background — the App only gets the items you pick.</p>
+        <h2 id="how-we-use-information">2. How we use information</h2>
+        <ul><li>To perform the transfers you start.</li><li>To show your transfer history and settings on your device.</li><li>To diagnose crashes, improve stability and understand overall usage through Firebase.</li><li>To check whether a required update is available.</li></ul>
+        <h2 id="third-party-services">3. Third-party services</h2>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Provider</th><th>Purpose</th><th>Data</th></tr></thead><tbody><tr><td>Firebase Crashlytics</td><td>Google</td><td>Crash reporting</td><td>Crash logs, device and app info</td></tr><tr><td>Firebase Analytics</td><td>Google</td><td>Usage statistics</td><td>App-instance ID, usage events, device info</td></tr><tr><td>Firebase Remote Config</td><td>Google</td><td>Configuration, forced-update flag</td><td>App-instance ID, device info</td></tr></tbody></table></div>
+        <p>Google's handling of this data is described at https://policies.google.com/privacy.</p>
+        <h2 id="sharing">4. Sharing</h2>
+        <p>We do not sell your data. Your transferred content goes only to the phone you connect to. Technical data described in section 3 is processed by Google as our service provider.</p>
+        <h2 id="security">5. Security</h2>
+        <p>Transfers use a one-time token shared through the QR code, and the sender accepts only one valid connection per session. The transfer runs on your local network and is not routed through our servers. Vault PINs are stored as salted hashes. No method of electronic storage is perfectly secure.</p>
+        <h2 id="retention-and-deletion">6. Retention and deletion</h2>
+        <p>Transfer history, settings, received files and Vault files stay on your device until you delete them (via the App's Cleaner, history, or Vault tools) or uninstall the App. Crash and analytics data held by Firebase is retained according to Google's retention settings. To ask us about data associated with your device, email contact@tranquilmind.co.</p>
+        <h2 id="your-rights">7. Your rights</h2>
+        <p>Depending on where you live (including the EEA/UK under GDPR, California under CCPA/CPRA, Brazil under LGPD, and Canada under PIPEDA), you may have rights to access, correct, delete or object to processing of your personal data. Since we hold no account data, contact contact@tranquilmind.co and we will respond within the period required by law.</p>
+        <h2 id="childrens-privacy">8. Children's privacy</h2>
+        <p>The App is not directed to children under 13 (or the minimum age in your country) and we do not knowingly collect personal information from children. If you believe a child has provided data, contact us and we will delete it.</p>
+        <h2 id="international-transfers">9. International transfers</h2>
+        <p>Firebase may process data in countries outside your own. Such processing is governed by Google's data-processing terms.</p>
+        <h2 id="changes-to-this-policy">10. Changes to this policy</h2>
+        <p>We may update this policy. The effective date at the top shows the latest revision; material changes will be reflected in the App's policy page at https://policy.tranquilmind.co/fileswift/privacy.</p>
+        <h2 id="contact">11. Contact</h2>
+        <p>Tranquil Mind Technology JSC — contact@tranquilmind.co</p>
+    </article>
+</main>
+
+</body>
+</html>
