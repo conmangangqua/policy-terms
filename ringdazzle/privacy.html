@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Privacy Policy for Ringdazzle — how we collect, use, and protect your data.">
+    <title>Privacy Policy — Ringdazzle</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elev: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --text-soft: #64748b;
+            --accent: #0ea5e9;
+            --accent-hover: #0284c7;
+            --accent-soft: #e0f2fe;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -8px rgba(15,23,42,.08);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --bg-elev: #111a2e;
+                --bg-card: #131d36;
+                --border: #1f2a44;
+                --text: #e2e8f0;
+                --text-muted: #94a3b8;
+                --text-soft: #64748b;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --accent-soft: #0c2540;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -8px rgba(0,0,0,.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        header.site {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            background: color-mix(in srgb, var(--bg) 80%, transparent);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+            border-bottom: none;
+        }
+        .brand .dot {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #6366f1);
+            display: grid; place-items: center;
+            color: #fff; font-size: 14px;
+            box-shadow: 0 4px 12px -4px var(--accent);
+        }
+        .nav-meta {
+            font-size: 13px;
+            color: var(--text-soft);
+            display: flex; gap: 14px;
+        }
+        main.shell {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        @media (min-width: 960px) {
+            main.shell { grid-template-columns: 240px 1fr; }
+        }
+        aside.toc {
+            position: sticky;
+            top: 84px;
+            align-self: start;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            font-size: 13.5px;
+            display: none;
+        }
+        @media (min-width: 960px) { aside.toc { display: block; } }
+        aside.toc strong {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: 11px;
+            color: var(--text-soft);
+            margin-bottom: 10px;
+        }
+        aside.toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        aside.toc a {
+            display: block;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            color: var(--text-muted);
+            border-bottom: none;
+            line-height: 1.4;
+        }
+        aside.toc a:hover {
+            background: var(--bg-elev);
+            color: var(--text);
+        }
+        article {
+            max-width: 72ch;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            box-shadow: var(--shadow);
+        }
+        @media (max-width: 600px) { article { padding: 28px 20px; } }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 11px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 38px 0 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            scroll-margin-top: 88px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 22px 0 8px;
+        }
+        p { margin: 0 0 14px; color: var(--text-muted); }
+        article p strong, article li strong { color: var(--text); font-weight: 600; }
+        ul {
+            margin: 0 0 14px;
+            padding-left: 22px;
+            color: var(--text-muted);
+        }
+        ul li { margin-bottom: 6px; }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            font-size: 13.5px;
+            color: var(--text-soft);
+            padding: 12px 16px;
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 28px;
+        }
+        .meta span strong { color: var(--text); font-weight: 600; }
+        .footer-block {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13.5px;
+            color: var(--text-soft);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 0 20px;
+            font-size: 14px;
+        }
+        thead th {
+            text-align: left;
+            font-weight: 600;
+            color: var(--text);
+            background: var(--bg-elev);
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        tbody td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+            vertical-align: top;
+        }
+        tbody tr:last-child td { border-bottom: none; }
+        .table-wrap {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        .table-wrap table { margin: 0; }
+        .callout {
+            background: var(--bg-elev);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
+            margin: 0 0 16px;
+            color: var(--text-muted);
+        }
+        .callout strong { color: var(--text); }
+        @media print {
+            header.site, aside.toc { display: none; }
+            main.shell { display: block; padding: 0; }
+            article { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            h2 { page-break-after: avoid; }
+            a { color: var(--text); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="nav">
+        <a href="#top" class="brand"><span class="dot">P</span>Ringdazzle</a>
+        <div class="nav-meta">
+            <span>Privacy Policy</span>
+            <span>·</span>
+            <span>2026-11-22</span>
+        </div>
+    </div>
+</header>
+
+<main class="shell" id="top">
+
+    <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <ol>
+            <li><a href="#information-we-collect">1. Information we collect</a></li>
+            <li><a href="#how-we-use-information">2. How we use information</a></li>
+            <li><a href="#third-party-services">3. Third-party services</a></li>
+            <li><a href="#how-we-share-information">4. How we share information</a></li>
+            <li><a href="#legal-bases">5. Legal bases (EEA/UK — GDPR)</a></li>
+            <li><a href="#data-retention">6. Data retention</a></li>
+            <li><a href="#your-rights">7. Your rights</a></li>
+            <li><a href="#childrens-privacy">8. Children&#x27;s privacy</a></li>
+            <li><a href="#international-data-transfers">9. International data transfers</a></li>
+            <li><a href="#data-security">10. Data security</a></li>
+            <li><a href="#changes-to-this-policy">11. Changes to this Policy</a></li>
+            <li><a href="#contact-us">12. Contact us</a></li>
+        </ol>
+    </aside>
+
+    <article>
+        <span class="eyebrow">Legal · Privacy</span>
+        <h1>Privacy Policy</h1>
+
+        <div class="meta">
+            <span><strong>App:</strong> Ringdazzle</span>
+            <span><strong>Effective:</strong> 2026-11-22</span>
+            <span><strong>Last Updated:</strong> 2026-11-22</span>
+        </div>
+
+        <p>Ringdazzle ("the App", "we", "us", "our"), operated by Tranquil Mind Technology JSC, respects your privacy. This Privacy Policy explains what information we collect, how we use and share it, and the choices and rights you have. By using the App, you agree to this Policy.</p>
+        <p>Ringdazzle lets you schedule a pretend incoming call that rings like a real one, pick the look of the call screen, and play a short line you recorded yourself when you answer. Every call and chat in the App is pretend and entertainment only. You do not need to create an account to use it.</p>
+        <h2 id="information-we-collect">1. Information we collect</h2>
+        <p><strong>Information that stays on your device.</strong> The photos you choose for custom callers, the callers you create, your call history, your settings (sound, vibration, flash, ringtone, call-screen style) and the voice clips you record are stored only in the App's private storage on your device. They are not uploaded to our servers.</p>
+        <p><strong>Voice recordings.</strong> If you tap the record button when creating a caller, the App uses your microphone to record a clip of up to 30 seconds. The clip is saved only on your device, is played back when you answer a pretend call, and is deleted when you delete the voice or the caller, or uninstall the App. The App never records in the background, and the clip is never sent to us or to any third party.</p>
+        <p><strong>Camera.</strong> During a pretend call the App can show your front camera as a small preview. The preview is not recorded or sent anywhere by the App. If you use the in-call screen-recording button, the recording is saved on your device and is shared only if you choose to share it.</p>
+        <p><strong>Information collected automatically (leaves your device).</strong> Through the third-party services listed in Section 3, we receive: device and advertising identifiers (such as the Google Advertising ID), approximate location derived from your IP address, app activity such as screens used and the pretend-call settings you choose, crash logs and diagnostics, and device information (model, operating system, language). When you report a character from the call screen, the report reason and the character identifier are sent as an analytics event.</p>
+        <p><strong>Notifications.</strong> To ring when the screen is locked, the App asks for permission to show notifications and full-screen call alerts, and to schedule exact alarms. These permissions are used only to deliver the pretend call you scheduled.</p>
+        <p><strong>Permissions the App may request:</strong> microphone (record a caller voice, only when you tap record), camera (in-call preview), notifications and full-screen intent (ring while the screen is locked), exact alarms (ring at the time you chose), vibration (ring vibration), flashlight via the camera (blink on ring, if enabled), network state and internet (ads, analytics, updates), advertising ID (ads measurement), run at start-up (re-arm a scheduled call after restart) and wake lock (turn the screen on for the call).</p>
+        <p><strong>Permissions the App declares (Android):</strong> <code>CAMERA</code>, <code>POST_NOTIFICATIONS</code>, <code>RECORD_AUDIO</code>, <code>SCHEDULE_EXACT_ALARM</code>, <code>USE_FULL_SCREEN_INTENT</code>.</p>
+        <h2 id="how-we-use-information">2. How we use information</h2>
+        <p>To provide and operate the App; to ring your scheduled pretend call; to remember your settings; to show and measure advertising; to understand which features are used and fix crashes; to detect fraud and keep the App secure; and to comply with the law.</p>
+        <h2 id="third-party-services">3. Third-party services</h2>
+        <div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Data involved</th><th>Policy</th></tr></thead><tbody><tr><td>Google Firebase (Analytics, Crashlytics, Remote Config)</td><td>Usage analytics, crash reports, remote settings</td><td>App activity, device identifiers, crash logs, diagnostics</td><td>https://policies.google.com/privacy</td></tr><tr><td>Google AdMob and mediation partners (Meta Audience Network, Pangle, Liftoff/Vungle, Mintegral, Unity Ads)</td><td>Showing and measuring ads</td><td>Advertising ID, IP-derived location, device info, ad interactions</td><td>https://policies.google.com/technologies/ads</td></tr><tr><td>Adjust and AppsFlyer</td><td>Install attribution and ad-revenue measurement</td><td>Advertising ID, device info, install and ad events</td><td>https://www.adjust.com/terms/privacy-policy/ and https://www.appsflyer.com/legal/privacy-policy/</td></tr><tr><td>Meta (Facebook SDK)</td><td>Attribution and ad measurement</td><td>Advertising ID, device info</td><td>https://www.facebook.com/privacy/policy</td></tr></tbody></table></div>
+        <p><strong>Ad consent.</strong> Where required (for example in the EEA and UK), the App shows a consent message from Google's User Messaging Platform before personalized ads. You can change your choice at any time from the privacy options the App provides.</p>
+        <p><strong>Advertising ID.</strong> You can reset your advertising ID or opt out of ads personalization in your Android settings (Settings → Google → Ads).</p>
+        <h2 id="how-we-share-information">4. How we share information</h2>
+        <p>We do not sell your personal information for money. We share the information described in Section 3 with those third-party services, when required by law or to protect rights and safety, and in a business transfer. Because advertising partners may use your advertising ID for personalized ads, this can count as "sharing" or "sale" under some U.S. state laws; you can opt out as described in Sections 3 and 7.</p>
+        <h2 id="legal-bases">5. Legal bases (EEA/UK — GDPR)</h2>
+        <p>Consent (personalized ads and analytics where required); legitimate interests (running and securing the App, fixing crashes, improving features); and legal obligation.</p>
+        <h2 id="data-retention">6. Data retention</h2>
+        <p>Data on your device is kept until you delete it or uninstall the App. Data held by our service providers is kept only as long as needed for the purposes above or as required by law, according to their own retention periods; crash and diagnostic data is kept for a limited period.</p>
+        <h2 id="your-rights">7. Your rights</h2>
+        <p>Depending on where you live you may have the right to access, correct, delete, port, object to or restrict the use of your data, to withdraw consent, and to complain to a data-protection authority (GDPR/UK GDPR); to know, delete and correct, to opt out of sale/sharing and targeted advertising, and not to be discriminated against (CCPA/CPRA); and similar rights under LGPD and PIPEDA. Because the App has no accounts, include your advertising ID and device details when you contact us so we can locate your data. Email <strong>contact@tranquilmind.co</strong>.</p>
+        <h2 id="childrens-privacy">8. Children's privacy</h2>
+        <p>The App is intended for users aged 13 and over and is not directed to children under 13. When you first open the App it asks for your date of birth to set an age tier. If the date shows you are under 13, the App asks for a parent or guardian to confirm, limits how often it shows reminder calls, and keeps a Parent Zone with screen-time and quiet-hours controls that is protected by a parent check. We do not knowingly collect personal information from children under 13 beyond the automatic data described in Section 1; if you believe a child has given us information, contact <strong>contact@tranquilmind.co</strong> and we will delete it. Your date of birth is used only to work out the age tier; the App stores the tier on your device, not the date itself.</p>
+        <h3>Child Safety Standards (CSAE)</h3>
+        <p>Ringdazzle has a pretend chat feature with scripted replies and lets you add a photo and name for a custom caller. For that reason we publish these standards for the Ringdazzle app and for Tranquil Mind Technology JSC.</p>
+        <ul><li><strong>Zero tolerance.</strong> Child sexual abuse and exploitation (CSAE), including child sexual abuse material (CSAM), is strictly prohibited in the App. This covers images, video, audio, text and AI-generated content, any sexualization of minors, grooming, sextortion, solicitation and trafficking, and any attempt to create, request, share or promote such material.</li><li><strong>What the App does today.</strong> Chat replies come from scripted content bundled with the App; the App does not let users send messages or media to other people. Photos and names you add for custom callers stay on your device. You can report a character from the call screen; the report is recorded as an analytics event for our team to review. The App does not currently have live human moderation, and we are working to add a direct reporting channel.</li><li><strong>If we learn of a violation.</strong> We remove the content, stop the feature or access involved, and report apparent CSAM to the National Center for Missing &amp; Exploited Children (NCMEC) and/or the competent local authorities.</li><li><strong>Legal compliance.</strong> We comply with applicable child-safety laws and align with the Google Play Child Safety Standards policy.</li><li><strong>Child-safety contact:</strong> Tranquil Mind Technology JSC, <strong>contact@tranquilmind.co</strong>.</li></ul>
+        <h2 id="international-data-transfers">9. International data transfers</h2>
+        <p>Data may be processed in countries other than your own, including the United States. Where required we rely on safeguards such as Standard Contractual Clauses.</p>
+        <h2 id="data-security">10. Data security</h2>
+        <p>We use encryption in transit (HTTPS/TLS) and reasonable measures to protect data. No method of transmission or storage is 100% secure.</p>
+        <h2 id="changes-to-this-policy">11. Changes to this Policy</h2>
+        <p>We may update this Policy. Material changes will be posted here with a new date, and continued use means you accept them.</p>
+        <h2 id="contact-us">12. Contact us</h2>
+        <p>Tranquil Mind Technology JSC No. 3, Alley 98, Vu Trong Phung Street, Thanh Xuan Ward, Hanoi City, Vietnam Email: <strong>contact@tranquilmind.co</strong></p>
+        <p>© 2026 Tranquil Mind Technology JSC (@Tranquil Mind Technology JSC). All rights reserved.</p>
+    </article>
+</main>
+
+</body>
+</html>
